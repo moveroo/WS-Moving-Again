@@ -16,13 +16,14 @@ const navItems = [
         <a href="tel:1300668464" class="hover:text-brand-yellow transition-colors font-bold">
           📞 1300 668 464
         </a>
-        <a href="mailto:info@movingagain.com.au" class="hidden md:inline hover:text-brand-yellow transition-colors">
+        <a
+          href="mailto:info@movingagain.com.au"
+          class="hidden md:inline hover:text-brand-yellow transition-colors"
+        >
           ✉️ info@movingagain.com.au
         </a>
       </div>
-      <div class="font-bold text-brand-yellow hidden sm:block">
-        Moving Made Easy
-      </div>
+      <div class="font-bold text-brand-yellow hidden sm:block">Moving Made Easy</div>
     </div>
   </div>
 
@@ -41,41 +42,84 @@ const navItems = [
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-6 lg:gap-8">
-        {navItems.map((item) => (
-          <a href={item.href} class="text-white font-bold hover:text-brand-yellow transition-colors text-sm lg:text-base uppercase tracking-tight">
-            {item.name}
-          </a>
-        ))}
-        <a href="/quote" class="bg-brand-red text-white font-bold py-2.5 px-6 rounded-brand hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              class="text-white font-bold hover:text-brand-yellow transition-colors text-sm lg:text-base uppercase tracking-tight"
+            >
+              {item.name}
+            </a>
+          ))
+        }
+        <a
+          href="/quote"
+          class="bg-brand-red text-white font-bold py-2.5 px-6 rounded-brand hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
+        >
           Get a Quote
         </a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
   </div>
 
   <!-- Mobile Menu Drawer -->
-  <div id="mobile-menu" class="fixed inset-0 bg-brand-dark/95 backdrop-blur-sm z-50 transform translate-x-full transition-transform duration-300 md:hidden flex justify-center items-center">
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 bg-brand-dark/95 backdrop-blur-sm z-50 transform translate-x-full transition-transform duration-300 md:hidden flex justify-center items-center"
+  >
     <!-- Close Button -->
-    <button id="close-menu-btn" class="absolute top-6 right-6 text-white p-2" aria-label="Close Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    <button
+      id="close-menu-btn"
+      class="absolute top-6 right-6 text-white p-2"
+      aria-label="Close Menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
 
     <nav class="flex flex-col items-center gap-6 text-center">
-      {navItems.map((item) => (
-        <a href={item.href} class="text-2xl text-white font-bold hover:text-brand-yellow transition-colors">
-          {item.name}
-        </a>
-      ))}
-      <a href="/quote" class="mt-4 bg-brand-yellow text-brand-dark font-bold py-4 px-10 rounded-brand text-xl shadow-xl">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-2xl text-white font-bold hover:text-brand-yellow transition-colors"
+          >
+            {item.name}
+          </a>
+        ))
+      }
+      <a
+        href="/quote"
+        class="mt-4 bg-brand-yellow text-brand-dark font-bold py-4 px-10 rounded-brand text-xl shadow-xl"
+      >
         Get a Quote
       </a>
     </nav>

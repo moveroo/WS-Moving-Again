@@ -5,10 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com', // Replace with your site URL
-  integrations: [
-    tailwind(),
-    sitemap(),
-  ],
+  integrations: [tailwind(), sitemap()],
   // Optimize images automatically
   image: {
     service: {

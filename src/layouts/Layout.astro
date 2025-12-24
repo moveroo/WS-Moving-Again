@@ -19,20 +19,10 @@ interface Props {
   schemaData?: Record<string, any>;
 }
 
-const { 
-  title, 
-  description, 
-  image,
-  schemaType = 'WebSite',
-  schemaData = {} 
-} = Astro.props;
+const { title, description, image, schemaType = 'WebSite', schemaData = {} } = Astro.props;
 ---
 
-<SEO 
-  title={title}
-  description={description}
-  image={image}
->
+<SEO title={title} description={description} image={image}>
   <!-- Global Analytics -->
   <Analytics slot="head" />
 
@@ -42,7 +32,7 @@ const {
   <!-- App Structure -->
   <div class="flex flex-col min-h-screen bg-brand-light font-sans text-brand-dark">
     <Header />
-    
+
     <main class="flex-grow">
       <slot />
     </main>
