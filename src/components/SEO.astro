@@ -6,12 +6,13 @@ interface Props {
   type?: 'website' | 'article';
   canonical?: string;
   noindex?: boolean;
+  lang?: string;
 }
 
 const {
   title,
   description = import.meta.env.PUBLIC_SITE_DESCRIPTION || '',
-  image = import.meta.env.PUBLIC_SITE_IMAGE || '',
+  image = import.meta.env.PUBLIC_SITE_IMAGE || '/logo.png',
   type = 'website',
   canonical = Astro.url.href,
   noindex = false,
