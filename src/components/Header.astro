@@ -8,7 +8,7 @@ const navItems = [
 ];
 ---
 
-<header class="w-full bg-white shadow-md relative z-50">
+<header class="w-full bg-brand-dark shadow-md relative z-50">
   <!-- Top Bar -->
   <div class="bg-brand-dark text-white py-2 px-4">
     <div class="container mx-auto flex justify-between items-center text-sm md:text-base">
@@ -31,10 +31,10 @@ const navItems = [
     <div class="flex justify-between items-center">
       <!-- Logo -->
       <a href="/" class="flex flex-col">
-        <span class="text-3xl md:text-4xl font-black text-brand-red tracking-tighter leading-none">
+        <span class="text-3xl md:text-4xl font-black text-white tracking-tighter leading-none">
           MOVING AGAIN
         </span>
-        <span class="text-xs md:text-sm font-bold text-brand-dark tracking-widest uppercase">
+        <span class="text-xs md:text-sm font-bold text-gray-400 tracking-widest uppercase">
           Interstate Removalists
         </span>
       </a>
@@ -42,7 +42,7 @@ const navItems = [
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-6 lg:gap-8">
         {navItems.map((item) => (
-          <a href={item.href} class="text-brand-dark font-bold hover:text-brand-red transition-colors text-sm lg:text-base uppercase tracking-tight">
+          <a href={item.href} class="text-white font-bold hover:text-brand-yellow transition-colors text-sm lg:text-base uppercase tracking-tight">
             {item.name}
           </a>
         ))}
@@ -52,7 +52,7 @@ const navItems = [
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden text-brand-dark p-2" aria-label="Toggle Menu">
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle Menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
