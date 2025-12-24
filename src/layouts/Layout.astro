@@ -5,11 +5,6 @@ import SEO from '../components/SEO.astro';
 import Analytics from '../components/Analytics.astro';
 import Schema from '../components/Schema.astro';
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/700.css';
-import '@fontsource/roboto/900.css';
-
 interface Props {
   title?: string;
   description?: string;
@@ -28,6 +23,27 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
 
   <!-- Global Schema -->
   <Schema type={schemaType} data={schemaData} slot="head" />
+
+  <!-- Preload Fonts to Avoid Chaining -->
+  <link rel="preload" href="/fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin slot="head" />
+  <link rel="preload" href="/fonts/roboto-bold.woff2" as="font" type="font/woff2" crossorigin slot="head" />
+
+  <style is:global>
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/roboto-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/fonts/roboto-bold.woff2') format('woff2');
+    }
+  </style>
 
   <!-- App Structure -->
   <div class="flex flex-col min-h-screen bg-brand-light font-sans text-brand-dark">
