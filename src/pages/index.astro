@@ -1,38 +1,57 @@
 ---
-import SEO from '../components/SEO.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<SEO 
-  title="Moving Again Astro"
-  description="A new project scaffolded with Webforge."
+<Layout 
+  title="Moving Again | Interstate Removalists Australia"
+  description="Moving Again is Australia's most trusted interstate removalist. Get a quote for furniture removals, car transport, and container transport today."
 >
-  <!-- Load Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" slot="head" />
-
-  <main class="min-h-screen bg-brand-light font-sans text-brand-dark flex items-center justify-center p-4">
-    <div class="max-w-xl w-full bg-white rounded-2xl p-8 border border-gray-200 shadow-xl">
-      <div class="mb-6">
-        <span class="inline-block px-3 py-1 rounded-full bg-brand-red/10 text-brand-red text-sm font-bold border border-brand-red/20">
-          Moving Again Brand
-        </span>
-      </div>
+  <div class="container mx-auto px-4 py-16 text-center">
+    <div class="max-w-3xl mx-auto">
+      <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/10 text-brand-red font-bold uppercase tracking-wider text-sm border border-brand-red/20">
+        Trusted Nationwide
+      </span>
       
-      <h1 class="text-4xl font-black text-brand-dark mb-4 tracking-tight">
-        Ready to Move?
+      <h1 class="text-5xl md:text-7xl font-black text-brand-dark mb-8 tracking-tighter leading-tight">
+        Moving Made <span class="text-brand-red">Easy.</span>
       </h1>
       
-      <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-        Your new Astro project is branded with the Moving Again identity.
+      <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+        Professional interstate removalists, car transport, and container shipping. 
+        We handle the heavy lifting so you can focus on your new beginning.
       </p>
 
-      <div class="grid gap-4">
-        <button class="w-full py-4 px-6 bg-brand-red text-white font-bold rounded-brand hover:bg-red-900 transition-colors shadow-lg shadow-brand-red/30">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/quote" class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200">
           Get a Moving Quote
-        </button>
-        <button class="w-full py-4 px-6 bg-brand-yellow text-brand-dark font-bold rounded-brand hover:bg-yellow-400 transition-colors">
-          Get a Car Transport Quote
-        </button>
+        </a>
+        <a href="/car-transport" class="inline-block py-4 px-8 bg-brand-yellow text-brand-dark font-bold rounded-brand text-lg hover:bg-yellow-400 transition-colors shadow-md hover:shadow-lg">
+          Car Transport Quote
+        </a>
       </div>
     </div>
-  </main>
-</SEO>
+  </div>
+
+  <!-- Feautre Grid (Placeholder) -->
+  <div class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">🚛</div>
+          <h3 class="text-xl font-bold text-brand-dark mb-2">Interstate Removals</h3>
+          <p class="text-gray-600">Reliable weekly services between all major capital cities and regional centers.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">🚗</div>
+          <h3 class="text-xl font-bold text-brand-dark mb-2">Car Transport</h3>
+          <p class="text-gray-600">Door-to-door or depot-to-depot vehicle transport services nationwide.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">📦</div>
+          <h3 class="text-xl font-bold text-brand-dark mb-2">Container Transport</h3>
+          <p class="text-gray-600">Self-pack container options for a flexible and cost-effective move.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

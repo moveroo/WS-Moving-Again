@@ -1,0 +1,50 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SEO from '../components/SEO.astro';
+import Analytics from '../components/Analytics.astro';
+import Schema from '../components/Schema.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  schemaType?: 'WebSite' | 'Organization' | 'Article' | 'Product' | 'FAQPage' | 'LocalBusiness';
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  schemaData?: Record<string, any>;
+}
+
+const { 
+  title, 
+  description, 
+  image,
+  schemaType = 'WebSite',
+  schemaData = {} 
+} = Astro.props;
+---
+
+<SEO 
+  title={title}
+  description={description}
+  image={image}
+>
+  <!-- Global Analytics -->
+  <Analytics slot="head" />
+
+  <!-- Global Schema -->
+  <Schema type={schemaType} data={schemaData} slot="head" />
+
+  <!-- Fonts (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" slot="head" />
+
+  <!-- App Structure -->
+  <div class="flex flex-col min-h-screen bg-brand-light font-sans text-brand-dark">
+    <Header />
+    
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <Footer />
+  </div>
+</SEO>
