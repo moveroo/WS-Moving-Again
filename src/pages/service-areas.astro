@@ -1,0 +1,540 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import { BRAND } from '../utils/brand';
+import {
+  NET_INTERSTATE_MIGRATION,
+  MIGRATION_DATA_PERIOD,
+  MIGRATION_DATA_SOURCE,
+  MIGRATION_DATA_URL,
+  formatMigration,
+  getMigrationTrend,
+  STATE_POPULATION,
+  CITY_POPULATION,
+} from '../utils/migration-stats';
+
+// City hub data
+const cityHubs = [
+  {
+    city: 'Sydney',
+    state: 'NSW',
+    slug: '/sydney/',
+    stateCode: 'NSW',
+    icon: '🏙️',
+    tagline: "Australia's Busiest Hub",
+    features: ['Daily services', 'Largest network', 'All routes'],
+  },
+  {
+    city: 'Melbourne',
+    state: 'VIC',
+    slug: '/melbourne/',
+    stateCode: 'VIC',
+    icon: '🎭',
+    tagline: 'Southern Backloading Hub',
+    features: ['Daily to Sydney', 'Adelaide gateway', 'High volume'],
+  },
+  {
+    city: 'Brisbane',
+    state: 'QLD',
+    slug: '/brisbane/',
+    stateCode: 'QLD',
+    icon: '☀️',
+    tagline: 'Highest Net Migration',
+    features: ['Daily services', 'Gold Coast', 'North QLD routes'],
+  },
+  {
+    city: 'Perth',
+    state: 'WA',
+    slug: '/perth/',
+    stateCode: 'WA',
+    icon: '🌏',
+    tagline: 'Nullarbor Specialists',
+    features: ['Weekly east coast', 'Quarantine experts', 'WA coverage'],
+  },
+  {
+    city: 'Adelaide',
+    state: 'SA',
+    slug: '/adelaide/',
+    stateCode: 'SA',
+    icon: '🍷',
+    tagline: 'East-West Crossroads',
+    features: ['Perth gateway', 'Melbourne daily', 'Central hub'],
+  },
+  {
+    city: 'Hobart',
+    state: 'TAS',
+    slug: '/hobart/',
+    stateCode: 'TAS',
+    icon: '🌲',
+    tagline: 'Ferry Crossing Included',
+    features: ['Bass Strait ferry', 'Quarantine support', 'All Tasmania'],
+  },
+  {
+    city: 'Darwin',
+    state: 'NT',
+    slug: '/darwin/',
+    stateCode: 'NT',
+    icon: '🦎',
+    tagline: 'Top End Specialists',
+    features: ['Stuart Highway', 'Wet season experts', 'Remote access'],
+  },
+  {
+    city: 'Canberra',
+    state: 'ACT',
+    slug: '/canberra/',
+    stateCode: 'ACT',
+    icon: '🏛️',
+    tagline: 'Government Relocations',
+    features: ['Daily to Sydney', 'APS experience', 'Fast transit'],
+  },
+];
+
+// Sort cities by migration (highest to lowest)
+const citiesByMigration = [...cityHubs].sort((a, b) => {
+  const migA = NET_INTERSTATE_MIGRATION[a.stateCode as keyof typeof NET_INTERSTATE_MIGRATION] || 0;
+  const migB = NET_INTERSTATE_MIGRATION[b.stateCode as keyof typeof NET_INTERSTATE_MIGRATION] || 0;
+  return migB - migA;
+});
+
+// Popular corridors
+const corridors = [
+  {
+    from: 'Sydney',
+    to: 'Melbourne',
+    transit: '2-3 days',
+    frequency: 'Daily',
+    slug: '/sydney-melbourne/',
+  },
+  {
+    from: 'Sydney',
+    to: 'Brisbane',
+    transit: '2-3 days',
+    frequency: 'Daily',
+    slug: '/sydney-brisbane/',
+  },
+  {
+    from: 'Melbourne',
+    to: 'Brisbane',
+    transit: '3-4 days',
+    frequency: '3x Weekly',
+    slug: '/melbourne-brisbane/',
+  },
+  {
+    from: 'Melbourne',
+    to: 'Adelaide',
+    transit: '1-2 days',
+    frequency: 'Daily',
+    slug: '/melbourne-adelaide/',
+  },
+  {
+    from: 'Sydney',
+    to: 'Perth',
+    transit: '5-7 days',
+    frequency: '2x Weekly',
+    slug: '/sydney-perth/',
+  },
+  {
+    from: 'Adelaide',
+    to: 'Perth',
+    transit: '3-5 days',
+    frequency: '2x Weekly',
+    slug: '/adelaide-perth/',
+  },
+  {
+    from: 'Sydney',
+    to: 'Canberra',
+    transit: '1 day',
+    frequency: 'Daily',
+    slug: '/sydney-canberra/',
+  },
+  {
+    from: 'Brisbane',
+    to: 'Cairns',
+    transit: '2-3 days',
+    frequency: '3x Weekly',
+    slug: '/brisbane-cairns/',
+  },
+];
+
+// FAQs
+const faqs = [
+  {
+    question: 'Which Australian city are people moving to most?',
+    answer: `Queensland leads the nation in net interstate migration, with ${formatMigration('QLD')} people relocating to the Sunshine State in ${MIGRATION_DATA_PERIOD}. Brisbane and the Gold Coast are the primary destinations. Western Australia is second with ${formatMigration('WA')} net arrivals.`,
+  },
+  {
+    question: 'Which states are losing the most residents?',
+    answer: `New South Wales saw the largest net loss with ${formatMigration('NSW')} people leaving for other states in ${MIGRATION_DATA_PERIOD}. Victoria also experienced a slight net loss of ${formatMigration('VIC')}. Many are relocating to Queensland and Western Australia for lifestyle and affordability reasons.`,
+  },
+  {
+    question: 'What is the cheapest interstate moving route?',
+    answer:
+      'The Sydney-Melbourne corridor offers the best value due to high truck volumes and daily services. Backloading on this route typically saves 40-60% compared to dedicated truck hire. Brisbane-Sydney is another affordable corridor with daily services.',
+  },
+  {
+    question: 'Which states have quarantine restrictions for moving?',
+    answer:
+      'Western Australia and Tasmania have strict quarantine laws. Certain items including live plants, fresh produce, soil, and some seeds cannot be transported into these states. Our teams are experienced with these requirements and will advise you during the quoting process.',
+  },
+  {
+    question: 'How long does an interstate move take?',
+    answer:
+      'Transit times vary by route: Sydney-Melbourne takes 2-3 days, Sydney-Brisbane 2-3 days, Melbourne-Brisbane 3-4 days, and cross-country routes like Perth-Sydney take 5-7 days. Backloading typically adds 1-2 days of flexibility compared to dedicated moves.',
+  },
+];
+
+// Machine-readable facts
+const pageFacts = {
+  service: 'Interstate backloading service areas',
+  coverage: 'All Australian capital cities',
+  cities_serviced: cityHubs.map((c) => c.city),
+  data_source: MIGRATION_DATA_SOURCE,
+  data_period: MIGRATION_DATA_PERIOD,
+};
+---
+
+<Layout
+  title="Service Areas | Interstate Moving to All Australian Capitals | Moving Again"
+  description={`Interstate backloading services to all 8 Australian capital cities. See real migration data, transit times, and get quotes for Sydney, Melbourne, Brisbane, Perth, Adelaide, Hobart, Darwin & Canberra.`}
+  schemaType="FAQPage"
+  schemaData={{ questions: faqs }}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm"
+        >
+          All Australian Capitals
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
+          Moving to Australia's <span class="text-brand-yellow">Capital Cities</span>
+        </h1>
+
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          {BRAND.yearsInBusiness} years connecting Australians with affordable interstate moves. Real
+          migration data. All 8 capitals. Weekly services nationwide.
+        </p>
+
+        <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
+          class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get a Free Quote →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Migration Dashboard -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-brand-dark mb-4">Where Are Australians Moving?</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Real interstate migration data from the Australian Bureau of Statistics ({
+              MIGRATION_DATA_PERIOD
+            }). See which states are gaining and losing residents.
+          </p>
+        </div>
+
+        <!-- Migration Ranking -->
+        <div
+          class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-100 shadow-sm"
+        >
+          <div class="grid gap-4">
+            {
+              citiesByMigration.map((hub, index) => {
+                const migration =
+                  NET_INTERSTATE_MIGRATION[hub.stateCode as keyof typeof NET_INTERSTATE_MIGRATION];
+                const isPositive = migration > 0;
+                const trend = getMigrationTrend(hub.stateCode);
+
+                return (
+                  <a
+                    href={hub.slug}
+                    class="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-100 hover:border-brand-red/30 hover:shadow-md transition-all group"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div class="text-2xl w-10 text-center">{hub.icon}</div>
+                      <div>
+                        <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+                          {hub.city}, {hub.state}
+                        </h3>
+                        <p class="text-sm text-gray-500">{trend}</p>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div
+                        class={`text-xl font-black ${isPositive ? 'text-green-600' : 'text-orange-500'}`}
+                      >
+                        {formatMigration(hub.stateCode)}
+                      </div>
+                      <p class="text-xs text-gray-400">Net migration</p>
+                    </div>
+                  </a>
+                );
+              })
+            }
+          </div>
+
+          <p class="text-xs text-gray-400 text-center mt-6">
+            Source: <a
+              href={MIGRATION_DATA_URL}
+              target="_blank"
+              rel="noopener"
+              class="hover:underline">{MIGRATION_DATA_SOURCE}</a
+            > • Year ending June 2025
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- City Hub Cards -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-brand-dark mb-4">Our Capital City Hubs</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Each city has dedicated pages with local information, popular routes, and service details.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {
+          cityHubs.map((hub) => {
+            const migration =
+              NET_INTERSTATE_MIGRATION[hub.stateCode as keyof typeof NET_INTERSTATE_MIGRATION];
+            const population = CITY_POPULATION[hub.city as keyof typeof CITY_POPULATION];
+            const isPositive = migration > 0;
+
+            return (
+              <a
+                href={hub.slug}
+                class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-red/30 hover:shadow-xl transition-all group"
+              >
+                <div class="text-4xl mb-4">{hub.icon}</div>
+                <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-1">
+                  {hub.city}
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">{hub.tagline}</p>
+
+                <div class="space-y-2 mb-4">
+                  <div class="flex justify-between text-sm">
+                    <span class="text-gray-500">Population</span>
+                    <span class="font-medium text-brand-dark">{population}</span>
+                  </div>
+                  <div class="flex justify-between text-sm">
+                    <span class="text-gray-500">Migration</span>
+                    <span class={`font-bold ${isPositive ? 'text-green-600' : 'text-orange-500'}`}>
+                      {formatMigration(hub.stateCode)}
+                    </span>
+                  </div>
+                </div>
+
+                <ul class="space-y-1 text-xs text-gray-500">
+                  {hub.features.map((feature) => (
+                    <li class="flex items-center gap-1">
+                      <span class="text-green-500">✓</span> {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                  <span class="text-brand-red font-semibold text-sm group-hover:underline">
+                    View {hub.city} Hub →
+                  </span>
+                </div>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Interstate Corridors -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-brand-dark mb-4">Popular Interstate Corridors</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Our busiest routes with the most frequent services and best backloading availability.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-gray-50 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-brand-dark text-white">
+                <th class="p-4 text-left font-bold">Route</th>
+                <th class="p-4 text-center font-bold">Transit Time</th>
+                <th class="p-4 text-center font-bold">Frequency</th>
+                <th class="p-4 text-center font-bold"></th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 bg-white">
+              {
+                corridors.map((route) => (
+                  <tr class="hover:bg-gray-50">
+                    <td class="p-4 font-medium">
+                      {route.from} ↔ {route.to}
+                    </td>
+                    <td class="p-4 text-center text-gray-600">{route.transit}</td>
+                    <td class="p-4 text-center">
+                      <span
+                        class={`px-2 py-1 rounded-full text-xs font-medium ${
+                          route.frequency === 'Daily'
+                            ? 'bg-green-100 text-green-700'
+                            : 'bg-yellow-100 text-yellow-700'
+                        }`}
+                      >
+                        {route.frequency}
+                      </span>
+                    </td>
+                    <td class="p-4 text-center">
+                      <a
+                        href={route.slug}
+                        class="text-brand-red hover:underline font-medium text-sm"
+                      >
+                        View Route →
+                      </a>
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-center text-gray-500 mt-6 text-sm">
+          Don't see your route? We service all interstate corridors.
+          <a
+            href="https://removalistquotes.movingagain.com.au/quote/household"
+            class="text-brand-red hover:underline">Get a quote</a
+          > for any origin and destination.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- State Considerations -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-brand-dark mb-4">State-Specific Considerations</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Some states have unique requirements. Here's what you need to know.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- WA Quarantine -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">🌏</span>
+              <h3 class="font-bold text-brand-dark">Western Australia</h3>
+            </div>
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
+              <p class="text-yellow-800 text-sm font-medium">Quarantine State</p>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              WA has strict quarantine laws. Fresh produce, plants, soil, and certain seeds cannot
+              enter the state. Our team will advise you on what can and cannot be transported.
+            </p>
+            <a href="/perth/" class="text-brand-red hover:underline text-sm font-medium">
+              Learn more about Perth moves →
+            </a>
+          </div>
+
+          <!-- Tasmania -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">🌲</span>
+              <h3 class="font-bold text-brand-dark">Tasmania</h3>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg mb-4">
+              <p class="text-blue-800 text-sm font-medium">Ferry Crossing + Quarantine</p>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Tasmania requires Bass Strait ferry crossing (included in our quotes) and has
+              quarantine restrictions similar to WA. Plants and produce cannot enter.
+            </p>
+            <a href="/hobart/" class="text-brand-red hover:underline text-sm font-medium">
+              Learn more about Hobart moves →
+            </a>
+          </div>
+
+          <!-- NT -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">🦎</span>
+              <h3 class="font-bold text-brand-dark">Northern Territory</h3>
+            </div>
+            <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg mb-4">
+              <p class="text-orange-800 text-sm font-medium">Wet Season Considerations</p>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              During the wet season (Nov-Apr), some regional NT areas may experience access delays.
+              Darwin and major corridors remain accessible year-round.
+            </p>
+            <a href="/darwin/" class="text-brand-red hover:underline text-sm font-medium">
+              Learn more about Darwin moves →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
+          Interstate Moving Questions
+        </h2>
+
+        <div class="space-y-4">
+          {
+            faqs.map((faq) => (
+              <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+                <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                  {faq.question}
+                  <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machine-readable facts -->
+  <FactBox facts={pageFacts} />
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-brand-red to-brand-accent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Move Interstate?</h2>
+      <p class="text-white/80 mb-8 max-w-xl mx-auto">
+        Get a free quote for your move to any Australian capital. Most quotes returned within 10-15
+        minutes.
+      </p>
+      <a
+        href="https://removalistquotes.movingagain.com.au/quote/household"
+        class="inline-block py-4 px-10 bg-white text-brand-red font-bold rounded-brand text-lg hover:bg-gray-100 transition-colors shadow-lg"
+      >
+        Get Your Free Quote
+      </a>
+    </div>
+  </section>
+</Layout>
