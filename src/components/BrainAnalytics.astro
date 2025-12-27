@@ -6,12 +6,12 @@
  *   <BrainAnalytics />
  * 
  * Requires environment variables:
- *   PUBLIC_BRAIN_URL - Brain API URL
+ *   PUBLIC_BRAIN_URL - Brain API URL (e.g., https://again.com.au)
  *   PUBLIC_BRAIN_KEY - Brain API key
  */
 
-const brainUrl = import.meta.env.PUBLIC_BRAIN_URL || '';
-const brainKey = import.meta.env.PUBLIC_BRAIN_KEY || '';
+const brainUrl = import.meta.env.PUBLIC_BRAIN_URL || import.meta.env.BRAIN_BASE_URL || '';
+const brainKey = import.meta.env.PUBLIC_BRAIN_KEY || import.meta.env.BRAIN_API_KEY || '';
 const debug = import.meta.env.DEV;
 ---
 
