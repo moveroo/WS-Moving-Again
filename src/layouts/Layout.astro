@@ -2,7 +2,6 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEO from '../components/SEO.astro';
-import Analytics from '../components/Analytics.astro';
 import BrainAnalytics from '../components/BrainAnalytics.astro';
 import Schema from '../components/Schema.astro';
 
@@ -19,9 +18,6 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
 ---
 
 <SEO title={title} description={description} image={image}>
-  <!-- Global Analytics (GA4) -->
-  <Analytics slot="head" id="G-N39M3PF056" />
-
   <!-- Brain Analytics (First-Party) -->
   <BrainAnalytics slot="head" />
 
