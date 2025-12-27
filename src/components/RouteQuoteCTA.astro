@@ -1,0 +1,34 @@
+---
+interface Props {
+  origin: string;
+  destination: string;
+}
+
+const { origin, destination } = Astro.props;
+---
+
+<section class="py-20 bg-brand-dark">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">
+      Ready for Your {origin} to {destination} Move?
+    </h2>
+    <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+      Get a free quote for backloading from {origin} to {destination}. 
+      Our online system provides instant pricing based on your inventory.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="https://removalistquotes.movingagain.com.au/quote/household" 
+        class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+      >
+        Get Your Free Quote
+      </a>
+      <a 
+        href="/questions/" 
+        class="inline-block py-4 px-10 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
+      >
+        View FAQs
+      </a>
+    </div>
+  </div>
+</section>

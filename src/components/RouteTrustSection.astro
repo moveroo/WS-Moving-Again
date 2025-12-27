@@ -1,0 +1,67 @@
+---
+interface Props {
+  origin: string;
+  destination: string;
+}
+
+const { origin, destination } = Astro.props;
+---
+
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-gradient-to-br from-brand-dark to-gray-900 rounded-2xl p-8 text-white">
+        <h2 class="text-2xl font-bold mb-6">
+          Why Choose Moving Again for {origin} to {destination}?
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="flex flex-col items-center text-center p-4">
+            <span class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl mb-4">🏆</span>
+            <h3 class="font-bold mb-2">30 Years Experience</h3>
+            <p class="text-gray-300 text-sm">
+              Thousands of successful moves across Australia
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center p-4">
+            <span class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl mb-4">🇦🇺</span>
+            <h3 class="font-bold mb-2">Australian Owned</h3>
+            <p class="text-gray-300 text-sm">
+              Family-run business with personal service
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center text-center p-4">
+            <span class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl mb-4">🔒</span>
+            <h3 class="font-bold mb-2">Fully Insured</h3>
+            <p class="text-gray-300 text-sm">
+              Transit insurance included on all moves
+            </p>
+          </div>
+        </div>
+        
+        <div class="mt-8 pt-6 border-t border-white/10">
+          <div class="grid md:grid-cols-2 gap-6 text-sm">
+            <div>
+              <h4 class="font-bold mb-3 flex items-center gap-2">
+                <span class="text-brand-yellow">✓</span> Nationwide Network
+              </h4>
+              <p class="text-gray-300">
+                Our extensive network of trusted carriers and depots means competitive pricing on major routes like {origin} to {destination}.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-bold mb-3 flex items-center gap-2">
+                <span class="text-brand-yellow">✓</span> Easy Online Quotes
+              </h4>
+              <p class="text-gray-300">
+                Get instant quotes through our online system. Most quotes returned within 10-15 minutes, 7 days a week.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

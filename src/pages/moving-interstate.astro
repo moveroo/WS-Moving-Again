@@ -1,0 +1,643 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqQuestions = [
+  {
+    question: "How much does interstate moving cost in Australia?",
+    answer: "Interstate moving costs typically range from $1,500-$8,000+ depending on distance, volume (cubic meters), access difficulty, and timing. A 1-bedroom move Sydney-Melbourne might cost $1,500-$2,500, while a 4-bedroom Perth-Sydney move could be $6,000-$10,000. Backloading can save 40-60% off these prices."
+  },
+  {
+    question: "How long does an interstate move take?",
+    answer: "Transit times vary by route: Sydney-Melbourne takes 1-2 days, Sydney-Brisbane 2-3 days, Melbourne-Brisbane 3-4 days, and cross-country routes like Perth-Sydney take 5-8 days. Add 1-2 days for pickup and delivery scheduling."
+  },
+  {
+    question: "What's the difference between backloading and a dedicated move?",
+    answer: "Backloading means sharing truck space with other customers' goods—you pay only for your cubic meters and save 40-60%. Dedicated moves give you the whole truck and fixed dates, but cost more. Choose backloading for flexibility and savings; dedicated for tight schedules."
+  },
+  {
+    question: "Do I need insurance for an interstate move?",
+    answer: "Yes! Transit insurance (included with all moves) only covers fire, collision, and overturning of the truck—it does NOT cover breakage, scratches, or handling damage. We strongly recommend full moving insurance for complete peace of mind. Visit movinginsurance.com.au for comprehensive coverage options."
+  },
+  {
+    question: "What can't be transported interstate?",
+    answer: "Hazardous materials (paint, chemicals, fuel), perishable food, live plants (quarantine restrictions), gas bottles, and aerosols. Some states (WA, Tasmania) have strict quarantine rules for soil, produce, and certain plants."
+  },
+  {
+    question: "How do I prepare for an interstate move?",
+    answer: "Start 6-8 weeks early: declutter, get quotes, book early. 2-4 weeks out: start packing non-essentials, organize valuables separately. 1 week out: confirm dates, pack most items. Moving day: have essentials bag ready, do final walkthrough."
+  },
+  {
+    question: "Can you move cars interstate?",
+    answer: "Yes! We offer vehicle transport services separately from household goods. Cars can travel on enclosed carriers or open transport, door-to-door or depot-to-depot. See our car transport page for details."
+  },
+  {
+    question: "What size truck do I need?",
+    answer: "This depends on cubic meters: 1-bedroom (5-10m³) fits a small van, 2-bedroom (15-20m³) needs a medium truck, 3-bedroom (25-35m³) requires a large truck, 4+ bedrooms (40m³+) may need the largest trucks or multiple trips."
+  }
+];
+
+const routes = [
+  { from: "Sydney", to: "Melbourne", distance: "870km", days: "1-2", frequency: "Daily" },
+  { from: "Sydney", to: "Brisbane", distance: "920km", days: "2-3", frequency: "Daily" },
+  { from: "Melbourne", to: "Brisbane", distance: "1,670km", days: "3-4", frequency: "3x Weekly" },
+  { from: "Melbourne", to: "Adelaide", distance: "730km", days: "1-2", frequency: "Daily" },
+  { from: "Sydney", to: "Perth", distance: "3,930km", days: "5-7", frequency: "2x Weekly" },
+  { from: "Melbourne", to: "Perth", distance: "3,420km", days: "5-7", frequency: "2x Weekly" },
+  { from: "Brisbane", to: "Cairns", distance: "1,700km", days: "2-3", frequency: "3x Weekly" },
+  { from: "Adelaide", to: "Perth", distance: "2,700km", days: "3-5", frequency: "2x Weekly" },
+  { from: "Sydney", to: "Canberra", distance: "290km", days: "1", frequency: "Daily" },
+  { from: "Brisbane", to: "Gold Coast", distance: "80km", days: "Same day", frequency: "Daily" },
+];
+
+const timeline = [
+  { weeks: "8-6 weeks", tasks: "Research removalists, get quotes, book moving date, start decluttering" },
+  { weeks: "6-4 weeks", tasks: "Notify landlord/utilities, change address, organize school transfers, sort valuables" },
+  { weeks: "4-2 weeks", tasks: "Start packing non-essentials, arrange pet transport, book travel" },
+  { weeks: "2-1 weeks", tasks: "Pack most items, confirm moving details, prepare appliances" },
+  { weeks: "Moving week", tasks: "Final packing, essentials bag, walkthrough, keys handover" },
+];
+---
+
+<Layout 
+  title="Interstate Moving Australia | Complete 2025 Guide | Moving Again"
+  description="Everything you need to know about interstate moving in Australia. Routes, costs, timelines, packing tips, and how to save up to 60% with backloading."
+  schemaType="FAQPage"
+  schemaData={{ questions: faqQuestions }}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/20 text-brand-red font-bold uppercase tracking-wider text-sm">
+          Complete Moving Guide
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
+          Interstate Moving Australia: <span class="text-brand-yellow">Your 2025 Guide</span>
+        </h1>
+        
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Moving to a new state? This comprehensive guide covers everything from costs and timelines to packing tips and how to save up to 60% on your move.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://removalistquotes.movingagain.com.au/quote/household" 
+            class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+          >
+            Get a Free Quote
+          </a>
+          <a 
+            href="#routes" 
+            class="inline-block py-4 px-8 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
+          >
+            See Routes & Times
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- Intro Text -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-brand-dark mb-6">
+            What You Need to Know About Interstate Moving
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Moving interstate is one of life's biggest logistical challenges. Whether you're relocating for work, family, or a fresh start, an interstate move involves hundreds of decisions—from choosing how to transport your belongings to navigating different state regulations.
+          </p>
+        </div>
+        
+        <!-- Feature Box -->
+        <div class="bg-gradient-to-br from-brand-dark to-gray-900 rounded-2xl p-8 text-white mb-12">
+          <p class="text-lg text-gray-300 mb-6 text-center">
+            The good news? With proper planning and the right moving partner, interstate moving doesn't have to be stressful or expensive. This guide covers everything you need to know.
+          </p>
+        </div>
+        
+        <!-- What You'll Learn Grid -->
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <h3 class="text-xl font-bold text-brand-dark mb-6 text-center">
+            📚 In This Guide You'll Learn
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">How interstate moving works in Australia</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">Realistic costs and how to budget</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">Route-by-route transit times</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">A complete moving timeline</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">Packing tips and what you can't transport</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">How to save 40-60% with backloading</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-100 md:col-span-2 md:max-w-md md:mx-auto">
+              <span class="text-brand-red text-xl">✓</span>
+              <span class="text-gray-700">State-specific regulations and quarantine rules</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Interstate Moving Works -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          How Interstate Moving Works
+        </h2>
+        
+        <div class="prose prose-lg mx-auto">
+          <p>
+            Interstate moving in Australia typically follows one of three models, each with different costs, timelines, and flexibility:
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+          <!-- Dedicated Move -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">🚛</div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Dedicated Move</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              You get the entire truck. Best for large homes or when you need a specific pickup/delivery date.
+            </p>
+            <div class="text-sm">
+              <p class="text-green-600 font-medium">✓ Fixed dates</p>
+              <p class="text-green-600 font-medium">✓ Direct transit</p>
+              <p class="text-red-600 font-medium">✗ Higher cost</p>
+            </div>
+          </div>
+          
+          <!-- Backloading -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border-2 border-brand-red">
+            <div class="absolute -top-3 left-4 bg-brand-red text-white text-xs px-3 py-1 rounded-full font-bold">BEST VALUE</div>
+            <div class="text-4xl mb-4">💰</div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Backloading</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Share truck space on a return journey. Perfect for flexible movers who want to save money.
+            </p>
+            <div class="text-sm">
+              <p class="text-green-600 font-medium">✓ 40-60% savings</p>
+              <p class="text-green-600 font-medium">✓ Same professional service</p>
+              <p class="text-yellow-600 font-medium">~ Flexible dates (2-7 days)</p>
+            </div>
+            <a href="/backloading/" class="block mt-4 text-brand-red font-bold hover:underline text-sm">
+              Learn about backloading →
+            </a>
+          </div>
+          
+          <!-- Container/PODS -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">📦</div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Container/Self-Pack</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              A container is delivered to you, you pack it, and it's transported. Good for flexible timelines.
+            </p>
+            <div class="text-sm">
+              <p class="text-green-600 font-medium">✓ Pack at your pace</p>
+              <p class="text-green-600 font-medium">✓ Storage flexibility</p>
+              <p class="text-yellow-600 font-medium">~ You do the packing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cost Guide -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Interstate Moving Costs
+        </h2>
+        
+        <div class="prose prose-lg mx-auto">
+          <p>
+            Interstate moving costs are determined by three main factors: <strong>distance</strong>, <strong>volume</strong> (cubic meters), and <strong>access</strong> (stairs, long carries, narrow streets). Here's what you can expect to pay:
+          </p>
+        </div>
+        
+        <!-- Cost Table -->
+        <div class="overflow-x-auto mt-8">
+          <table class="w-full border-collapse bg-gray-50 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-brand-dark text-white">
+                <th class="p-4 text-left font-bold">Move Size</th>
+                <th class="p-4 text-center font-bold">Volume</th>
+                <th class="p-4 text-center font-bold">800km Route</th>
+                <th class="p-4 text-center font-bold">2,000km Route</th>
+                <th class="p-4 text-center font-bold">4,000km Route</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 bg-white">
+              <tr>
+                <td class="p-4 font-medium">Studio/Few Items</td>
+                <td class="p-4 text-center text-gray-600">1-5 m³</td>
+                <td class="p-4 text-center text-gray-600">$400-$800</td>
+                <td class="p-4 text-center text-gray-600">$600-$1,200</td>
+                <td class="p-4 text-center text-gray-600">$900-$1,500</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">1 Bedroom</td>
+                <td class="p-4 text-center text-gray-600">5-10 m³</td>
+                <td class="p-4 text-center text-gray-600">$800-$1,500</td>
+                <td class="p-4 text-center text-gray-600">$1,200-$2,200</td>
+                <td class="p-4 text-center text-gray-600">$1,800-$3,000</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">2 Bedroom</td>
+                <td class="p-4 text-center text-gray-600">15-20 m³</td>
+                <td class="p-4 text-center text-gray-600">$1,500-$2,500</td>
+                <td class="p-4 text-center text-gray-600">$2,500-$4,000</td>
+                <td class="p-4 text-center text-gray-600">$3,500-$5,500</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">3 Bedroom</td>
+                <td class="p-4 text-center text-gray-600">25-35 m³</td>
+                <td class="p-4 text-center text-gray-600">$2,500-$4,000</td>
+                <td class="p-4 text-center text-gray-600">$4,000-$6,000</td>
+                <td class="p-4 text-center text-gray-600">$5,500-$8,000</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">4+ Bedroom</td>
+                <td class="p-4 text-center text-gray-600">40+ m³</td>
+                <td class="p-4 text-center text-gray-600">$4,000-$6,000</td>
+                <td class="p-4 text-center text-gray-600">$6,000-$9,000</td>
+                <td class="p-4 text-center text-gray-600">$8,000-$12,000+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <p class="text-center text-gray-500 mt-4 text-sm">
+          Prices are indicative. <a href="https://removalistquotes.movingagain.com.au/quote/household" class="text-brand-red hover:underline">Get a personalized quote</a> for exact pricing.
+        </p>
+        
+        <div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 mt-8">
+          <h3 class="font-bold text-brand-dark mb-2">💡 Save 40-60% with Backloading</h3>
+          <p class="text-gray-600">
+            The prices above are for dedicated moves. Choose <a href="/backloading/" class="text-brand-red hover:underline">backloading</a> and pay only for your cubic meters—sharing the journey means sharing the cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routes Section -->
+  <section id="routes" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">
+        Popular Interstate Routes
+      </h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        We run regular services between all major Australian cities and regional centers
+      </p>
+      
+      <div class="max-w-4xl mx-auto overflow-x-auto">
+        <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-brand-dark text-white">
+              <th class="p-4 text-left font-bold">Route</th>
+              <th class="p-4 text-center font-bold">Distance</th>
+              <th class="p-4 text-center font-bold">Transit Time</th>
+              <th class="p-4 text-center font-bold">Frequency</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            {routes.map((route) => (
+              <tr class="hover:bg-gray-50">
+                <td class="p-4 font-medium">{route.from} ↔ {route.to}</td>
+                <td class="p-4 text-center text-gray-600">{route.distance}</td>
+                <td class="p-4 text-center text-gray-600">{route.days} days</td>
+                <td class="p-4 text-center text-gray-600">{route.frequency}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Moving Timeline -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Interstate Moving Timeline
+        </h2>
+        
+        <div class="prose prose-lg mx-auto mb-10">
+          <p>
+            A successful interstate move starts with planning. Here's your week-by-week guide to staying on track:
+          </p>
+        </div>
+        
+        <div class="space-y-4">
+          {timeline.map((item) => (
+            <div class="bg-gray-50 rounded-xl p-6 flex gap-6 items-start">
+              <div class="bg-brand-red text-white font-bold px-4 py-2 rounded-lg whitespace-nowrap text-sm">
+                {item.weeks}
+              </div>
+              <p class="text-gray-700">{item.tasks}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packing Guide -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Packing for an Interstate Move
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Packing Tips -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold text-brand-dark mb-4">📦 Packing Tips</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Use quality boxes (double-walled for heavy items)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Wrap fragile items individually in paper/bubble wrap
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Fill empty box space to prevent shifting
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Label all boxes with room and contents
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Keep essentials (docs, valuables, meds) separate
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span>
+                Disassemble furniture where possible
+              </li>
+            </ul>
+            <a href="/how-many-boxes-do-i-need-for-my-move/" class="block mt-6 text-brand-red font-bold hover:underline">
+              How many boxes do I need? →
+            </a>
+          </div>
+          
+          <!-- What Not to Pack -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold text-brand-dark mb-4">🚫 What Can't Be Transported</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Hazardous materials (paint, chemicals, fuel)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Gas bottles and aerosols
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Perishable food
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Live plants (quarantine restrictions)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Firearms and ammunition
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span>
+                Valuables (cash, jewelry) - keep with you
+              </li>
+            </ul>
+            <a href="/moving-pot-plants-interstate/" class="block mt-6 text-brand-red font-bold hover:underline">
+              What about plants? →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- State Regulations -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          State-by-State Regulations
+        </h2>
+        
+        <div class="prose prose-lg mx-auto mb-10">
+          <p>
+            Australia takes biosecurity seriously. Each state has quarantine rules you need to be aware of when moving interstate:
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- WA -->
+          <div class="bg-red-50 p-6 rounded-xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">🚨 Western Australia</h3>
+            <p class="text-red-700 text-sm">
+              <strong>STRICT</strong> - Most plants, fruit, vegetables, honey, and some used equipment require inspection or are prohibited. Soil is often restricted.
+            </p>
+          </div>
+          
+          <!-- Tasmania -->
+          <div class="bg-red-50 p-6 rounded-xl border border-red-100">
+            <h3 class="font-bold text-red-800 mb-2">🚨 Tasmania</h3>
+            <p class="text-red-700 text-sm">
+              <strong>STRICT</strong> - Quarantine at ferry ports. Many fruit, vegetables, plants, and soil products are prohibited or require inspection.
+            </p>
+          </div>
+          
+          <!-- SA -->
+          <div class="bg-yellow-50 p-6 rounded-xl border border-yellow-100">
+            <h3 class="font-bold text-yellow-800 mb-2">⚠️ South Australia</h3>
+            <p class="text-yellow-700 text-sm">
+              <strong>MODERATE</strong> - Fruit fly restrictions on some produce. Most household goods are fine.
+            </p>
+          </div>
+          
+          <!-- NSW/VIC/QLD -->
+          <div class="bg-green-50 p-6 rounded-xl border border-green-100">
+            <h3 class="font-bold text-green-800 mb-2">✅ NSW, VIC, QLD, ACT, NT</h3>
+            <p class="text-green-700 text-sm">
+              <strong>RELAXED</strong> - Most household goods move freely. Standard pest-free requirements apply.
+            </p>
+          </div>
+        </div>
+        
+        <p class="text-center text-gray-500 mt-8 text-sm">
+          Always check destination state's biosecurity website before moving plants, food, or soil.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Moving Insurance & Protection
+        </h2>
+        
+        <div class="prose prose-lg mx-auto">
+          <p>
+            Long-distance moves carry inherent risks—accidents happen, even with professional care. That's why insurance matters.
+          </p>
+          
+          <h3>Understanding Moving Insurance</h3>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-6 not-prose rounded-r-lg">
+            <p class="font-bold text-yellow-800 mb-2">⚠️ Important: Transit Insurance Has Limitations</p>
+            <p class="text-yellow-700 text-sm">
+              Transit insurance (included with all moves via our contractor partners) <strong>only covers fire, collision, and overturning</strong> of the truck. It does NOT cover breakage, scratches, or handling damage.
+            </p>
+          </div>
+          
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th class="text-left">Coverage Type</th>
+                <th class="text-left">What It Covers</th>
+                <th class="text-left">Recommended?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Transit Insurance</strong></td>
+                <td>Fire, collision, truck overturning only</td>
+                <td>Included (limited)</td>
+              </tr>
+              <tr>
+                <td><strong>Full Moving Insurance</strong></td>
+                <td>Breakage, scratches, handling damage, loss</td>
+                <td><strong class="text-green-600">Highly Recommended ✓</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 not-prose mt-6">
+            <h4 class="font-bold text-brand-dark mb-2">Our Recommendation</h4>
+            <p class="text-gray-600 text-sm mb-3">
+              We <strong>always recommend full moving insurance</strong> for every interstate move. It provides complete peace of mind and covers the things transit insurance doesn't.
+            </p>
+            <a href="https://movinginsurance.com.au" target="_blank" rel="noopener" class="inline-block text-brand-red font-bold hover:underline">
+              Get a quote at movinginsurance.com.au →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
+        Frequently Asked Questions
+      </h2>
+      
+      <div class="max-w-3xl mx-auto space-y-4">
+        {faqQuestions.map((faq) => (
+          <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+              {faq.question}
+              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              {faq.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Content -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Related Guides
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/moving-pot-plants-interstate/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">🌱</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Moving Pot Plants Interstate</h3>
+            <p class="text-sm text-gray-500 mt-2">Quarantine rules, preparation tips, and what plants can travel</p>
+          </a>
+          
+          <a href="/how-many-boxes-do-i-need-for-my-move/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">📦</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">How Many Boxes Do I Need?</h3>
+            <p class="text-sm text-gray-500 mt-2">Calculate your box requirements by room and household size</p>
+          </a>
+          
+          <a href="/furniture-removal-inventory-list/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">📋</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Furniture Inventory Checklist</h3>
+            <p class="text-sm text-gray-500 mt-2">Room-by-room checklist to calculate your cubic meters</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-brand-dark">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ready to Start Your Interstate Move?
+      </h2>
+      <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+        Get a free quote in under 2 minutes. Save up to 60% with our backloading service.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://removalistquotes.movingagain.com.au/quote/household" 
+          class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get Your Free Quote
+        </a>
+        <a 
+          href="/backloading/" 
+          class="inline-block py-4 px-10 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
+        >
+          Learn About Backloading
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

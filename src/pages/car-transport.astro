@@ -1,0 +1,472 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqQuestions = [
+  {
+    question: "How much does it cost to transport a car interstate?",
+    answer: "Car transport costs typically range from $500-$1,800+ depending on route, vehicle type, and service level. Sydney-Melbourne starts around $500-700, while Perth-Sydney runs $1,200-1,800. Enclosed transport costs 30-50% more than open carriers."
+  },
+  {
+    question: "How long does interstate car transport take?",
+    answer: "Transit times depend on the route: Sydney-Melbourne takes 2-3 days, Sydney-Brisbane 2-4 days, Adelaide-Perth 3-5 days, and cross-country routes like Perth-Sydney take 7-10 days. Express services are available for urgent deliveries."
+  },
+  {
+    question: "Is my car insured during transport?",
+    answer: "All reputable carriers have transit insurance covering fire, collision, and overturning. However, this basic coverage has limitations. We strongly recommend full vehicle transport insurance from movinginsurance.com.au for complete peace of mind, especially for high-value vehicles."
+  },
+  {
+    question: "What's the difference between open and enclosed transport?",
+    answer: "Open transport uses multi-car carriers exposed to weather—it's cheaper and fine for everyday vehicles. Enclosed transport uses covered trailers protecting against weather, dust, and road debris—ideal for luxury, classic, sports cars, or motorcycles."
+  },
+  {
+    question: "Can I leave personal items in my car?",
+    answer: "Generally, no. Most carriers prohibit personal items due to insurance and weight restrictions. Some allow a small bag in the boot (under 50kg). Always confirm with your carrier before booking."
+  },
+  {
+    question: "What do I need to prepare before my car is collected?",
+    answer: "Wash your car (to document existing condition), remove personal items, ensure fuel is at quarter tank, disable alarms, note any existing damage with photos, and have your keys ready. Remove toll tags and secure loose parts like antennas."
+  },
+  {
+    question: "Door-to-door or depot-to-depot—which should I choose?",
+    answer: "Door-to-door is convenient but costs more and may not be available everywhere (large trucks can't access some streets). Depot-to-depot is cheaper and often faster. Choose door-to-door for convenience, depot for savings."
+  },
+  {
+    question: "Can you transport motorcycles?",
+    answer: "Yes! Motorcycles can be transported on enclosed carriers or specialized motorcycle transport. Costs are typically $300-800 for standard routes. The bike must be in running condition and we'll need fuel at quarter tank."
+  }
+];
+
+const routes = [
+  { route: "Sydney ↔ Melbourne", distance: "870km", days: "2-3", openPrice: "$500-700", enclosedPrice: "$750-1,000" },
+  { route: "Sydney ↔ Brisbane", distance: "920km", days: "2-4", openPrice: "$550-750", enclosedPrice: "$800-1,100" },
+  { route: "Melbourne ↔ Brisbane", distance: "1,670km", days: "4-5", openPrice: "$700-950", enclosedPrice: "$1,000-1,400" },
+  { route: "Melbourne ↔ Adelaide", distance: "730km", days: "2-3", openPrice: "$450-600", enclosedPrice: "$650-900" },
+  { route: "Adelaide ↔ Perth", distance: "2,700km", days: "5-7", openPrice: "$900-1,200", enclosedPrice: "$1,300-1,700" },
+  { route: "Sydney ↔ Perth", distance: "3,930km", days: "7-10", openPrice: "$1,200-1,600", enclosedPrice: "$1,700-2,200" },
+  { route: "Melbourne ↔ Perth", distance: "3,420km", days: "6-9", openPrice: "$1,100-1,500", enclosedPrice: "$1,600-2,100" },
+  { route: "Brisbane ↔ Cairns", distance: "1,700km", days: "3-5", openPrice: "$600-850", enclosedPrice: "$900-1,200" },
+];
+---
+
+<Layout 
+  title="Car Transport Australia | Interstate Vehicle Transport | Moving Again"
+  description="Professional interstate car transport across Australia. Open and enclosed carriers available. Get an instant quote for door-to-door or depot-to-depot vehicle transport."
+  schemaType="FAQPage"
+  schemaData={{ questions: faqQuestions }}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm">
+          Vehicle Transport Services
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
+          Interstate Car Transport <span class="text-brand-yellow">Australia</span>
+        </h1>
+        
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Professional vehicle transport to every state. Open or enclosed carriers, door-to-door or depot service. Your car in safe hands.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://carquotes.movingagain.com.au/quote/v2" 
+            class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+          >
+            Get Transport Quote
+          </a>
+          <a 
+            href="#routes" 
+            class="inline-block py-4 px-8 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
+          >
+            View Routes & Prices
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg mx-auto">
+          <h2>How Interstate Car Transport Works</h2>
+          <p>
+            Moving a car interstate is easier than you think. Whether you're relocating, buying a vehicle from another state, or need a classic car transported safely, professional car transport handles the logistics while you focus on the rest of your move.
+          </p>
+          <p>
+            Here's how the process works:
+          </p>
+        </div>
+        
+        <!-- How It Works Steps -->
+        <div class="grid md:grid-cols-4 gap-6 mt-10">
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-brand-red text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+            <h3 class="font-bold text-brand-dark mb-2">Get a Quote</h3>
+            <p class="text-gray-600 text-sm">Tell us your vehicle type, pickup location, and destination. Get a quote in minutes.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-brand-red text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+            <h3 class="font-bold text-brand-dark mb-2">Book & Prepare</h3>
+            <p class="text-gray-600 text-sm">Confirm your booking. Clean your car, remove belongings, and document condition with photos.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-brand-red text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+            <h3 class="font-bold text-brand-dark mb-2">Collection</h3>
+            <p class="text-gray-600 text-sm">Our carrier collects your vehicle and loads it securely. You'll get updates on transit progress.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-brand-red text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+            <h3 class="font-bold text-brand-dark mb-2">Delivery</h3>
+            <p class="text-gray-600 text-sm">Inspect your car on arrival, sign off on condition, and you're done!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport Options -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-12 text-center">
+          Open vs Enclosed Transport
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Open Transport -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-5xl mb-4">🚗</div>
+            <h3 class="text-2xl font-bold text-brand-dark mb-4">Open Transport</h3>
+            <p class="text-gray-600 mb-6">
+              Your car travels on a multi-car carrier, exposed to weather but securely strapped. The most popular and economical choice.
+            </p>
+            
+            <div class="space-y-3 mb-6">
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                Most affordable option
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                Frequent departures
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                Perfect for standard vehicles
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-yellow-500">~</span>
+                Exposed to weather & dust
+              </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Best for:</p>
+              <p class="font-bold text-brand-dark">Regular cars, SUVs, 4WDs, daily drivers</p>
+            </div>
+          </div>
+          
+          <!-- Enclosed Transport -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border-2 border-brand-yellow">
+            <div class="text-5xl mb-4">🛡️</div>
+            <h3 class="text-2xl font-bold text-brand-dark mb-4">Enclosed Transport</h3>
+            <p class="text-gray-600 mb-6">
+              Your vehicle travels inside a covered trailer, protected from weather, road debris, and prying eyes. Premium protection.
+            </p>
+            
+            <div class="space-y-3 mb-6">
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                Full weather protection
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                No road debris damage
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-green-500">✓</span>
+                Privacy for high-value vehicles
+              </p>
+              <p class="flex gap-2 text-gray-600">
+                <span class="text-yellow-500">~</span>
+                30-50% higher cost
+              </p>
+            </div>
+            
+            <div class="bg-brand-yellow/10 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Best for:</p>
+              <p class="font-bold text-brand-dark">Luxury, sports, classic, rare, or prestige vehicles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Pricing -->
+  <section id="routes" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">
+        Interstate Routes & Pricing
+      </h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Indicative pricing for standard sedans. Final quote depends on vehicle type and availability.
+      </p>
+      
+      <div class="max-w-5xl mx-auto overflow-x-auto">
+        <table class="w-full border-collapse bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-brand-dark text-white">
+              <th class="p-4 text-left font-bold">Route</th>
+              <th class="p-4 text-center font-bold">Distance</th>
+              <th class="p-4 text-center font-bold">Transit</th>
+              <th class="p-4 text-center font-bold">Open Carrier</th>
+              <th class="p-4 text-center font-bold">Enclosed</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 bg-white">
+            {routes.map((route) => (
+              <tr class="hover:bg-gray-50">
+                <td class="p-4 font-medium">{route.route}</td>
+                <td class="p-4 text-center text-gray-600">{route.distance}</td>
+                <td class="p-4 text-center text-gray-600">{route.days} days</td>
+                <td class="p-4 text-center text-gray-600">{route.openPrice}</td>
+                <td class="p-4 text-center text-gray-600">{route.enclosedPrice}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="text-center text-gray-500 mt-4 text-sm">
+        Prices are indicative for standard sedans. <a href="https://carquotes.movingagain.com.au/quote/v2" class="text-brand-red hover:underline">Get an exact quote</a> for your vehicle.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Factors -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          What Affects Car Transport Pricing?
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">📍 Distance</h3>
+            <p class="text-gray-600 text-sm">Longer routes cost more. Cross-country trips (e.g., Perth-Sydney) are the most expensive.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">🚗 Vehicle Size</h3>
+            <p class="text-gray-600 text-sm">Larger vehicles (SUVs, 4WDs, utes) cost more than sedans due to weight and space.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">🛡️ Transport Type</h3>
+            <p class="text-gray-600 text-sm">Enclosed transport costs 30-50% more than open carriers for added protection.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">📅 Timing</h3>
+            <p class="text-gray-600 text-sm">Flexible dates get better prices. Express or guaranteed dates cost more.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">🏠 Pickup/Delivery</h3>
+            <p class="text-gray-600 text-sm">Door-to-door costs more than depot-to-depot. Regional areas may cost extra.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">⚙️ Vehicle Condition</h3>
+            <p class="text-gray-600 text-sm">Non-running vehicles require winch-loading, adding $100-300 to the price.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Vehicle Transport Insurance
+        </h2>
+        
+        <div class="prose prose-lg mx-auto">
+          <p>
+            Your vehicle is a valuable asset. Understanding insurance coverage is essential before booking transport.
+          </p>
+        </div>
+        
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8 rounded-r-lg">
+          <p class="font-bold text-yellow-800 mb-2">⚠️ Important: Carrier Insurance Has Limits</p>
+          <p class="text-yellow-700 text-sm">
+            Standard carrier insurance (transit insurance) <strong>only covers fire, collision, and overturning</strong> of the transport truck. It does NOT cover existing damage, stone chips, scratches during loading, or mechanical issues.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+            <h3 class="font-bold text-brand-dark mb-3">Carrier Transit Insurance</h3>
+            <p class="text-gray-600 text-sm mb-4">Included with all moves</p>
+            <ul class="text-sm text-gray-600 space-y-2">
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Fire damage</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Collision/accident</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Truck overturning</li>
+              <li class="flex gap-2"><span class="text-red-500">✗</span> Stone chips</li>
+              <li class="flex gap-2"><span class="text-red-500">✗</span> Loading scratches</li>
+              <li class="flex gap-2"><span class="text-red-500">✗</span> Existing damage</li>
+            </ul>
+          </div>
+          
+          <div class="bg-brand-red/5 p-6 rounded-xl border border-brand-red/20">
+            <h3 class="font-bold text-brand-dark mb-3">Full Vehicle Transport Insurance</h3>
+            <p class="text-gray-600 text-sm mb-4">Recommended for all moves</p>
+            <ul class="text-sm text-gray-600 space-y-2">
+              <li class="flex gap-2"><span class="text-green-500">✓</span> All transit insurance coverage</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Accidental damage</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Stone chips & scratches</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Loading/unloading incidents</li>
+              <li class="flex gap-2"><span class="text-green-500">✓</span> Peace of mind</li>
+            </ul>
+            <a href="https://movinginsurance.com.au" target="_blank" rel="noopener" class="inline-block mt-4 bg-brand-red text-white font-bold px-6 py-3 rounded-brand hover:bg-brand-accent transition-colors text-sm">
+              Get Insurance Quote →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prepare Your Car -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Preparing Your Vehicle for Transport
+        </h2>
+        
+        <div class="bg-white rounded-2xl shadow-sm p-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="font-bold text-brand-dark mb-4">Before Collection</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Wash your car (easier to spot damage)
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Take photos of all sides + close-ups of existing damage
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Remove ALL personal belongings
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Leave fuel at ¼ tank only
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Disable any alarms
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Remove toll tags and parking passes
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Secure or remove loose parts (antennas, spoilers)
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-brand-dark mb-4">On Delivery</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Inspect the car before signing anything
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Compare to your pre-transport photos
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Note any new damage on the delivery report
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Take photos of any issues immediately
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-green-500">✓</span>
+                  Don't sign if you're unhappy—call us first
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
+        Frequently Asked Questions
+      </h2>
+      
+      <div class="max-w-3xl mx-auto space-y-4">
+        {faqQuestions.map((faq) => (
+          <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+              {faq.question}
+              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              {faq.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-brand-dark">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ready to Transport Your Vehicle?
+      </h2>
+      <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+        Get a quote in minutes. Open and enclosed options available for all routes.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://carquotes.movingagain.com.au/quote/v2" 
+          class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get Your Free Quote
+        </a>
+        <a 
+          href="/moving-interstate/" 
+          class="inline-block py-4 px-10 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
+        >
+          Moving Furniture Too?
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

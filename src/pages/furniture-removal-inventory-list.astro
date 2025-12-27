@@ -1,0 +1,470 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqQuestions = [
+  {
+    question: "Why do I need a furniture inventory for my move?",
+    answer: "A detailed inventory helps you get an accurate quote (you pay for space used), ensures nothing gets forgotten, and gives you a checklist for unpacking. It also helps you decide what to keep, sell, or donate before the move."
+  },
+  {
+    question: "How do I estimate the size of my move?",
+    answer: "Walk through each room listing every item. Our quote system calculates volume automatically. Alternatively, if items are in storage, provide the cubic metre capacity of your unit—we can quote from that."
+  },
+  {
+    question: "What about oversized or unusual items?",
+    answer: "Measure large items like L-shaped sofas, king beds, large wall units, or American-style fridges. Our quote form lets you enter custom dimensions for any item so we can ensure accurate pricing and truck space."
+  },
+  {
+    question: "Do access issues affect my moving quote?",
+    answer: "Yes. Stairs, lifts, long walks from truck to door, narrow hallways, and parking restrictions all affect time and therefore cost. Always tell us about access issues upfront to avoid surprises on moving day."
+  },
+  {
+    question: "Can I update my inventory after I've submitted a quote?",
+    answer: "Absolutely! Our system lets you duplicate and edit your inventory as you pack. Just submit the updated list and we'll revise your quote. This is especially important if items increase significantly."
+  },
+  {
+    question: "What shouldn't I include in my moving inventory?",
+    answer: "Don't include hazardous materials, flammable liquids, perishable food, or live plants (check state regulations). Items of extreme sentimental or monetary value should travel with you, not on the truck."
+  }
+];
+
+const roomInventory = {
+  bedroom: [
+    { item: "Bed (King)", avg: "King mattress + base" },
+    { item: "Bed (Queen)", avg: "Queen mattress + base" },
+    { item: "Bed (Double)", avg: "Double mattress + base" },
+    { item: "Bed (Single)", avg: "Single mattress + base" },
+    { item: "Bedside table", avg: "Per table" },
+    { item: "Chest of drawers", avg: "Tallboy or lowboy" },
+    { item: "Wardrobe (freestanding)", avg: "Measure height!" },
+    { item: "Dressing table", avg: "With mirror" },
+    { item: "Blanket box", avg: "Ottoman style" },
+  ],
+  living: [
+    { item: "Sofa (3-seater)", avg: "Standard couch" },
+    { item: "Sofa (2-seater / loveseat)", avg: "Smaller couch" },
+    { item: "Armchair", avg: "Single seat" },
+    { item: "Coffee table", avg: "Standard size" },
+    { item: "TV unit / entertainment unit", avg: "Measure if large" },
+    { item: "TV (size in inches)", avg: "Pack carefully" },
+    { item: "Bookcase", avg: "Per unit" },
+    { item: "Display cabinet", avg: "Glass doors?" },
+    { item: "Floor lamp", avg: "Per lamp" },
+    { item: "Rug (large)", avg: "Rolled" },
+  ],
+  dining: [
+    { item: "Dining table", avg: "Seats 4/6/8?" },
+    { item: "Dining chairs", avg: "Per chair" },
+    { item: "Buffet / sideboard", avg: "Measure depth" },
+    { item: "Bar stools", avg: "Per stool" },
+    { item: "China cabinet", avg: "Fragile contents!" },
+  ],
+  kitchen: [
+    { item: "Fridge", avg: "Standard or American?" },
+    { item: "Freezer (standalone)", avg: "Chest or upright" },
+    { item: "Microwave", avg: "Benchtop" },
+    { item: "Dishwasher (portable)", avg: "If not built-in" },
+    { item: "Kitchen island / trolley", avg: "Movable units" },
+    { item: "Small appliances", avg: "Boxes needed" },
+    { item: "Pots, pans, dishes", avg: "Multiple boxes" },
+  ],
+  laundry: [
+    { item: "Washing machine", avg: "Front or top load" },
+    { item: "Dryer", avg: "If separate" },
+    { item: "Ironing board", avg: "Folds flat" },
+    { item: "Laundry shelf unit", avg: "Over washer" },
+  ],
+  office: [
+    { item: "Desk", avg: "L-shaped? Measure" },
+    { item: "Office chair", avg: "On wheels" },
+    { item: "Filing cabinet", avg: "2 or 4 drawer" },
+    { item: "Bookshelf", avg: "Per unit" },
+    { item: "Computer / monitor", avg: "Original boxes ideal" },
+    { item: "Printer", avg: "Remove ink!" },
+  ],
+  outdoor: [
+    { item: "Outdoor table", avg: "Glass top? Fragile" },
+    { item: "Outdoor chairs", avg: "Per chair" },
+    { item: "BBQ", avg: "Disconnect gas" },
+    { item: "Outdoor lounge / daybed", avg: "Measure if large" },
+    { item: "Pot plants", avg: "Check state rules" },
+    { item: "Garden tools", avg: "Bundle together" },
+    { item: "Lawnmower", avg: "Drain fuel" },
+    { item: "Wheelbarrow", avg: "Awkward shape" },
+  ],
+  garage: [
+    { item: "Workbench", avg: "Heavy—book boxes" },
+    { item: "Tool chest / cabinet", avg: "Weight varies" },
+    { item: "Bikes", avg: "Per bike" },
+    { item: "Ladders", avg: "Extension or A-frame" },
+    { item: "Sports equipment", avg: "Golf, ski, etc." },
+    { item: "Storage shelving", avg: "Disassemble?" },
+    { item: "Boxes / containers", avg: "Already packed?" },
+  ],
+};
+---
+
+<Layout 
+  title="Furniture Removal Inventory List | Moving Checklist | Moving Again"
+  description="Complete room-by-room furniture inventory checklist for your move. Use our list to create an accurate moving inventory and get a precise quote."
+  schemaType="FAQPage"
+  schemaData={{ questions: faqQuestions }}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm">
+          Moving Checklist
+        </span>
+        
+        <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight leading-tight">
+          Furniture Removal <span class="text-brand-yellow">Inventory List</span>
+        </h1>
+        
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          The complete room-by-room checklist to accurately list your furniture and belongings for an interstate move.
+        </p>
+        
+        <a 
+          href="#checklist" 
+          class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          View Checklist
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg mx-auto">
+          <h2>How to Create Your Moving Inventory</h2>
+          <p>
+            To get an accurate quote for your interstate move or backloading service, you'll need to provide a detailed list of items. This might seem daunting, but if you take it room by room, you'll progress through quickly.
+          </p>
+          <p>
+            <strong>Here's our recommended approach:</strong>
+          </p>
+          <ol>
+            <li><strong>Grab a partner</strong> – Have someone call out items while you note them down</li>
+            <li><strong>Walk room by room</strong> – Complete one room before moving to the next</li>
+            <li><strong>Decide what to keep</strong> – This is the perfect time to declutter</li>
+            <li><strong>Measure oversized items</strong> – Large sofas, beds, fridges need measurements</li>
+            <li><strong>Don't forget outside</strong> – Sheds, garages, outdoor furniture</li>
+          </ol>
+          
+          <div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 not-prose mt-6">
+            <h3 class="font-bold text-brand-dark mb-2">💡 Remember: You Pay for Space</h3>
+            <p class="text-gray-600 text-sm">
+              You're charged based on the cubic metres your items occupy on the truck. Don't transport items you no longer need—consider selling, donating, or disposing of them before the move.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Considerations Before You Start -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Before You Start Your Inventory
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-3xl mb-3">🏠</div>
+            <h3 class="font-bold text-brand-dark mb-2">Consider Your New Home</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Built-in wardrobes? Skip freestanding ones</li>
+              <li>• No garden? Leave garden tools behind</li>
+              <li>• Downsizing? Some furniture won't fit</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-3xl mb-3">📏</div>
+            <h3 class="font-bold text-brand-dark mb-2">Measure Large Items</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• L-shaped or oversized sofas</li>
+              <li>• American-style fridges</li>
+              <li>• Large wall units</li>
+              <li>• King/super king beds</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="text-3xl mb-3">📦</div>
+            <h3 class="font-bold text-brand-dark mb-2">Items in Storage?</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Provide the m³ capacity instead</li>
+              <li>• We can quote from unit size</li>
+              <li>• Combine with home inventory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Room by Room Checklists -->
+  <section id="checklist" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">
+        Room-by-Room Inventory Checklist
+      </h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Use this checklist as you walk through your home. Tick off items and note quantities.
+      </p>
+      
+      <div class="max-w-5xl mx-auto space-y-8">
+        <!-- Bedroom -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🛏️</span> Bedroom
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.bedroom.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Living Room -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🛋️</span> Living Room
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.living.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Dining Room -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🍽️</span> Dining Room
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.dining.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Kitchen -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🍳</span> Kitchen
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.kitchen.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Laundry -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🧺</span> Laundry
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.laundry.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Home Office -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">💼</span> Home Office
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.office.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Outdoor -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🌳</span> Outdoor / Patio
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.outdoor.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Garage -->
+        <div class="bg-gray-50 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+            <span class="text-2xl">🔧</span> Garage / Shed
+          </h3>
+          <div class="grid md:grid-cols-3 gap-3">
+            {roomInventory.garage.map((item) => (
+              <label class="flex items-center gap-2 bg-white p-3 rounded-lg text-sm cursor-pointer hover:bg-gray-50">
+                <input type="checkbox" class="rounded text-brand-red" />
+                <span>{item.item}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Issues -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Access Issues to Report
+        </h2>
+        
+        <div class="prose prose-lg mx-auto mb-8">
+          <p>
+            Access affects your quote and moving day timing. Be upfront about any of these issues to avoid surprises:
+          </p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-bold text-brand-dark mb-4">At Pickup Location</h3>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li class="flex gap-2"><span>🔲</span> Are there stairs? How many flights?</li>
+                <li class="flex gap-2"><span>🔲</span> Is there a lift? What size?</li>
+                <li class="flex gap-2"><span>🔲</span> Walk more than 50m from truck to door?</li>
+                <li class="flex gap-2"><span>🔲</span> Street parking restrictions?</li>
+                <li class="flex gap-2"><span>🔲</span> Narrow hallways or doorways?</li>
+                <li class="flex gap-2"><span>🔲</span> School nearby (traffic at certain times)?</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-brand-dark mb-4">At Delivery Location</h3>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li class="flex gap-2"><span>🔲</span> Are there stairs? How many flights?</li>
+                <li class="flex gap-2"><span>🔲</span> Is there a lift? What size?</li>
+                <li class="flex gap-2"><span>🔲</span> Walk more than 50m from truck to door?</li>
+                <li class="flex gap-2"><span>🔲</span> Street parking restrictions?</li>
+                <li class="flex gap-2"><span>🔲</span> Tight corners or narrow stairs?</li>
+                <li class="flex gap-2"><span>🔲</span> Building management to notify?</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+            <p class="text-yellow-800 text-sm">
+              <strong>Why this matters:</strong> Stairs, lifts, and long walks take time. We price based on the work involved—telling us upfront means no surprises on moving day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
+        Frequently Asked Questions
+      </h2>
+      
+      <div class="max-w-3xl mx-auto space-y-4">
+        {faqQuestions.map((faq) => (
+          <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+              {faq.question}
+              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              {faq.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Content -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          Related Resources
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/moving-interstate/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">🚚</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Interstate Moving Guide</h3>
+            <p class="text-sm text-gray-500 mt-2">Complete planning guide</p>
+          </a>
+          
+          <a href="/how-many-boxes-do-i-need-for-my-move/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">📦</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Box Calculator</h3>
+            <p class="text-sm text-gray-500 mt-2">Estimate packing materials</p>
+          </a>
+          
+          <a href="/backloading/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div class="text-3xl mb-3">💰</div>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Save with Backloading</h3>
+            <p class="text-sm text-gray-500 mt-2">Cut costs by up to 60%</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-brand-dark">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ready to Submit Your Inventory?
+      </h2>
+      <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+        Enter your furniture list into our quote system. Update it anytime as you refine your inventory.
+      </p>
+      <a 
+        href="https://removalistquotes.movingagain.com.au/quote/household" 
+        class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+      >
+        Get Your Free Quote
+      </a>
+    </div>
+  </section>
+</Layout>

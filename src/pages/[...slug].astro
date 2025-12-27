@@ -1,0 +1,155 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import RouteQuoteCTA from '../components/RouteQuoteCTA.astro';
+import RouteFAQ from '../components/RouteFAQ.astro';
+import RelatedRoutes from '../components/RelatedRoutes.astro';
+import RouteServiceOptions from '../components/RouteServiceOptions.astro';
+import RouteProcess from '../components/RouteProcess.astro';
+import RouteTrustSection from '../components/RouteTrustSection.astro';
+import { generateFAQsForRoute } from '../utils/faqGenerator';
+import { getRelatedRoutes } from '../utils/relatedRoutes';
+
+export async function getStaticPaths() {
+  const routes = await getCollection('routes');
+  
+  return routes.map((route) => ({
+    params: { slug: route.data.slugFs },
+    props: { route }
+  }));
+}
+
+const allRoutes = await getCollection('routes');
+const { route } = Astro.props as { route: CollectionEntry<'routes'> };
+
+// Generate route-specific FAQs
+const faqs = generateFAQsForRoute(route);
+
+// Get related routes
+const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 3);
+const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 3);
+
+const canonicalUrl = route.data.canonicalUrl ?? `https://movingagain.com.au/${route.data.slugFs}/`;
+const metaDescription = route.data.metaDescription ?? 
+  `Affordable backloading from ${route.data.origin} to ${route.data.destination}. Save up to 60% on your interstate move with Moving Again's shared truck service.`;
+
+// Structured data for SEO
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": route.data.title,
+  "description": metaDescription,
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "Moving Again",
+    "telephone": "1300 668 464"
+  },
+  "areaServed": [
+    { "@type": "City", "name": route.data.origin },
+    { "@type": "City", "name": route.data.destination }
+  ],
+  "serviceType": "Interstate Backloading"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<Layout 
+  title={route.data.title}
+  description={metaDescription}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm">
+          Interstate Backloading
+        </span>
+        
+        <h1 class="text-4xl md:text-5xl font-black mb-4">
+          {route.data.title}
+        </h1>
+        
+        <p class="text-xl text-gray-300 mb-2">
+          {route.data.origin}, {route.data.originState} → {route.data.destination}, {route.data.destinationState}
+        </p>
+        
+        {route.data.transitDays && (
+          <p class="text-gray-400 mb-8">
+            Typical transit: {route.data.transitDays}
+          </p>
+        )}
+        
+        <a 
+          href="https://removalistquotes.movingagain.com.au/quote/household" 
+          class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <nav class="py-4 bg-[#800005]">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center gap-2 text-sm text-white/80">
+        <a href="/" class="hover:text-white">Home</a>
+        <span>›</span>
+        <a href="/backloading/" class="hover:text-white">Backloading</a>
+        <span>›</span>
+        <span class="text-white">{route.data.origin} to {route.data.destination}</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Service Options Section -->
+  <RouteServiceOptions origin={route.data.origin} destination={route.data.destination} />
+
+  <!-- Related Routes from Origin -->
+  {originRelated.length > 0 && (
+    <RelatedRoutes 
+      title={`More routes from ${route.data.origin}`}
+      routes={originRelated}
+    />
+  )}
+
+  <!-- Transport Process Section -->
+  <RouteProcess 
+    origin={route.data.origin} 
+    destination={route.data.destination}
+    transitDays={route.data.transitDays}
+  />
+
+  <!-- Trust Section -->
+  <RouteTrustSection origin={route.data.origin} destination={route.data.destination} />
+
+  <!-- FAQ Section -->
+  <RouteFAQ faqs={faqs} />
+
+  <!-- Related Routes to Destination -->
+  {destinationRelated.length > 0 && (
+    <RelatedRoutes 
+      title={`More routes to ${route.data.destination}`}
+      routes={destinationRelated}
+    />
+  )}
+
+  <!-- Quote CTA -->
+  <RouteQuoteCTA origin={route.data.origin} destination={route.data.destination} />
+</Layout>

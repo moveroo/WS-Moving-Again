@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Replace with your site URL
+  site: 'https://movingagain.com.au',
   integrations: [tailwind(), sitemap()],
   // Optimize images automatically
   image: {
