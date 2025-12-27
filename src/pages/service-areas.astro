@@ -9,7 +9,6 @@ import {
   MIGRATION_DATA_URL,
   formatMigration,
   getMigrationTrend,
-  STATE_POPULATION,
   CITY_POPULATION,
 } from '../utils/migration-stats';
 
@@ -247,7 +246,7 @@ const pageFacts = {
         >
           <div class="grid gap-4">
             {
-              citiesByMigration.map((hub, index) => {
+              citiesByMigration.map((hub) => {
                 const migration =
                   NET_INTERSTATE_MIGRATION[hub.stateCode as keyof typeof NET_INTERSTATE_MIGRATION];
                 const isPositive = migration > 0;

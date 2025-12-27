@@ -2,11 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
-import {
-  NET_INTERSTATE_MIGRATION,
-  formatMigration,
-  MIGRATION_DATA_PERIOD,
-} from '../utils/migration-stats';
+import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
