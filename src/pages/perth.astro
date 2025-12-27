@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
+import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
 const pageFacts = {
   service: 'Interstate backloading',
@@ -73,7 +74,8 @@ const popularRoutes = [
         <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
           <div class="flex items-center gap-2">
             <span class="text-green-400">✓</span><span
-              >{BRAND.yearsInBusiness} Years Experience</span>
+              >{BRAND.yearsInBusiness} Years Experience</span
+            >
           </div>
           <div class="flex items-center gap-2">
             <span class="text-green-400">✓</span><span>Transit Insurance Included</span>

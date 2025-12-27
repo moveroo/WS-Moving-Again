@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
+import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -105,8 +106,8 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Sydney Population</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">#1</div>
-          <p class="text-sm text-gray-600">Busiest Migration Corridor (Syd↔Mel)</p>
+          <div class="text-4xl font-black text-orange-500 mb-2">{formatMigration('NSW')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">Daily</div>
@@ -114,9 +115,10 @@ const popularRoutes = [
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">60%</div>
-          <p class="text-sm text-gray-600">Typical Savings with Backloading</p>
+          <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 

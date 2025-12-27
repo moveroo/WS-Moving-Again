@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
+import {
+  NET_INTERSTATE_MIGRATION,
+  formatMigration,
+  MIGRATION_DATA_PERIOD,
+} from '../utils/migration-stats';
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -106,8 +111,8 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Brisbane Population</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">📈</div>
-          <p class="text-sm text-gray-600">Positive Net Migration</p>
+          <div class="text-4xl font-black text-green-600 mb-2">{formatMigration('QLD')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">Daily</div>
@@ -118,6 +123,7 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 
@@ -206,7 +212,8 @@ const popularRoutes = [
             <li>• Toowoomba & Darling Downs</li>
             <li>
               • <a href="/townsville/" class="text-brand-red hover:underline"
-                >Townsville & North QLD</a>
+                >Townsville & North QLD</a
+              >
             </li>
             <li>• Cairns & Far North QLD</li>
           </ul>
