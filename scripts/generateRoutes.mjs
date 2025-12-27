@@ -99,7 +99,9 @@ function generateMDXContent(origin, destination) {
   const originCity = CITIES.find((c) => c.name === origin);
   const destCity = CITIES.find((c) => c.name === destination);
 
-  const slug = `${slugify(origin)}-to-${slugify(destination)}`;
+  // URL format: city1-city2 (no 'to' - matches old WordPress URLs)
+  const slug = `${slugify(origin)}-${slugify(destination)}`;
+  const reverseSlug = `${slugify(destination)}-${slugify(origin)}`;
   const distance = getDistance(origin, destination);
   const transitTime = getTransitTime(distance);
   const now = new Date().toISOString();
@@ -117,7 +119,7 @@ ${distance ? `distanceKm: ${distance}` : '# distanceKm: estimated'}
 transitDays: "${transitTime}"
 canonicalUrl: https://movingagain.com.au/${slug}/
 relatedSlugs:
-  - ${slugify(destination)}-to-${slugify(origin)}
+  - ${reverseSlug}
 lastUpdated: '${now}'
 ---`;
 
@@ -184,17 +186,18 @@ function generateAllRoutes() {
       const dest = sortedCities[j];
 
       // Canonical direction: larger city → smaller city
+      // URL format: city1-city2 (no 'to' - matches old WordPress URLs)
       routes.push({
         origin: origin.name,
         destination: dest.name,
-        slug: `${slugify(origin.name)}-to-${slugify(dest.name)}`,
+        slug: `${slugify(origin.name)}-${slugify(dest.name)}`,
       });
 
       // Reverse direction gets redirected
-      const reverseSlug = `${slugify(dest.name)}-to-${slugify(origin.name)}`;
+      const reverseSlug = `${slugify(dest.name)}-${slugify(origin.name)}`;
       redirects.push({
         source: `/${reverseSlug}/`,
-        destination: `/${slugify(origin.name)}-to-${slugify(dest.name)}/`,
+        destination: `/${slugify(origin.name)}-${slugify(dest.name)}/`,
         permanent: true,
       });
     }

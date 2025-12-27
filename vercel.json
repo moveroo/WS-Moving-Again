@@ -76,1503 +76,4503 @@
       "permanent": true
     },
     {
+      "source": "/melbourne-sydney/",
+      "destination": "/sydney-melbourne/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-sydney/",
+      "destination": "/sydney-brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-sydney/",
+      "destination": "/sydney-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-sydney/",
+      "destination": "/sydney-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-sydney/",
+      "destination": "/sydney-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-sydney/",
+      "destination": "/sydney-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-sydney/",
+      "destination": "/sydney-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-sydney/",
+      "destination": "/sydney-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-sydney/",
+      "destination": "/sydney-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-sydney/",
+      "destination": "/sydney-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-sydney/",
+      "destination": "/sydney-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-sydney/",
+      "destination": "/sydney-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-sydney/",
+      "destination": "/sydney-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-sydney/",
+      "destination": "/sydney-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-sydney/",
+      "destination": "/sydney-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-sydney/",
+      "destination": "/sydney-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-sydney/",
+      "destination": "/sydney-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-sydney/",
+      "destination": "/sydney-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-sydney/",
+      "destination": "/sydney-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-sydney/",
+      "destination": "/sydney-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-sydney/",
+      "destination": "/sydney-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-sydney/",
+      "destination": "/sydney-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-sydney/",
+      "destination": "/sydney-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-sydney/",
+      "destination": "/sydney-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-melbourne/",
+      "destination": "/melbourne-brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-melbourne/",
+      "destination": "/melbourne-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-melbourne/",
+      "destination": "/melbourne-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-melbourne/",
+      "destination": "/melbourne-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-melbourne/",
+      "destination": "/melbourne-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-melbourne/",
+      "destination": "/melbourne-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-melbourne/",
+      "destination": "/melbourne-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-melbourne/",
+      "destination": "/melbourne-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-melbourne/",
+      "destination": "/melbourne-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-melbourne/",
+      "destination": "/melbourne-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-melbourne/",
+      "destination": "/melbourne-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-melbourne/",
+      "destination": "/melbourne-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-melbourne/",
+      "destination": "/melbourne-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-melbourne/",
+      "destination": "/melbourne-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-melbourne/",
+      "destination": "/melbourne-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-melbourne/",
+      "destination": "/melbourne-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-melbourne/",
+      "destination": "/melbourne-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-melbourne/",
+      "destination": "/melbourne-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-melbourne/",
+      "destination": "/melbourne-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-melbourne/",
+      "destination": "/melbourne-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-melbourne/",
+      "destination": "/melbourne-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-melbourne/",
+      "destination": "/melbourne-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-melbourne/",
+      "destination": "/melbourne-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-brisbane/",
+      "destination": "/brisbane-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-brisbane/",
+      "destination": "/brisbane-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-brisbane/",
+      "destination": "/brisbane-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-brisbane/",
+      "destination": "/brisbane-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-brisbane/",
+      "destination": "/brisbane-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-brisbane/",
+      "destination": "/brisbane-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-brisbane/",
+      "destination": "/brisbane-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-brisbane/",
+      "destination": "/brisbane-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-brisbane/",
+      "destination": "/brisbane-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-brisbane/",
+      "destination": "/brisbane-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-brisbane/",
+      "destination": "/brisbane-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-brisbane/",
+      "destination": "/brisbane-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-brisbane/",
+      "destination": "/brisbane-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-brisbane/",
+      "destination": "/brisbane-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-brisbane/",
+      "destination": "/brisbane-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-brisbane/",
+      "destination": "/brisbane-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-brisbane/",
+      "destination": "/brisbane-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-brisbane/",
+      "destination": "/brisbane-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-brisbane/",
+      "destination": "/brisbane-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-brisbane/",
+      "destination": "/brisbane-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-brisbane/",
+      "destination": "/brisbane-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-brisbane/",
+      "destination": "/brisbane-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-perth/",
+      "destination": "/perth-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-perth/",
+      "destination": "/perth-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-perth/",
+      "destination": "/perth-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-perth/",
+      "destination": "/perth-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-perth/",
+      "destination": "/perth-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-perth/",
+      "destination": "/perth-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-perth/",
+      "destination": "/perth-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-perth/",
+      "destination": "/perth-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-perth/",
+      "destination": "/perth-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-perth/",
+      "destination": "/perth-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-perth/",
+      "destination": "/perth-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-perth/",
+      "destination": "/perth-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-perth/",
+      "destination": "/perth-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-perth/",
+      "destination": "/perth-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-perth/",
+      "destination": "/perth-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-perth/",
+      "destination": "/perth-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-perth/",
+      "destination": "/perth-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-perth/",
+      "destination": "/perth-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-perth/",
+      "destination": "/perth-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-perth/",
+      "destination": "/perth-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-perth/",
+      "destination": "/perth-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-adelaide/",
+      "destination": "/adelaide-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-adelaide/",
+      "destination": "/adelaide-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-adelaide/",
+      "destination": "/adelaide-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-adelaide/",
+      "destination": "/adelaide-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-adelaide/",
+      "destination": "/adelaide-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-adelaide/",
+      "destination": "/adelaide-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-adelaide/",
+      "destination": "/adelaide-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-adelaide/",
+      "destination": "/adelaide-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-adelaide/",
+      "destination": "/adelaide-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-adelaide/",
+      "destination": "/adelaide-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-adelaide/",
+      "destination": "/adelaide-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-adelaide/",
+      "destination": "/adelaide-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-adelaide/",
+      "destination": "/adelaide-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-adelaide/",
+      "destination": "/adelaide-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-adelaide/",
+      "destination": "/adelaide-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-adelaide/",
+      "destination": "/adelaide-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-adelaide/",
+      "destination": "/adelaide-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-adelaide/",
+      "destination": "/adelaide-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-adelaide/",
+      "destination": "/adelaide-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-adelaide/",
+      "destination": "/adelaide-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-gold-coast/",
+      "destination": "/gold-coast-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-gold-coast/",
+      "destination": "/gold-coast-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-gold-coast/",
+      "destination": "/gold-coast-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-gold-coast/",
+      "destination": "/gold-coast-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-gold-coast/",
+      "destination": "/gold-coast-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-gold-coast/",
+      "destination": "/gold-coast-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-gold-coast/",
+      "destination": "/gold-coast-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-gold-coast/",
+      "destination": "/gold-coast-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-gold-coast/",
+      "destination": "/gold-coast-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-gold-coast/",
+      "destination": "/gold-coast-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-gold-coast/",
+      "destination": "/gold-coast-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-gold-coast/",
+      "destination": "/gold-coast-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-gold-coast/",
+      "destination": "/gold-coast-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-gold-coast/",
+      "destination": "/gold-coast-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-gold-coast/",
+      "destination": "/gold-coast-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-gold-coast/",
+      "destination": "/gold-coast-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-gold-coast/",
+      "destination": "/gold-coast-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-gold-coast/",
+      "destination": "/gold-coast-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-gold-coast/",
+      "destination": "/gold-coast-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-canberra/",
+      "destination": "/canberra-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-canberra/",
+      "destination": "/canberra-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-canberra/",
+      "destination": "/canberra-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-canberra/",
+      "destination": "/canberra-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-canberra/",
+      "destination": "/canberra-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-canberra/",
+      "destination": "/canberra-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-canberra/",
+      "destination": "/canberra-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-canberra/",
+      "destination": "/canberra-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-canberra/",
+      "destination": "/canberra-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-canberra/",
+      "destination": "/canberra-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-canberra/",
+      "destination": "/canberra-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-canberra/",
+      "destination": "/canberra-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-canberra/",
+      "destination": "/canberra-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-canberra/",
+      "destination": "/canberra-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-canberra/",
+      "destination": "/canberra-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-canberra/",
+      "destination": "/canberra-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-canberra/",
+      "destination": "/canberra-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-canberra/",
+      "destination": "/canberra-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-logan-city/",
+      "destination": "/logan-city-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-logan-city/",
+      "destination": "/logan-city-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-logan-city/",
+      "destination": "/logan-city-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-logan-city/",
+      "destination": "/logan-city-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-logan-city/",
+      "destination": "/logan-city-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-logan-city/",
+      "destination": "/logan-city-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-logan-city/",
+      "destination": "/logan-city-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-logan-city/",
+      "destination": "/logan-city-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-logan-city/",
+      "destination": "/logan-city-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-logan-city/",
+      "destination": "/logan-city-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-logan-city/",
+      "destination": "/logan-city-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-logan-city/",
+      "destination": "/logan-city-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-logan-city/",
+      "destination": "/logan-city-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-logan-city/",
+      "destination": "/logan-city-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-logan-city/",
+      "destination": "/logan-city-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-logan-city/",
+      "destination": "/logan-city-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-logan-city/",
+      "destination": "/logan-city-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-newcastle/",
+      "destination": "/newcastle-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-newcastle/",
+      "destination": "/newcastle-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-newcastle/",
+      "destination": "/newcastle-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-newcastle/",
+      "destination": "/newcastle-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-newcastle/",
+      "destination": "/newcastle-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-newcastle/",
+      "destination": "/newcastle-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-newcastle/",
+      "destination": "/newcastle-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-newcastle/",
+      "destination": "/newcastle-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-newcastle/",
+      "destination": "/newcastle-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-newcastle/",
+      "destination": "/newcastle-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-newcastle/",
+      "destination": "/newcastle-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-newcastle/",
+      "destination": "/newcastle-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-newcastle/",
+      "destination": "/newcastle-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-newcastle/",
+      "destination": "/newcastle-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-newcastle/",
+      "destination": "/newcastle-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-newcastle/",
+      "destination": "/newcastle-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-wollongong/",
+      "destination": "/wollongong-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-wollongong/",
+      "destination": "/wollongong-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-wollongong/",
+      "destination": "/wollongong-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-wollongong/",
+      "destination": "/wollongong-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-wollongong/",
+      "destination": "/wollongong-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-wollongong/",
+      "destination": "/wollongong-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-wollongong/",
+      "destination": "/wollongong-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-wollongong/",
+      "destination": "/wollongong-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-wollongong/",
+      "destination": "/wollongong-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-wollongong/",
+      "destination": "/wollongong-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-wollongong/",
+      "destination": "/wollongong-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-wollongong/",
+      "destination": "/wollongong-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-wollongong/",
+      "destination": "/wollongong-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-wollongong/",
+      "destination": "/wollongong-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-wollongong/",
+      "destination": "/wollongong-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-hobart/",
+      "destination": "/hobart-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-hobart/",
+      "destination": "/hobart-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-hobart/",
+      "destination": "/hobart-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-hobart/",
+      "destination": "/hobart-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-hobart/",
+      "destination": "/hobart-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-hobart/",
+      "destination": "/hobart-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-hobart/",
+      "destination": "/hobart-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-hobart/",
+      "destination": "/hobart-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-hobart/",
+      "destination": "/hobart-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-hobart/",
+      "destination": "/hobart-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-hobart/",
+      "destination": "/hobart-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-hobart/",
+      "destination": "/hobart-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-hobart/",
+      "destination": "/hobart-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-hobart/",
+      "destination": "/hobart-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-geelong/",
+      "destination": "/geelong-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-geelong/",
+      "destination": "/geelong-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-geelong/",
+      "destination": "/geelong-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-geelong/",
+      "destination": "/geelong-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-geelong/",
+      "destination": "/geelong-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-geelong/",
+      "destination": "/geelong-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-geelong/",
+      "destination": "/geelong-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-geelong/",
+      "destination": "/geelong-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-geelong/",
+      "destination": "/geelong-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-geelong/",
+      "destination": "/geelong-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-geelong/",
+      "destination": "/geelong-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-geelong/",
+      "destination": "/geelong-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-geelong/",
+      "destination": "/geelong-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-townsville/",
+      "destination": "/townsville-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-townsville/",
+      "destination": "/townsville-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-townsville/",
+      "destination": "/townsville-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-townsville/",
+      "destination": "/townsville-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-townsville/",
+      "destination": "/townsville-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-townsville/",
+      "destination": "/townsville-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-townsville/",
+      "destination": "/townsville-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-townsville/",
+      "destination": "/townsville-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-townsville/",
+      "destination": "/townsville-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-townsville/",
+      "destination": "/townsville-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-townsville/",
+      "destination": "/townsville-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-townsville/",
+      "destination": "/townsville-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-cairns/",
+      "destination": "/cairns-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-cairns/",
+      "destination": "/cairns-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-cairns/",
+      "destination": "/cairns-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-cairns/",
+      "destination": "/cairns-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-cairns/",
+      "destination": "/cairns-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-cairns/",
+      "destination": "/cairns-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-cairns/",
+      "destination": "/cairns-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-cairns/",
+      "destination": "/cairns-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-cairns/",
+      "destination": "/cairns-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-cairns/",
+      "destination": "/cairns-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-cairns/",
+      "destination": "/cairns-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-darwin/",
+      "destination": "/darwin-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-darwin/",
+      "destination": "/darwin-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-darwin/",
+      "destination": "/darwin-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-darwin/",
+      "destination": "/darwin-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-darwin/",
+      "destination": "/darwin-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-darwin/",
+      "destination": "/darwin-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-darwin/",
+      "destination": "/darwin-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-darwin/",
+      "destination": "/darwin-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-darwin/",
+      "destination": "/darwin-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-darwin/",
+      "destination": "/darwin-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-rockingham/",
+      "destination": "/rockingham-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-rockingham/",
+      "destination": "/rockingham-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-rockingham/",
+      "destination": "/rockingham-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-rockingham/",
+      "destination": "/rockingham-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-rockingham/",
+      "destination": "/rockingham-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-rockingham/",
+      "destination": "/rockingham-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-rockingham/",
+      "destination": "/rockingham-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-rockingham/",
+      "destination": "/rockingham-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-rockingham/",
+      "destination": "/rockingham-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-toowoomba/",
+      "destination": "/toowoomba-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-toowoomba/",
+      "destination": "/toowoomba-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-toowoomba/",
+      "destination": "/toowoomba-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-toowoomba/",
+      "destination": "/toowoomba-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-toowoomba/",
+      "destination": "/toowoomba-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-toowoomba/",
+      "destination": "/toowoomba-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-toowoomba/",
+      "destination": "/toowoomba-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-toowoomba/",
+      "destination": "/toowoomba-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-ballarat/",
+      "destination": "/ballarat-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-ballarat/",
+      "destination": "/ballarat-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-ballarat/",
+      "destination": "/ballarat-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-ballarat/",
+      "destination": "/ballarat-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-ballarat/",
+      "destination": "/ballarat-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-ballarat/",
+      "destination": "/ballarat-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-ballarat/",
+      "destination": "/ballarat-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-bendigo/",
+      "destination": "/bendigo-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-bendigo/",
+      "destination": "/bendigo-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-bendigo/",
+      "destination": "/bendigo-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-bendigo/",
+      "destination": "/bendigo-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-bendigo/",
+      "destination": "/bendigo-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-bendigo/",
+      "destination": "/bendigo-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-mandurah/",
+      "destination": "/mandurah-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-mandurah/",
+      "destination": "/mandurah-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-mandurah/",
+      "destination": "/mandurah-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-mandurah/",
+      "destination": "/mandurah-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-mandurah/",
+      "destination": "/mandurah-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-launceston/",
+      "destination": "/launceston-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-launceston/",
+      "destination": "/launceston-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-launceston/",
+      "destination": "/launceston-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-launceston/",
+      "destination": "/launceston-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-mackay/",
+      "destination": "/mackay-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-mackay/",
+      "destination": "/mackay-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-mackay/",
+      "destination": "/mackay-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-bunbury/",
+      "destination": "/bunbury-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-bunbury/",
+      "destination": "/bunbury-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-bundaberg/",
+      "destination": "/bundaberg-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-melbourne/",
+      "destination": "/sydney-melbourne/",
+      "permanent": true
+    },
+    {
       "source": "/melbourne-to-sydney/",
-      "destination": "/sydney-to-melbourne/",
+      "destination": "/sydney-melbourne/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-brisbane/",
+      "destination": "/sydney-brisbane/",
       "permanent": true
     },
     {
       "source": "/brisbane-to-sydney/",
-      "destination": "/sydney-to-brisbane/",
+      "destination": "/sydney-brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-perth/",
+      "destination": "/sydney-perth/",
       "permanent": true
     },
     {
       "source": "/perth-to-sydney/",
-      "destination": "/sydney-to-perth/",
+      "destination": "/sydney-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-adelaide/",
+      "destination": "/sydney-adelaide/",
       "permanent": true
     },
     {
       "source": "/adelaide-to-sydney/",
-      "destination": "/sydney-to-adelaide/",
+      "destination": "/sydney-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-gold-to-coast/",
+      "destination": "/sydney-gold-coast/",
       "permanent": true
     },
     {
       "source": "/gold-coast-to-sydney/",
-      "destination": "/sydney-to-gold-coast/",
+      "destination": "/sydney-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-canberra/",
+      "destination": "/sydney-canberra/",
       "permanent": true
     },
     {
       "source": "/canberra-to-sydney/",
-      "destination": "/sydney-to-canberra/",
+      "destination": "/sydney-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-logan-to-city/",
+      "destination": "/sydney-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-sydney/",
-      "destination": "/sydney-to-logan-city/",
+      "destination": "/sydney-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-newcastle/",
+      "destination": "/sydney-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-sydney/",
-      "destination": "/sydney-to-newcastle/",
+      "destination": "/sydney-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-wollongong/",
+      "destination": "/sydney-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-sydney/",
-      "destination": "/sydney-to-wollongong/",
+      "destination": "/sydney-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-hobart/",
+      "destination": "/sydney-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-sydney/",
-      "destination": "/sydney-to-hobart/",
+      "destination": "/sydney-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-geelong/",
+      "destination": "/sydney-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-sydney/",
-      "destination": "/sydney-to-geelong/",
+      "destination": "/sydney-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-townsville/",
+      "destination": "/sydney-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-sydney/",
-      "destination": "/sydney-to-townsville/",
+      "destination": "/sydney-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-cairns/",
+      "destination": "/sydney-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-sydney/",
-      "destination": "/sydney-to-cairns/",
+      "destination": "/sydney-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-darwin/",
+      "destination": "/sydney-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-sydney/",
-      "destination": "/sydney-to-darwin/",
+      "destination": "/sydney-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-rockingham/",
+      "destination": "/sydney-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-sydney/",
-      "destination": "/sydney-to-rockingham/",
+      "destination": "/sydney-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-toowoomba/",
+      "destination": "/sydney-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-sydney/",
-      "destination": "/sydney-to-toowoomba/",
+      "destination": "/sydney-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-ballarat/",
+      "destination": "/sydney-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-sydney/",
-      "destination": "/sydney-to-ballarat/",
+      "destination": "/sydney-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-bendigo/",
+      "destination": "/sydney-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-sydney/",
-      "destination": "/sydney-to-bendigo/",
+      "destination": "/sydney-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-mandurah/",
+      "destination": "/sydney-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-sydney/",
-      "destination": "/sydney-to-mandurah/",
+      "destination": "/sydney-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-launceston/",
+      "destination": "/sydney-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-sydney/",
-      "destination": "/sydney-to-launceston/",
+      "destination": "/sydney-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-mackay/",
+      "destination": "/sydney-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-sydney/",
-      "destination": "/sydney-to-mackay/",
+      "destination": "/sydney-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-bunbury/",
+      "destination": "/sydney-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-sydney/",
-      "destination": "/sydney-to-bunbury/",
+      "destination": "/sydney-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-bundaberg/",
+      "destination": "/sydney-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-sydney/",
-      "destination": "/sydney-to-bundaberg/",
+      "destination": "/sydney-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-to-rockhampton/",
+      "destination": "/sydney-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-sydney/",
-      "destination": "/sydney-to-rockhampton/",
+      "destination": "/sydney-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-brisbane/",
+      "destination": "/melbourne-brisbane/",
       "permanent": true
     },
     {
       "source": "/brisbane-to-melbourne/",
-      "destination": "/melbourne-to-brisbane/",
+      "destination": "/melbourne-brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-perth/",
+      "destination": "/melbourne-perth/",
       "permanent": true
     },
     {
       "source": "/perth-to-melbourne/",
-      "destination": "/melbourne-to-perth/",
+      "destination": "/melbourne-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-adelaide/",
+      "destination": "/melbourne-adelaide/",
       "permanent": true
     },
     {
       "source": "/adelaide-to-melbourne/",
-      "destination": "/melbourne-to-adelaide/",
+      "destination": "/melbourne-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-gold-to-coast/",
+      "destination": "/melbourne-gold-coast/",
       "permanent": true
     },
     {
       "source": "/gold-coast-to-melbourne/",
-      "destination": "/melbourne-to-gold-coast/",
+      "destination": "/melbourne-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-canberra/",
+      "destination": "/melbourne-canberra/",
       "permanent": true
     },
     {
       "source": "/canberra-to-melbourne/",
-      "destination": "/melbourne-to-canberra/",
+      "destination": "/melbourne-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-logan-to-city/",
+      "destination": "/melbourne-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-melbourne/",
-      "destination": "/melbourne-to-logan-city/",
+      "destination": "/melbourne-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-newcastle/",
+      "destination": "/melbourne-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-melbourne/",
-      "destination": "/melbourne-to-newcastle/",
+      "destination": "/melbourne-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-wollongong/",
+      "destination": "/melbourne-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-melbourne/",
-      "destination": "/melbourne-to-wollongong/",
+      "destination": "/melbourne-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-hobart/",
+      "destination": "/melbourne-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-melbourne/",
-      "destination": "/melbourne-to-hobart/",
+      "destination": "/melbourne-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-geelong/",
+      "destination": "/melbourne-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-melbourne/",
-      "destination": "/melbourne-to-geelong/",
+      "destination": "/melbourne-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-townsville/",
+      "destination": "/melbourne-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-melbourne/",
-      "destination": "/melbourne-to-townsville/",
+      "destination": "/melbourne-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-cairns/",
+      "destination": "/melbourne-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-melbourne/",
-      "destination": "/melbourne-to-cairns/",
+      "destination": "/melbourne-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-darwin/",
+      "destination": "/melbourne-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-melbourne/",
-      "destination": "/melbourne-to-darwin/",
+      "destination": "/melbourne-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-rockingham/",
+      "destination": "/melbourne-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-melbourne/",
-      "destination": "/melbourne-to-rockingham/",
+      "destination": "/melbourne-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-toowoomba/",
+      "destination": "/melbourne-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-melbourne/",
-      "destination": "/melbourne-to-toowoomba/",
+      "destination": "/melbourne-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-ballarat/",
+      "destination": "/melbourne-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-melbourne/",
-      "destination": "/melbourne-to-ballarat/",
+      "destination": "/melbourne-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-bendigo/",
+      "destination": "/melbourne-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-melbourne/",
-      "destination": "/melbourne-to-bendigo/",
+      "destination": "/melbourne-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-mandurah/",
+      "destination": "/melbourne-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-melbourne/",
-      "destination": "/melbourne-to-mandurah/",
+      "destination": "/melbourne-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-launceston/",
+      "destination": "/melbourne-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-melbourne/",
-      "destination": "/melbourne-to-launceston/",
+      "destination": "/melbourne-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-mackay/",
+      "destination": "/melbourne-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-melbourne/",
-      "destination": "/melbourne-to-mackay/",
+      "destination": "/melbourne-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-bunbury/",
+      "destination": "/melbourne-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-melbourne/",
-      "destination": "/melbourne-to-bunbury/",
+      "destination": "/melbourne-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-bundaberg/",
+      "destination": "/melbourne-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-melbourne/",
-      "destination": "/melbourne-to-bundaberg/",
+      "destination": "/melbourne-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-to-rockhampton/",
+      "destination": "/melbourne-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-melbourne/",
-      "destination": "/melbourne-to-rockhampton/",
+      "destination": "/melbourne-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-perth/",
+      "destination": "/brisbane-perth/",
       "permanent": true
     },
     {
       "source": "/perth-to-brisbane/",
-      "destination": "/brisbane-to-perth/",
+      "destination": "/brisbane-perth/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-adelaide/",
+      "destination": "/brisbane-adelaide/",
       "permanent": true
     },
     {
       "source": "/adelaide-to-brisbane/",
-      "destination": "/brisbane-to-adelaide/",
+      "destination": "/brisbane-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-gold-to-coast/",
+      "destination": "/brisbane-gold-coast/",
       "permanent": true
     },
     {
       "source": "/gold-coast-to-brisbane/",
-      "destination": "/brisbane-to-gold-coast/",
+      "destination": "/brisbane-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-canberra/",
+      "destination": "/brisbane-canberra/",
       "permanent": true
     },
     {
       "source": "/canberra-to-brisbane/",
-      "destination": "/brisbane-to-canberra/",
+      "destination": "/brisbane-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-logan-to-city/",
+      "destination": "/brisbane-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-brisbane/",
-      "destination": "/brisbane-to-logan-city/",
+      "destination": "/brisbane-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-newcastle/",
+      "destination": "/brisbane-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-brisbane/",
-      "destination": "/brisbane-to-newcastle/",
+      "destination": "/brisbane-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-wollongong/",
+      "destination": "/brisbane-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-brisbane/",
-      "destination": "/brisbane-to-wollongong/",
+      "destination": "/brisbane-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-hobart/",
+      "destination": "/brisbane-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-brisbane/",
-      "destination": "/brisbane-to-hobart/",
+      "destination": "/brisbane-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-geelong/",
+      "destination": "/brisbane-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-brisbane/",
-      "destination": "/brisbane-to-geelong/",
+      "destination": "/brisbane-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-townsville/",
+      "destination": "/brisbane-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-brisbane/",
-      "destination": "/brisbane-to-townsville/",
+      "destination": "/brisbane-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-cairns/",
+      "destination": "/brisbane-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-brisbane/",
-      "destination": "/brisbane-to-cairns/",
+      "destination": "/brisbane-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-darwin/",
+      "destination": "/brisbane-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-brisbane/",
-      "destination": "/brisbane-to-darwin/",
+      "destination": "/brisbane-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-rockingham/",
+      "destination": "/brisbane-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-brisbane/",
-      "destination": "/brisbane-to-rockingham/",
+      "destination": "/brisbane-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-toowoomba/",
+      "destination": "/brisbane-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-brisbane/",
-      "destination": "/brisbane-to-toowoomba/",
+      "destination": "/brisbane-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-ballarat/",
+      "destination": "/brisbane-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-brisbane/",
-      "destination": "/brisbane-to-ballarat/",
+      "destination": "/brisbane-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-bendigo/",
+      "destination": "/brisbane-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-brisbane/",
-      "destination": "/brisbane-to-bendigo/",
+      "destination": "/brisbane-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-mandurah/",
+      "destination": "/brisbane-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-brisbane/",
-      "destination": "/brisbane-to-mandurah/",
+      "destination": "/brisbane-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-launceston/",
+      "destination": "/brisbane-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-brisbane/",
-      "destination": "/brisbane-to-launceston/",
+      "destination": "/brisbane-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-mackay/",
+      "destination": "/brisbane-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-brisbane/",
-      "destination": "/brisbane-to-mackay/",
+      "destination": "/brisbane-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-bunbury/",
+      "destination": "/brisbane-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-brisbane/",
-      "destination": "/brisbane-to-bunbury/",
+      "destination": "/brisbane-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-bundaberg/",
+      "destination": "/brisbane-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-brisbane/",
-      "destination": "/brisbane-to-bundaberg/",
+      "destination": "/brisbane-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-to-rockhampton/",
+      "destination": "/brisbane-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-brisbane/",
-      "destination": "/brisbane-to-rockhampton/",
+      "destination": "/brisbane-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-adelaide/",
+      "destination": "/perth-adelaide/",
       "permanent": true
     },
     {
       "source": "/adelaide-to-perth/",
-      "destination": "/perth-to-adelaide/",
+      "destination": "/perth-adelaide/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-gold-to-coast/",
+      "destination": "/perth-gold-coast/",
       "permanent": true
     },
     {
       "source": "/gold-coast-to-perth/",
-      "destination": "/perth-to-gold-coast/",
+      "destination": "/perth-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-canberra/",
+      "destination": "/perth-canberra/",
       "permanent": true
     },
     {
       "source": "/canberra-to-perth/",
-      "destination": "/perth-to-canberra/",
+      "destination": "/perth-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-logan-to-city/",
+      "destination": "/perth-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-perth/",
-      "destination": "/perth-to-logan-city/",
+      "destination": "/perth-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-newcastle/",
+      "destination": "/perth-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-perth/",
-      "destination": "/perth-to-newcastle/",
+      "destination": "/perth-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-wollongong/",
+      "destination": "/perth-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-perth/",
-      "destination": "/perth-to-wollongong/",
+      "destination": "/perth-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-hobart/",
+      "destination": "/perth-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-perth/",
-      "destination": "/perth-to-hobart/",
+      "destination": "/perth-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-geelong/",
+      "destination": "/perth-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-perth/",
-      "destination": "/perth-to-geelong/",
+      "destination": "/perth-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-townsville/",
+      "destination": "/perth-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-perth/",
-      "destination": "/perth-to-townsville/",
+      "destination": "/perth-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-cairns/",
+      "destination": "/perth-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-perth/",
-      "destination": "/perth-to-cairns/",
+      "destination": "/perth-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-darwin/",
+      "destination": "/perth-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-perth/",
-      "destination": "/perth-to-darwin/",
+      "destination": "/perth-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-rockingham/",
+      "destination": "/perth-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-perth/",
-      "destination": "/perth-to-rockingham/",
+      "destination": "/perth-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-toowoomba/",
+      "destination": "/perth-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-perth/",
-      "destination": "/perth-to-toowoomba/",
+      "destination": "/perth-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-ballarat/",
+      "destination": "/perth-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-perth/",
-      "destination": "/perth-to-ballarat/",
+      "destination": "/perth-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-bendigo/",
+      "destination": "/perth-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-perth/",
-      "destination": "/perth-to-bendigo/",
+      "destination": "/perth-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-mandurah/",
+      "destination": "/perth-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-perth/",
-      "destination": "/perth-to-mandurah/",
+      "destination": "/perth-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-launceston/",
+      "destination": "/perth-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-perth/",
-      "destination": "/perth-to-launceston/",
+      "destination": "/perth-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-mackay/",
+      "destination": "/perth-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-perth/",
-      "destination": "/perth-to-mackay/",
+      "destination": "/perth-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-bunbury/",
+      "destination": "/perth-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-perth/",
-      "destination": "/perth-to-bunbury/",
+      "destination": "/perth-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-bundaberg/",
+      "destination": "/perth-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-perth/",
-      "destination": "/perth-to-bundaberg/",
+      "destination": "/perth-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-to-rockhampton/",
+      "destination": "/perth-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-perth/",
-      "destination": "/perth-to-rockhampton/",
+      "destination": "/perth-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-gold-to-coast/",
+      "destination": "/adelaide-gold-coast/",
       "permanent": true
     },
     {
       "source": "/gold-coast-to-adelaide/",
-      "destination": "/adelaide-to-gold-coast/",
+      "destination": "/adelaide-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-canberra/",
+      "destination": "/adelaide-canberra/",
       "permanent": true
     },
     {
       "source": "/canberra-to-adelaide/",
-      "destination": "/adelaide-to-canberra/",
+      "destination": "/adelaide-canberra/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-logan-to-city/",
+      "destination": "/adelaide-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-adelaide/",
-      "destination": "/adelaide-to-logan-city/",
+      "destination": "/adelaide-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-newcastle/",
+      "destination": "/adelaide-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-adelaide/",
-      "destination": "/adelaide-to-newcastle/",
+      "destination": "/adelaide-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-wollongong/",
+      "destination": "/adelaide-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-adelaide/",
-      "destination": "/adelaide-to-wollongong/",
+      "destination": "/adelaide-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-hobart/",
+      "destination": "/adelaide-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-adelaide/",
-      "destination": "/adelaide-to-hobart/",
+      "destination": "/adelaide-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-geelong/",
+      "destination": "/adelaide-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-adelaide/",
-      "destination": "/adelaide-to-geelong/",
+      "destination": "/adelaide-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-townsville/",
+      "destination": "/adelaide-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-adelaide/",
-      "destination": "/adelaide-to-townsville/",
+      "destination": "/adelaide-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-cairns/",
+      "destination": "/adelaide-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-adelaide/",
-      "destination": "/adelaide-to-cairns/",
+      "destination": "/adelaide-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-darwin/",
+      "destination": "/adelaide-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-adelaide/",
-      "destination": "/adelaide-to-darwin/",
+      "destination": "/adelaide-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-rockingham/",
+      "destination": "/adelaide-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-adelaide/",
-      "destination": "/adelaide-to-rockingham/",
+      "destination": "/adelaide-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-toowoomba/",
+      "destination": "/adelaide-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-adelaide/",
-      "destination": "/adelaide-to-toowoomba/",
+      "destination": "/adelaide-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-ballarat/",
+      "destination": "/adelaide-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-adelaide/",
-      "destination": "/adelaide-to-ballarat/",
+      "destination": "/adelaide-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-bendigo/",
+      "destination": "/adelaide-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-adelaide/",
-      "destination": "/adelaide-to-bendigo/",
+      "destination": "/adelaide-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-mandurah/",
+      "destination": "/adelaide-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-adelaide/",
-      "destination": "/adelaide-to-mandurah/",
+      "destination": "/adelaide-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-launceston/",
+      "destination": "/adelaide-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-adelaide/",
-      "destination": "/adelaide-to-launceston/",
+      "destination": "/adelaide-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-mackay/",
+      "destination": "/adelaide-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-adelaide/",
-      "destination": "/adelaide-to-mackay/",
+      "destination": "/adelaide-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-bunbury/",
+      "destination": "/adelaide-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-adelaide/",
-      "destination": "/adelaide-to-bunbury/",
+      "destination": "/adelaide-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-bundaberg/",
+      "destination": "/adelaide-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-adelaide/",
-      "destination": "/adelaide-to-bundaberg/",
+      "destination": "/adelaide-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-to-rockhampton/",
+      "destination": "/adelaide-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-adelaide/",
-      "destination": "/adelaide-to-rockhampton/",
+      "destination": "/adelaide-rockhampton/",
       "permanent": true
     },
     {
-      "source": "/canberra-to-gold-coast/",
-      "destination": "/gold-coast-to-canberra/",
+      "source": "/gold-coast-to-canberra/",
+      "destination": "/gold-coast-canberra/",
       "permanent": true
     },
     {
-      "source": "/logan-city-to-gold-coast/",
-      "destination": "/gold-coast-to-logan-city/",
+      "source": "/canberra-gold-to-coast/",
+      "destination": "/gold-coast-canberra/",
       "permanent": true
     },
     {
-      "source": "/newcastle-to-gold-coast/",
-      "destination": "/gold-coast-to-newcastle/",
+      "source": "/gold-coast-logan-to-city/",
+      "destination": "/gold-coast-logan-city/",
       "permanent": true
     },
     {
-      "source": "/wollongong-to-gold-coast/",
-      "destination": "/gold-coast-to-wollongong/",
+      "source": "/logan-city-gold-to-coast/",
+      "destination": "/gold-coast-logan-city/",
       "permanent": true
     },
     {
-      "source": "/hobart-to-gold-coast/",
-      "destination": "/gold-coast-to-hobart/",
+      "source": "/gold-coast-to-newcastle/",
+      "destination": "/gold-coast-newcastle/",
       "permanent": true
     },
     {
-      "source": "/geelong-to-gold-coast/",
-      "destination": "/gold-coast-to-geelong/",
+      "source": "/newcastle-gold-to-coast/",
+      "destination": "/gold-coast-newcastle/",
       "permanent": true
     },
     {
-      "source": "/townsville-to-gold-coast/",
-      "destination": "/gold-coast-to-townsville/",
+      "source": "/gold-coast-to-wollongong/",
+      "destination": "/gold-coast-wollongong/",
       "permanent": true
     },
     {
-      "source": "/cairns-to-gold-coast/",
-      "destination": "/gold-coast-to-cairns/",
+      "source": "/wollongong-gold-to-coast/",
+      "destination": "/gold-coast-wollongong/",
       "permanent": true
     },
     {
-      "source": "/darwin-to-gold-coast/",
-      "destination": "/gold-coast-to-darwin/",
+      "source": "/gold-coast-to-hobart/",
+      "destination": "/gold-coast-hobart/",
       "permanent": true
     },
     {
-      "source": "/rockingham-to-gold-coast/",
-      "destination": "/gold-coast-to-rockingham/",
+      "source": "/hobart-gold-to-coast/",
+      "destination": "/gold-coast-hobart/",
       "permanent": true
     },
     {
-      "source": "/toowoomba-to-gold-coast/",
-      "destination": "/gold-coast-to-toowoomba/",
+      "source": "/gold-coast-to-geelong/",
+      "destination": "/gold-coast-geelong/",
       "permanent": true
     },
     {
-      "source": "/ballarat-to-gold-coast/",
-      "destination": "/gold-coast-to-ballarat/",
+      "source": "/geelong-gold-to-coast/",
+      "destination": "/gold-coast-geelong/",
       "permanent": true
     },
     {
-      "source": "/bendigo-to-gold-coast/",
-      "destination": "/gold-coast-to-bendigo/",
+      "source": "/gold-coast-to-townsville/",
+      "destination": "/gold-coast-townsville/",
       "permanent": true
     },
     {
-      "source": "/mandurah-to-gold-coast/",
-      "destination": "/gold-coast-to-mandurah/",
+      "source": "/townsville-gold-to-coast/",
+      "destination": "/gold-coast-townsville/",
       "permanent": true
     },
     {
-      "source": "/launceston-to-gold-coast/",
-      "destination": "/gold-coast-to-launceston/",
+      "source": "/gold-coast-to-cairns/",
+      "destination": "/gold-coast-cairns/",
       "permanent": true
     },
     {
-      "source": "/mackay-to-gold-coast/",
-      "destination": "/gold-coast-to-mackay/",
+      "source": "/cairns-gold-to-coast/",
+      "destination": "/gold-coast-cairns/",
       "permanent": true
     },
     {
-      "source": "/bunbury-to-gold-coast/",
-      "destination": "/gold-coast-to-bunbury/",
+      "source": "/gold-coast-to-darwin/",
+      "destination": "/gold-coast-darwin/",
       "permanent": true
     },
     {
-      "source": "/bundaberg-to-gold-coast/",
-      "destination": "/gold-coast-to-bundaberg/",
+      "source": "/darwin-gold-to-coast/",
+      "destination": "/gold-coast-darwin/",
       "permanent": true
     },
     {
-      "source": "/rockhampton-to-gold-coast/",
-      "destination": "/gold-coast-to-rockhampton/",
+      "source": "/gold-coast-to-rockingham/",
+      "destination": "/gold-coast-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-gold-to-coast/",
+      "destination": "/gold-coast-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-toowoomba/",
+      "destination": "/gold-coast-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-gold-to-coast/",
+      "destination": "/gold-coast-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-ballarat/",
+      "destination": "/gold-coast-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-gold-to-coast/",
+      "destination": "/gold-coast-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-bendigo/",
+      "destination": "/gold-coast-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-gold-to-coast/",
+      "destination": "/gold-coast-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-mandurah/",
+      "destination": "/gold-coast-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-gold-to-coast/",
+      "destination": "/gold-coast-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-launceston/",
+      "destination": "/gold-coast-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-gold-to-coast/",
+      "destination": "/gold-coast-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-mackay/",
+      "destination": "/gold-coast-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-gold-to-coast/",
+      "destination": "/gold-coast-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-bunbury/",
+      "destination": "/gold-coast-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-gold-to-coast/",
+      "destination": "/gold-coast-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-bundaberg/",
+      "destination": "/gold-coast-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-gold-to-coast/",
+      "destination": "/gold-coast-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-to-rockhampton/",
+      "destination": "/gold-coast-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-gold-to-coast/",
+      "destination": "/gold-coast-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-logan-to-city/",
+      "destination": "/canberra-logan-city/",
       "permanent": true
     },
     {
       "source": "/logan-city-to-canberra/",
-      "destination": "/canberra-to-logan-city/",
+      "destination": "/canberra-logan-city/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-newcastle/",
+      "destination": "/canberra-newcastle/",
       "permanent": true
     },
     {
       "source": "/newcastle-to-canberra/",
-      "destination": "/canberra-to-newcastle/",
+      "destination": "/canberra-newcastle/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-wollongong/",
+      "destination": "/canberra-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-canberra/",
-      "destination": "/canberra-to-wollongong/",
+      "destination": "/canberra-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-hobart/",
+      "destination": "/canberra-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-canberra/",
-      "destination": "/canberra-to-hobart/",
+      "destination": "/canberra-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-geelong/",
+      "destination": "/canberra-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-canberra/",
-      "destination": "/canberra-to-geelong/",
+      "destination": "/canberra-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-townsville/",
+      "destination": "/canberra-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-canberra/",
-      "destination": "/canberra-to-townsville/",
+      "destination": "/canberra-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-cairns/",
+      "destination": "/canberra-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-canberra/",
-      "destination": "/canberra-to-cairns/",
+      "destination": "/canberra-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-darwin/",
+      "destination": "/canberra-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-canberra/",
-      "destination": "/canberra-to-darwin/",
+      "destination": "/canberra-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-rockingham/",
+      "destination": "/canberra-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-canberra/",
-      "destination": "/canberra-to-rockingham/",
+      "destination": "/canberra-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-toowoomba/",
+      "destination": "/canberra-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-canberra/",
-      "destination": "/canberra-to-toowoomba/",
+      "destination": "/canberra-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-ballarat/",
+      "destination": "/canberra-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-canberra/",
-      "destination": "/canberra-to-ballarat/",
+      "destination": "/canberra-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-bendigo/",
+      "destination": "/canberra-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-canberra/",
-      "destination": "/canberra-to-bendigo/",
+      "destination": "/canberra-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-mandurah/",
+      "destination": "/canberra-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-canberra/",
-      "destination": "/canberra-to-mandurah/",
+      "destination": "/canberra-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-launceston/",
+      "destination": "/canberra-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-canberra/",
-      "destination": "/canberra-to-launceston/",
+      "destination": "/canberra-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-mackay/",
+      "destination": "/canberra-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-canberra/",
-      "destination": "/canberra-to-mackay/",
+      "destination": "/canberra-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-bunbury/",
+      "destination": "/canberra-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-canberra/",
-      "destination": "/canberra-to-bunbury/",
+      "destination": "/canberra-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-bundaberg/",
+      "destination": "/canberra-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-canberra/",
-      "destination": "/canberra-to-bundaberg/",
+      "destination": "/canberra-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-to-rockhampton/",
+      "destination": "/canberra-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-canberra/",
-      "destination": "/canberra-to-rockhampton/",
+      "destination": "/canberra-rockhampton/",
       "permanent": true
     },
     {
-      "source": "/newcastle-to-logan-city/",
-      "destination": "/logan-city-to-newcastle/",
+      "source": "/logan-city-to-newcastle/",
+      "destination": "/logan-city-newcastle/",
       "permanent": true
     },
     {
-      "source": "/wollongong-to-logan-city/",
-      "destination": "/logan-city-to-wollongong/",
+      "source": "/newcastle-logan-to-city/",
+      "destination": "/logan-city-newcastle/",
       "permanent": true
     },
     {
-      "source": "/hobart-to-logan-city/",
-      "destination": "/logan-city-to-hobart/",
+      "source": "/logan-city-to-wollongong/",
+      "destination": "/logan-city-wollongong/",
       "permanent": true
     },
     {
-      "source": "/geelong-to-logan-city/",
-      "destination": "/logan-city-to-geelong/",
+      "source": "/wollongong-logan-to-city/",
+      "destination": "/logan-city-wollongong/",
       "permanent": true
     },
     {
-      "source": "/townsville-to-logan-city/",
-      "destination": "/logan-city-to-townsville/",
+      "source": "/logan-city-to-hobart/",
+      "destination": "/logan-city-hobart/",
       "permanent": true
     },
     {
-      "source": "/cairns-to-logan-city/",
-      "destination": "/logan-city-to-cairns/",
+      "source": "/hobart-logan-to-city/",
+      "destination": "/logan-city-hobart/",
       "permanent": true
     },
     {
-      "source": "/darwin-to-logan-city/",
-      "destination": "/logan-city-to-darwin/",
+      "source": "/logan-city-to-geelong/",
+      "destination": "/logan-city-geelong/",
       "permanent": true
     },
     {
-      "source": "/rockingham-to-logan-city/",
-      "destination": "/logan-city-to-rockingham/",
+      "source": "/geelong-logan-to-city/",
+      "destination": "/logan-city-geelong/",
       "permanent": true
     },
     {
-      "source": "/toowoomba-to-logan-city/",
-      "destination": "/logan-city-to-toowoomba/",
+      "source": "/logan-city-to-townsville/",
+      "destination": "/logan-city-townsville/",
       "permanent": true
     },
     {
-      "source": "/ballarat-to-logan-city/",
-      "destination": "/logan-city-to-ballarat/",
+      "source": "/townsville-logan-to-city/",
+      "destination": "/logan-city-townsville/",
       "permanent": true
     },
     {
-      "source": "/bendigo-to-logan-city/",
-      "destination": "/logan-city-to-bendigo/",
+      "source": "/logan-city-to-cairns/",
+      "destination": "/logan-city-cairns/",
       "permanent": true
     },
     {
-      "source": "/mandurah-to-logan-city/",
-      "destination": "/logan-city-to-mandurah/",
+      "source": "/cairns-logan-to-city/",
+      "destination": "/logan-city-cairns/",
       "permanent": true
     },
     {
-      "source": "/launceston-to-logan-city/",
-      "destination": "/logan-city-to-launceston/",
+      "source": "/logan-city-to-darwin/",
+      "destination": "/logan-city-darwin/",
       "permanent": true
     },
     {
-      "source": "/mackay-to-logan-city/",
-      "destination": "/logan-city-to-mackay/",
+      "source": "/darwin-logan-to-city/",
+      "destination": "/logan-city-darwin/",
       "permanent": true
     },
     {
-      "source": "/bunbury-to-logan-city/",
-      "destination": "/logan-city-to-bunbury/",
+      "source": "/logan-city-to-rockingham/",
+      "destination": "/logan-city-rockingham/",
       "permanent": true
     },
     {
-      "source": "/bundaberg-to-logan-city/",
-      "destination": "/logan-city-to-bundaberg/",
+      "source": "/rockingham-logan-to-city/",
+      "destination": "/logan-city-rockingham/",
       "permanent": true
     },
     {
-      "source": "/rockhampton-to-logan-city/",
-      "destination": "/logan-city-to-rockhampton/",
+      "source": "/logan-city-to-toowoomba/",
+      "destination": "/logan-city-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-logan-to-city/",
+      "destination": "/logan-city-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-ballarat/",
+      "destination": "/logan-city-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-logan-to-city/",
+      "destination": "/logan-city-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-bendigo/",
+      "destination": "/logan-city-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-logan-to-city/",
+      "destination": "/logan-city-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-mandurah/",
+      "destination": "/logan-city-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-logan-to-city/",
+      "destination": "/logan-city-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-launceston/",
+      "destination": "/logan-city-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-logan-to-city/",
+      "destination": "/logan-city-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-mackay/",
+      "destination": "/logan-city-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-logan-to-city/",
+      "destination": "/logan-city-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-bunbury/",
+      "destination": "/logan-city-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-logan-to-city/",
+      "destination": "/logan-city-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-bundaberg/",
+      "destination": "/logan-city-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-logan-to-city/",
+      "destination": "/logan-city-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/logan-city-to-rockhampton/",
+      "destination": "/logan-city-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-logan-to-city/",
+      "destination": "/logan-city-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-wollongong/",
+      "destination": "/newcastle-wollongong/",
       "permanent": true
     },
     {
       "source": "/wollongong-to-newcastle/",
-      "destination": "/newcastle-to-wollongong/",
+      "destination": "/newcastle-wollongong/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-hobart/",
+      "destination": "/newcastle-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-newcastle/",
-      "destination": "/newcastle-to-hobart/",
+      "destination": "/newcastle-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-geelong/",
+      "destination": "/newcastle-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-newcastle/",
-      "destination": "/newcastle-to-geelong/",
+      "destination": "/newcastle-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-townsville/",
+      "destination": "/newcastle-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-newcastle/",
-      "destination": "/newcastle-to-townsville/",
+      "destination": "/newcastle-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-cairns/",
+      "destination": "/newcastle-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-newcastle/",
-      "destination": "/newcastle-to-cairns/",
+      "destination": "/newcastle-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-darwin/",
+      "destination": "/newcastle-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-newcastle/",
-      "destination": "/newcastle-to-darwin/",
+      "destination": "/newcastle-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-rockingham/",
+      "destination": "/newcastle-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-newcastle/",
-      "destination": "/newcastle-to-rockingham/",
+      "destination": "/newcastle-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-toowoomba/",
+      "destination": "/newcastle-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-newcastle/",
-      "destination": "/newcastle-to-toowoomba/",
+      "destination": "/newcastle-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-ballarat/",
+      "destination": "/newcastle-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-newcastle/",
-      "destination": "/newcastle-to-ballarat/",
+      "destination": "/newcastle-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-bendigo/",
+      "destination": "/newcastle-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-newcastle/",
-      "destination": "/newcastle-to-bendigo/",
+      "destination": "/newcastle-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-mandurah/",
+      "destination": "/newcastle-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-newcastle/",
-      "destination": "/newcastle-to-mandurah/",
+      "destination": "/newcastle-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-launceston/",
+      "destination": "/newcastle-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-newcastle/",
-      "destination": "/newcastle-to-launceston/",
+      "destination": "/newcastle-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-mackay/",
+      "destination": "/newcastle-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-newcastle/",
-      "destination": "/newcastle-to-mackay/",
+      "destination": "/newcastle-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-bunbury/",
+      "destination": "/newcastle-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-newcastle/",
-      "destination": "/newcastle-to-bunbury/",
+      "destination": "/newcastle-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-bundaberg/",
+      "destination": "/newcastle-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-newcastle/",
-      "destination": "/newcastle-to-bundaberg/",
+      "destination": "/newcastle-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-to-rockhampton/",
+      "destination": "/newcastle-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-newcastle/",
-      "destination": "/newcastle-to-rockhampton/",
+      "destination": "/newcastle-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-hobart/",
+      "destination": "/wollongong-hobart/",
       "permanent": true
     },
     {
       "source": "/hobart-to-wollongong/",
-      "destination": "/wollongong-to-hobart/",
+      "destination": "/wollongong-hobart/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-geelong/",
+      "destination": "/wollongong-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-wollongong/",
-      "destination": "/wollongong-to-geelong/",
+      "destination": "/wollongong-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-townsville/",
+      "destination": "/wollongong-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-wollongong/",
-      "destination": "/wollongong-to-townsville/",
+      "destination": "/wollongong-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-cairns/",
+      "destination": "/wollongong-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-wollongong/",
-      "destination": "/wollongong-to-cairns/",
+      "destination": "/wollongong-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-darwin/",
+      "destination": "/wollongong-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-wollongong/",
-      "destination": "/wollongong-to-darwin/",
+      "destination": "/wollongong-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-rockingham/",
+      "destination": "/wollongong-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-wollongong/",
-      "destination": "/wollongong-to-rockingham/",
+      "destination": "/wollongong-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-toowoomba/",
+      "destination": "/wollongong-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-wollongong/",
-      "destination": "/wollongong-to-toowoomba/",
+      "destination": "/wollongong-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-ballarat/",
+      "destination": "/wollongong-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-wollongong/",
-      "destination": "/wollongong-to-ballarat/",
+      "destination": "/wollongong-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-bendigo/",
+      "destination": "/wollongong-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-wollongong/",
-      "destination": "/wollongong-to-bendigo/",
+      "destination": "/wollongong-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-mandurah/",
+      "destination": "/wollongong-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-wollongong/",
-      "destination": "/wollongong-to-mandurah/",
+      "destination": "/wollongong-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-launceston/",
+      "destination": "/wollongong-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-wollongong/",
-      "destination": "/wollongong-to-launceston/",
+      "destination": "/wollongong-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-mackay/",
+      "destination": "/wollongong-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-wollongong/",
-      "destination": "/wollongong-to-mackay/",
+      "destination": "/wollongong-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-bunbury/",
+      "destination": "/wollongong-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-wollongong/",
-      "destination": "/wollongong-to-bunbury/",
+      "destination": "/wollongong-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-bundaberg/",
+      "destination": "/wollongong-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-wollongong/",
-      "destination": "/wollongong-to-bundaberg/",
+      "destination": "/wollongong-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-to-rockhampton/",
+      "destination": "/wollongong-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-wollongong/",
-      "destination": "/wollongong-to-rockhampton/",
+      "destination": "/wollongong-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-geelong/",
+      "destination": "/hobart-geelong/",
       "permanent": true
     },
     {
       "source": "/geelong-to-hobart/",
-      "destination": "/hobart-to-geelong/",
+      "destination": "/hobart-geelong/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-townsville/",
+      "destination": "/hobart-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-hobart/",
-      "destination": "/hobart-to-townsville/",
+      "destination": "/hobart-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-cairns/",
+      "destination": "/hobart-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-hobart/",
-      "destination": "/hobart-to-cairns/",
+      "destination": "/hobart-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-darwin/",
+      "destination": "/hobart-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-hobart/",
-      "destination": "/hobart-to-darwin/",
+      "destination": "/hobart-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-rockingham/",
+      "destination": "/hobart-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-hobart/",
-      "destination": "/hobart-to-rockingham/",
+      "destination": "/hobart-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-toowoomba/",
+      "destination": "/hobart-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-hobart/",
-      "destination": "/hobart-to-toowoomba/",
+      "destination": "/hobart-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-ballarat/",
+      "destination": "/hobart-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-hobart/",
-      "destination": "/hobart-to-ballarat/",
+      "destination": "/hobart-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-bendigo/",
+      "destination": "/hobart-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-hobart/",
-      "destination": "/hobart-to-bendigo/",
+      "destination": "/hobart-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-mandurah/",
+      "destination": "/hobart-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-hobart/",
-      "destination": "/hobart-to-mandurah/",
+      "destination": "/hobart-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-launceston/",
+      "destination": "/hobart-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-hobart/",
-      "destination": "/hobart-to-launceston/",
+      "destination": "/hobart-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-mackay/",
+      "destination": "/hobart-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-hobart/",
-      "destination": "/hobart-to-mackay/",
+      "destination": "/hobart-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-bunbury/",
+      "destination": "/hobart-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-hobart/",
-      "destination": "/hobart-to-bunbury/",
+      "destination": "/hobart-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-bundaberg/",
+      "destination": "/hobart-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-hobart/",
-      "destination": "/hobart-to-bundaberg/",
+      "destination": "/hobart-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-to-rockhampton/",
+      "destination": "/hobart-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-hobart/",
-      "destination": "/hobart-to-rockhampton/",
+      "destination": "/hobart-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-townsville/",
+      "destination": "/geelong-townsville/",
       "permanent": true
     },
     {
       "source": "/townsville-to-geelong/",
-      "destination": "/geelong-to-townsville/",
+      "destination": "/geelong-townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-cairns/",
+      "destination": "/geelong-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-geelong/",
-      "destination": "/geelong-to-cairns/",
+      "destination": "/geelong-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-darwin/",
+      "destination": "/geelong-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-geelong/",
-      "destination": "/geelong-to-darwin/",
+      "destination": "/geelong-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-rockingham/",
+      "destination": "/geelong-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-geelong/",
-      "destination": "/geelong-to-rockingham/",
+      "destination": "/geelong-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-toowoomba/",
+      "destination": "/geelong-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-geelong/",
-      "destination": "/geelong-to-toowoomba/",
+      "destination": "/geelong-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-ballarat/",
+      "destination": "/geelong-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-geelong/",
-      "destination": "/geelong-to-ballarat/",
+      "destination": "/geelong-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-bendigo/",
+      "destination": "/geelong-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-geelong/",
-      "destination": "/geelong-to-bendigo/",
+      "destination": "/geelong-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-mandurah/",
+      "destination": "/geelong-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-geelong/",
-      "destination": "/geelong-to-mandurah/",
+      "destination": "/geelong-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-launceston/",
+      "destination": "/geelong-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-geelong/",
-      "destination": "/geelong-to-launceston/",
+      "destination": "/geelong-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-mackay/",
+      "destination": "/geelong-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-geelong/",
-      "destination": "/geelong-to-mackay/",
+      "destination": "/geelong-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-bunbury/",
+      "destination": "/geelong-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-geelong/",
-      "destination": "/geelong-to-bunbury/",
+      "destination": "/geelong-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-bundaberg/",
+      "destination": "/geelong-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-geelong/",
-      "destination": "/geelong-to-bundaberg/",
+      "destination": "/geelong-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-to-rockhampton/",
+      "destination": "/geelong-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-geelong/",
-      "destination": "/geelong-to-rockhampton/",
+      "destination": "/geelong-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-cairns/",
+      "destination": "/townsville-cairns/",
       "permanent": true
     },
     {
       "source": "/cairns-to-townsville/",
-      "destination": "/townsville-to-cairns/",
+      "destination": "/townsville-cairns/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-darwin/",
+      "destination": "/townsville-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-townsville/",
-      "destination": "/townsville-to-darwin/",
+      "destination": "/townsville-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-rockingham/",
+      "destination": "/townsville-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-townsville/",
-      "destination": "/townsville-to-rockingham/",
+      "destination": "/townsville-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-toowoomba/",
+      "destination": "/townsville-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-townsville/",
-      "destination": "/townsville-to-toowoomba/",
+      "destination": "/townsville-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-ballarat/",
+      "destination": "/townsville-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-townsville/",
-      "destination": "/townsville-to-ballarat/",
+      "destination": "/townsville-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-bendigo/",
+      "destination": "/townsville-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-townsville/",
-      "destination": "/townsville-to-bendigo/",
+      "destination": "/townsville-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-mandurah/",
+      "destination": "/townsville-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-townsville/",
-      "destination": "/townsville-to-mandurah/",
+      "destination": "/townsville-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-launceston/",
+      "destination": "/townsville-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-townsville/",
-      "destination": "/townsville-to-launceston/",
+      "destination": "/townsville-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-mackay/",
+      "destination": "/townsville-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-townsville/",
-      "destination": "/townsville-to-mackay/",
+      "destination": "/townsville-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-bunbury/",
+      "destination": "/townsville-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-townsville/",
-      "destination": "/townsville-to-bunbury/",
+      "destination": "/townsville-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-bundaberg/",
+      "destination": "/townsville-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-townsville/",
-      "destination": "/townsville-to-bundaberg/",
+      "destination": "/townsville-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-to-rockhampton/",
+      "destination": "/townsville-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-townsville/",
-      "destination": "/townsville-to-rockhampton/",
+      "destination": "/townsville-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-darwin/",
+      "destination": "/cairns-darwin/",
       "permanent": true
     },
     {
       "source": "/darwin-to-cairns/",
-      "destination": "/cairns-to-darwin/",
+      "destination": "/cairns-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-rockingham/",
+      "destination": "/cairns-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-cairns/",
-      "destination": "/cairns-to-rockingham/",
+      "destination": "/cairns-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-toowoomba/",
+      "destination": "/cairns-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-cairns/",
-      "destination": "/cairns-to-toowoomba/",
+      "destination": "/cairns-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-ballarat/",
+      "destination": "/cairns-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-cairns/",
-      "destination": "/cairns-to-ballarat/",
+      "destination": "/cairns-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-bendigo/",
+      "destination": "/cairns-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-cairns/",
-      "destination": "/cairns-to-bendigo/",
+      "destination": "/cairns-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-mandurah/",
+      "destination": "/cairns-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-cairns/",
-      "destination": "/cairns-to-mandurah/",
+      "destination": "/cairns-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-launceston/",
+      "destination": "/cairns-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-cairns/",
-      "destination": "/cairns-to-launceston/",
+      "destination": "/cairns-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-mackay/",
+      "destination": "/cairns-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-cairns/",
-      "destination": "/cairns-to-mackay/",
+      "destination": "/cairns-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-bunbury/",
+      "destination": "/cairns-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-cairns/",
-      "destination": "/cairns-to-bunbury/",
+      "destination": "/cairns-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-bundaberg/",
+      "destination": "/cairns-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-cairns/",
-      "destination": "/cairns-to-bundaberg/",
+      "destination": "/cairns-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/cairns-to-rockhampton/",
+      "destination": "/cairns-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-cairns/",
-      "destination": "/cairns-to-rockhampton/",
+      "destination": "/cairns-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-rockingham/",
+      "destination": "/darwin-rockingham/",
       "permanent": true
     },
     {
       "source": "/rockingham-to-darwin/",
-      "destination": "/darwin-to-rockingham/",
+      "destination": "/darwin-rockingham/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-toowoomba/",
+      "destination": "/darwin-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-darwin/",
-      "destination": "/darwin-to-toowoomba/",
+      "destination": "/darwin-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-ballarat/",
+      "destination": "/darwin-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-darwin/",
-      "destination": "/darwin-to-ballarat/",
+      "destination": "/darwin-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-bendigo/",
+      "destination": "/darwin-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-darwin/",
-      "destination": "/darwin-to-bendigo/",
+      "destination": "/darwin-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-mandurah/",
+      "destination": "/darwin-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-darwin/",
-      "destination": "/darwin-to-mandurah/",
+      "destination": "/darwin-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-launceston/",
+      "destination": "/darwin-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-darwin/",
-      "destination": "/darwin-to-launceston/",
+      "destination": "/darwin-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-mackay/",
+      "destination": "/darwin-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-darwin/",
-      "destination": "/darwin-to-mackay/",
+      "destination": "/darwin-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-bunbury/",
+      "destination": "/darwin-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-darwin/",
-      "destination": "/darwin-to-bunbury/",
+      "destination": "/darwin-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-bundaberg/",
+      "destination": "/darwin-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-darwin/",
-      "destination": "/darwin-to-bundaberg/",
+      "destination": "/darwin-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-to-rockhampton/",
+      "destination": "/darwin-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-darwin/",
-      "destination": "/darwin-to-rockhampton/",
+      "destination": "/darwin-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-toowoomba/",
+      "destination": "/rockingham-toowoomba/",
       "permanent": true
     },
     {
       "source": "/toowoomba-to-rockingham/",
-      "destination": "/rockingham-to-toowoomba/",
+      "destination": "/rockingham-toowoomba/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-ballarat/",
+      "destination": "/rockingham-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-rockingham/",
-      "destination": "/rockingham-to-ballarat/",
+      "destination": "/rockingham-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-bendigo/",
+      "destination": "/rockingham-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-rockingham/",
-      "destination": "/rockingham-to-bendigo/",
+      "destination": "/rockingham-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-mandurah/",
+      "destination": "/rockingham-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-rockingham/",
-      "destination": "/rockingham-to-mandurah/",
+      "destination": "/rockingham-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-launceston/",
+      "destination": "/rockingham-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-rockingham/",
-      "destination": "/rockingham-to-launceston/",
+      "destination": "/rockingham-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-mackay/",
+      "destination": "/rockingham-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-rockingham/",
-      "destination": "/rockingham-to-mackay/",
+      "destination": "/rockingham-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-bunbury/",
+      "destination": "/rockingham-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-rockingham/",
-      "destination": "/rockingham-to-bunbury/",
+      "destination": "/rockingham-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-bundaberg/",
+      "destination": "/rockingham-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-rockingham/",
-      "destination": "/rockingham-to-bundaberg/",
+      "destination": "/rockingham-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/rockingham-to-rockhampton/",
+      "destination": "/rockingham-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-rockingham/",
-      "destination": "/rockingham-to-rockhampton/",
+      "destination": "/rockingham-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-ballarat/",
+      "destination": "/toowoomba-ballarat/",
       "permanent": true
     },
     {
       "source": "/ballarat-to-toowoomba/",
-      "destination": "/toowoomba-to-ballarat/",
+      "destination": "/toowoomba-ballarat/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-bendigo/",
+      "destination": "/toowoomba-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-toowoomba/",
-      "destination": "/toowoomba-to-bendigo/",
+      "destination": "/toowoomba-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-mandurah/",
+      "destination": "/toowoomba-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-toowoomba/",
-      "destination": "/toowoomba-to-mandurah/",
+      "destination": "/toowoomba-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-launceston/",
+      "destination": "/toowoomba-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-toowoomba/",
-      "destination": "/toowoomba-to-launceston/",
+      "destination": "/toowoomba-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-mackay/",
+      "destination": "/toowoomba-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-toowoomba/",
-      "destination": "/toowoomba-to-mackay/",
+      "destination": "/toowoomba-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-bunbury/",
+      "destination": "/toowoomba-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-toowoomba/",
-      "destination": "/toowoomba-to-bunbury/",
+      "destination": "/toowoomba-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-bundaberg/",
+      "destination": "/toowoomba-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-toowoomba/",
-      "destination": "/toowoomba-to-bundaberg/",
+      "destination": "/toowoomba-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-to-rockhampton/",
+      "destination": "/toowoomba-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-toowoomba/",
-      "destination": "/toowoomba-to-rockhampton/",
+      "destination": "/toowoomba-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-bendigo/",
+      "destination": "/ballarat-bendigo/",
       "permanent": true
     },
     {
       "source": "/bendigo-to-ballarat/",
-      "destination": "/ballarat-to-bendigo/",
+      "destination": "/ballarat-bendigo/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-mandurah/",
+      "destination": "/ballarat-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-ballarat/",
-      "destination": "/ballarat-to-mandurah/",
+      "destination": "/ballarat-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-launceston/",
+      "destination": "/ballarat-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-ballarat/",
-      "destination": "/ballarat-to-launceston/",
+      "destination": "/ballarat-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-mackay/",
+      "destination": "/ballarat-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-ballarat/",
-      "destination": "/ballarat-to-mackay/",
+      "destination": "/ballarat-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-bunbury/",
+      "destination": "/ballarat-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-ballarat/",
-      "destination": "/ballarat-to-bunbury/",
+      "destination": "/ballarat-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-bundaberg/",
+      "destination": "/ballarat-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-ballarat/",
-      "destination": "/ballarat-to-bundaberg/",
+      "destination": "/ballarat-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-to-rockhampton/",
+      "destination": "/ballarat-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-ballarat/",
-      "destination": "/ballarat-to-rockhampton/",
+      "destination": "/ballarat-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-mandurah/",
+      "destination": "/bendigo-mandurah/",
       "permanent": true
     },
     {
       "source": "/mandurah-to-bendigo/",
-      "destination": "/bendigo-to-mandurah/",
+      "destination": "/bendigo-mandurah/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-launceston/",
+      "destination": "/bendigo-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-bendigo/",
-      "destination": "/bendigo-to-launceston/",
+      "destination": "/bendigo-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-mackay/",
+      "destination": "/bendigo-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-bendigo/",
-      "destination": "/bendigo-to-mackay/",
+      "destination": "/bendigo-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-bunbury/",
+      "destination": "/bendigo-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-bendigo/",
-      "destination": "/bendigo-to-bunbury/",
+      "destination": "/bendigo-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-bundaberg/",
+      "destination": "/bendigo-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-bendigo/",
-      "destination": "/bendigo-to-bundaberg/",
+      "destination": "/bendigo-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-to-rockhampton/",
+      "destination": "/bendigo-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-bendigo/",
-      "destination": "/bendigo-to-rockhampton/",
+      "destination": "/bendigo-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-to-launceston/",
+      "destination": "/mandurah-launceston/",
       "permanent": true
     },
     {
       "source": "/launceston-to-mandurah/",
-      "destination": "/mandurah-to-launceston/",
+      "destination": "/mandurah-launceston/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-to-mackay/",
+      "destination": "/mandurah-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-mandurah/",
-      "destination": "/mandurah-to-mackay/",
+      "destination": "/mandurah-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-to-bunbury/",
+      "destination": "/mandurah-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-mandurah/",
-      "destination": "/mandurah-to-bunbury/",
+      "destination": "/mandurah-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-to-bundaberg/",
+      "destination": "/mandurah-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-mandurah/",
-      "destination": "/mandurah-to-bundaberg/",
+      "destination": "/mandurah-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-to-rockhampton/",
+      "destination": "/mandurah-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-mandurah/",
-      "destination": "/mandurah-to-rockhampton/",
+      "destination": "/mandurah-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-to-mackay/",
+      "destination": "/launceston-mackay/",
       "permanent": true
     },
     {
       "source": "/mackay-to-launceston/",
-      "destination": "/launceston-to-mackay/",
+      "destination": "/launceston-mackay/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-to-bunbury/",
+      "destination": "/launceston-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-launceston/",
-      "destination": "/launceston-to-bunbury/",
+      "destination": "/launceston-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-to-bundaberg/",
+      "destination": "/launceston-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-launceston/",
-      "destination": "/launceston-to-bundaberg/",
+      "destination": "/launceston-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-to-rockhampton/",
+      "destination": "/launceston-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-launceston/",
-      "destination": "/launceston-to-rockhampton/",
+      "destination": "/launceston-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-to-bunbury/",
+      "destination": "/mackay-bunbury/",
       "permanent": true
     },
     {
       "source": "/bunbury-to-mackay/",
-      "destination": "/mackay-to-bunbury/",
+      "destination": "/mackay-bunbury/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-to-bundaberg/",
+      "destination": "/mackay-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-mackay/",
-      "destination": "/mackay-to-bundaberg/",
+      "destination": "/mackay-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay-to-rockhampton/",
+      "destination": "/mackay-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-mackay/",
-      "destination": "/mackay-to-rockhampton/",
+      "destination": "/mackay-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-to-bundaberg/",
+      "destination": "/bunbury-bundaberg/",
       "permanent": true
     },
     {
       "source": "/bundaberg-to-bunbury/",
-      "destination": "/bunbury-to-bundaberg/",
+      "destination": "/bunbury-bundaberg/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury-to-rockhampton/",
+      "destination": "/bunbury-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-bunbury/",
-      "destination": "/bunbury-to-rockhampton/",
+      "destination": "/bunbury-rockhampton/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg-to-rockhampton/",
+      "destination": "/bundaberg-rockhampton/",
       "permanent": true
     },
     {
       "source": "/rockhampton-to-bundaberg/",
-      "destination": "/bundaberg-to-rockhampton/",
+      "destination": "/bundaberg-rockhampton/",
       "permanent": true
     }
   ],
