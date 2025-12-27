@@ -92,34 +92,23 @@ const popularRoutes = [
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">2.1M</div><p
-            class="text-sm text-gray-600"
-          >
-            Perth Population
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">2.1M</div>
+          <p class="text-sm text-gray-600">Perth Population</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">4,000km</div><p
-            class="text-sm text-gray-600"
-          >
-            To Sydney (we do it weekly)
-          </p>
+          <div class="text-4xl font-black text-green-600 mb-2">{formatMigration('WA')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div><p
-            class="text-sm text-gray-600"
-          >
-            Services All Capitals
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div>
+          <p class="text-sm text-gray-600">Services All Capitals</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">60%</div><p
-            class="text-sm text-gray-600"
-          >
-            Typical Savings
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">60%</div>
+          <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 

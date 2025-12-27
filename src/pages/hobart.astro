@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
+import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
 const pageFacts = {
   service: 'Interstate backloading',
@@ -75,34 +76,23 @@ const popularRoutes = [
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">⛴️</div><p
-            class="text-sm text-gray-600"
-          >
-            Ferry Crossing Included
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">⛴️</div>
+          <p class="text-sm text-gray-600">Ferry Crossing Included</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">🌿</div><p
-            class="text-sm text-gray-600"
-          >
-            Plant Quarantine Experts
-          </p>
+          <div class="text-4xl font-black text-orange-500 mb-2">{formatMigration('TAS')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div><p
-            class="text-sm text-gray-600"
-          >
-            Services to Melbourne
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div>
+          <p class="text-sm text-gray-600">Services to Melbourne</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">60%</div><p
-            class="text-sm text-gray-600"
-          >
-            Typical Savings
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">60%</div>
+          <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 

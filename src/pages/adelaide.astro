@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import { BRAND } from '../utils/brand';
+import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
 const pageFacts = {
   service: 'Interstate backloading',
@@ -70,7 +71,8 @@ const popularRoutes = [
         <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
           <div class="flex items-center gap-2">
             <span class="text-green-400">✓</span><span
-              >{BRAND.yearsInBusiness} Years Experience</span>
+              >{BRAND.yearsInBusiness} Years Experience</span
+            >
           </div>
           <div class="flex items-center gap-2">
             <span class="text-green-400">✓</span><span>Transit Insurance Included</span>
@@ -84,34 +86,23 @@ const popularRoutes = [
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">1.4M</div><p
-            class="text-sm text-gray-600"
-          >
-            Adelaide Population
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">1.4M</div>
+          <p class="text-sm text-gray-600">Adelaide Population</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">🗺️</div><p
-            class="text-sm text-gray-600"
-          >
-            Central East-West Hub
-          </p>
+          <div class="text-4xl font-black text-orange-500 mb-2">{formatMigration('SA')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div><p
-            class="text-sm text-gray-600"
-          >
-            Services All Capitals
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div>
+          <p class="text-sm text-gray-600">Services All Capitals</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">60%</div><p
-            class="text-sm text-gray-600"
-          >
-            Typical Savings
-          </p>
+          <div class="text-4xl font-black text-brand-red mb-2">60%</div>
+          <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 

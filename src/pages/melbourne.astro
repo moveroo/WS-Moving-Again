@@ -106,8 +106,8 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Melbourne Population</p>
         </div>
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">#1</div>
-          <p class="text-sm text-gray-600">Busiest Corridor (Mel↔Syd)</p>
+          <div class="text-4xl font-black text-yellow-500 mb-2">{formatMigration('VIC')}</div>
+          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">Daily</div>
@@ -118,6 +118,7 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
+      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 
