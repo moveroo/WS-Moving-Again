@@ -1,5 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import Definitions from '../components/Definitions.astro';
+
+// Machine-readable facts for LLM extraction
+const pageFacts = {
+  service: 'Interstate car transport',
+  coverage: 'Australia-wide',
+  typical_cost_range: '$500-$1,800+',
+  typical_transit_time: '2-10 business days',
+  transport_types: ['open carrier', 'enclosed carrier'],
+  delivery_options: ['door-to-door', 'depot-to-depot'],
+  transit_insurance_included: true,
+  contact: '1300 668 464',
+  restrictions: ['personal items in vehicle', 'full fuel tank'],
+};
+
+// Key term definitions for LLM extraction
+const definitions = [
+  {
+    term: 'Open transport',
+    definition:
+      'Vehicles travel on multi-car carriers exposed to weather. The most affordable option, suitable for standard daily-driver vehicles.',
+  },
+  {
+    term: 'Enclosed transport',
+    definition:
+      'Vehicles travel inside covered trailers, protected from weather and road debris. Costs 30-50% more than open transport. Recommended for luxury, classic, or high-value vehicles.',
+  },
+  {
+    term: 'Non-drivable vehicle',
+    definition:
+      'A vehicle that cannot be driven onto or off the transport carrier under its own power. Requires winch-loading at additional cost ($100-300).',
+  },
+  {
+    term: 'Door-to-door transport',
+    definition:
+      'Carrier picks up the vehicle from your address and delivers to the destination address. More convenient but costs more than depot-to-depot.',
+  },
+  {
+    term: 'Transit insurance',
+    definition:
+      'Basic coverage included with all vehicle transport, covering fire, collision, and overturning of the truck only. Does not cover stone chips, scratches, or loading damage.',
+  },
+];
 
 const faqQuestions = [
   {
@@ -566,6 +610,12 @@ const routes = [
       </div>
     </div>
   </section>
+
+  <!-- Key Definitions (LLM-optimized) -->
+  <Definitions terms={definitions} />
+
+  <!-- Machine-readable facts for AI extraction -->
+  <FactBox facts={pageFacts} />
 
   <!-- CTA Section -->
   <section class="py-20 bg-brand-dark">

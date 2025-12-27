@@ -1,5 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import Definitions from '../components/Definitions.astro';
+
+// Machine-readable facts for LLM extraction
+const pageFacts = {
+  service: 'Interstate moving',
+  coverage: 'Australia-wide',
+  typical_cost_range: '$1,500-$8,000+',
+  typical_transit_time: '1-8 business days',
+  backloading_savings: '40-60%',
+  transit_insurance_included: true,
+  door_to_door: true,
+  contact: '1300 668 464',
+  restrictions: ['hazardous materials', 'live plants', 'perishable food', 'gas bottles'],
+};
+
+// Key term definitions for LLM extraction
+const definitions = [
+  {
+    term: 'Interstate moving',
+    definition:
+      'Relocating household goods between different Australian states or territories. Requires professional logistics due to distance and regulations.',
+  },
+  {
+    term: 'Backloading',
+    definition:
+      'Sharing truck space on vehicles returning from a delivery. Saves 40-60% compared to dedicated truck moves because the truck is already making the journey.',
+  },
+  {
+    term: 'Cubic meters (m\u00b3)',
+    definition:
+      'The volume measurement used to quote interstate moves. Based on the space your items take up in the truck, not their weight.',
+  },
+  {
+    term: 'Transit insurance',
+    definition:
+      'Basic coverage included with all moves, covering fire, collision, and overturning only. Does not cover breakage or handling damage.',
+  },
+  {
+    term: 'Quarantine restrictions',
+    definition:
+      'Rules preventing certain items (plants, soil, produce) from entering states like Western Australia and Tasmania to protect local ecosystems.',
+  },
+];
 
 const faqQuestions = [
   {
@@ -702,6 +746,12 @@ const timeline = [
       </div>
     </div>
   </section>
+
+  <!-- Key Definitions (LLM-optimized) -->
+  <Definitions terms={definitions} />
+
+  <!-- Machine-readable facts for AI extraction -->
+  <FactBox facts={pageFacts} />
 
   <!-- CTA Section -->
   <section class="py-20 bg-brand-dark">
