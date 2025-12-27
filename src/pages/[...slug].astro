@@ -34,6 +34,22 @@ const metaDescription =
   route.data.metaDescription ??
   `Affordable backloading from ${route.data.origin} to ${route.data.destination}. Save up to 60% on your interstate move with Moving Again's shared truck service.`;
 
+// Machine-readable facts for LLM extraction
+const routeFacts = {
+  service: 'Interstate backloading',
+  route: `${route.data.origin} to ${route.data.destination}`,
+  origin: route.data.origin,
+  origin_state: route.data.originState,
+  destination: route.data.destination,
+  destination_state: route.data.destinationState,
+  transit_time: route.data.transitDays || '3-7 business days',
+  typical_savings: '40-60%',
+  auto_quote_available: true,
+  transit_insurance_included: true,
+  door_to_door: true,
+  contact: '1300 668 464',
+};
+
 // Structured data for SEO
 const schemaData = {
   '@context': 'https://schema.org',
@@ -69,6 +85,8 @@ const faqSchema = {
 <Layout title={route.data.title} description={metaDescription}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <!-- Machine-readable facts for LLM extraction -->
+  <script type="application/json" id="route-facts" set:html={JSON.stringify(routeFacts)} />
 
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">

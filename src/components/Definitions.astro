@@ -1,0 +1,39 @@
+---
+/**
+ * Definitions.astro
+ * Renders a definitions section with Schema.org DefinedTermSet markup.
+ * LLMs can extract term definitions from this structured format.
+ */
+interface Props {
+  terms: Array<{ term: string; definition: string }>;
+  title?: string;
+}
+
+const { terms, title = 'Key Definitions' } = Astro.props;
+---
+
+<section
+  class="definitions my-12 bg-gray-50 rounded-xl p-8"
+  itemscope
+  itemtype="https://schema.org/DefinedTermSet"
+>
+  <h2 class="text-2xl font-bold text-brand-dark mb-6">{title}</h2>
+  <dl class="space-y-4">
+    {
+      terms.map(({ term, definition }) => (
+        <div
+          class="border-l-4 border-brand-red pl-4"
+          itemscope
+          itemtype="https://schema.org/DefinedTerm"
+        >
+          <dt class="font-bold text-brand-dark" itemprop="name">
+            {term}
+          </dt>
+          <dd class="text-gray-600 mt-1" itemprop="description">
+            {definition}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>

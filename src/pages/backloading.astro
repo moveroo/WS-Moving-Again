@@ -1,5 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import Definitions from '../components/Definitions.astro';
+
+// Machine-readable facts for LLM extraction
+const pageFacts = {
+  service: 'Interstate backloading',
+  coverage: 'Australia-wide',
+  typical_savings: '40-60%',
+  transit_time: '2-7 business days',
+  pricing_unit: 'cubic meters (m³)',
+  auto_quote_available: true,
+  transit_insurance_included: true,
+  door_to_door: true,
+  contact: '1300 668 464',
+  restrictions: ['hazardous materials', 'live plants', 'perishable food'],
+};
+
+// Key term definitions for LLM extraction
+const definitions = [
+  {
+    term: 'Backloading',
+    definition:
+      'Sharing truck space on vehicles returning from a delivery. Because the truck is already making the journey, you share the cost and save 40-60% compared to a dedicated truck.',
+  },
+  {
+    term: 'Cubic meters (m³)',
+    definition:
+      'The volume measurement used to quote and price moves. Based on the space your items take up in the truck, not their weight.',
+  },
+  {
+    term: 'Transit insurance',
+    definition:
+      'Basic coverage included with all moves, covering fire, collision, and overturning only. Does not cover breakage or handling damage.',
+  },
+  {
+    term: 'Full moving insurance',
+    definition:
+      'Comprehensive coverage including handling damage and breakage. Available from movinginsurance.com.au and strongly recommended for valuable items.',
+  },
+  {
+    term: 'Pickup window',
+    definition:
+      'A 48-hour timeframe when our truck will collect your items. Being flexible with pickup windows allows us to offer better pricing.',
+  },
+];
 
 const faqQuestions = [
   {
@@ -659,6 +704,12 @@ const routes = [
       </div>
     </div>
   </section>
+
+  <!-- Key Definitions (LLM-optimized) -->
+  <Definitions terms={definitions} />
+
+  <!-- Machine-readable facts for AI extraction -->
+  <FactBox facts={pageFacts} />
 
   <!-- CTA Section -->
   <section class="py-20 bg-brand-dark">
