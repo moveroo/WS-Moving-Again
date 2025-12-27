@@ -42,7 +42,12 @@
     },
     {
       "source": "/removalist-quotes/",
-      "destination": "https://removalistquotes.movingagain.com.au/quote/household",
+      "destination": "/backloading/",
+      "permanent": true
+    },
+    {
+      "source": "/backloading-quotes/",
+      "destination": "/backloading/",
       "permanent": true
     },
     {
