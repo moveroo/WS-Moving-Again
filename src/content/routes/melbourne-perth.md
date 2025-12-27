@@ -8,7 +8,7 @@ destination: Perth
 originState: VIC
 destinationState: WA
 distanceKm: 3410
-transitDays: "10-14 business days"
+transitDays: '10-14 business days'
 canonicalUrl: https://movingagain.com.au/melbourne-perth/
 relatedSlugs:
   - perth-melbourne
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets

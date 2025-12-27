@@ -8,7 +8,7 @@ destination: Bunbury
 originState: WA
 destinationState: WA
 distanceKm: 175
-transitDays: "2-4 business days"
+transitDays: '2-4 business days'
 canonicalUrl: https://movingagain.com.au/perth-bunbury/
 relatedSlugs:
   - bunbury-perth
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets

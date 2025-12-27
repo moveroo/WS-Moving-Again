@@ -8,7 +8,7 @@ destination: Darwin
 originState: SA
 destinationState: NT
 distanceKm: 3030
-transitDays: "10-14 business days"
+transitDays: '10-14 business days'
 canonicalUrl: https://movingagain.com.au/adelaide-darwin/
 relatedSlugs:
   - darwin-adelaide
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets
