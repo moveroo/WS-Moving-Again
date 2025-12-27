@@ -5,15 +5,6 @@ export interface FAQ {
   answer: string;
 }
 
-interface RouteData {
-  origin: string;
-  destination: string;
-  originState: string;
-  destinationState: string;
-  distanceKm?: number;
-  transitDays?: string;
-}
-
 // State name mapping
 const STATE_NAMES: Record<string, string> = {
   'NSW': 'New South Wales',

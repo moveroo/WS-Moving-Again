@@ -30,7 +30,6 @@ const faqs = generateFAQsForRoute(route);
 const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 3);
 const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 3);
 
-const canonicalUrl = route.data.canonicalUrl ?? `https://movingagain.com.au/${route.data.slugFs}/`;
 const metaDescription = route.data.metaDescription ?? 
   `Affordable backloading from ${route.data.origin} to ${route.data.destination}. Save up to 60% on your interstate move with Moving Again's shared truck service.`;
 
