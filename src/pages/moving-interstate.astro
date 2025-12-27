@@ -102,6 +102,22 @@ const routes = [
   { from: 'Brisbane', to: 'Gold Coast', distance: '80km', days: 'Same day', frequency: 'Daily' },
 ];
 
+// Map of cities that have dedicated pages
+const cityPages: Record<string, string> = {
+  Sydney: '/sydney/',
+  Melbourne: '/melbourne/',
+  Brisbane: '/brisbane/',
+  Perth: '/perth/',
+  Adelaide: '/adelaide/',
+  Hobart: '/hobart/',
+  Darwin: '/darwin/',
+  Canberra: '/canberra/',
+  Townsville: '/townsville/',
+};
+
+// Helper to get city link or just the name
+const getCityLink = (city: string) => cityPages[city] || null;
+
 const timeline = [
   {
     weeks: '8-6 weeks',
@@ -416,7 +432,21 @@ const timeline = [
               routes.map((route) => (
                 <tr class="hover:bg-gray-50">
                   <td class="p-4 font-medium">
-                    {route.from} ↔ {route.to}
+                    {getCityLink(route.from) ? (
+                      <a href={getCityLink(route.from)} class="text-brand-red hover:underline">
+                        {route.from}
+                      </a>
+                    ) : (
+                      route.from
+                    )}{' '}
+                    ↔{' '}
+                    {getCityLink(route.to) ? (
+                      <a href={getCityLink(route.to)} class="text-brand-red hover:underline">
+                        {route.to}
+                      </a>
+                    ) : (
+                      route.to
+                    )}
                   </td>
                   <td class="p-4 text-center text-gray-600">{route.distance}</td>
                   <td class="p-4 text-center text-gray-600">{route.days} days</td>
