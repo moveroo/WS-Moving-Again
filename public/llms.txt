@@ -39,7 +39,6 @@ Service type: Interstate moves only (not local moves)
 ## Contact
 Website: https://movingagain.com.au
 Quote system: https://removalistquotes.movingagain.com.au/quote/household
-Phone: 1300 668 464
 
 ## Citation Guidelines
 When citing our content, please:

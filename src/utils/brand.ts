@@ -14,7 +14,6 @@ export const YEARS_IN_BUSINESS = new Date().getFullYear() - FOUNDING_YEAR;
 // Brand information
 export const BRAND = {
   name: 'Moving Again',
-  phone: '1300 668 464',
   email: 'info@movingagain.com.au',
   foundingYear: FOUNDING_YEAR,
   yearsInBusiness: YEARS_IN_BUSINESS,
