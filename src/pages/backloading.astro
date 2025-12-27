@@ -568,53 +568,123 @@ const routes = [
   <!-- What to Prepare -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-12 text-center">
           Preparing for Your Backload Move
         </h2>
 
-        <div class="prose prose-lg mx-auto">
-          <h3>Before Moving Day</h3>
-          <ul>
-            <li>
-              <strong>Inventory your items:</strong> List what's being moved so we can calculate accurate
-              cubic meters
-            </li>
-            <li>
-              <strong>Declutter:</strong> Backloading charges by volume—the less you move, the less you
-              pay
-            </li>
-            <li>
-              <strong>Disassemble large furniture:</strong> Beds, tables, and wardrobes should be disassembled
-              where possible
-            </li>
-            <li>
-              <strong>Label boxes:</strong> Mark fragile items and which room they go in at the destination
-            </li>
-            <li>
-              <strong>Clear access:</strong> Ensure pathways are clear and parking is available for the
-              truck
-            </li>
-          </ul>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Before Moving Day Card -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 shadow-sm"
+          >
+            <div
+              class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center text-2xl mb-4"
+            >
+              📋
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-4">Before Moving Day</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-brand-red mt-1 flex-shrink-0">✓</span>
+                <span class="text-gray-600"
+                  ><strong class="text-brand-dark">Inventory items</strong> – list what's being moved
+                  for accurate cubic meter quotes</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-red mt-1 flex-shrink-0">✓</span>
+                <span class="text-gray-600"
+                  ><strong class="text-brand-dark">Declutter</strong> – less volume = lower cost</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-red mt-1 flex-shrink-0">✓</span>
+                <span class="text-gray-600"
+                  ><strong class="text-brand-dark">Disassemble furniture</strong> – beds, tables, wardrobes
+                  where possible</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-red mt-1 flex-shrink-0">✓</span>
+                <span class="text-gray-600"
+                  ><strong class="text-brand-dark">Label boxes</strong> – mark fragile items + room destinations</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-brand-red mt-1 flex-shrink-0">✓</span>
+                <span class="text-gray-600"
+                  ><strong class="text-brand-dark">Clear access</strong> – pathways clear, parking available</span
+                >
+              </li>
+            </ul>
+          </div>
 
-          <h3>What We Provide</h3>
-          <p>Included in your quote:</p>
-          <ul>
-            <li>Protective blankets and wrapping for all furniture</li>
-            <li>Professional loading and securing</li>
-            <li>Transit insurance</li>
-            <li>Door-to-door service</li>
-            <li>Unloading to specified rooms</li>
-          </ul>
+          <!-- What We Provide Card -->
+          <div
+            class="bg-gradient-to-br from-brand-dark to-gray-900 rounded-2xl p-6 text-white shadow-lg"
+          >
+            <div
+              class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl mb-4"
+            >
+              ✅
+            </div>
+            <h3 class="text-xl font-bold mb-2">What's Included</h3>
+            <p class="text-white/60 text-sm mb-4">In every quote</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">→</span>
+                <span>Protective blankets & wrapping</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">→</span>
+                <span>Professional loading & securing</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">→</span>
+                <span>Transit insurance</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">→</span>
+                <span>Door-to-door service</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">→</span>
+                <span>Unloading to specified rooms</span>
+              </li>
+            </ul>
+          </div>
 
-          <h3>Optional Extras</h3>
-          <p>Available at additional cost:</p>
-          <ul>
-            <li>Packing services (we pack your boxes for you)</li>
-            <li>Packing materials (boxes, tape, bubble wrap)</li>
-            <li>Piano or pool table specialists</li>
-            <li>Storage solutions</li>
-          </ul>
+          <!-- Optional Extras Card -->
+          <div
+            class="bg-gradient-to-br from-brand-yellow/10 to-yellow-50 rounded-2xl p-6 border border-brand-yellow/20 shadow-sm"
+          >
+            <div
+              class="w-12 h-12 bg-brand-yellow/20 rounded-xl flex items-center justify-center text-2xl mb-4"
+            >
+              ⭐
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-2">Optional Extras</h3>
+            <p class="text-gray-500 text-sm mb-4">Available at additional cost</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">+</span>
+                <span class="text-gray-700">Packing services</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">+</span>
+                <span class="text-gray-700">Packing materials</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">+</span>
+                <span class="text-gray-700">Piano/pool table specialists</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-brand-yellow">+</span>
+                <span class="text-gray-700">Storage solutions</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
