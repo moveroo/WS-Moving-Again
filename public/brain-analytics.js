@@ -9,6 +9,7 @@
  * 
  * @version 1.0.0
  */
+/* eslint-disable @typescript-eslint/no-this-alias, @typescript-eslint/no-unused-vars */
 (function(window, document) {
   'use strict';
 
