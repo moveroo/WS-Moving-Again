@@ -1,6 +1,6 @@
 /**
  * Route Generator Script for Moving Again
- * 
+ *
  * Generates MDX files for all 253 unique route pages.
  * Run with: node scripts/generateRoutes.mjs
  */
@@ -34,7 +34,7 @@ const CITIES = [
   { name: 'Mandurah', state: 'WA', population: 97641 },
   { name: 'Rockingham', state: 'WA', population: 130000 },
   { name: 'Bunbury', state: 'WA', population: 75106 },
-  { name: 'Logan City', state: 'QLD', population: 326615 }
+  { name: 'Logan City', state: 'QLD', population: 326615 },
 ];
 
 // Distance estimates between major cities (km)
@@ -72,7 +72,7 @@ const DISTANCES = {
   'perth-rockingham': 50,
   'perth-bunbury': 175,
   'adelaide-darwin': 3030,
-  'hobart-launceston': 200
+  'hobart-launceston': 200,
 };
 
 function slugify(str) {
@@ -96,14 +96,14 @@ function getTransitTime(distanceKm) {
 }
 
 function generateMDXContent(origin, destination) {
-  const originCity = CITIES.find(c => c.name === origin);
-  const destCity = CITIES.find(c => c.name === destination);
-  
+  const originCity = CITIES.find((c) => c.name === origin);
+  const destCity = CITIES.find((c) => c.name === destination);
+
   const slug = `${slugify(origin)}-to-${slugify(destination)}`;
   const distance = getDistance(origin, destination);
   const transitTime = getTransitTime(distance);
   const now = new Date().toISOString();
-  
+
   const frontmatter = `---
 slug: /${slug}/
 slugFs: ${slug}
@@ -174,32 +174,32 @@ Ready to save on your ${origin} to ${destination} move? Get your free quote toda
 function generateAllRoutes() {
   const routes = [];
   const redirects = [];
-  
+
   // Sort cities by population (largest first)
   const sortedCities = [...CITIES].sort((a, b) => b.population - a.population);
-  
+
   for (let i = 0; i < sortedCities.length; i++) {
     for (let j = i + 1; j < sortedCities.length; j++) {
       const origin = sortedCities[i];
       const dest = sortedCities[j];
-      
+
       // Canonical direction: larger city → smaller city
       routes.push({
         origin: origin.name,
         destination: dest.name,
-        slug: `${slugify(origin.name)}-to-${slugify(dest.name)}`
+        slug: `${slugify(origin.name)}-to-${slugify(dest.name)}`,
       });
-      
+
       // Reverse direction gets redirected
       const reverseSlug = `${slugify(dest.name)}-to-${slugify(origin.name)}`;
       redirects.push({
         source: `/${reverseSlug}/`,
         destination: `/${slugify(origin.name)}-to-${slugify(dest.name)}/`,
-        permanent: true
+        permanent: true,
       });
     }
   }
-  
+
   return { routes, redirects };
 }
 
@@ -219,9 +219,9 @@ console.log(`\n🚛 Generating ${routes.length} route pages...`);
 routes.forEach((route, index) => {
   const filePath = path.join(routesDir, `${route.slug}.mdx`);
   const content = generateMDXContent(route.origin, route.destination);
-  
+
   fs.writeFileSync(filePath, content, 'utf8');
-  
+
   if ((index + 1) % 50 === 0) {
     console.log(`  ✓ Generated ${index + 1}/${routes.length} routes`);
   }

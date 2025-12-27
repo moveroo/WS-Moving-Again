@@ -8,7 +8,7 @@ destination: Adelaide
 originState: QLD
 destinationState: SA
 distanceKm: 1930
-transitDays: "6-9 business days"
+transitDays: '6-9 business days'
 canonicalUrl: https://movingagain.com.au/brisbane-to-adelaide/
 relatedSlugs:
   - adelaide-to-brisbane
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets

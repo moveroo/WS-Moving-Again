@@ -11,10 +11,7 @@ const vercelConfig = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
 const routeRedirects = JSON.parse(fs.readFileSync('route-redirects.json', 'utf8'));
 
 // Merge redirects (existing first, then routes)
-vercelConfig.redirects = [
-  ...vercelConfig.redirects,
-  ...routeRedirects
-];
+vercelConfig.redirects = [...vercelConfig.redirects, ...routeRedirects];
 
 // Write back
 fs.writeFileSync('vercel.json', JSON.stringify(vercelConfig, null, 2), 'utf8');

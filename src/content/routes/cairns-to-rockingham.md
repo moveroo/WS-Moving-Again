@@ -8,7 +8,7 @@ destination: Rockingham
 originState: QLD
 destinationState: WA
 # distanceKm: estimated
-transitDays: "5-10 business days"
+transitDays: '5-10 business days'
 canonicalUrl: https://movingagain.com.au/cairns-to-rockingham/
 relatedSlugs:
   - rockingham-to-cairns
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets

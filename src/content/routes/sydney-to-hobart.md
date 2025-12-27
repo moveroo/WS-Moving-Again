@@ -8,7 +8,7 @@ destination: Hobart
 originState: NSW
 destinationState: TAS
 distanceKm: 1180
-transitDays: "4-7 business days"
+transitDays: '4-7 business days'
 canonicalUrl: https://movingagain.com.au/sydney-to-hobart/
 relatedSlugs:
   - hobart-to-sydney
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets

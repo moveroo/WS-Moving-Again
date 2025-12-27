@@ -115,25 +115,25 @@ For **each pillar page**:
 ```
 1. RUN BLUEPRINT
    └─→ research-engine blueprint "topic" --site "https://..."
-   
+
 2. REVIEW BLUEPRINT
    └─→ Target word count
-   └─→ Competitor analysis  
+   └─→ Competitor analysis
    └─→ Topics to cover (H2s)
    └─→ Content gaps
-   
+
 3. BUILD PILLAR PAGE
    └─→ Meet word count target
    └─→ Cover all recommended topics
    └─→ FAQ with schema
    └─→ Comparison tables
    └─→ Link to cluster pages
-   
+
 4. BUILD CLUSTER PAGES
    └─→ Each links BACK to pillar
    └─→ Each links to other clusters
    └─→ Pillar links DOWN to clusters
-   
+
 5. UPDATE HOMEPAGE
    └─→ Link to all pillars
 ```
@@ -194,7 +194,7 @@ For **each pillar page**:
 /questions/
 ├── Section 1: Backloading FAQs
 │   └── Links to → /backloading/
-├── Section 2: Interstate Moving FAQs  
+├── Section 2: Interstate Moving FAQs
 │   └── Links to → /moving-interstate/
 └── Section 3: Car Transport FAQs
     └── Links to → /car-transport/

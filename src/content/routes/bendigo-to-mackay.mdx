@@ -8,7 +8,7 @@ destination: Mackay
 originState: VIC
 destinationState: QLD
 # distanceKm: estimated
-transitDays: "5-10 business days"
+transitDays: '5-10 business days'
 canonicalUrl: https://movingagain.com.au/bendigo-to-mackay/
 relatedSlugs:
   - mackay-to-bendigo
@@ -42,6 +42,7 @@ Need tighter timelines? Ask about our express options for priority pickup and fa
 ### What Can We Move?
 
 We handle all standard household items including:
+
 - Beds, mattresses, and bedroom furniture
 - Sofas, lounge suites, and living room items
 - Dining tables, chairs, and cabinets
