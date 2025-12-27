@@ -6,6 +6,41 @@
       "permanent": true
     },
     {
+      "source": "/bendigo/",
+      "destination": "/melbourne/",
+      "permanent": true
+    },
+    {
+      "source": "/bunbury/",
+      "destination": "/perth/",
+      "permanent": true
+    },
+    {
+      "source": "/bundaberg/",
+      "destination": "/brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/mackay/",
+      "destination": "/townsville/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba/",
+      "destination": "/brisbane/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong/",
+      "destination": "/sydney/",
+      "permanent": true
+    },
+    {
+      "source": "/moving-home-tips/",
+      "destination": "/moving-interstate/",
+      "permanent": true
+    },
+    {
       "source": "/terms-and-conditions-of-booking-with-moving-again/",
       "destination": "/terms/",
       "permanent": true
