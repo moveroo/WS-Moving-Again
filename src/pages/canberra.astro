@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import { BRAND } from '../utils/brand';
+
+const pageFacts = {
+  service: 'Interstate backloading',
+  location: 'Canberra, Australian Capital Territory',
+  coverage: ['Canberra CBD', 'Belconnen', 'Woden', 'Tuggeranong', 'Gungahlin', 'Queanbeyan'],
+  population: '460,000',
+  typical_transit_to_sydney: '1 day',
+  typical_transit_to_melbourne: '2-3 business days',
+  typical_savings: '40-60%',
+  transit_insurance_included: true,
+  government_relocation_experience: true,
+};
+
+const popularRoutes = [
+  { city: 'Sydney', slug: '/canberra-sydney/', transit: '1 day', frequency: 'Daily' },
+  { city: 'Melbourne', slug: '/canberra-melbourne/', transit: '2-3 days', frequency: 'Weekly' },
+  { city: 'Brisbane', slug: '/canberra-brisbane/', transit: '3-4 days', frequency: 'Weekly' },
+  { city: 'Adelaide', slug: '/canberra-adelaide/', transit: '3-4 days', frequency: 'Fortnightly' },
+];
+---
+
+<Layout
+  title="Backloading Canberra | Interstate Removals ACT | Moving Again"
+  description="Canberra backloading and interstate removals. Save up to 60% on moves to/from ACT. Daily services to Sydney. Transit insurance included."
+  schemaType="LocalBusiness"
+  schemaData={{
+    name: 'Moving Again - Canberra',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Canberra',
+      addressRegion: 'ACT',
+      addressCountry: 'AU',
+    },
+    areaServed: 'Australian Capital Territory',
+    priceRange: '$$',
+  }}
+>
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm"
+        >
+          ACT Hub
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black mb-6">Backloading Canberra</h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Australia's capital city with daily services to Sydney. Government relocation specialists.
+        </p>
+        <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
+          class="inline-flex items-center justify-center gap-2 py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get a Canberra Quote →
+        </a>
+        <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
+          <div class="flex items-center gap-2">
+            <span class="text-green-400">✓</span><span>Daily Sydney Services</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-green-400">✓</span><span>Transit Insurance Included</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">290km</div><p
+            class="text-sm text-gray-600"
+          >
+            To Sydney
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">🏛️</div><p
+            class="text-sm text-gray-600"
+          >
+            Gov't Relocation Experts
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">Daily</div><p
+            class="text-sm text-gray-600"
+          >
+            Sydney Services
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">60%</div><p
+            class="text-sm text-gray-600"
+          >
+            Typical Savings
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Popular Canberra Routes</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Regular backloading services from Canberra
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {
+          popularRoutes.map((route) => (
+            <a
+              href={route.slug}
+              class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
+            >
+              <div class="text-2xl mb-3">🚛</div>
+              <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
+                Canberra → {route.city}
+              </h3>
+              <div class="mt-3 text-sm text-gray-500">
+                <span>{route.frequency}</span> • <span>{route.transit}</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-6">Moving to or from the Capital</h2>
+        <div class="prose prose-lg">
+          <p>
+            Canberra's close proximity to Sydney (just 290km) makes it one of our quickest routes.
+            Our <a href="/backloading/" class="text-brand-red hover:underline">backloading</a> service
+            connects Canberra to all capitals, with daily trucks to Sydney.
+          </p>
+          <p>
+            <strong>Government relocations:</strong> We have extensive experience with APS and contractor
+            relocations. We understand the timelines and requirements of government moves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">ACT Coverage</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-xl border border-gray-100">
+          <h3 class="font-bold text-brand-dark mb-4">Canberra Districts</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Civic & Inner North/South</li>
+            <li>• Belconnen & Gungahlin</li>
+            <li>• Woden & Tuggeranong</li>
+            <li>• Weston Creek & Molonglo</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-gray-100">
+          <h3 class="font-bold text-brand-dark mb-4">Surrounding Areas</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Queanbeyan (NSW)</li>
+            <li>• Yass & surrounds</li>
+            <li>• Goulburn & Southern NSW</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FactBox facts={pageFacts} />
+
+  <section class="py-20 bg-gradient-to-r from-brand-red to-brand-accent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Move from Canberra?</h2>
+      <p class="text-white/80 mb-8 max-w-xl mx-auto">
+        Get an instant quote for your Canberra interstate move.
+      </p>
+      <a
+        href="https://removalistquotes.movingagain.com.au/quote/household"
+        class="inline-block py-4 px-10 bg-white text-brand-red font-bold rounded-brand text-lg hover:bg-gray-100 transition-colors shadow-lg"
+        >Get Your Free Quote</a
+      >
+    </div>
+  </section>
+</Layout>

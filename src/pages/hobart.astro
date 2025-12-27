@@ -1,0 +1,212 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+import { BRAND } from '../utils/brand';
+
+const pageFacts = {
+  service: 'Interstate backloading',
+  location: 'Hobart, Tasmania',
+  coverage: ['Hobart CBD', 'Launceston', 'Devonport', 'Burnie', 'Kingston', 'Glenorchy'],
+  population: '240,000',
+  typical_transit_to_melbourne: '3-5 business days',
+  typical_transit_to_sydney: '4-6 business days',
+  typical_savings: '40-60%',
+  transit_insurance_included: true,
+  ferry_crossing_included: true,
+  quarantine_restrictions: true,
+};
+
+const popularRoutes = [
+  { city: 'Melbourne', slug: '/hobart-melbourne/', transit: '3-5 days', frequency: 'Weekly' },
+  { city: 'Sydney', slug: '/hobart-sydney/', transit: '4-6 days', frequency: 'Weekly' },
+  { city: 'Brisbane', slug: '/hobart-brisbane/', transit: '5-7 days', frequency: 'Fortnightly' },
+  { city: 'Adelaide', slug: '/hobart-adelaide/', transit: '4-6 days', frequency: 'Fortnightly' },
+];
+---
+
+<Layout
+  title="Backloading Hobart | Interstate Removals TAS | Moving Again"
+  description="Hobart backloading and interstate removals including Bass Strait ferry crossing. Save up to 60% on moves to/from Tasmania. Transit insurance included."
+  schemaType="LocalBusiness"
+  schemaData={{
+    name: 'Moving Again - Hobart',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Hobart',
+      addressRegion: 'TAS',
+      addressCountry: 'AU',
+    },
+    areaServed: 'Tasmania',
+    priceRange: '$$',
+  }}
+>
+  <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm"
+        >
+          Tasmania Hub
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black mb-6">Backloading Hobart</h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Tasmania's capital with Bass Strait ferry crossing included. Save up to 60% with
+          backloading.
+        </p>
+        <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
+          class="inline-flex items-center justify-center gap-2 py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+        >
+          Get a Hobart Quote →
+        </a>
+        <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
+          <div class="flex items-center gap-2">
+            <span class="text-green-400">✓</span><span>Ferry Crossing Included</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-green-400">✓</span><span>Transit Insurance Included</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">⛴️</div><p
+            class="text-sm text-gray-600"
+          >
+            Ferry Crossing Included
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">🌿</div><p
+            class="text-sm text-gray-600"
+          >
+            Plant Quarantine Experts
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">Weekly</div><p
+            class="text-sm text-gray-600"
+          >
+            Services to Melbourne
+          </p>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-brand-red mb-2">60%</div><p
+            class="text-sm text-gray-600"
+          >
+            Typical Savings
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quarantine Notice -->
+  <section class="py-8 bg-yellow-50 border-y border-yellow-200">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto flex items-start gap-4">
+        <span class="text-2xl">⚠️</span>
+        <div>
+          <h3 class="font-bold text-yellow-800">Tasmania Quarantine Restrictions</h3>
+          <p class="text-yellow-700 text-sm">
+            Some items cannot enter Tasmania including live plants, soil, and certain produce. We'll
+            advise you on what can and cannot be transported during your quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Popular Hobart Routes</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Regular backloading services from Hobart
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {
+          popularRoutes.map((route) => (
+            <a
+              href={route.slug}
+              class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
+            >
+              <div class="text-2xl mb-3">🚛</div>
+              <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
+                Hobart → {route.city}
+              </h3>
+              <div class="mt-3 text-sm text-gray-500">
+                <span>{route.frequency}</span> • <span>{route.transit}</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-6">Moving to or from Tasmania</h2>
+        <div class="prose prose-lg">
+          <p>
+            Moving to Tasmania involves crossing Bass Strait by ferry. We coordinate the entire
+            process including ferry booking, vehicle loading, and delivery on both ends. Our <a
+              href="/backloading/"
+              class="text-brand-red hover:underline">backloading</a
+            > service can save you 40-60%.
+          </p>
+          <p>
+            <strong>Important:</strong> Tasmania has strict quarantine laws. We'll help you understand
+            what can and cannot be brought into the state.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Tasmania Coverage</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-xl border border-gray-100">
+          <h3 class="font-bold text-brand-dark mb-4">Southern Tasmania</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Hobart CBD & Glenorchy</li>
+            <li>• Kingston & Huonville</li>
+            <li>• New Norfolk & Derwent Valley</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-gray-100">
+          <h3 class="font-bold text-brand-dark mb-4">Northern Tasmania</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Launceston & Tamar Valley</li>
+            <li>• Devonport (ferry terminal)</li>
+            <li>• Burnie & North West Coast</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FactBox facts={pageFacts} />
+
+  <section class="py-20 bg-gradient-to-r from-brand-red to-brand-accent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Move from Hobart?</h2>
+      <p class="text-white/80 mb-8 max-w-xl mx-auto">
+        Get a quote including Bass Strait ferry crossing.
+      </p>
+      <a
+        href="https://removalistquotes.movingagain.com.au/quote/household"
+        class="inline-block py-4 px-10 bg-white text-brand-red font-bold rounded-brand text-lg hover:bg-gray-100 transition-colors shadow-lg"
+        >Get Your Free Quote</a
+      >
+    </div>
+  </section>
+</Layout>
