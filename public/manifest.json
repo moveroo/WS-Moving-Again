@@ -1,15 +1,28 @@
 {
-  "name": "My Webforge Site",
-  "short_name": "Webforge",
+  "name": "Moving Again - Interstate Removalists",
+  "short_name": "Moving Again",
+  "description": "Australia's trusted interstate removalist since 1995",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#4f46e5",
+  "theme_color": "#D90000",
   "icons": [
     {
       "src": "/favicon.svg",
-      "sizes": "192x192",
+      "sizes": "any",
       "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
