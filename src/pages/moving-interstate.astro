@@ -45,6 +45,8 @@ const definitions = [
   },
 ];
 
+const currentYear = new Date().getFullYear();
+
 const faqQuestions = [
   {
     question: 'How much does interstate moving cost in Australia?',
@@ -117,7 +119,7 @@ const timeline = [
 ---
 
 <Layout
-  title="Interstate Moving Australia | Complete 2025 Guide | Moving Again"
+  title={`Interstate Moving Australia | Complete ${currentYear} Guide | Moving Again`}
   description="Everything you need to know about interstate moving in Australia. Routes, costs, timelines, packing tips, and how to save up to 60% with backloading."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
@@ -133,7 +135,9 @@ const timeline = [
         </span>
 
         <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
-          Interstate Moving Australia: <span class="text-brand-yellow">Your 2025 Guide</span>
+          Interstate Moving Australia: <span class="text-brand-yellow"
+            >Your {currentYear} Guide</span
+          >
         </h1>
 
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
