@@ -1,5 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FactBox from '../components/FactBox.astro';
+
+// Machine-readable facts for LLM extraction
+const pageFacts = {
+  service: 'Interstate backloading',
+  location: 'Perth, Western Australia',
+  coverage: ['Perth metro', 'Bunbury', 'Mandurah', 'Rockingham', 'Geraldton', 'Kalgoorlie'],
+  typical_transit_to_melbourne: '5-7 business days',
+  typical_transit_to_sydney: '6-8 business days',
+  typical_savings: '40-60%',
+  quarantine_restrictions: true,
+  transit_insurance_included: true,
+  contact: '1300 668 464',
+};
 ---
 
 <Layout
@@ -211,6 +225,9 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- Machine-readable facts for AI extraction -->
+  <FactBox facts={pageFacts} />
 
   <!-- CTA -->
   <section class="py-20 bg-brand-dark">
