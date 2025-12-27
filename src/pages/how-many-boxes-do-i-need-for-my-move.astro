@@ -3,101 +3,127 @@ import Layout from '../layouts/Layout.astro';
 
 const faqQuestions = [
   {
-    question: "How many boxes do I need for a 3 bedroom house?",
-    answer: "A typical 3-bedroom house needs 25-40 removal cartons plus 20-30 book boxes. Add wardrobe boxes for hanging clothes, and you'll need about 3-4 rolls of tape and 3-4 reams of packing paper. The exact number depends on how much you've accumulated over time."
+    question: 'How many boxes do I need for a 3 bedroom house?',
+    answer:
+      "A typical 3-bedroom house needs 25-40 removal cartons plus 20-30 book boxes. Add wardrobe boxes for hanging clothes, and you'll need about 3-4 rolls of tape and 3-4 reams of packing paper. The exact number depends on how much you've accumulated over time.",
   },
   {
-    question: "What size moving boxes should I use?",
-    answer: "Use a mix of sizes: small/book boxes (400x300x300mm) for heavy items like books; medium boxes (430x410x600mm) for general items; large boxes for light bulky items like linen and pillows. Never put heavy items in large boxes—they become impossible to lift."
+    question: 'What size moving boxes should I use?',
+    answer:
+      'Use a mix of sizes: small/book boxes (400x300x300mm) for heavy items like books; medium boxes (430x410x600mm) for general items; large boxes for light bulky items like linen and pillows. Never put heavy items in large boxes—they become impossible to lift.',
   },
   {
-    question: "Should I buy new boxes or use secondhand ones?",
-    answer: "Professional removal cartons are ideal as they're designed for stacking and handling. Secondhand boxes work but may be weakened. Avoid produce boxes from supermarkets—they often have holes and aren't designed for stacking."
+    question: 'Should I buy new boxes or use secondhand ones?',
+    answer:
+      "Professional removal cartons are ideal as they're designed for stacking and handling. Secondhand boxes work but may be weakened. Avoid produce boxes from supermarkets—they often have holes and aren't designed for stacking.",
   },
   {
-    question: "How far in advance should I start packing?",
-    answer: "Start 4-6 weeks before your move. Begin with items you rarely use: seasonal clothes, books, decorations. Pack room by room, leaving everyday essentials until the final week. Label everything as you go."
+    question: 'How far in advance should I start packing?',
+    answer:
+      'Start 4-6 weeks before your move. Begin with items you rarely use: seasonal clothes, books, decorations. Pack room by room, leaving everyday essentials until the final week. Label everything as you go.',
   },
   {
-    question: "What should I pack first?",
-    answer: "Start with items you won't need before the move: out-of-season clothing, books, memorabilia, formal dinnerware, decorations, and garage items. Leave kitchen essentials, toiletries, and daily clothing until the final days."
+    question: 'What should I pack first?',
+    answer:
+      "Start with items you won't need before the move: out-of-season clothing, books, memorabilia, formal dinnerware, decorations, and garage items. Leave kitchen essentials, toiletries, and daily clothing until the final days.",
   },
   {
-    question: "How do I estimate boxes for each room?",
-    answer: "Visualise the contents of each cupboard, drawer, and shelf as piles. Each pile roughly equals one box. Kitchens typically need 8-15 boxes, bedrooms 5-10 each, bathrooms 2-3, and living areas 5-10 depending on books and decorations."
-  }
+    question: 'How do I estimate boxes for each room?',
+    answer:
+      'Visualise the contents of each cupboard, drawer, and shelf as piles. Each pile roughly equals one box. Kitchens typically need 8-15 boxes, bedrooms 5-10 each, bathrooms 2-3, and living areas 5-10 depending on books and decorations.',
+  },
 ];
 
 const moveEstimates = [
-  { 
-    size: "Studio / Student", 
-    bedrooms: "Bedsit / 1BR", 
-    cartons: "10-20", 
-    bookBoxes: "5-10", 
-    paper: "1 ream", 
-    tape: "3-4 rolls",
-    volume: "5-10 m³"
+  {
+    size: 'Studio / Student',
+    bedrooms: 'Bedsit / 1BR',
+    cartons: '10-20',
+    bookBoxes: '5-10',
+    paper: '1 ream',
+    tape: '3-4 rolls',
+    volume: '5-10 m³',
   },
-  { 
-    size: "Small", 
-    bedrooms: "1-2 BR Unit", 
-    cartons: "15-25", 
-    bookBoxes: "10-15", 
-    paper: "2 reams", 
-    tape: "4-6 rolls",
-    volume: "10-15 m³"
+  {
+    size: 'Small',
+    bedrooms: '1-2 BR Unit',
+    cartons: '15-25',
+    bookBoxes: '10-15',
+    paper: '2 reams',
+    tape: '4-6 rolls',
+    volume: '10-15 m³',
   },
-  { 
-    size: "Medium", 
-    bedrooms: "2 BR House", 
-    cartons: "20-30", 
-    bookBoxes: "15-20", 
-    paper: "2-3 reams", 
-    tape: "3-4 rolls",
-    volume: "15-25 m³"
+  {
+    size: 'Medium',
+    bedrooms: '2 BR House',
+    cartons: '20-30',
+    bookBoxes: '15-20',
+    paper: '2-3 reams',
+    tape: '3-4 rolls',
+    volume: '15-25 m³',
   },
-  { 
-    size: "Medium-Large", 
-    bedrooms: "3 BR House", 
-    cartons: "25-40", 
-    bookBoxes: "20-30", 
-    paper: "3-4 reams", 
-    tape: "5-7 rolls",
-    volume: "25-35 m³"
+  {
+    size: 'Medium-Large',
+    bedrooms: '3 BR House',
+    cartons: '25-40',
+    bookBoxes: '20-30',
+    paper: '3-4 reams',
+    tape: '5-7 rolls',
+    volume: '25-35 m³',
   },
-  { 
-    size: "Large", 
-    bedrooms: "4 BR House", 
-    cartons: "35-60", 
-    bookBoxes: "25-40", 
-    paper: "4-6 reams", 
-    tape: "5-7 rolls",
-    volume: "35-45 m³"
+  {
+    size: 'Large',
+    bedrooms: '4 BR House',
+    cartons: '35-60',
+    bookBoxes: '25-40',
+    paper: '4-6 reams',
+    tape: '5-7 rolls',
+    volume: '35-45 m³',
   },
-  { 
-    size: "Very Large", 
-    bedrooms: "5+ BR House", 
-    cartons: "45-70", 
-    bookBoxes: "40-75", 
-    paper: "5-10 reams", 
-    tape: "5-10 rolls",
-    volume: "45+ m³"
+  {
+    size: 'Very Large',
+    bedrooms: '5+ BR House',
+    cartons: '45-70',
+    bookBoxes: '40-75',
+    paper: '5-10 reams',
+    tape: '5-10 rolls',
+    volume: '45+ m³',
   },
 ];
 
 const roomEstimates = [
-  { room: "Kitchen", boxes: "8-15", notes: "Dishes, appliances, pantry. Use lots of paper for fragile items." },
-  { room: "Master Bedroom", boxes: "5-10", notes: "Clothes, shoes, accessories. Add 1-2 wardrobe boxes." },
-  { room: "Other Bedrooms", boxes: "4-8 each", notes: "Fewer items typically. Kids rooms can vary wildly." },
-  { room: "Living Room", boxes: "5-10", notes: "Books, DVDs, decorations, electronics." },
-  { room: "Bathroom", boxes: "2-4", notes: "Toiletries, towels, medicines. Don't forget the linen closet." },
-  { room: "Laundry", boxes: "2-4", notes: "Cleaning supplies, detergents, iron, etc." },
-  { room: "Garage/Shed", boxes: "5-15", notes: "Tools, garden items, sports gear. Highly variable." },
-  { room: "Home Office", boxes: "5-10", notes: "Papers, books, supplies, electronics." },
+  {
+    room: 'Kitchen',
+    boxes: '8-15',
+    notes: 'Dishes, appliances, pantry. Use lots of paper for fragile items.',
+  },
+  {
+    room: 'Master Bedroom',
+    boxes: '5-10',
+    notes: 'Clothes, shoes, accessories. Add 1-2 wardrobe boxes.',
+  },
+  {
+    room: 'Other Bedrooms',
+    boxes: '4-8 each',
+    notes: 'Fewer items typically. Kids rooms can vary wildly.',
+  },
+  { room: 'Living Room', boxes: '5-10', notes: 'Books, DVDs, decorations, electronics.' },
+  {
+    room: 'Bathroom',
+    boxes: '2-4',
+    notes: "Toiletries, towels, medicines. Don't forget the linen closet.",
+  },
+  { room: 'Laundry', boxes: '2-4', notes: 'Cleaning supplies, detergents, iron, etc.' },
+  {
+    room: 'Garage/Shed',
+    boxes: '5-15',
+    notes: 'Tools, garden items, sports gear. Highly variable.',
+  },
+  { room: 'Home Office', boxes: '5-10', notes: 'Papers, books, supplies, electronics.' },
 ];
 ---
 
-<Layout 
+<Layout
   title="How Many Boxes Do I Need for My Move? | Free Calculator | Moving Again"
   description="Calculate how many moving boxes you need based on your home size. Room-by-room guide with packing materials checklist for every move size."
   schemaType="FAQPage"
@@ -107,20 +133,23 @@ const roomEstimates = [
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/20 text-brand-red font-bold uppercase tracking-wider text-sm">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/20 text-brand-red font-bold uppercase tracking-wider text-sm"
+        >
           Packing Calculator
         </span>
-        
+
         <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight leading-tight">
           How Many Boxes Do I Need <span class="text-brand-yellow">for My Move?</span>
         </h1>
-        
+
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Use our calculator to estimate removal cartons, book boxes, and packing materials for your move size.
+          Use our calculator to estimate removal cartons, book boxes, and packing materials for your
+          move size.
         </p>
-        
-        <a 
-          href="#calculator" 
+
+        <a
+          href="#calculator"
           class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
         >
           Jump to Calculator
@@ -136,13 +165,18 @@ const roomEstimates = [
         <div class="prose prose-lg mx-auto">
           <h2>Estimating Your Moving Boxes</h2>
           <p>
-            One of the trickiest parts of planning your move is figuring out exactly how many boxes you'll need. Underestimate, and you'll be scrambling for boxes at the last minute. Overestimate, and you've wasted money on boxes you don't need.
+            One of the trickiest parts of planning your move is figuring out exactly how many boxes
+            you'll need. Underestimate, and you'll be scrambling for boxes at the last minute.
+            Overestimate, and you've wasted money on boxes you don't need.
           </p>
           <p>
-            The best approach is to <strong>estimate room by room</strong>, rather than trying to guess for your whole home at once. Walk through each room and visualise the contents of every cupboard, drawer, and shelf as piles—each pile roughly equals one box.
+            The best approach is to <strong>estimate room by room</strong>, rather than trying to
+            guess for your whole home at once. Walk through each room and visualise the contents of
+            every cupboard, drawer, and shelf as piles—each pile roughly equals one box.
           </p>
           <p>
-            Our estimates below are based on typical Australian homes. Your needs may vary depending on:
+            Our estimates below are based on typical Australian homes. Your needs may vary depending
+            on:
           </p>
           <ul>
             <li>How long you've lived in your home (longer = more stuff)</li>
@@ -150,11 +184,15 @@ const roomEstimates = [
             <li>How many books, clothes, and decorations you have</li>
             <li>What you're taking vs. what you're donating or discarding</li>
           </ul>
-          
+
           <div class="bg-brand-red/5 border border-brand-red/20 rounded-xl p-6 not-prose mt-6">
             <h3 class="font-bold text-brand-dark mb-2">💡 Pro Tip: You Can Adjust Later</h3>
             <p class="text-gray-600 text-sm">
-              Our <a href="https://removalistquotes.movingagain.com.au/quote/household" class="text-brand-red hover:underline">quoting system</a> allows you to update your box count as you progress with packing. Give it your best estimate now, then update closer to moving day for an accurate final quote.
+              Our <a
+                href="https://removalistquotes.movingagain.com.au/quote/household"
+                class="text-brand-red hover:underline">quoting system</a
+              > allows you to update your box count as you progress with packing. Give it your best estimate
+              now, then update closer to moving day for an accurate final quote.
             </p>
           </div>
         </div>
@@ -171,7 +209,7 @@ const roomEstimates = [
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
         Find your home size below for an estimate of boxes and packing materials needed.
       </p>
-      
+
       <div class="max-w-6xl mx-auto overflow-x-auto">
         <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
           <thead>
@@ -186,21 +224,23 @@ const roomEstimates = [
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-100">
-            {moveEstimates.map((est) => (
-              <tr class="hover:bg-gray-50">
-                <td class="p-4 font-medium">{est.size}</td>
-                <td class="p-4 text-center text-gray-600">{est.bedrooms}</td>
-                <td class="p-4 text-center text-gray-600">{est.cartons}</td>
-                <td class="p-4 text-center text-gray-600">{est.bookBoxes}</td>
-                <td class="p-4 text-center text-gray-600">{est.paper}</td>
-                <td class="p-4 text-center text-gray-600">{est.tape}</td>
-                <td class="p-4 text-center text-gray-600">{est.volume}</td>
-              </tr>
-            ))}
+            {
+              moveEstimates.map((est) => (
+                <tr class="hover:bg-gray-50">
+                  <td class="p-4 font-medium">{est.size}</td>
+                  <td class="p-4 text-center text-gray-600">{est.bedrooms}</td>
+                  <td class="p-4 text-center text-gray-600">{est.cartons}</td>
+                  <td class="p-4 text-center text-gray-600">{est.bookBoxes}</td>
+                  <td class="p-4 text-center text-gray-600">{est.paper}</td>
+                  <td class="p-4 text-center text-gray-600">{est.tape}</td>
+                  <td class="p-4 text-center text-gray-600">{est.volume}</td>
+                </tr>
+              ))
+            }
           </tbody>
         </table>
       </div>
-      
+
       <p class="text-center text-gray-500 mt-6 text-sm">
         A standard removal carton is approximately 435 x 410 x 600mm.
       </p>
@@ -214,13 +254,14 @@ const roomEstimates = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Room-by-Room Box Estimates
         </h2>
-        
+
         <div class="prose prose-lg mx-auto mb-10">
           <p>
-            For a more accurate count, estimate boxes room by room. This table shows typical box counts for each area of your home:
+            For a more accurate count, estimate boxes room by room. This table shows typical box
+            counts for each area of your home:
           </p>
         </div>
-        
+
         <div class="overflow-x-auto">
           <table class="w-full border-collapse bg-gray-50 rounded-xl overflow-hidden">
             <thead>
@@ -231,13 +272,15 @@ const roomEstimates = [
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 bg-white">
-              {roomEstimates.map((room) => (
-                <tr class="hover:bg-gray-50">
-                  <td class="p-4 font-medium">{room.room}</td>
-                  <td class="p-4 text-center text-gray-600">{room.boxes}</td>
-                  <td class="p-4 text-gray-600 text-sm">{room.notes}</td>
-                </tr>
-              ))}
+              {
+                roomEstimates.map((room) => (
+                  <tr class="hover:bg-gray-50">
+                    <td class="p-4 font-medium">{room.room}</td>
+                    <td class="p-4 text-center text-gray-600">{room.boxes}</td>
+                    <td class="p-4 text-gray-600 text-sm">{room.notes}</td>
+                  </tr>
+                ))
+              }
             </tbody>
           </table>
         </div>
@@ -249,37 +292,47 @@ const roomEstimates = [
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
-          Types of Moving Boxes
-        </h2>
-        
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">Types of Moving Boxes</h2>
+
         <div class="grid md:grid-cols-2 gap-6">
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <div class="text-3xl mb-3">📦</div>
             <h3 class="font-bold text-brand-dark mb-2">Standard Removal Carton</h3>
             <p class="text-gray-600 text-sm mb-2">Size: 435 x 410 x 600mm</p>
-            <p class="text-gray-600 text-sm">Your main workhorse. Use for most household items, kitchenware, clothes, and general belongings. Don't overload—aim for 15-20kg max.</p>
+            <p class="text-gray-600 text-sm">
+              Your main workhorse. Use for most household items, kitchenware, clothes, and general
+              belongings. Don't overload—aim for 15-20kg max.
+            </p>
           </div>
-          
+
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <div class="text-3xl mb-3">📚</div>
             <h3 class="font-bold text-brand-dark mb-2">Book Box (Small/Heavy)</h3>
             <p class="text-gray-600 text-sm mb-2">Size: 400 x 300 x 300mm</p>
-            <p class="text-gray-600 text-sm">Smaller and stronger for heavy items. Perfect for books, records, tools, canned goods, and anything dense. Easier to carry when full.</p>
+            <p class="text-gray-600 text-sm">
+              Smaller and stronger for heavy items. Perfect for books, records, tools, canned goods,
+              and anything dense. Easier to carry when full.
+            </p>
           </div>
-          
+
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <div class="text-3xl mb-3">👔</div>
             <h3 class="font-bold text-brand-dark mb-2">Wardrobe Box</h3>
             <p class="text-gray-600 text-sm mb-2">Size: 600 x 500 x 1200mm (approx)</p>
-            <p class="text-gray-600 text-sm">Tall box with hanging rail. Transfer clothes directly from wardrobe without folding. Reduces wrinkles and saves time unpacking.</p>
+            <p class="text-gray-600 text-sm">
+              Tall box with hanging rail. Transfer clothes directly from wardrobe without folding.
+              Reduces wrinkles and saves time unpacking.
+            </p>
           </div>
-          
+
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <div class="text-3xl mb-3">🖼️</div>
             <h3 class="font-bold text-brand-dark mb-2">Picture/Mirror Box</h3>
             <p class="text-gray-600 text-sm mb-2">Size: Various flat profiles</p>
-            <p class="text-gray-600 text-sm">Flat, adjustable boxes for artwork, mirrors, and TVs. Provides protection for fragile flat items that don't fit in standard boxes.</p>
+            <p class="text-gray-600 text-sm">
+              Flat, adjustable boxes for artwork, mirrors, and TVs. Provides protection for fragile
+              flat items that don't fit in standard boxes.
+            </p>
           </div>
         </div>
       </div>
@@ -293,24 +346,33 @@ const roomEstimates = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Essential Packing Materials
         </h2>
-        
+
         <div class="grid md:grid-cols-3 gap-6">
           <div class="bg-gray-50 p-6 rounded-xl text-center">
             <div class="text-4xl mb-3">📜</div>
             <h3 class="font-bold text-brand-dark mb-2">Packing Paper</h3>
-            <p class="text-gray-600 text-sm">Wrap fragile items individually. Use scrunched paper to fill empty spaces and prevent shifting.</p>
+            <p class="text-gray-600 text-sm">
+              Wrap fragile items individually. Use scrunched paper to fill empty spaces and prevent
+              shifting.
+            </p>
           </div>
-          
+
           <div class="bg-gray-50 p-6 rounded-xl text-center">
             <div class="text-4xl mb-3">🎈</div>
             <h3 class="font-bold text-brand-dark mb-2">Bubble Wrap</h3>
-            <p class="text-gray-600 text-sm">Extra protection for delicate items, glassware, and electronics. Use for anything that could crack or break.</p>
+            <p class="text-gray-600 text-sm">
+              Extra protection for delicate items, glassware, and electronics. Use for anything that
+              could crack or break.
+            </p>
           </div>
-          
+
           <div class="bg-gray-50 p-6 rounded-xl text-center">
             <div class="text-4xl mb-3">📌</div>
             <h3 class="font-bold text-brand-dark mb-2">Tape & Markers</h3>
-            <p class="text-gray-600 text-sm">Heavy-duty packing tape to secure boxes. Markers to label contents and destination room.</p>
+            <p class="text-gray-600 text-sm">
+              Heavy-duty packing tape to secure boxes. Markers to label contents and destination
+              room.
+            </p>
           </div>
         </div>
       </div>
@@ -324,31 +386,61 @@ const roomEstimates = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Packing Tips for Success
         </h2>
-        
+
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-white p-6 rounded-xl shadow-sm">
             <h3 class="font-bold text-brand-dark mb-4">✅ Do</h3>
             <ul class="space-y-2 text-gray-600 text-sm">
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Start packing 4-6 weeks early</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Pack room by room, finish one before starting another</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Label every box with contents AND destination room</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Put heavy items in small boxes, light items in large boxes</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Fill all empty space to prevent shifting</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Keep an "essentials" box with you (not on the truck)</li>
-              <li class="flex gap-2"><span class="text-green-500">✓</span> Take photos of electronics connections before unplugging</li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Start packing 4-6 weeks early
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Pack room by room, finish one before starting another
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Label every box with contents AND destination room
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Put heavy items in small boxes, light items in large
+                boxes
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Fill all empty space to prevent shifting
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Keep an "essentials" box with you (not on the truck)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-green-500">✓</span> Take photos of electronics connections before unplugging
+              </li>
             </ul>
           </div>
-          
+
           <div class="bg-white p-6 rounded-xl shadow-sm">
             <h3 class="font-bold text-brand-dark mb-4">❌ Don't</h3>
             <ul class="space-y-2 text-gray-600 text-sm">
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Overload boxes (keep under 20kg)</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Use newspaper to wrap items (ink transfers)</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Pack hazardous materials, liquids, or perishables</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Leave boxes half-empty (they'll crush when stacked)</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Wait until the last week to start packing</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Forget to measure doorways for large furniture</li>
-              <li class="flex gap-2"><span class="text-red-500">✗</span> Pack items with sentimental value in the truck (carry with you)</li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Overload boxes (keep under 20kg)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Use newspaper to wrap items (ink transfers)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Pack hazardous materials, liquids, or perishables
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Leave boxes half-empty (they'll crush when stacked)
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Wait until the last week to start packing
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Forget to measure doorways for large furniture
+              </li>
+              <li class="flex gap-2">
+                <span class="text-red-500">✗</span> Pack items with sentimental value in the truck (carry
+                with you)
+              </li>
             </ul>
           </div>
         </div>
@@ -362,19 +454,19 @@ const roomEstimates = [
       <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
         Frequently Asked Questions
       </h2>
-      
+
       <div class="max-w-3xl mx-auto space-y-4">
-        {faqQuestions.map((faq) => (
-          <details class="bg-gray-50 rounded-xl border border-gray-100 group">
-            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-              {faq.question}
-              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              {faq.answer}
-            </div>
-          </details>
-        ))}
+        {
+          faqQuestions.map((faq) => (
+            <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                {faq.question}
+                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+            </details>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -383,26 +475,39 @@ const roomEstimates = [
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
-          More Moving Resources
-        </h2>
-        
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">More Moving Resources</h2>
+
         <div class="grid md:grid-cols-3 gap-6">
-          <a href="/moving-interstate/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <a
+            href="/moving-interstate/"
+            class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+          >
             <div class="text-3xl mb-3">🚚</div>
-            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Interstate Moving Guide</h3>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Interstate Moving Guide
+            </h3>
             <p class="text-sm text-gray-500 mt-2">Complete guide to moving between states</p>
           </a>
-          
-          <a href="/furniture-removal-inventory-list/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+
+          <a
+            href="/furniture-removal-inventory-list/"
+            class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+          >
             <div class="text-3xl mb-3">📋</div>
-            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Furniture Inventory Checklist</h3>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Furniture Inventory Checklist
+            </h3>
             <p class="text-sm text-gray-500 mt-2">Room-by-room furniture checklist</p>
           </a>
-          
-          <a href="/backloading/" class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+
+          <a
+            href="/backloading/"
+            class="block bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+          >
             <div class="text-3xl mb-3">💰</div>
-            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">Save with Backloading</h3>
+            <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors">
+              Save with Backloading
+            </h3>
             <p class="text-sm text-gray-500 mt-2">Cut your moving costs by up to 60%</p>
           </a>
         </div>
@@ -419,8 +524,8 @@ const roomEstimates = [
       <p class="text-gray-300 mb-8 max-w-xl mx-auto">
         Use your box estimate to get an accurate quote. Update your count anytime as you pack.
       </p>
-      <a 
-        href="https://removalistquotes.movingagain.com.au/quote/household" 
+      <a
+        href="https://removalistquotes.movingagain.com.au/quote/household"
         class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
       >
         Get Your Free Quote

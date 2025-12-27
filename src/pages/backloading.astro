@@ -3,52 +3,60 @@ import Layout from '../layouts/Layout.astro';
 
 const faqQuestions = [
   {
-    question: "How much can I save with backloading?",
-    answer: "On average, customers save 40-60% compared to dedicated truck moves. The exact savings depend on your move size, route, timing flexibility, and current truck availability. Popular routes like Sydney-Melbourne typically offer the best savings due to high truck volumes."
+    question: 'How much can I save with backloading?',
+    answer:
+      'On average, customers save 40-60% compared to dedicated truck moves. The exact savings depend on your move size, route, timing flexibility, and current truck availability. Popular routes like Sydney-Melbourne typically offer the best savings due to high truck volumes.',
   },
   {
-    question: "How long does backloading take?",
-    answer: "Backloading typically takes 2-7 business days depending on the route. Direct routes (e.g., Sydney-Brisbane) are faster (2-4 days), while cross-country routes (e.g., Perth-Sydney) take 5-7 days. We'll give you a delivery window when you book."
+    question: 'How long does backloading take?',
+    answer:
+      "Backloading typically takes 2-7 business days depending on the route. Direct routes (e.g., Sydney-Brisbane) are faster (2-4 days), while cross-country routes (e.g., Perth-Sydney) take 5-7 days. We'll give you a delivery window when you book.",
   },
   {
-    question: "Is my furniture safe with backloading?",
-    answer: "Absolutely. Your items are professionally wrapped, secured with straps, and separated from other loads using steel partitions. All moves include transit insurance (covering fire, collision, overturning). For complete protection including breakage and handling damage, we recommend full moving insurance from movinginsurance.com.au."
+    question: 'Is my furniture safe with backloading?',
+    answer:
+      'Absolutely. Your items are professionally wrapped, secured with straps, and separated from other loads using steel partitions. All moves include transit insurance (covering fire, collision, overturning). For complete protection including breakage and handling damage, we recommend full moving insurance from movinginsurance.com.au.',
   },
   {
-    question: "What can I move with backloading?",
-    answer: "Most household furniture, boxes, and appliances. We can transport fridges, washing machines, beds, sofas, and fragile items. We can't transport hazardous materials, live plants, or perishable food. Ask us about car transport for vehicles."
+    question: 'What can I move with backloading?',
+    answer:
+      "Most household furniture, boxes, and appliances. We can transport fridges, washing machines, beds, sofas, and fragile items. We can't transport hazardous materials, live plants, or perishable food. Ask us about car transport for vehicles.",
   },
   {
-    question: "How do I get a quote?",
-    answer: "Use our online quote form or call us. We need your pickup and delivery addresses (suburbs), an inventory list or approximate cubic meter volume, and your preferred pickup window. Quotes are free and delivered within 2 hours during business hours."
+    question: 'How do I get a quote?',
+    answer:
+      'Use our online quote form or call us. We need your pickup and delivery addresses (suburbs), an inventory list or approximate cubic meter volume, and your preferred pickup window. Quotes are free and delivered within 2 hours during business hours.',
   },
   {
-    question: "What happens if my items are damaged?",
-    answer: "Transit insurance (included via our contractors) covers fire, collision, and overturning only. For breakage or handling damage, you'll need full moving insurance. We strongly recommend getting a policy from movinginsurance.com.au before your move. Document any issues immediately on delivery with photos."
+    question: 'What happens if my items are damaged?',
+    answer:
+      "Transit insurance (included via our contractors) covers fire, collision, and overturning only. For breakage or handling damage, you'll need full moving insurance. We strongly recommend getting a policy from movinginsurance.com.au before your move. Document any issues immediately on delivery with photos.",
   },
   {
-    question: "Can I choose a specific delivery date?",
-    answer: "Backloading works best with flexibility—that's where the savings come from. If you need a specific date, ask about our premium options, though this reduces the cost savings."
+    question: 'Can I choose a specific delivery date?',
+    answer:
+      "Backloading works best with flexibility—that's where the savings come from. If you need a specific date, ask about our premium options, though this reduces the cost savings.",
   },
   {
-    question: "How is backloading priced?",
-    answer: "Pricing is based on cubic meters (volume), route distance, and current availability. More popular routes with returning trucks offer better discounts. We quote per cubic meter, so you only pay for the space you use."
-  }
+    question: 'How is backloading priced?',
+    answer:
+      'Pricing is based on cubic meters (volume), route distance, and current availability. More popular routes with returning trucks offer better discounts. We quote per cubic meter, so you only pay for the space you use.',
+  },
 ];
 
 const routes = [
-  { from: "Sydney", to: "Melbourne", days: "2-3", frequency: "Daily" },
-  { from: "Sydney", to: "Brisbane", days: "2-3", frequency: "Daily" },
-  { from: "Melbourne", to: "Brisbane", days: "3-4", frequency: "3x Weekly" },
-  { from: "Perth", to: "Melbourne", days: "5-7", frequency: "2x Weekly" },
-  { from: "Perth", to: "Sydney", days: "6-8", frequency: "2x Weekly" },
-  { from: "Adelaide", to: "Melbourne", days: "1-2", frequency: "Daily" },
-  { from: "Brisbane", to: "Cairns", days: "2-3", frequency: "3x Weekly" },
-  { from: "Sydney", to: "Canberra", days: "1-2", frequency: "Daily" },
+  { from: 'Sydney', to: 'Melbourne', days: '2-3', frequency: 'Daily' },
+  { from: 'Sydney', to: 'Brisbane', days: '2-3', frequency: 'Daily' },
+  { from: 'Melbourne', to: 'Brisbane', days: '3-4', frequency: '3x Weekly' },
+  { from: 'Perth', to: 'Melbourne', days: '5-7', frequency: '2x Weekly' },
+  { from: 'Perth', to: 'Sydney', days: '6-8', frequency: '2x Weekly' },
+  { from: 'Adelaide', to: 'Melbourne', days: '1-2', frequency: 'Daily' },
+  { from: 'Brisbane', to: 'Cairns', days: '2-3', frequency: '3x Weekly' },
+  { from: 'Sydney', to: 'Canberra', days: '1-2', frequency: 'Daily' },
 ];
 ---
 
-<Layout 
+<Layout
   title="Interstate Backloading | Save 40-60% on Removals | Moving Again"
   description="Share truck space and save up to 60% on interstate removals. Professional backloading services across Australia. Door-to-door, fully insured, 2-7 day delivery."
   schemaType="FAQPage"
@@ -58,38 +66,45 @@ const routes = [
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/20 text-brand-red font-bold uppercase tracking-wider text-sm">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-red/20 text-brand-red font-bold uppercase tracking-wider text-sm"
+        >
           Australia's Smart Moving Solution
         </span>
-        
+
         <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
-          Interstate Backloading: <span class="text-brand-yellow">Save 40–60%</span> by Sharing Truck Space
+          Interstate Backloading: <span class="text-brand-yellow">Save 40–60%</span> by Sharing Truck
+          Space
         </h1>
-        
+
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          When our trucks return from a delivery, they have empty space. You fill that space and share the cost. Simple logistics, real savings.
+          When our trucks return from a delivery, they have empty space. You fill that space and
+          share the cost. Simple logistics, real savings.
         </p>
-        
+
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a 
-            href="https://removalistquotes.movingagain.com.au/quote/household" 
+          <a
+            href="https://removalistquotes.movingagain.com.au/quote/household"
             class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
           >
             Get an Instant Quote
           </a>
-          <a 
-            href="#how-it-works" 
+          <a
+            href="#how-it-works"
             class="inline-block py-4 px-8 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
           >
             See How It Works
           </a>
         </div>
-        
+
         <!-- Live Savings Badge -->
-        <div class="mt-10 inline-flex items-center gap-3 bg-white/5 rounded-full px-6 py-3 border border-white/10">
+        <div
+          class="mt-10 inline-flex items-center gap-3 bg-white/5 rounded-full px-6 py-3 border border-white/10"
+        >
           <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
           <span class="text-gray-300 text-sm">
-            <strong class="text-white">$890 saved</strong> on the last Sydney → Brisbane move (3 bedroom home)
+            <strong class="text-white">$890 saved</strong> on the last Sydney → Brisbane move (3 bedroom
+            home)
           </span>
         </div>
       </div>
@@ -100,22 +115,26 @@ const routes = [
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
-          What Is Backloading?
-        </h2>
-        
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">What Is Backloading?</h2>
+
         <div class="prose prose-lg mx-auto">
           <p>
-            Backloading is the transport industry's smartest secret. Every day, hundreds of removal trucks travel interstate carrying furniture. After they deliver, they need to return—often empty. That's wasted fuel, wasted capacity, and wasted money.
+            Backloading is the transport industry's smartest secret. Every day, hundreds of removal
+            trucks travel interstate carrying furniture. After they deliver, they need to
+            return—often empty. That's wasted fuel, wasted capacity, and wasted money.
           </p>
           <p>
-            <strong>Backloading solves this.</strong> Instead of paying for a dedicated truck (and its empty return journey), you share space on a truck already heading your way. The driver fills their return journey, you pay a fraction of the cost, and everyone wins—including the environment.
+            <strong>Backloading solves this.</strong> Instead of paying for a dedicated truck (and its
+            empty return journey), you share space on a truck already heading your way. The driver fills
+            their return journey, you pay a fraction of the cost, and everyone wins—including the environment.
           </p>
           <p>
-            Think of it like carpooling, but for your furniture. You're not getting a lesser service—you're getting the same professional removalists, the same insurance, the same care—just at a smarter price.
+            Think of it like carpooling, but for your furniture. You're not getting a lesser
+            service—you're getting the same professional removalists, the same insurance, the same
+            care—just at a smarter price.
           </p>
         </div>
-        
+
         <!-- Key Stats -->
         <div class="grid md:grid-cols-3 gap-6 mt-12">
           <div class="bg-gray-50 p-6 rounded-xl text-center">
@@ -144,7 +163,7 @@ const routes = [
       <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
         See why thousands of Australians choose backloading for their interstate moves
       </p>
-      
+
       <div class="max-w-4xl mx-auto overflow-x-auto">
         <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
           <thead>
@@ -158,32 +177,44 @@ const routes = [
             <tr>
               <td class="p-4 font-medium">Cost</td>
               <td class="p-4 text-center text-gray-600">$2,500 - $6,000+</td>
-              <td class="p-4 text-center font-bold text-brand-red bg-brand-red/5">$1,000 - $2,500 ✓</td>
+              <td class="p-4 text-center font-bold text-brand-red bg-brand-red/5"
+                >$1,000 - $2,500 ✓</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Timing</td>
               <td class="p-4 text-center text-gray-600">Fixed Date</td>
-              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5">Flexible Window (2-7 days)</td>
+              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5"
+                >Flexible Window (2-7 days)</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Space Used</td>
               <td class="p-4 text-center text-gray-600">Full truck (even if empty)</td>
-              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5">Pay only for cubic meters used ✓</td>
+              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5"
+                >Pay only for cubic meters used ✓</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Best For</td>
               <td class="p-4 text-center text-gray-600">Urgent, date-specific moves</td>
-              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5">Budget-conscious, flexible movers ✓</td>
+              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5"
+                >Budget-conscious, flexible movers ✓</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Environmental Impact</td>
               <td class="p-4 text-center text-gray-600">High (empty return trip)</td>
-              <td class="p-4 text-center font-bold text-green-600 bg-brand-red/5">Eco-Friendly (shared journey) ✓</td>
+              <td class="p-4 text-center font-bold text-green-600 bg-brand-red/5"
+                >Eco-Friendly (shared journey) ✓</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Transit Insurance</td>
               <td class="p-4 text-center text-gray-600">Often extra cost</td>
-              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5">Always Included ✓</td>
+              <td class="p-4 text-center font-bold text-brand-dark bg-brand-red/5"
+                >Always Included ✓</td
+              >
             </tr>
             <tr>
               <td class="p-4 font-medium">Professional Handling</td>
@@ -199,56 +230,71 @@ const routes = [
   <!-- How It Works -->
   <section id="how-it-works" class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">
-        How Backloading Works
-      </h2>
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">How Backloading Works</h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
         Three simple steps to save money on your interstate move
       </p>
-      
+
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <!-- Step 1 -->
         <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+          <div
+            class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+          >
             1
           </div>
           <h3 class="text-xl font-bold text-brand-dark mb-3">Tell Us Your Inventory</h3>
           <p class="text-gray-600">
-            List what you're moving—beds, sofas, boxes, appliances. We measure in <strong>cubic meters</strong> (size, not weight). Use our inventory form or send photos for a quick estimate.
+            List what you're moving—beds, sofas, boxes, appliances. We measure in <strong
+              >cubic meters</strong
+            > (size, not weight). Use our inventory form or send photos for a quick estimate.
           </p>
         </div>
-        
+
         <!-- Step 2 -->
         <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+          <div
+            class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+          >
             2
           </div>
           <h3 class="text-xl font-bold text-brand-dark mb-3">We Match Your Load</h3>
           <p class="text-gray-600">
-            Our logistics team finds a truck already scheduled on your route with available capacity. The more flexible your dates, the better the match—and the bigger your savings.
+            Our logistics team finds a truck already scheduled on your route with available
+            capacity. The more flexible your dates, the better the match—and the bigger your
+            savings.
           </p>
         </div>
-        
+
         <!-- Step 3 -->
         <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+          <div
+            class="w-20 h-20 mx-auto mb-6 bg-brand-red text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+          >
             3
           </div>
           <h3 class="text-xl font-bold text-brand-dark mb-3">Professional Pickup & Delivery</h3>
           <p class="text-gray-600">
-            Our team arrives, wraps your furniture in protective blankets, loads securely with straps, and delivers door-to-door. <strong>Fully insured, professionally handled.</strong>
+            Our team arrives, wraps your furniture in protective blankets, loads securely with
+            straps, and delivers door-to-door. <strong
+              >Fully insured, professionally handled.</strong
+            >
           </p>
         </div>
       </div>
-      
+
       <!-- Process Details -->
       <div class="max-w-3xl mx-auto mt-12 prose prose-lg">
         <h3>What to Expect on Moving Day</h3>
         <p>
-          When our truck arrives, the removalists will assess your items, apply protective blankets and wrapping to all furniture (included in the price), and carefully load everything into a partitioned section of the truck. Your items are secured with professional straps and separated from other customers' goods.
+          When our truck arrives, the removalists will assess your items, apply protective blankets
+          and wrapping to all furniture (included in the price), and carefully load everything into
+          a partitioned section of the truck. Your items are secured with professional straps and
+          separated from other customers' goods.
         </p>
         <p>
-          During transit, you'll receive updates on your delivery window. On arrival, everything is unloaded to your specified rooms—we don't just dump boxes at the door.
+          During transit, you'll receive updates on your delivery window. On arrival, everything is
+          unloaded to your specified rooms—we don't just dump boxes at the door.
         </p>
       </div>
     </div>
@@ -263,7 +309,7 @@ const routes = [
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
         We run regular services between all major Australian cities
       </p>
-      
+
       <div class="max-w-4xl mx-auto overflow-x-auto">
         <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
           <thead>
@@ -275,22 +321,34 @@ const routes = [
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-100">
-            {routes.map((route) => (
-              <tr class="hover:bg-gray-50">
-                <td class="p-4 font-medium">{route.from} ↔ {route.to}</td>
-                <td class="p-4 text-center text-gray-600">{route.days} days</td>
-                <td class="p-4 text-center text-gray-600">{route.frequency}</td>
-                <td class="p-4 text-center">
-                  <a href="https://removalistquotes.movingagain.com.au/quote/household" class="text-brand-red hover:underline font-medium">Quote →</a>
-                </td>
-              </tr>
-            ))}
+            {
+              routes.map((route) => (
+                <tr class="hover:bg-gray-50">
+                  <td class="p-4 font-medium">
+                    {route.from} ↔ {route.to}
+                  </td>
+                  <td class="p-4 text-center text-gray-600">{route.days} days</td>
+                  <td class="p-4 text-center text-gray-600">{route.frequency}</td>
+                  <td class="p-4 text-center">
+                    <a
+                      href="https://removalistquotes.movingagain.com.au/quote/household"
+                      class="text-brand-red hover:underline font-medium"
+                    >
+                      Quote →
+                    </a>
+                  </td>
+                </tr>
+              ))
+            }
           </tbody>
         </table>
       </div>
-      
+
       <p class="text-center text-gray-500 mt-6 text-sm">
-        Don't see your route? <a href="https://removalistquotes.movingagain.com.au/quote/household" class="text-brand-red hover:underline">Contact us</a>—we cover all Australian interstate moves.
+        Don't see your route? <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
+          class="text-brand-red hover:underline">Contact us</a
+        >—we cover all Australian interstate moves.
       </p>
     </div>
   </section>
@@ -302,27 +360,39 @@ const routes = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Backloading Pricing Guide
         </h2>
-        
+
         <div class="prose prose-lg mx-auto">
           <p>
-            Backloading is priced by <strong>cubic meter (m³)</strong>—the volume your items take up in the truck. This means you pay for exactly what you're moving, not for empty space.
+            Backloading is priced by <strong>cubic meter (m³)</strong>—the volume your items take up
+            in the truck. This means you pay for exactly what you're moving, not for empty space.
           </p>
-          
+
           <h3>What Affects Your Quote?</h3>
           <ul>
-            <li><strong>Volume (cubic meters):</strong> A 1-bedroom unit is typically 5-10m³; a 3-bedroom house is 25-40m³</li>
-            <li><strong>Route distance:</strong> Sydney-Melbourne costs less than Perth-Brisbane</li>
-            <li><strong>Timing flexibility:</strong> More flexibility = better truck matches = lower prices</li>
-            <li><strong>Current availability:</strong> Popular routes often have multiple trucks available, increasing competition</li>
-            <li><strong>Access difficulty:</strong> Stairs, tight streets, or long carries may add to the quote</li>
+            <li>
+              <strong>Volume (cubic meters):</strong> A 1-bedroom unit is typically 5-10m³; a 3-bedroom
+              house is 25-40m³
+            </li>
+            <li>
+              <strong>Route distance:</strong> Sydney-Melbourne costs less than Perth-Brisbane
+            </li>
+            <li>
+              <strong>Timing flexibility:</strong> More flexibility = better truck matches = lower prices
+            </li>
+            <li>
+              <strong>Current availability:</strong> Popular routes often have multiple trucks available,
+              increasing competition
+            </li>
+            <li>
+              <strong>Access difficulty:</strong> Stairs, tight streets, or long carries may add to the
+              quote
+            </li>
           </ul>
-          
+
           <h3>Sample Price Ranges</h3>
-          <p>
-            These are indicative ranges for standard moves with good access:
-          </p>
+          <p>These are indicative ranges for standard moves with good access:</p>
         </div>
-        
+
         <div class="overflow-x-auto mt-8">
           <table class="w-full border-collapse bg-gray-50 rounded-xl overflow-hidden">
             <thead>
@@ -367,9 +437,12 @@ const routes = [
             </tbody>
           </table>
         </div>
-        
+
         <p class="text-center text-gray-500 mt-6 text-sm">
-          Prices are estimates only. <a href="https://removalistquotes.movingagain.com.au/quote/household" class="text-brand-red hover:underline">Get a personalized quote</a> for your exact move.
+          Prices are estimates only. <a
+            href="https://removalistquotes.movingagain.com.au/quote/household"
+            class="text-brand-red hover:underline">Get a personalized quote</a
+          > for your exact move.
         </p>
       </div>
     </div>
@@ -379,57 +452,68 @@ const routes = [
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
-          Your Items, Protected
-        </h2>
-        
+        <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Your Items, Protected</h2>
+
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-2xl shadow-sm">
             <div class="text-4xl mb-4">🛡️</div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Transit Insurance Included</h3>
             <p class="text-gray-600 mb-4">
-              All moves include transit insurance via our contractor partners. This covers fire, collision, and overturning of the truck.
+              All moves include transit insurance via our contractor partners. This covers fire,
+              collision, and overturning of the truck.
             </p>
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
               <p class="text-yellow-800 text-sm">
-                <strong>Note:</strong> Transit insurance does NOT cover breakage, scratches, or handling damage.
+                <strong>Note:</strong> Transit insurance does NOT cover breakage, scratches, or handling
+                damage.
               </p>
             </div>
-            <a href="https://movinginsurance.com.au" target="_blank" rel="noopener" class="text-brand-red font-bold hover:underline text-sm">
+            <a
+              href="https://movinginsurance.com.au"
+              target="_blank"
+              rel="noopener"
+              class="text-brand-red font-bold hover:underline text-sm"
+            >
               Get full moving insurance →
             </a>
           </div>
-          
+
           <div class="bg-white p-8 rounded-2xl shadow-sm">
             <div class="text-4xl mb-4">📦</div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">"Shared" Doesn't Mean "Mixed"</h3>
             <p class="text-gray-600 mb-4">
-              We know what you're thinking: "What about my neighbor's stuff touching mine?" Don't worry—that doesn't happen.
+              We know what you're thinking: "What about my neighbor's stuff touching mine?" Don't
+              worry—that doesn't happen.
             </p>
             <p class="text-gray-600">
-              Your items are wrapped in protective blankets, secured with professional straps, and separated from other loads using steel partitions. Each load has its own distinct area.
+              Your items are wrapped in protective blankets, secured with professional straps, and
+              separated from other loads using steel partitions. Each load has its own distinct
+              area.
             </p>
           </div>
-          
+
           <div class="bg-white p-8 rounded-2xl shadow-sm">
             <div class="text-4xl mb-4">👷</div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Professional Removalists</h3>
             <p class="text-gray-600 mb-4">
-              Our teams are trained, experienced, and careful. We've been doing this since 2010, and we know how to handle everything from delicate antiques to heavy appliances.
+              Our teams are trained, experienced, and careful. We've been doing this since 2010, and
+              we know how to handle everything from delicate antiques to heavy appliances.
             </p>
             <p class="text-gray-600">
               Same professional service as a dedicated move—just at a smarter price.
             </p>
           </div>
-          
+
           <div class="bg-white p-8 rounded-2xl shadow-sm">
             <div class="text-4xl mb-4">📋</div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Transparent Process</h3>
             <p class="text-gray-600 mb-4">
-              No hidden fees. No surprise charges. Your quote includes pickup, transport, delivery, blankets/wrapping, and insurance.
+              No hidden fees. No surprise charges. Your quote includes pickup, transport, delivery,
+              blankets/wrapping, and insurance.
             </p>
             <p class="text-gray-600">
-              The only extras are optional services like packing, boxes, or difficult access (stairs, long carries)—and we'll quote these upfront.
+              The only extras are optional services like packing, boxes, or difficult access
+              (stairs, long carries)—and we'll quote these upfront.
             </p>
           </div>
         </div>
@@ -444,17 +528,31 @@ const routes = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Preparing for Your Backload Move
         </h2>
-        
+
         <div class="prose prose-lg mx-auto">
           <h3>Before Moving Day</h3>
           <ul>
-            <li><strong>Inventory your items:</strong> List what's being moved so we can calculate accurate cubic meters</li>
-            <li><strong>Declutter:</strong> Backloading charges by volume—the less you move, the less you pay</li>
-            <li><strong>Disassemble large furniture:</strong> Beds, tables, and wardrobes should be disassembled where possible</li>
-            <li><strong>Label boxes:</strong> Mark fragile items and which room they go in at the destination</li>
-            <li><strong>Clear access:</strong> Ensure pathways are clear and parking is available for the truck</li>
+            <li>
+              <strong>Inventory your items:</strong> List what's being moved so we can calculate accurate
+              cubic meters
+            </li>
+            <li>
+              <strong>Declutter:</strong> Backloading charges by volume—the less you move, the less you
+              pay
+            </li>
+            <li>
+              <strong>Disassemble large furniture:</strong> Beds, tables, and wardrobes should be disassembled
+              where possible
+            </li>
+            <li>
+              <strong>Label boxes:</strong> Mark fragile items and which room they go in at the destination
+            </li>
+            <li>
+              <strong>Clear access:</strong> Ensure pathways are clear and parking is available for the
+              truck
+            </li>
           </ul>
-          
+
           <h3>What We Provide</h3>
           <p>Included in your quote:</p>
           <ul>
@@ -464,7 +562,7 @@ const routes = [
             <li>Door-to-door service</li>
             <li>Unloading to specified rooms</li>
           </ul>
-          
+
           <h3>Optional Extras</h3>
           <p>Available at additional cost:</p>
           <ul>
@@ -484,19 +582,19 @@ const routes = [
       <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
         Frequently Asked Questions
       </h2>
-      
+
       <div class="max-w-3xl mx-auto space-y-4">
-        {faqQuestions.map((faq) => (
-          <details class="bg-white rounded-xl border border-gray-100 group">
-            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-              {faq.question}
-              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              {faq.answer}
-            </div>
-          </details>
-        ))}
+        {
+          faqQuestions.map((faq) => (
+            <details class="bg-white rounded-xl border border-gray-100 group">
+              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                {faq.question}
+                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+            </details>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -508,25 +606,31 @@ const routes = [
         <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Nationwide Backloading Coverage
         </h2>
-        
+
         <div class="prose prose-lg mx-auto">
           <p>
-            We run backloading services between all Australian states and territories. Whether you're moving from Sydney to Melbourne, Perth to Brisbane, or anywhere in between—we've got you covered.
+            We run backloading services between all Australian states and territories. Whether
+            you're moving from Sydney to Melbourne, Perth to Brisbane, or anywhere in between—we've
+            got you covered.
           </p>
-          
+
           <h3>State Hubs</h3>
-          <p>
-            Our primary hubs ensure regular truck availability and competitive pricing:
-          </p>
+          <p>Our primary hubs ensure regular truck availability and competitive pricing:</p>
         </div>
-        
+
         <div class="grid md:grid-cols-3 gap-6 mt-8">
-          <a href="/perth/" class="block bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow text-center group">
+          <a
+            href="/perth/"
+            class="block bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow text-center group"
+          >
             <div class="text-3xl mb-2">🌏</div>
             <h3 class="font-bold text-brand-dark group-hover:text-brand-red">Western Australia</h3>
             <p class="text-sm text-gray-500">Perth, Bunbury, Mandurah</p>
           </a>
-          <a href="/townsville/" class="block bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow text-center group">
+          <a
+            href="/townsville/"
+            class="block bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow text-center group"
+          >
             <div class="text-3xl mb-2">☀️</div>
             <h3 class="font-bold text-brand-dark group-hover:text-brand-red">Queensland</h3>
             <p class="text-sm text-gray-500">Brisbane, Townsville, Cairns</p>
@@ -563,17 +667,18 @@ const routes = [
         Ready to Save on Your Interstate Move?
       </h2>
       <p class="text-gray-300 mb-8 max-w-xl mx-auto">
-        Get a free quote in under 2 minutes. No obligation, no hidden fees. Just smart savings on your next move.
+        Get a free quote in under 2 minutes. No obligation, no hidden fees. Just smart savings on
+        your next move.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="https://removalistquotes.movingagain.com.au/quote/household" 
+        <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
           class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
         >
           Get Your Free Quote
         </a>
-        <a 
-          href="tel:1300000000" 
+        <a
+          href="tel:1300000000"
           class="inline-block py-4 px-10 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
         >
           Call 1300 000 000

@@ -10,24 +10,31 @@ const { origin, destination } = Astro.props;
 <section class="py-12 bg-white">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
-      <div class="bg-gradient-to-br from-red-50/50 to-gray-50 rounded-2xl p-8 border border-red-100/50">
+      <div
+        class="bg-gradient-to-br from-red-50/50 to-gray-50 rounded-2xl p-8 border border-red-100/50"
+      >
         <h2 class="text-2xl font-bold text-brand-dark mb-6">
           Service Options for {origin} to {destination}
         </h2>
-        
+
         <p class="text-gray-600 mb-8">
-          Moving from {origin} to {destination}? We offer flexible service options to suit your needs and budget.
+          Moving from {origin} to {destination}? We offer flexible service options to suit your
+          needs and budget.
         </p>
-        
+
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Standard Backloading -->
           <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
             <div class="flex items-center gap-3 mb-4">
-              <span class="w-10 h-10 bg-brand-red/10 rounded-full flex items-center justify-center text-xl">💰</span>
+              <span
+                class="w-10 h-10 bg-brand-red/10 rounded-full flex items-center justify-center text-xl"
+                >💰</span
+              >
               <h3 class="font-bold text-brand-dark">Standard Backloading</h3>
             </div>
             <p class="text-gray-600 text-sm mb-4">
-              Our most affordable option. You're flexible with pickup (48-hour window), and we match you with trucks heading from {origin} to {destination}.
+              Our most affordable option. You're flexible with pickup (48-hour window), and we match
+              you with trucks heading from {origin} to {destination}.
             </p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2 text-gray-600">
@@ -41,15 +48,19 @@ const { origin, destination } = Astro.props;
               </li>
             </ul>
           </div>
-          
+
           <!-- Express Service -->
           <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
             <div class="flex items-center gap-3 mb-4">
-              <span class="w-10 h-10 bg-brand-yellow/10 rounded-full flex items-center justify-center text-xl">⚡</span>
+              <span
+                class="w-10 h-10 bg-brand-yellow/10 rounded-full flex items-center justify-center text-xl"
+                >⚡</span
+              >
               <h3 class="font-bold text-brand-dark">Express Service</h3>
             </div>
             <p class="text-gray-600 text-sm mb-4">
-              Need tighter timelines? Ask about our express options for priority pickup and faster transit times.
+              Need tighter timelines? Ask about our express options for priority pickup and faster
+              transit times.
             </p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-center gap-2 text-gray-600">

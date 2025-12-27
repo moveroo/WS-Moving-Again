@@ -4,123 +4,148 @@ import Layout from '../layouts/Layout.astro';
 // Backloading FAQs
 const backloadingFaqs = [
   {
-    question: "What is backloading?",
-    answer: "Backloading means sharing space on a truck that's already travelling your route. Instead of paying for a whole truck, you share the cost with other customers heading the same way. This can save you up to 60% compared to a dedicated removal."
+    question: 'What is backloading?',
+    answer:
+      "Backloading means sharing space on a truck that's already travelling your route. Instead of paying for a whole truck, you share the cost with other customers heading the same way. This can save you up to 60% compared to a dedicated removal.",
   },
   {
-    question: "How much can I save with backloading?",
-    answer: "Savings vary depending on your route and how much you're moving, but customers typically save 30-60% compared to exclusive truck hire. The more flexible you are with dates, the more you can save."
+    question: 'How much can I save with backloading?',
+    answer:
+      "Savings vary depending on your route and how much you're moving, but customers typically save 30-60% compared to exclusive truck hire. The more flexible you are with dates, the more you can save.",
   },
   {
-    question: "How long does backloading take?",
-    answer: "Transit times vary by route. Brisbane to Sydney might be 3-5 days, while Perth to Melbourne could be 7-10 days. We'll give you an estimated timeframe when you get a quote, and keep you updated throughout."
+    question: 'How long does backloading take?',
+    answer:
+      "Transit times vary by route. Brisbane to Sydney might be 3-5 days, while Perth to Melbourne could be 7-10 days. We'll give you an estimated timeframe when you get a quote, and keep you updated throughout.",
   },
   {
-    question: "Is my furniture safe when sharing a truck?",
-    answer: "Yes. Your items are professionally wrapped, secured with straps, and separated from other loads using steel partitions. We treat backloading jobs with the same care as dedicated moves. Moving furniture long distances does carry some inherent risk, but we take every precaution to protect your belongings."
+    question: 'Is my furniture safe when sharing a truck?',
+    answer:
+      'Yes. Your items are professionally wrapped, secured with straps, and separated from other loads using steel partitions. We treat backloading jobs with the same care as dedicated moves. Moving furniture long distances does carry some inherent risk, but we take every precaution to protect your belongings.',
   },
   {
-    question: "Do I need to be flexible with dates?",
-    answer: "Some flexibility helps—we typically ask for a 48-hour pickup window rather than a specific day. This lets us match you with trucks heading your way, which is how we offer lower prices."
+    question: 'Do I need to be flexible with dates?',
+    answer:
+      'Some flexibility helps—we typically ask for a 48-hour pickup window rather than a specific day. This lets us match you with trucks heading your way, which is how we offer lower prices.',
   },
   {
-    question: "Is there a minimum amount I need to move?",
-    answer: "Not at all—that's the main benefit of backloading. It enables us to take anything from 1 item to an entire truck full. Just send through a list of what you need to move and we'll give you a price."
+    question: 'Is there a minimum amount I need to move?',
+    answer:
+      "Not at all—that's the main benefit of backloading. It enables us to take anything from 1 item to an entire truck full. Just send through a list of what you need to move and we'll give you a price.",
   },
   {
-    question: "Will you beat competitor quotes?",
-    answer: "Whilst we believe you'll generally not find a cheaper price, if you somehow do we'll happily do our best to beat it for you."
-  }
+    question: 'Will you beat competitor quotes?',
+    answer:
+      "Whilst we believe you'll generally not find a cheaper price, if you somehow do we'll happily do our best to beat it for you.",
+  },
 ];
 
 // Interstate Moving FAQs
 const interstateFaqs = [
   {
-    question: "How much notice do you need?",
-    answer: "Ideally, we'd like around a week to provide the best service. For last-minute jobs between metropolitan areas, we can often work with just 48 hours notice."
+    question: 'How much notice do you need?',
+    answer:
+      "Ideally, we'd like around a week to provide the best service. For last-minute jobs between metropolitan areas, we can often work with just 48 hours notice.",
   },
   {
-    question: "How do I get an accurate moving quote?",
-    answer: "Create a detailed inventory of everything you're moving. We always request an inventory list as it's the most accurate way to quote. When customers estimate cubic metres themselves, they often over or underestimate the size which leads to incorrect pricing."
+    question: 'How do I get an accurate moving quote?',
+    answer:
+      "Create a detailed inventory of everything you're moving. We always request an inventory list as it's the most accurate way to quote. When customers estimate cubic metres themselves, they often over or underestimate the size which leads to incorrect pricing.",
   },
   {
     question: "What's included in the moving price?",
-    answer: "Our quotes include pickup, transit, delivery, basic wrapping, and transit insurance. Packing services, specialty item handling, and storage are available as add-ons. Your quote will clearly show what's included."
+    answer:
+      "Our quotes include pickup, transit, delivery, basic wrapping, and transit insurance. Packing services, specialty item handling, and storage are available as add-ons. Your quote will clearly show what's included.",
   },
   {
-    question: "How many boxes do I need?",
-    answer: "It depends on your home size. A 2-bedroom typically needs 20-30 boxes, while a 4-bedroom might need 35-60. Standard removal cartons are approx 650×450×450mm. Book cartons are 400×300×430mm. Check our box calculator for detailed estimates."
+    question: 'How many boxes do I need?',
+    answer:
+      'It depends on your home size. A 2-bedroom typically needs 20-30 boxes, while a 4-bedroom might need 35-60. Standard removal cartons are approx 650×450×450mm. Book cartons are 400×300×430mm. Check our box calculator for detailed estimates.',
   },
   {
-    question: "What about insurance?",
-    answer: "Transit insurance is included via our contractors, covering fire, collision, and overturning during transport. For complete protection including breakage and handling damage, we recommend full moving insurance from movinginsurance.com.au."
+    question: 'What about insurance?',
+    answer:
+      'Transit insurance is included via our contractors, covering fire, collision, and overturning during transport. For complete protection including breakage and handling damage, we recommend full moving insurance from movinginsurance.com.au.',
   },
   {
-    question: "Can you move items from multiple locations?",
-    answer: "Yes, we can arrange pickups from multiple addresses. Just let us know when you're getting a quote—there may be additional charges depending on the locations and distances involved."
+    question: 'Can you move items from multiple locations?',
+    answer:
+      "Yes, we can arrange pickups from multiple addresses. Just let us know when you're getting a quote—there may be additional charges depending on the locations and distances involved.",
   },
   {
-    question: "Should I wrap upholstered furniture in plastic?",
-    answer: "Yes, we always recommend wrapping upholstered furniture in plastic covers. Even when wrapped in our removal blankets, items can sometimes get dusty or dirty inside the truck during transit."
+    question: 'Should I wrap upholstered furniture in plastic?',
+    answer:
+      'Yes, we always recommend wrapping upholstered furniture in plastic covers. Even when wrapped in our removal blankets, items can sometimes get dusty or dirty inside the truck during transit.',
   },
   {
-    question: "Can I leave items inside drawers?",
-    answer: "It's never a good idea to store items inside drawers during a move. It runs a high risk of damaging the drawers, and there's also the possibility of belongings falling out and getting lost."
+    question: 'Can I leave items inside drawers?',
+    answer:
+      "It's never a good idea to store items inside drawers during a move. It runs a high risk of damaging the drawers, and there's also the possibility of belongings falling out and getting lost.",
   },
   {
-    question: "Can I move pot plants interstate?",
-    answer: "Yes, most common house plants can be moved, but each state has different quarantine rules. WA and Tasmania are strictest. Check our Moving Pot Plants guide and your destination state's requirements."
-  }
+    question: 'Can I move pot plants interstate?',
+    answer:
+      "Yes, most common house plants can be moved, but each state has different quarantine rules. WA and Tasmania are strictest. Check our Moving Pot Plants guide and your destination state's requirements.",
+  },
 ];
 
 // Car Transport FAQs
 const carTransportFaqs = [
   {
-    question: "Can I put my car on your furniture truck?",
-    answer: "No, cars can't travel on furniture trucks. However, we can give you a separate quote to transport your car on a dedicated car carrier at the same time as your furniture."
+    question: 'Can I put my car on your furniture truck?',
+    answer:
+      "No, cars can't travel on furniture trucks. However, we can give you a separate quote to transport your car on a dedicated car carrier at the same time as your furniture.",
   },
   {
-    question: "How does car transport work?",
-    answer: "Your vehicle is collected by a car carrier and transported to your destination. You can choose door-to-door pickup/delivery or depot-to-depot for savings. Cars are secured and transported by professional carriers."
+    question: 'How does car transport work?',
+    answer:
+      'Your vehicle is collected by a car carrier and transported to your destination. You can choose door-to-door pickup/delivery or depot-to-depot for savings. Cars are secured and transported by professional carriers.',
   },
   {
     question: "Open or enclosed transport—what's the difference?",
-    answer: "Open transport is the standard, cost-effective option suitable for most vehicles. Enclosed transport provides extra protection from weather and road debris—recommended for luxury, classic, or high-value vehicles."
+    answer:
+      'Open transport is the standard, cost-effective option suitable for most vehicles. Enclosed transport provides extra protection from weather and road debris—recommended for luxury, classic, or high-value vehicles.',
   },
   {
-    question: "How long does car transport take?",
-    answer: "Transit times depend on distance and route frequency. East coast moves (e.g., Sydney to Melbourne) might be 2-4 days. Cross-country routes (e.g., Perth to Brisbane) can take 7-12 days."
+    question: 'How long does car transport take?',
+    answer:
+      'Transit times depend on distance and route frequency. East coast moves (e.g., Sydney to Melbourne) might be 2-4 days. Cross-country routes (e.g., Perth to Brisbane) can take 7-12 days.',
   },
   {
-    question: "Do I need to prepare my car?",
-    answer: "Yes—remove personal belongings, ensure the car starts and brakes work, check for leaks, note any existing damage, and keep fuel at about ¼ tank. We'll provide a full preparation checklist."
+    question: 'Do I need to prepare my car?',
+    answer:
+      "Yes—remove personal belongings, ensure the car starts and brakes work, check for leaks, note any existing damage, and keep fuel at about ¼ tank. We'll provide a full preparation checklist.",
   },
   {
-    question: "Is my car insured during transport?",
-    answer: "All vehicles are covered by the carrier's transit insurance during transport. For high-value vehicles, you may want additional coverage. Check with your own insurer about any policy requirements."
-  }
+    question: 'Is my car insured during transport?',
+    answer:
+      "All vehicles are covered by the carrier's transit insurance during transport. For high-value vehicles, you may want additional coverage. Check with your own insurer about any policy requirements.",
+  },
 ];
 
 // General / Booking FAQs
 const generalFaqs = [
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept bank transfer, credit card, or cash payment to the driver. Payment details will be provided with your booking confirmation."
+    question: 'What payment methods do you accept?',
+    answer:
+      'We accept bank transfer, credit card, or cash payment to the driver. Payment details will be provided with your booking confirmation.',
   },
   {
-    question: "Are there fees to change my moving date?",
-    answer: "No, there are no fees to change your date. However, we need as much notice as possible so we can try to secure your new date."
+    question: 'Are there fees to change my moving date?',
+    answer:
+      'No, there are no fees to change your date. However, we need as much notice as possible so we can try to secure your new date.',
   },
   {
-    question: "What are your contact hours?",
-    answer: "Phones are answered Monday to Friday, 8am to 4pm. We also provide online and email support every day—if you have a question, just email and we'll get back to you quickly."
-  }
+    question: 'What are your contact hours?',
+    answer:
+      "Phones are answered Monday to Friday, 8am to 4pm. We also provide online and email support every day—if you have a question, just email and we'll get back to you quickly.",
+  },
 ];
 
 const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...generalFaqs];
 ---
 
-<Layout 
+<Layout
   title="Moving FAQs | Common Questions Answered | Moving Again"
   description="Get answers to frequently asked questions about backloading, interstate moving, and car transport in Australia. Everything you need to know before your move."
   schemaType="FAQPage"
@@ -130,30 +155,42 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <span class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-brand-yellow/20 text-brand-yellow font-bold uppercase tracking-wider text-sm"
+        >
           Help Centre
         </span>
-        
-        <h1 class="text-4xl md:text-5xl font-black mb-6">
-          Frequently Asked Questions
-        </h1>
-        
+
+        <h1 class="text-4xl md:text-5xl font-black mb-6">Frequently Asked Questions</h1>
+
         <p class="text-xl text-gray-300 mb-8">
           Everything you need to know about moving interstate with Moving Again.
         </p>
-        
+
         <!-- Jump Links -->
         <div class="flex flex-wrap justify-center gap-3">
-          <a href="#backloading" class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
+          <a
+            href="#backloading"
+            class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+          >
             Backloading
           </a>
-          <a href="#interstate" class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
+          <a
+            href="#interstate"
+            class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+          >
             Interstate Moving
           </a>
-          <a href="#car-transport" class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
+          <a
+            href="#car-transport"
+            class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+          >
             Car Transport
           </a>
-          <a href="#general" class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors">
+          <a
+            href="#general"
+            class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+          >
             General
           </a>
         </div>
@@ -166,27 +203,31 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl">
+          <div
+            class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl"
+          >
             🚛
           </div>
           <div>
             <h2 class="text-2xl font-bold text-brand-dark">Backloading Questions</h2>
-            <a href="/backloading/" class="text-brand-red hover:underline text-sm">Learn more about backloading →</a>
+            <a href="/backloading/" class="text-brand-red hover:underline text-sm"
+              >Learn more about backloading →</a
+            >
           </div>
         </div>
-        
+
         <div class="space-y-4">
-          {backloadingFaqs.map((faq) => (
-            <details class="bg-gray-50 rounded-xl border border-gray-100 group">
-              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-                {faq.question}
-                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-              </summary>
-              <div class="px-6 pb-6 text-gray-600">
-                {faq.answer}
-              </div>
-            </details>
-          ))}
+          {
+            backloadingFaqs.map((faq) => (
+              <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+                <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                  {faq.question}
+                  <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -197,27 +238,31 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl">
+          <div
+            class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl"
+          >
             📦
           </div>
           <div>
             <h2 class="text-2xl font-bold text-brand-dark">Interstate Moving Questions</h2>
-            <a href="/moving-interstate/" class="text-brand-red hover:underline text-sm">Complete interstate moving guide →</a>
+            <a href="/moving-interstate/" class="text-brand-red hover:underline text-sm"
+              >Complete interstate moving guide →</a
+            >
           </div>
         </div>
-        
+
         <div class="space-y-4">
-          {interstateFaqs.map((faq) => (
-            <details class="bg-white rounded-xl border border-gray-100 group">
-              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-                {faq.question}
-                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-              </summary>
-              <div class="px-6 pb-6 text-gray-600">
-                {faq.answer}
-              </div>
-            </details>
-          ))}
+          {
+            interstateFaqs.map((faq) => (
+              <details class="bg-white rounded-xl border border-gray-100 group">
+                <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                  {faq.question}
+                  <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -228,27 +273,31 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl">
+          <div
+            class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl"
+          >
             🚗
           </div>
           <div>
             <h2 class="text-2xl font-bold text-brand-dark">Car Transport Questions</h2>
-            <a href="/car-transport/" class="text-brand-red hover:underline text-sm">Car transport explained →</a>
+            <a href="/car-transport/" class="text-brand-red hover:underline text-sm"
+              >Car transport explained →</a
+            >
           </div>
         </div>
-        
+
         <div class="space-y-4">
-          {carTransportFaqs.map((faq) => (
-            <details class="bg-gray-50 rounded-xl border border-gray-100 group">
-              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-                {faq.question}
-                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-              </summary>
-              <div class="px-6 pb-6 text-gray-600">
-                {faq.answer}
-              </div>
-            </details>
-          ))}
+          {
+            carTransportFaqs.map((faq) => (
+              <details class="bg-gray-50 rounded-xl border border-gray-100 group">
+                <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                  {faq.question}
+                  <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -259,7 +308,9 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl">
+          <div
+            class="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center text-2xl"
+          >
             ❓
           </div>
           <div>
@@ -267,19 +318,19 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
             <span class="text-gray-500 text-sm">Booking, payment, and other queries</span>
           </div>
         </div>
-        
+
         <div class="space-y-4">
-          {generalFaqs.map((faq) => (
-            <details class="bg-white rounded-xl border border-gray-100 group">
-              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-                {faq.question}
-                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-              </summary>
-              <div class="px-6 pb-6 text-gray-600">
-                {faq.answer}
-              </div>
-            </details>
-          ))}
+          {
+            generalFaqs.map((faq) => (
+              <details class="bg-white rounded-xl border border-gray-100 group">
+                <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                  {faq.question}
+                  <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -289,22 +340,20 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-brand-dark mb-4">
-          Still Have Questions?
-        </h2>
+        <h2 class="text-3xl font-bold text-brand-dark mb-4">Still Have Questions?</h2>
         <p class="text-gray-600 mb-8">
           Can't find what you're looking for? Get in touch and we'll help you out.
         </p>
-        
+
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a 
-            href="/contact/" 
+          <a
+            href="/contact/"
             class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors"
           >
             Contact Us
           </a>
-          <a 
-            href="tel:1300668464" 
+          <a
+            href="tel:1300668464"
             class="inline-block py-4 px-8 bg-white border-2 border-brand-dark text-brand-dark font-bold rounded-brand text-lg hover:bg-gray-50 transition-colors"
           >
             📞 1300 668 464
@@ -317,21 +366,19 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
   <!-- CTA -->
   <section class="py-20 bg-brand-dark">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">
-        Ready to Get Started?
-      </h2>
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
       <p class="text-gray-300 mb-8 max-w-xl mx-auto">
         Get a free quote for your interstate move, backloading service, or car transport.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="https://removalistquotes.movingagain.com.au/quote/household" 
+        <a
+          href="https://removalistquotes.movingagain.com.au/quote/household"
           class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
         >
           Moving Quote
         </a>
-        <a 
-          href="https://carquotes.movingagain.com.au/quote/v2" 
+        <a
+          href="https://carquotes.movingagain.com.au/quote/v2"
           class="inline-block py-4 px-8 bg-white/10 text-white font-bold rounded-brand text-lg hover:bg-white/20 transition-colors border border-white/20"
         >
           Car Transport Quote

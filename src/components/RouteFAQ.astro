@@ -14,22 +14,20 @@ const { faqs } = Astro.props;
 <section class="py-16 bg-gradient-to-b from-gray-50 to-red-50/30">
   <div class="container mx-auto px-4">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold text-brand-dark mb-8">
-        Frequently Asked Questions
-      </h2>
-      
+      <h2 class="text-3xl font-bold text-brand-dark mb-8">Frequently Asked Questions</h2>
+
       <div class="space-y-4">
-        {faqs.map((faq) => (
-          <details class="bg-white rounded-xl border border-gray-100 group">
-            <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
-              {faq.question}
-              <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              {faq.answer}
-            </div>
-          </details>
-        ))}
+        {
+          faqs.map((faq) => (
+            <details class="bg-white rounded-xl border border-gray-100 group">
+              <summary class="p-6 cursor-pointer font-bold text-brand-dark flex justify-between items-center">
+                {faq.question}
+                <span class="text-brand-red group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600">{faq.answer}</div>
+            </details>
+          ))
+        }
       </div>
     </div>
   </div>
