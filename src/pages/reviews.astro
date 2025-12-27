@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { BRAND } from '../utils/brand';
 
 // Realistic reviews - balanced, not over the top
 const reviews = [
@@ -174,7 +175,7 @@ const averageRating = (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.l
         </div>
 
         <div>
-          <div class="text-4xl font-black text-brand-red mb-2">15+</div>
+          <div class="text-4xl font-black text-brand-red mb-2">{BRAND.yearsInBusiness}+</div>
           <p class="text-sm text-gray-600">Years in business</p>
         </div>
 

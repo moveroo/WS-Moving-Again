@@ -1,4 +1,6 @@
 ---
+import { BRAND } from '../utils/brand';
+
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Backloading', href: '/backloading/' },
@@ -11,7 +13,9 @@ const navItems = [
   <!-- Top Bar -->
   <div class="bg-brand-dark text-white py-2 px-4">
     <div class="container mx-auto flex justify-center items-center text-sm md:text-base">
-      <div class="font-bold text-brand-yellow">🚛 Moving Made Easy – 30 Years Experience</div>
+      <div class="font-bold text-brand-yellow">
+        🚛 Moving Made Easy – {BRAND.yearsInBusiness} Years Experience
+      </div>
     </div>
   </div>
 

@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { BRAND } from '../utils/brand';
 ---
 
 <Layout
   title="Moving Again | Australia's Interstate Removalists Since 1995"
-  description="Moving Again is Australia's most trusted interstate removalist with 30 years experience. Backloading, car transport, and container shipping. Get your free quote today."
+  description={`Moving Again is Australia's most trusted interstate removalist with ${BRAND.yearsInBusiness} years experience. Backloading, car transport, and container shipping. Get your free quote today.`}
 >
   <!-- Hero Section -->
   <section
@@ -26,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
           class="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-brand-yellow/20 border border-brand-yellow/30"
         >
           <span class="text-brand-yellow font-bold text-sm uppercase tracking-wider"
-            >🏆 30 Years of Moving Australia</span
+            >🏆 {BRAND.yearsInBusiness} Years of Moving Australia</span
           >
         </div>
 
@@ -177,14 +178,14 @@ import Layout from '../layouts/Layout.astro';
       <div class="text-center mb-12">
         <h2 class="text-4xl font-black">Why Choose Moving Again?</h2>
         <p class="text-white/70 mt-4 text-lg max-w-2xl mx-auto">
-          For 30 years, we've been helping Australians move interstate with care and
-          professionalism.
+          For {BRAND.yearsInBusiness} years, we've been helping Australians move interstate with care
+          and professionalism.
         </p>
       </div>
 
       <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
         <div class="text-center">
-          <div class="text-5xl font-black text-brand-yellow mb-2">30</div>
+          <div class="text-5xl font-black text-brand-yellow mb-2">{BRAND.yearsInBusiness}</div>
           <div class="text-white/80 text-sm uppercase tracking-wider">Years Experience</div>
         </div>
         <div class="text-center">

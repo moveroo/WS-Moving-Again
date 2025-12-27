@@ -1,4 +1,6 @@
 ---
+import { BRAND } from '../utils/brand';
+
 interface Props {
   origin: string;
   destination: string;
@@ -21,7 +23,7 @@ const { origin, destination } = Astro.props;
               class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-2xl mb-4"
               >🏆</span
             >
-            <h3 class="font-bold mb-2">30 Years Experience</h3>
+            <h3 class="font-bold mb-2">{BRAND.yearsInBusiness} Years Experience</h3>
             <p class="text-gray-300 text-sm">Thousands of successful moves across Australia</p>
           </div>
 
