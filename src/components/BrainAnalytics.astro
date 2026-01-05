@@ -21,16 +21,18 @@ const debug = import.meta.env.DEV;
       <script is:inline src="/brain-analytics.js" defer />
       {/* prettier-ignore */}
       <script is:inline set:html={`
-        if (typeof BrainAnalytics !== 'undefined') {
-          BrainAnalytics.init({
-            url: '${brainUrl}',
-            key: '${brainKey}',
-            debug: ${debug},
-            trackScrollDepth: true,
-            trackPerformance: true,
-            trackClicks: true
-          });
-        }
+        window.addEventListener('DOMContentLoaded', function() {
+          if (typeof BrainAnalytics !== 'undefined') {
+            BrainAnalytics.init({
+              url: '${brainUrl}',
+              key: '${brainKey}',
+              debug: ${debug},
+              trackScrollDepth: true,
+              trackPerformance: true,
+              trackClicks: true
+            });
+          }
+        });
       `} />
     </>
   )
