@@ -1,27 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
+import { getCollection } from 'astro:content';
+import { BRAND } from '../utils/brand';
 import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
+import { getPopularRoutesForCity } from '../utils/routeDiscovery';
+
+const allRoutes = await getCollection('routes');
+const cityName = 'Hobart';
+const popularRoutes = getPopularRoutesForCity(allRoutes, cityName, 12);
 
 const pageFacts = {
   service: 'Interstate backloading',
   location: 'Hobart, Tasmania',
-  coverage: ['Hobart CBD', 'Launceston', 'Devonport', 'Burnie', 'Kingston', 'Glenorchy'],
+  coverage: ['Hobart CBD', 'Glenorchy', 'Kingston', 'Huonville', 'New Norfolk', 'Bridgewater'],
   population: '240,000',
   typical_transit_to_melbourne: '3-5 business days',
   typical_transit_to_sydney: '4-6 business days',
   typical_savings: '40-60%',
   transit_insurance_included: true,
   ferry_crossing_included: true,
-  quarantine_restrictions: true,
 };
-
-const popularRoutes = [
-  { city: 'Melbourne', slug: '/hobart-melbourne/', transit: '3-5 days', frequency: 'Weekly' },
-  { city: 'Sydney', slug: '/hobart-sydney/', transit: '4-6 days', frequency: 'Weekly' },
-  { city: 'Brisbane', slug: '/hobart-brisbane/', transit: '5-7 days', frequency: 'Fortnightly' },
-  { city: 'Adelaide', slug: '/hobart-adelaide/', transit: '4-6 days', frequency: 'Fortnightly' },
-];
 ---
 
 <Layout
@@ -80,18 +79,17 @@ const popularRoutes = [
         </div>
         <div>
           <div class="text-4xl font-black text-orange-500 mb-2">{formatMigration('TAS')}</div>
-          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
+          <p class="text-sm text-gray-600">Net Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">Weekly</div>
-          <p class="text-sm text-gray-600">Services to Melbourne</p>
+          <p class="text-sm text-gray-600">Melbourne Services</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">60%</div>
           <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
-      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 
@@ -113,23 +111,23 @@ const popularRoutes = [
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Popular Hobart Routes</h2>
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Routes from Hobart</h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        Regular backloading services from Hobart
+        Regular backloading services from Hobart to all major Australian cities
       </p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {
-          popularRoutes.map((route) => (
+          popularRoutes.fromCity.map((route) => (
             <a
-              href={route.slug}
+              href={`/${route.data.slugFs}/`}
               class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
             >
               <div class="text-2xl mb-3">🚛</div>
               <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
-                Hobart → {route.city}
+                Hobart → {route.data.destination}
               </h3>
-              <div class="mt-3 text-sm text-gray-500">
-                <span>{route.frequency}</span> • <span>{route.transit}</span>
+              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+                <span>{route.data.transitDays || '3-7 days'}</span>
               </div>
             </a>
           ))
@@ -140,44 +138,53 @@ const popularRoutes = [
 
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-6">Moving to or from Tasmania</h2>
-        <div class="prose prose-lg">
-          <p>
-            Moving to Tasmania involves crossing Bass Strait by ferry. We coordinate the entire
-            process including ferry booking, vehicle loading, and delivery on both ends. Our <a
-              href="/backloading/"
-              class="text-brand-red hover:underline">backloading</a
-            > service can save you 40-60%.
-          </p>
-          <p>
-            <strong>Important:</strong> Tasmania has strict quarantine laws. We'll help you understand
-            what can and cannot be brought into the state.
-          </p>
-        </div>
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Routes to Hobart</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Moving to Hobart? Regular services from all major cities
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {
+          popularRoutes.toCity.map((route) => (
+            <a
+              href={`/${route.data.slugFs}/`}
+              class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
+            >
+              <div class="text-2xl mb-3">🚛</div>
+              <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
+                {route.data.origin} → Hobart
+              </h3>
+              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+                <span>{route.data.transitDays || '3-7 days'}</span>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Tasmania Coverage</h2>
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="bg-white p-6 rounded-xl border border-gray-100">
-          <h3 class="font-bold text-brand-dark mb-4">Southern Tasmania</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li>• Hobart CBD & Glenorchy</li>
-            <li>• Kingston & Huonville</li>
-            <li>• New Norfolk & Derwent Valley</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-100">
-          <h3 class="font-bold text-brand-dark mb-4">Northern Tasmania</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li>• Launceston & Tamar Valley</li>
-            <li>• Devonport (ferry terminal)</li>
-            <li>• Burnie & North West Coast</li>
-          </ul>
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-6">Hobart: Tasmania's Southern Hub</h2>
+        <div class="prose prose-lg">
+          <p>
+            Moving to Tasmania involves crossing Bass Strait by ferry. Our
+            <a href="/backloading/" class="text-brand-red hover:underline">backloading</a> service includes
+            the Spirit of Tasmania ferry crossing in our quote — no hidden fees. We coordinate the entire
+            process from pickup to delivery.
+          </p>
+          <p>
+            With {BRAND.yearsInBusiness} years of experience, we've helped thousands of families relocate
+            to and from Tasmania. We service all of Southern Tasmania from Hobart to the Huon Valley,
+            plus work closely with our
+            <a href="/launceston/" class="text-brand-red hover:underline">Launceston</a> team for statewide
+            coverage.
+          </p>
+          <p>
+            We quote by <strong>cubic meter</strong> rather than truckload, so you pay fairly for the
+            space you use. Transit insurance is included on all moves.
+          </p>
         </div>
       </div>
     </div>

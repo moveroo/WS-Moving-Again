@@ -1,8 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
+import { getCollection } from 'astro:content';
 import { BRAND } from '../utils/brand';
 import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
+import { getPopularRoutesForCity } from '../utils/routeDiscovery';
+
+const allRoutes = await getCollection('routes');
+const cityName = 'Darwin';
+const popularRoutes = getPopularRoutesForCity(allRoutes, cityName, 12);
 
 const pageFacts = {
   service: 'Interstate backloading',
@@ -16,13 +22,6 @@ const pageFacts = {
   transit_insurance_included: true,
   wet_season_considerations: true,
 };
-
-const popularRoutes = [
-  { city: 'Adelaide', slug: '/darwin-adelaide/', transit: '3-4 days', frequency: 'Fortnightly' },
-  { city: 'Brisbane', slug: '/darwin-brisbane/', transit: '5-7 days', frequency: 'Fortnightly' },
-  { city: 'Perth', slug: '/darwin-perth/', transit: '4-6 days', frequency: 'Fortnightly' },
-  { city: 'Melbourne', slug: '/darwin-melbourne/', transit: '5-7 days', frequency: 'Fortnightly' },
-];
 ---
 
 <Layout
@@ -62,7 +61,9 @@ const popularRoutes = [
         </a>
         <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
           <div class="flex items-center gap-2">
-            <span class="text-green-400">✓</span><span>Remote Area Specialists</span>
+            <span class="text-green-400">✓</span><span
+              >{BRAND.yearsInBusiness} Years Experience</span
+            >
           </div>
           <div class="flex items-center gap-2">
             <span class="text-green-400">✓</span><span>Transit Insurance Included</span>
@@ -81,7 +82,7 @@ const popularRoutes = [
         </div>
         <div>
           <div class="text-4xl font-black text-orange-500 mb-2">{formatMigration('NT')}</div>
-          <p class="text-sm text-gray-600">Net Interstate Migration ({MIGRATION_DATA_PERIOD})</p>
+          <p class="text-sm text-gray-600">Net Migration ({MIGRATION_DATA_PERIOD})</p>
         </div>
         <div>
           <div class="text-4xl font-black text-brand-red mb-2">Fortnightly</div>
@@ -92,29 +93,28 @@ const popularRoutes = [
           <p class="text-sm text-gray-600">Typical Savings</p>
         </div>
       </div>
-      <p class="text-xs text-gray-400 text-center mt-4">Source: Australian Bureau of Statistics</p>
     </div>
   </section>
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Popular Darwin Routes</h2>
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Routes from Darwin</h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        Regular backloading services from Darwin
+        Regular backloading services from Darwin to all major Australian cities
       </p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {
-          popularRoutes.map((route) => (
+          popularRoutes.fromCity.map((route) => (
             <a
-              href={route.slug}
+              href={`/${route.data.slugFs}/`}
               class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
             >
               <div class="text-2xl mb-3">🚛</div>
               <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
-                Darwin → {route.city}
+                Darwin → {route.data.destination}
               </h3>
-              <div class="mt-3 text-sm text-gray-500">
-                <span>{route.frequency}</span> • <span>{route.transit}</span>
+              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+                <span>{route.data.transitDays || '3-7 days'}</span>
               </div>
             </a>
           ))
@@ -125,45 +125,53 @@ const popularRoutes = [
 
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-6">Moving to or from the Top End</h2>
-        <div class="prose prose-lg">
-          <p>
-            Darwin is one of Australia's most remote capitals, but our <a
-              href="/backloading/"
-              class="text-brand-red hover:underline">backloading</a
-            > service makes moves affordable. We run the Stuart Highway regularly and have {
-              BRAND.yearsInBusiness
-            } years of experience with NT logistics.
-          </p>
-          <p>
-            <strong>Wet season note:</strong> During the wet season (Nov-Apr), some regional NT areas
-            may experience access delays. We'll keep you informed of any timing impacts.
-          </p>
-        </div>
+      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">Routes to Darwin</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Moving to Darwin? Regular services from all major cities
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {
+          popularRoutes.toCity.map((route) => (
+            <a
+              href={`/${route.data.slugFs}/`}
+              class="block bg-white p-6 rounded-xl hover:shadow-lg transition-shadow border border-gray-100 group"
+            >
+              <div class="text-2xl mb-3">🚛</div>
+              <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
+                {route.data.origin} → Darwin
+              </h3>
+              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+                <span>{route.data.transitDays || '3-7 days'}</span>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">NT Coverage</h2>
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="bg-white p-6 rounded-xl border border-gray-100">
-          <h3 class="font-bold text-brand-dark mb-4">Top End</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li>• Darwin CBD & Northern Suburbs</li>
-            <li>• Palmerston & Coolalinga</li>
-            <li>• Katherine & surrounds</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-100">
-          <h3 class="font-bold text-brand-dark mb-4">Central Australia</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li>• Alice Springs</li>
-            <li>• Tennant Creek</li>
-            <li>• Stuart Highway corridor</li>
-          </ul>
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-6">Darwin: Top End Hub</h2>
+        <div class="prose prose-lg">
+          <p>
+            Darwin is one of Australia's most remote capitals, but our
+            <a href="/backloading/" class="text-brand-red hover:underline">backloading</a> service makes
+            moves affordable. We run the Stuart Highway regularly, connecting Darwin to
+            <a href="/adelaide/" class="text-brand-red hover:underline">Adelaide</a> and the national
+            network.
+          </p>
+          <p>
+            <strong>Wet season note:</strong> During the wet season (November to April), some regional
+            NT areas may experience access delays due to flooding. We'll keep you informed of any timing
+            impacts and work around weather conditions.
+          </p>
+          <p>
+            We quote by <strong>cubic meter</strong> rather than truckload, so you pay fairly for the
+            space you use. With {BRAND.yearsInBusiness} years of experience, we understand NT logistics.
+            Transit insurance is included on all moves.
+          </p>
         </div>
       </div>
     </div>
