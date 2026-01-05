@@ -259,38 +259,125 @@ const faqQuestions = [
 
         <p>Australia takes biosecurity seriously. Here's a quick guide by state:</p>
 
-        <div class="overflow-x-auto my-8 not-prose">
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="bg-brand-dark text-white">
-                <th class="p-3 text-left">State</th>
-                <th class="p-3 text-left">Strictness</th>
-                <th class="p-3 text-left">Key Rules</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y">
-              <tr>
-                <td class="p-3 font-medium">Western Australia</td>
-                <td class="p-3"><span class="text-red-500 font-bold">STRICT</span></td>
-                <td class="p-3">Most plants require inspection. No fruit plants.</td>
-              </tr>
-              <tr>
-                <td class="p-3 font-medium">Tasmania</td>
-                <td class="p-3"><span class="text-red-500 font-bold">STRICT</span></td>
-                <td class="p-3">Quarantine at border. Many soil restrictions.</td>
-              </tr>
-              <tr>
-                <td class="p-3 font-medium">South Australia</td>
-                <td class="p-3"><span class="text-yellow-500 font-bold">MODERATE</span></td>
-                <td class="p-3">Some fruit tree restrictions.</td>
-              </tr>
-              <tr>
-                <td class="p-3 font-medium">NSW, VIC, QLD</td>
-                <td class="p-3"><span class="text-green-500 font-bold">RELAXED</span></td>
-                <td class="p-3">Most house plants allowed. Check for pests.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="my-12 not-prose">
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- WA -->
+            <div class="bg-white border-l-4 border-red-500 shadow-sm rounded-r-xl p-6">
+              <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <span>Western Australia</span>
+                <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">Strict</span>
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Most plants require inspection and certification. No fruit/veg plants allowed.
+                Strict soil regulations.
+              </p>
+              <a
+                href="https://www.agric.wa.gov.au/importing-plant-and-plant-products/importing-plants-and-plant-products-western-australia"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+              >
+                Pass WA Quarantine <span>→</span>
+              </a>
+            </div>
+
+            <!-- TAS -->
+            <div class="bg-white border-l-4 border-red-500 shadow-sm rounded-r-xl p-6">
+              <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <span>Tasmania</span>
+                <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">Strict</span>
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                All plants must be declared. High risk for fruit fly host plants. Potting mix must
+                be certified.
+              </p>
+              <a
+                href="https://nre.tas.gov.au/biosecurity-tasmania/biosecurity/travellers-guide-to-tasmanian-biosecurity/what-you-can-can-t-bring-into-tasmania"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+              >
+                TAS Entry Rules <span>→</span>
+              </a>
+            </div>
+
+            <!-- SA -->
+            <div class="bg-white border-l-4 border-yellow-500 shadow-sm rounded-r-xl p-6">
+              <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <span>South Australia</span>
+                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full"
+                  >Moderate</span
+                >
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Restrictions on fruit/veg plants (phylloxera & fruit fly). Soil generally OK if free
+                of pests.
+              </p>
+              <a
+                href="https://pir.sa.gov.au/biosecurity/fruit_fly_in_sa/bringing_fruit_and_vegetables_into_sa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+              >
+                SA Plant Standards <span>→</span>
+              </a>
+            </div>
+
+            <!-- NT -->
+            <div class="bg-white border-l-4 border-yellow-500 shadow-sm rounded-r-xl p-6">
+              <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <span>Northern Territory</span>
+                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full"
+                  >Moderate</span
+                >
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Permits required for some species. Soil must be free of ants and pests.
+              </p>
+              <a
+                href="https://nt.gov.au/industry/agriculture/biosecurity/move-plants-and-plant-products"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+              >
+                NT Biosecurity <span>→</span>
+              </a>
+            </div>
+
+            <!-- East Coast (NSW/VIC/QLD) -->
+            <div
+              class="bg-white border-l-4 border-green-500 shadow-sm rounded-r-xl p-6 md:col-span-2 lg:col-span-1"
+            >
+              <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                <span>NSW / VIC / QLD</span>
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                  >Relaxed</span
+                >
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Generally freely permitted between these states. Always check for specific pest
+                outbreaks (e.g. Fire Ants).
+              </p>
+              <div class="flex flex-col gap-2">
+                <a
+                  href="https://www.dpi.nsw.gov.au/biosecurity/plant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+                >
+                  NSW DPI <span>→</span>
+                </a>
+                <a
+                  href="https://agriculture.vic.gov.au/biosecurity/moving-plants-and-plant-products"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-brand-red font-semibold text-sm hover:underline flex items-center gap-1"
+                >
+                  Agriculture VIC <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Moving Again Service Section -->
         <div
