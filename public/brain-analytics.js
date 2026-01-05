@@ -7,7 +7,11 @@
  * Usage:
  *   BrainAnalytics.init({ url: 'https://brain.example.com', key: 'your-api-key' });
  *
- * @version 1.0.0
+ * Quote Click Tracking:
+ *   Add data-brain-track="quote" attribute to quote/CTA links:
+ *   <a href="/quote" data-brain-track="quote">Get a Quote</a>
+ *
+ * @version 1.1.0
  */
 /* eslint-disable @typescript-eslint/no-this-alias, @typescript-eslint/no-unused-vars */
 (function (window, document) {
@@ -212,8 +216,9 @@
 
         var href = link.getAttribute('href') || '';
 
-        // Quote link clicks
-        if (href.indexOf('removalistquotes') !== -1 || href.indexOf('quote') !== -1) {
+        // Quote link clicks - check for data-brain-track="quote" attribute
+        var trackValue = link.getAttribute('data-brain-track');
+        if (trackValue === 'quote') {
           var deviceInfo = self.getDeviceInfo();
           var utmParams = self.getUTMParams();
           var landingPage = sessionStorage.getItem('brain_landing') || location.pathname;
