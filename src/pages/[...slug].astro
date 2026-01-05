@@ -113,17 +113,59 @@ const faqSchema = {
 
         {
           route.data.transitDays && (
-            <p class="text-gray-400 mb-8">Typical transit: {route.data.transitDays}</p>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+              {route.data.transitDays.includes('10-') || route.data.transitDays.includes('14') ? (
+                <span>
+                  Start your <strong>long-distance move</strong> from {route.data.origin} on the
+                  right foot. Standard transit time is {route.data.transitDays}.
+                </span>
+              ) : (
+                <span>
+                  Quick and efficient interstate transport. Typical transit time:{' '}
+                  {route.data.transitDays}.
+                </span>
+              )}
+            </p>
           )
         }
 
-        <a
-          data-brain-track="quote"
-          href="https://removalistquotes.movingagain.com.au/quote/household"
-          class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
-        >
-          Get a Free Quote
-        </a>
+        {/* State-specific advisory */}
+        {
+          route.data.destinationState === 'QLD' && (
+            <div class="mb-8 p-4 bg-white/10 rounded-lg text-sm text-gray-200 max-w-xl mx-auto border border-white/10">
+              <strong>Moving to Queensland?</strong> Ask us about our heat-safe transport options
+              for sensitive items.
+            </div>
+          )
+        }
+        {
+          route.data.destinationState === 'WA' && (
+            <div class="mb-8 p-4 bg-white/10 rounded-lg text-sm text-gray-200 max-w-xl mx-auto border border-white/10">
+              <strong>Heading West?</strong> We handle all biosecurity declaration forms for your
+              household plants.
+            </div>
+          )
+        }
+        {
+          route.data.destinationState === 'TAS' && (
+            <div class="mb-8 p-4 bg-white/10 rounded-lg text-sm text-gray-200 max-w-xl mx-auto border border-white/10">
+              <strong>Bass Strait Crossing:</strong> Our quotes include ferry costs. No hidden fees.
+            </div>
+          )
+        }
+
+        <div class="flex flex-col gap-4 justify-center items-center">
+          <a
+            data-brain-track="quote"
+            href="https://removalistquotes.movingagain.com.au/quote/household"
+            class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
+          >
+            Get a Free Quote
+          </a>
+          <p class="text-xs text-gray-500">
+            Daily departures from {route.data.originState} to {route.data.destinationState}
+          </p>
+        </div>
       </div>
     </div>
   </section>
