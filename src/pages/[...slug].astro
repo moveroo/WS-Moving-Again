@@ -27,9 +27,9 @@ const { route } = Astro.props as { route: CollectionEntry<'routes'> };
 // Generate route-specific FAQs
 const faqs = generateFAQsForRoute(route);
 
-// Get related routes (increased from 3 to 6 for better discoverability)
-const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 6);
-const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 6);
+// Get related routes (increased to 10 for full coverage)
+const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 10);
+const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 10);
 
 // Get hub page URLs for internal linking
 const originHubUrl = getCityHubUrl(route.data.origin);
