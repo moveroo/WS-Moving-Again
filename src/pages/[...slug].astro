@@ -10,6 +10,7 @@ import RouteProcess from '../components/RouteProcess.astro';
 import RouteTrustSection from '../components/RouteTrustSection.astro';
 import { generateFAQsForRoute } from '../utils/faqGenerator';
 import { getRelatedRoutes } from '../utils/relatedRoutes';
+import { getCityHubUrl } from '../utils/hubPages';
 
 export async function getStaticPaths() {
   const routes = await getCollection('routes');
@@ -29,6 +30,10 @@ const faqs = generateFAQsForRoute(route);
 // Get related routes (increased from 3 to 6 for better discoverability)
 const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 6);
 const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 6);
+
+// Get hub page URLs for internal linking
+const originHubUrl = getCityHubUrl(route.data.origin);
+const destinationHubUrl = getCityHubUrl(route.data.destination);
 
 const metaDescription =
   route.data.metaDescription ??
@@ -125,12 +130,30 @@ const faqSchema = {
   <!-- Breadcrumb -->
   <nav class="py-4 bg-[#800005]">
     <div class="container mx-auto px-4">
-      <div class="flex items-center gap-2 text-sm text-white/80">
+      <div class="flex items-center gap-2 text-sm text-white/80 flex-wrap">
         <a href="/" class="hover:text-white">Home</a>
         <span>›</span>
         <a href="/backloading/" class="hover:text-white">Backloading</a>
         <span>›</span>
-        <span class="text-white">{route.data.origin} to {route.data.destination}</span>
+        {
+          originHubUrl ? (
+            <a href={originHubUrl} class="hover:text-white">
+              {route.data.origin}
+            </a>
+          ) : (
+            <span>{route.data.origin}</span>
+          )
+        }
+        <span>→</span>
+        {
+          destinationHubUrl ? (
+            <a href={destinationHubUrl} class="hover:text-white">
+              {route.data.destination}
+            </a>
+          ) : (
+            <span class="text-white">{route.data.destination}</span>
+          )
+        }
       </div>
     </div>
   </nav>
@@ -165,6 +188,37 @@ const faqSchema = {
         title={`More routes to ${route.data.destination}`}
         routes={destinationRelated}
       />
+    )
+  }
+
+  <!-- Explore Service Areas -->
+  {
+    (originHubUrl || destinationHubUrl) && (
+      <section class="py-12 bg-white border-t">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold text-center text-brand-dark mb-8">Explore More Routes</h2>
+          <div class="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
+            {originHubUrl && (
+              <a
+                href={originHubUrl}
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 hover:bg-brand-red hover:text-white text-brand-dark font-semibold rounded-xl transition-colors"
+              >
+                <span>🗺️</span>
+                <span>All {route.data.origin} Routes</span>
+              </a>
+            )}
+            {destinationHubUrl && (
+              <a
+                href={destinationHubUrl}
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 hover:bg-brand-red hover:text-white text-brand-dark font-semibold rounded-xl transition-colors"
+              >
+                <span>🗺️</span>
+                <span>All {route.data.destination} Routes</span>
+              </a>
+            )}
+          </div>
+        </div>
+      </section>
     )
   }
 
