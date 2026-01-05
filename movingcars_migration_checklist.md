@@ -114,3 +114,31 @@ Use this as a foundation for the _Movingcars_ migration.
 - [ ] **Linting**: Install `eslint-plugin-astro` and `prettier-plugin-astro`
       from Day 1 to avoid formatting wars.
 - [ ] **Type Safety**: Use TypeScript for all Utils and Components.
+
+## 10. CI/CD & Configuration
+
+- [ ] **GitHub Actions**: Copy the robust `.github/workflows/ci.yml` from Moving
+      Again.
+  - **Linting**: Ensure `npm run lint` and `npm run format:check` are running in
+    CI.
+    - _Tip_: Prettier (`format:check`) validates YAML files by default. Run
+      `npx prettier --write .` locally to fix indentation errors before pushing.
+  - **Deployment Hooks**: Use the `curl` notification pattern (seen in `ci.yml`)
+    to trigger external tools (like Domain Monitor) on success.
+    - _Critical_: Be very careful with the JSON formatting in the `curl`
+      command. Multi-line strings in YAML require indentation to match the shell
+      script context.
+    - _Example_:
+      ```yaml
+      - name: Notify Domain Monitor
+        if: success() && github.ref == 'refs/heads/main'
+        run: |
+          curl -s -X POST "${{ secrets.DOMAIN_MONITOR_URL }}/api/deployments" \
+            -H "Authorization: Bearer ${{ secrets.DOMAIN_MONITOR_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "domain": "movingcars.com.au",
+              "commit": "${{ github.sha }}",
+              "notes": "Deployed via GitHub Actions"
+            }'
+      ```
