@@ -8,7 +8,7 @@ import { getPopularRoutesForCity } from '../utils/routeDiscovery';
 
 const allRoutes = await getCollection('routes');
 const cityName = 'Logan City';
-const popularRoutes = getPopularRoutesForCity(allRoutes, cityName, 15);
+const popularRoutes = getPopularRoutesForCity(allRoutes, cityName, 25);
 
 const pageFacts = {
   service: 'Interstate backloading',
