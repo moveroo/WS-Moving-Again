@@ -62,8 +62,7 @@ import Layout from '../layouts/Layout.astro';
             8:00am – 4:00pm AEST
           </p>
           <p class="text-2xl font-bold text-brand-red">
-            <!-- TODO: Add phone number -->
-            [Phone Number]
+            <a href="tel:+61721432557" class="hover:underline">07 2143 2557</a>
           </p>
         </div>
 
@@ -80,8 +79,9 @@ import Layout from '../layouts/Layout.astro';
             often much sooner
           </p>
           <p class="text-lg font-bold text-brand-red">
-            <!-- TODO: Add email address -->
-            [Email Address]
+            <a href="mailto:info@movingagain.com.au" class="hover:underline"
+              >info@movingagain.com.au</a
+            >
           </p>
         </div>
       </div>
@@ -190,6 +190,81 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </form>
       </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-6 text-center">
+          Why Choose Moving Again?
+        </h2>
+        <div class="prose prose-lg mx-auto">
+          <p>
+            Since 2010, Moving Again has helped thousands of Australians relocate interstate with
+            our innovative backloading service. We've built our reputation on transparent pricing,
+            reliable service, and genuine care for our customers' belongings.
+          </p>
+          <p>
+            Our team understands that moving is more than just transporting furniture — it's about
+            starting a new chapter. That's why we go above and beyond to make your interstate move
+            as stress-free as possible, with transit insurance included and real-time updates on
+            your shipment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">What to Expect</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="font-bold text-brand-dark mb-2">Quick Response</h3>
+            <p class="text-gray-600 text-sm">
+              We respond to quotes within 24 hours, often within just a few hours during business
+              hours.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="text-3xl mb-3">💬</div>
+            <h3 class="font-bold text-brand-dark mb-2">Clear Communication</h3>
+            <p class="text-gray-600 text-sm">
+              No hidden fees or surprises. We explain everything upfront and keep you updated
+              throughout.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="text-3xl mb-3">🛡️</div>
+            <h3 class="font-bold text-brand-dark mb-2">Transit Insurance</h3>
+            <p class="text-gray-600 text-sm">
+              Every shipment includes transit insurance for your peace of mind during the move.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas CTA -->
+  <section class="py-12 bg-brand-dark text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Moving Between Cities?</h2>
+      <p class="text-gray-300 mb-6 max-w-xl mx-auto">
+        We service all major Australian cities and many regional areas. Check out our dedicated city
+        pages for routes, transit times, and local information.
+      </p>
+      <a
+        href="/service-areas/"
+        class="inline-block py-3 px-8 bg-brand-red text-white font-bold rounded-xl hover:bg-brand-accent transition-colors"
+      >
+        Browse Service Areas →
+      </a>
     </div>
   </section>
 

@@ -7,7 +7,7 @@ export function getRelatedRoutes(
   allRoutes: CollectionEntry<'routes'>[],
   currentRoute: CollectionEntry<'routes'>,
   by: 'origin' | 'destination',
-  limit: number = 4
+  limit: number = 6
 ): CollectionEntry<'routes'>[] {
   const currentSlug = currentRoute.data.slugFs;
   const matchValue = by === 'origin' ? currentRoute.data.origin : currentRoute.data.destination;

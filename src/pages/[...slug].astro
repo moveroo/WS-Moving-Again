@@ -26,9 +26,9 @@ const { route } = Astro.props as { route: CollectionEntry<'routes'> };
 // Generate route-specific FAQs
 const faqs = generateFAQsForRoute(route);
 
-// Get related routes
-const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 3);
-const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 3);
+// Get related routes (increased from 3 to 6 for better discoverability)
+const originRelated = getRelatedRoutes(allRoutes, route, 'origin', 6);
+const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 6);
 
 const metaDescription =
   route.data.metaDescription ??

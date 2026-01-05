@@ -24,6 +24,30 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
   <!-- Global Schema -->
   <Schema type={schemaType} data={schemaData} slot="head" />
 
+  <!-- Organization Schema (Global - for brand visibility) -->
+  <Schema
+    type="Organization"
+    data={{
+      name: 'Moving Again',
+      url: 'https://movingagain.com.au',
+      logo: 'https://movingagain.com.au/logo.svg',
+      description:
+        "Australia's trusted interstate removalists and backloading specialists since 2010",
+      telephone: '+61 7 2143 2557',
+      email: 'info@movingagain.com.au',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '3/31 Expansion Street',
+        addressLocality: 'Molendinar',
+        addressRegion: 'QLD',
+        postalCode: '4216',
+        addressCountry: 'AU',
+      },
+      sameAs: ['https://www.facebook.com/MovingAgain'],
+    }}
+    slot="head"
+  />
+
   <!-- Preload Fonts to Avoid Chaining -->
   <link
     rel="preload"
