@@ -50,7 +50,7 @@ function extractHeadings(content) {
     headings.push({ level: 2, text: match[1].trim(), type: 'html' });
   }
   while ((match = h3Pattern.exec(content)) !== null) {
-    headings.push({ level: 3, text: match[3].trim(), type: 'html' });
+    headings.push({ level: 3, text: match[1].trim(), type: 'html' });
   }
 
   // Extract from markdown-style
@@ -86,53 +86,192 @@ function isQuestion(text) {
   return questionWords.some((word) => lowerText.startsWith(word)) || lowerText.endsWith('?');
 }
 
+// Helper: Capitalize first letter of each word
+function capitalizeWords(text) {
+  return text
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
+
 // Helper: Suggest question version of heading
 function suggestQuestion(text) {
-  const lowerText = text.toLowerCase().trim();
+  const originalText = text.trim();
+  const lowerText = originalText.toLowerCase().trim();
 
   // Already a question
   if (isQuestion(text)) {
     return null;
   }
 
-  // Patterns for conversion
+  // Patterns for conversion (order matters - more specific first)
   const conversions = [
-    // "How [verb]" patterns
-    { pattern: /^how\s+(.+)$/i, suggestion: (match) => `How Does ${match[1]} Work?` },
-    { pattern: /^how\s+to\s+(.+)$/i, suggestion: (match) => `How Do You ${match[1]}?` },
+    // "Routes from [City]" → "What Routes Are Available from [City]?"
+    {
+      pattern: /^routes?\s+from\s+(.+)$/i,
+      suggestion: (match) => `What Routes Are Available from ${capitalizeWords(match[1])}?`,
+    },
+
+    // "Routes to [City]" → "What Routes Are Available to [City]?"
+    {
+      pattern: /^routes?\s+to\s+(.+)$/i,
+      suggestion: (match) => `What Routes Are Available to ${capitalizeWords(match[1])}?`,
+    },
+
+    // "Popular [Noun]" → "What Are the Popular [Noun]?"
+    {
+      pattern: /^popular\s+(.+)$/i,
+      suggestion: (match) => `What Are the Popular ${capitalizeWords(match[1])}?`,
+    },
+
+    // "[Noun] Guide" → "What Is the [Noun] Guide?"
+    {
+      pattern: /^(.+)\s+guide$/i,
+      suggestion: (match) => `What Is the ${capitalizeWords(match[1])} Guide?`,
+    },
+
+    // "[Noun] Pricing" → "How Much Does [Noun] Cost?"
+    {
+      pattern: /^(.+)\s+pricing$/i,
+      suggestion: (match) => {
+        const noun = match[1].toLowerCase();
+        if (noun === 'backloading' || noun.includes('backload')) {
+          return 'How Much Does Backloading Cost?';
+        }
+        return `How Much Does ${capitalizeWords(match[1])} Cost?`;
+      },
+    },
+    { pattern: /^pricing$/i, suggestion: () => 'How Much Does It Cost?' },
 
     // "Benefits" → "What Are the Benefits?"
     { pattern: /^benefits?$/i, suggestion: () => 'What Are the Benefits?' },
 
-    // "Pricing" → "How Much Does It Cost?"
-    { pattern: /^pricing$/i, suggestion: () => 'How Much Does It Cost?' },
-
-    // "Why [noun]" → "Why [noun]?"
-    { pattern: /^why\s+(.+)$/i, suggestion: (match) => `Why ${match[1]}?` },
-
-    // "[Noun] Guide" → "What Is [Noun]?"
-    { pattern: /^(.+)\s+guide$/i, suggestion: (match) => `What Is ${match[1]}?` },
-
-    // "[Noun] Options" → "What Are [Noun] Options?"
-    { pattern: /^(.+)\s+options?$/i, suggestion: (match) => `What Are ${match[1]} Options?` },
-
-    // "[Noun] Process" → "How Does [Noun] Process Work?"
+    // "[Noun] Benefits" → "What Are the Benefits of [Noun]?"
     {
-      pattern: /^(.+)\s+process$/i,
-      suggestion: (match) => `How Does the ${match[1]} Process Work?`,
+      pattern: /^(.+)\s+benefits?$/i,
+      suggestion: (match) => `What Are the Benefits of ${capitalizeWords(match[1])}?`,
     },
 
-    // Generic: Add "What Is" or "How Does"
+    // "How [verb]" → "How Does [verb] Work?"
+    {
+      pattern: /^how\s+(.+)$/i,
+      suggestion: (match) => {
+        const rest = match[1];
+        if (rest.toLowerCase().includes('work')) {
+          return `How Does ${rest}?`;
+        }
+        return `How Does ${rest} Work?`;
+      },
+    },
+
+    // "How to [verb]" → "How Do You [verb]?"
+    {
+      pattern: /^how\s+to\s+(.+)$/i,
+      suggestion: (match) => `How Do You ${capitalizeWords(match[1])}?`,
+    },
+
+    // "Why [noun]" → "Why [noun]?"
+    { pattern: /^why\s+(.+)$/i, suggestion: (match) => `Why ${capitalizeWords(match[1])}?` },
+
+    // "[Noun] Options" → "What Are [Noun] Options?"
+    {
+      pattern: /^(.+)\s+options?$/i,
+      suggestion: (match) => `What Are ${capitalizeWords(match[1])} Options?`,
+    },
+
+    // "[Noun] Process" → "How Does the [Noun] Process Work?"
+    {
+      pattern: /^(.+)\s+process$/i,
+      suggestion: (match) => `How Does the ${capitalizeWords(match[1])} Process Work?`,
+    },
+
+    // "[City] → [City]" (route patterns) → Skip template variables
+    {
+      pattern: /^(.+)\s*→\s*(.+)$/i,
+      suggestion: (match) => {
+        const origin = match[1].trim();
+        const dest = match[2].trim();
+        // Skip if it contains template variables
+        if (origin.includes('{') || dest.includes('{')) {
+          return null;
+        }
+        return `What Routes Are Available from ${capitalizeWords(origin)} to ${capitalizeWords(dest)}?`;
+      },
+    },
+
+    // "[Noun] Coverage" or "Coverage" → "What Areas Do You Cover?"
+    { pattern: /^(.+)\s+coverage$/i, suggestion: () => 'What Areas Do You Cover?' },
+    { pattern: /^coverage$/i, suggestion: () => 'What Areas Do You Cover?' },
+
+    // "[Noun] Service" → "What [Noun] Services Do You Offer?"
+    {
+      pattern: /^(.+)\s+service$/i,
+      suggestion: (match) => `What ${capitalizeWords(match[1])} Services Do You Offer?`,
+    },
+
+    // "Moving to or from [City]" → "What Routes Are Available to or from [City]?"
+    {
+      pattern: /^moving\s+to\s+or\s+from\s+(.+)$/i,
+      suggestion: (match) => `What Routes Are Available to or from ${capitalizeWords(match[1])}?`,
+    },
+
+    // "[City]: [Description]" → Skip generic descriptions
+    {
+      pattern: /^(.+):\s*.+$/i,
+      suggestion: (match) => {
+        const city = match[1].trim();
+        // Skip if it's a generic description
+        if (city.toLowerCase().includes('where') || city.toLowerCase().includes('hub')) {
+          return null;
+        }
+        return `What Routes Are Available from ${capitalizeWords(city)}?`;
+      },
+    },
+
+    // Generic patterns for common nouns
+    {
+      pattern: /^(.+)\s+specialists?$/i,
+      suggestion: (match) => `What ${capitalizeWords(match[1])} Services Do You Offer?`,
+    },
+
+    // "Explore [Noun]" → "What [Noun] Are Available?"
+    {
+      pattern: /^explore\s+(.+)$/i,
+      suggestion: (match) => `What ${capitalizeWords(match[1])} Are Available?`,
+    },
+
+    // "Backloading vs. [Noun]" → "What Is the Difference Between Backloading and [Noun]?"
+    {
+      pattern: /^(.+)\s+vs\.?\s+(.+)$/i,
+      suggestion: (match) =>
+        `What Is the Difference Between ${capitalizeWords(match[1])} and ${capitalizeWords(match[2])}?`,
+    },
+
+    // Generic fallback: Use "What" for short phrases, "How" for longer
     {
       pattern: /^(.+)$/,
       suggestion: (match) => {
-        const text = match[1];
-        // If it's a noun phrase, use "What Is"
-        if (text.length < 30 && !text.includes(' ')) {
-          return `What Is ${text}?`;
+        const text = match[1].trim();
+        const words = text.split(' ');
+
+        // Short single-word or two-word phrases → "What Is/Are"
+        if (words.length <= 2 && text.length < 25) {
+          // Check if plural
+          const isPlural =
+            words[words.length - 1].toLowerCase().endsWith('s') &&
+            !words[words.length - 1].toLowerCase().endsWith('ss');
+          return isPlural
+            ? `What Are ${capitalizeWords(text)}?`
+            : `What Is ${capitalizeWords(text)}?`;
         }
-        // Otherwise use "How Does"
-        return `How Does ${text} Work?`;
+
+        // Longer phrases → "How Does" or "What Are"
+        if (text.toLowerCase().includes('route') || text.toLowerCase().includes('option')) {
+          return `What Are ${capitalizeWords(text)}?`;
+        }
+
+        // Default: "How Does [text] Work?"
+        return `How Does ${capitalizeWords(text)} Work?`;
       },
     },
   ];
@@ -140,7 +279,11 @@ function suggestQuestion(text) {
   for (const { pattern, suggestion } of conversions) {
     const match = lowerText.match(pattern);
     if (match) {
-      return suggestion(match);
+      const result = suggestion(match);
+      // Skip null results (patterns that don't apply)
+      if (result) {
+        return result;
+      }
     }
   }
 
