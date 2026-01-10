@@ -1,11 +1,11 @@
 /**
  * Automatically add BreadcrumbList schema to all pages
- * 
+ *
  * Generates appropriate breadcrumbs based on page type:
  * - City pages: Home → Service Areas → City
  * - Service pages: Home → Service Name
  * - Other pages: Home → Page Name
- * 
+ *
  * Usage: node scripts/add-breadcrumbs-to-pages.mjs [--dry-run]
  */
 
@@ -25,36 +25,36 @@ const isDryRun = process.argv.includes('--dry-run');
 
 // City names mapping (for proper capitalization)
 const CITY_NAMES = {
-  'adelaide': 'Adelaide',
-  'ballarat': 'Ballarat',
-  'bendigo': 'Bendigo',
-  'brisbane': 'Brisbane',
-  'bunbury': 'Bunbury',
-  'bundaberg': 'Bundaberg',
-  'cairns': 'Cairns',
-  'canberra': 'Canberra',
-  'darwin': 'Darwin',
-  'geelong': 'Geelong',
+  adelaide: 'Adelaide',
+  ballarat: 'Ballarat',
+  bendigo: 'Bendigo',
+  brisbane: 'Brisbane',
+  bunbury: 'Bunbury',
+  bundaberg: 'Bundaberg',
+  cairns: 'Cairns',
+  canberra: 'Canberra',
+  darwin: 'Darwin',
+  geelong: 'Geelong',
   'gold-coast': 'Gold Coast',
-  'hobart': 'Hobart',
-  'launceston': 'Launceston',
+  hobart: 'Hobart',
+  launceston: 'Launceston',
   'logan-city': 'Logan City',
-  'mackay': 'Mackay',
-  'mandurah': 'Mandurah',
-  'melbourne': 'Melbourne',
-  'newcastle': 'Newcastle',
-  'perth': 'Perth',
-  'rockhampton': 'Rockhampton',
-  'rockingham': 'Rockingham',
-  'sydney': 'Sydney',
-  'toowoomba': 'Toowoomba',
-  'townsville': 'Townsville',
-  'wollongong': 'Wollongong',
+  mackay: 'Mackay',
+  mandurah: 'Mandurah',
+  melbourne: 'Melbourne',
+  newcastle: 'Newcastle',
+  perth: 'Perth',
+  rockhampton: 'Rockhampton',
+  rockingham: 'Rockingham',
+  sydney: 'Sydney',
+  toowoomba: 'Toowoomba',
+  townsville: 'Townsville',
+  wollongong: 'Wollongong',
 };
 
 // Service page names
 const SERVICE_PAGES = {
-  'backloading': 'Backloading',
+  backloading: 'Backloading',
   'car-transport': 'Car Transport',
   'moving-interstate': 'Moving Interstate',
   'service-areas': 'Service Areas',
@@ -79,9 +79,8 @@ function findAstroFiles(dir) {
 
 // Generate breadcrumb items based on page
 function generateBreadcrumbs(filePath) {
-  const relativePath = filePath.replace(projectRoot + '/', '');
   const fileName = basename(filePath, '.astro');
-  
+
   // Skip dynamic routes and homepage
   if (fileName === 'index' || fileName.startsWith('[')) {
     return null;
@@ -122,7 +121,7 @@ function generateBreadcrumbs(filePath) {
 // Add breadcrumbs to a file
 function addBreadcrumbs(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
-  
+
   const breadcrumbs = generateBreadcrumbs(filePath);
   if (!breadcrumbs) {
     return { fixed: false, reason: 'Skipped (homepage or dynamic route)' };
@@ -136,7 +135,7 @@ function addBreadcrumbs(filePath) {
   if (!layoutMatch) {
     return { fixed: false, reason: 'Could not find Layout component' };
   }
-  
+
   // Check if there's already a breadcrumb script
   if (content.includes('BreadcrumbList') || content.includes('breadcrumbItems')) {
     return { fixed: false, reason: 'Breadcrumbs already present' };
@@ -176,11 +175,11 @@ ${breadcrumbs.map((item) => `  { name: '${item.name}', url: '${item.url}' }`).jo
   // Insert breadcrumb data in frontmatter (before closing ---)
   const frontmatterContent = content.substring(0, frontmatterEnd);
   const afterFrontmatter = content.substring(frontmatterEnd);
-  
+
   // Find last non-empty line in frontmatter
   const frontmatterLines = frontmatterContent.split('\n');
   let insertIndex = frontmatterLines.length;
-  
+
   for (let i = frontmatterLines.length - 1; i >= 0; i--) {
     if (frontmatterLines[i].trim()) {
       insertIndex = i + 1;
@@ -196,16 +195,16 @@ ${breadcrumbs.map((item) => `  { name: '${item.name}', url: '${item.url}' }`).jo
 
   // Insert breadcrumb schema after Layout opening tag
   const layoutTag = layoutMatch[0];
-  const newContent = 
-    newFrontmatter + 
+  const newContent =
+    newFrontmatter +
     afterFrontmatter.substring(0, layoutTag.length) +
     breadcrumbSchema +
     afterFrontmatter.substring(layoutTag.length);
-  
+
   if (!isDryRun) {
     fs.writeFileSync(filePath, newContent, 'utf-8');
   }
-  
+
   return { fixed: true, reason: isDryRun ? 'Would add breadcrumbs' : 'Added breadcrumbs' };
 }
 
