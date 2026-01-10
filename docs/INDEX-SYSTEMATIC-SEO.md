@@ -100,6 +100,16 @@ API-based crawl analysis:
 - Comparison with previous crawls
 - Improvement tracking
 
+**`CONTENT-UNIQUENESS-ANALYSIS.md`**
+
+Content quality and uniqueness analysis:
+
+- Duplicate content detection
+- Similarity scoring between pages
+- Thin content identification
+- Common phrase detection
+- Improvement suggestions
+
 ---
 
 ## 🏗️ Architecture Overview
