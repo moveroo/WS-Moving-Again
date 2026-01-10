@@ -8,6 +8,8 @@ interface Props {
   noindex?: boolean;
   lang?: string;
   modifiedDate?: string; // ISO date string (Git commit date, file mod date, or build time)
+  author?: string; // Author name (defaults to organization name for business pages)
+  publishedDate?: string; // ISO date string for article:published_time
 }
 
 // Production domain - always use this for canonical URLs
@@ -25,6 +27,8 @@ const {
   canonical = defaultCanonical,
   noindex = false,
   modifiedDate,
+  author,
+  publishedDate,
 } = Astro.props;
 
 // SEO best practice: Descriptions should be 150-160 characters
@@ -53,6 +57,10 @@ if (description.length > DESC_MAX_LENGTH) {
 }
 
 const siteName = import.meta.env.PUBLIC_SITE_NAME || 'Moving Again';
+// Default author for business pages (organization name)
+// For business/service sites, the organization is the author
+const defaultAuthor = 'Moving Again'; // Use brand name directly
+const pageAuthor = author || defaultAuthor;
 // SEO best practice: Titles should be 50-60 characters
 const MAX_TITLE_LENGTH = 60;
 const suffix = ` | ${siteName}`;
@@ -168,6 +176,11 @@ if (title) {
 
     <!-- Content Freshness - Use provided date, Git commit date, file mod date, or build time -->
     <meta property="article:modified_time" content={modifiedDate || new Date().toISOString()} />
+    {publishedDate && <meta property="article:published_time" content={publishedDate} />}
+
+    <!-- Author Attribution (E-E-A-T) -->
+    <meta name="author" content={pageAuthor} />
+    <meta property="article:author" content={pageAuthor} />
 
     <title>{pageTitle}</title>
     <meta name="title" content={pageTitle} />
@@ -181,6 +194,9 @@ if (title) {
     <meta property="og:description" content={description} />
     {image && <meta property="og:image" content={new URL(image, Astro.url)} />}
     <meta property="og:site_name" content={siteName} />
+    {publishedDate && <meta property="article:published_time" content={publishedDate} />}
+    {modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
+    <meta property="article:author" content={pageAuthor} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
