@@ -1,0 +1,33 @@
+{
+  "audit_id": 430,
+  "target_url": "https://movingagain.com.au/backloading",
+  "overall_score": 98,
+  "generated_at": "2026-01-10T11:39:37+00:00",
+  "summary": "The audit for https://movingagain.com.au/backloading scored 98/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 94,
+      "issues": [
+        {
+          "check_name": "Content Freshness",
+          "status": "warning",
+          "issue_detected": "No content date detected",
+          "remediation": "Add article:modified_time meta tag or include dateModified in your Schema.org markup."
+        }
+      ]
+    },
+    {
+      "category": "Content Quality",
+      "category_score": 95,
+      "issues": [
+        {
+          "check_name": "Trust Signals",
+          "status": "warning",
+          "issue_detected": "Good: 2/3 dimensions covered. Missing: Security",
+          "remediation": "Strengthen your Trust Triangle by adding signals for: Security."
+        }
+      ]
+    }
+  ]
+}

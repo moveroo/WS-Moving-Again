@@ -1,0 +1,57 @@
+{
+  "audit_id": 435,
+  "target_url": "https://movingagain.com.au/melbourne",
+  "overall_score": 95,
+  "generated_at": "2026-01-10T11:39:39+00:00",
+  "summary": "The audit for https://movingagain.com.au/melbourne scored 95/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 88,
+      "issues": [
+        {
+          "check_name": "Title Tag",
+          "status": "warning",
+          "issue_detected": "Length: 49 chars (ideal: 50-60)",
+          "remediation": "Optimize your title length. Titles shorter than 50 characters may not convey enough information, while titles longer than 60 characters may be truncated."
+        },
+        {
+          "check_name": "Content Freshness",
+          "status": "warning",
+          "issue_detected": "No content date detected",
+          "remediation": "Add article:modified_time meta tag or include dateModified in your Schema.org markup."
+        }
+      ]
+    },
+    {
+      "category": "Content Quality",
+      "category_score": 90,
+      "issues": [
+        {
+          "check_name": "Reading Level",
+          "status": "warning",
+          "issue_detected": "Reading score: 36 (College level) - may be too difficult",
+          "remediation": "Simplify sentences, use shorter words, and break up complex paragraphs. Aim for a score of 60+."
+        },
+        {
+          "check_name": "Trust Signals",
+          "status": "warning",
+          "issue_detected": "Good: 2/3 dimensions covered. Missing: Security",
+          "remediation": "Strengthen your Trust Triangle by adding signals for: Security."
+        }
+      ]
+    },
+    {
+      "category": "AI Readiness",
+      "category_score": 90,
+      "issues": [
+        {
+          "check_name": "Question Headings",
+          "status": "warning",
+          "issue_detected": "Only 1 question heading(s)",
+          "remediation": "Rephrase some of your subheadings as questions that your content answers (e.g., \"Why choose us?\" instead of \"Benefits\")."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://movingagain.com.au",
+    "auditId": 428,
+    "score": 95,
+    "failCount": 0,
+    "warningCount": 5,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/service-areas",
+    "auditId": 429,
+    "score": 97,
+    "failCount": 0,
+    "warningCount": 3,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/backloading",
+    "auditId": 430,
+    "score": 98,
+    "failCount": 0,
+    "warningCount": 2,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/car-transport",
+    "auditId": 431,
+    "score": 97,
+    "failCount": 0,
+    "warningCount": 2,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/contact",
+    "auditId": 433,
+    "score": 96,
+    "failCount": 0,
+    "warningCount": 4,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/moving-interstate",
+    "auditId": 432,
+    "score": 97,
+    "failCount": 0,
+    "warningCount": 3,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/perth",
+    "auditId": 437,
+    "score": null,
+    "failCount": 0,
+    "warningCount": 0,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/melbourne",
+    "auditId": 435,
+    "score": 95,
+    "failCount": 0,
+    "warningCount": 5,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/brisbane",
+    "auditId": 436,
+    "score": 96,
+    "failCount": 0,
+    "warningCount": 4,
+    "categoryScores": {}
+  },
+  {
+    "url": "https://movingagain.com.au/sydney",
+    "auditId": 434,
+    "score": 97,
+    "failCount": 0,
+    "warningCount": 3,
+    "categoryScores": {}
+  }
+]
