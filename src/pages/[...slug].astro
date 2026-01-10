@@ -11,6 +11,7 @@ import RouteTrustSection from '../components/RouteTrustSection.astro';
 import { generateFAQsForRoute } from '../utils/faqGenerator';
 import { getRelatedRoutes } from '../utils/relatedRoutes';
 import { getCityHubUrl } from '../utils/hubPages';
+import { generateRouteSEO } from '../utils/seoGenerator';
 
 export async function getStaticPaths() {
   const routes = await getCollection('routes');
@@ -35,9 +36,20 @@ const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 10)
 const originHubUrl = getCityHubUrl(route.data.origin);
 const destinationHubUrl = getCityHubUrl(route.data.destination);
 
-const metaDescription =
-  route.data.metaDescription ??
-  `Affordable backloading from ${route.data.origin} to ${route.data.destination}. Save up to 60% on your interstate move with Moving Again's shared truck service.`;
+// Generate SEO-optimized title and description
+// Always use generated SEO for route pages to ensure optimal length and format
+const seo = generateRouteSEO({
+  origin: route.data.origin,
+  destination: route.data.destination,
+  originState: route.data.originState,
+  destinationState: route.data.destinationState,
+  transitDays: route.data.transitDays,
+  title: route.data.title, // Use as base, but generator will optimize it
+});
+
+// Use generated SEO (optimized for length and format)
+const pageTitle = seo.title;
+const metaDescription = seo.description;
 
 // Machine-readable facts for LLM extraction
 const routeFacts = {
@@ -58,7 +70,7 @@ const routeFacts = {
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: route.data.title,
+  name: pageTitle.replace(` | Moving Again`, ''), // Remove suffix for schema
   description: metaDescription,
   provider: {
     '@type': 'MovingCompany',
@@ -85,7 +97,7 @@ const faqSchema = {
 };
 ---
 
-<Layout title={route.data.title} description={metaDescription}>
+<Layout title={pageTitle} description={metaDescription}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <!-- Machine-readable facts for LLM extraction -->

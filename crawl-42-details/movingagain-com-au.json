@@ -1,0 +1,57 @@
+{
+  "audit_id": 407,
+  "target_url": "https://movingagain.com.au",
+  "overall_score": 94,
+  "generated_at": "2026-01-10T09:40:35+00:00",
+  "summary": "The audit for https://movingagain.com.au scored 94/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 81,
+      "issues": [
+        {
+          "check_name": "Title Tag",
+          "status": "warning",
+          "issue_detected": "Length: 79 chars (ideal: 50-60)",
+          "remediation": "Optimize your title length. Titles shorter than 50 characters may not convey enough information, while titles longer than 60 characters may be truncated."
+        },
+        {
+          "check_name": "Meta Description",
+          "status": "warning",
+          "issue_detected": "Length: 25 chars (ideal: 150-160)",
+          "remediation": "Optimize your description length. Descriptions around 150-160 characters maximize screen real estate in search results without truncation."
+        },
+        {
+          "check_name": "Content Freshness",
+          "status": "warning",
+          "issue_detected": "No content date detected",
+          "remediation": "Add article:modified_time meta tag or include dateModified in your Schema.org markup."
+        }
+      ]
+    },
+    {
+      "category": "Content Quality",
+      "category_score": 85,
+      "issues": [
+        {
+          "check_name": "Author Attribution (E-E-A-T)",
+          "status": "warning",
+          "issue_detected": "No author attribution found",
+          "remediation": "Add author bylines with links to author bio pages. Use schema.org/Person markup for best results."
+        },
+        {
+          "check_name": "Reading Level",
+          "status": "warning",
+          "issue_detected": "Reading score: 38 (College level) - may be too difficult",
+          "remediation": "Simplify sentences, use shorter words, and break up complex paragraphs. Aim for a score of 60+."
+        },
+        {
+          "check_name": "Trust Signals",
+          "status": "warning",
+          "issue_detected": "Good: 2/3 dimensions covered. Missing: Security",
+          "remediation": "Strengthen your Trust Triangle by adding signals for: Security."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "audit_id": 409,
+  "target_url": "https://movingagain.com.au/backloading",
+  "overall_score": 96,
+  "generated_at": "2026-01-10T09:40:35+00:00",
+  "summary": "The audit for https://movingagain.com.au/backloading scored 96/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 88,
+      "issues": [
+        {
+          "check_name": "Title Tag",
+          "status": "warning",
+          "issue_detected": "Length: 78 chars (ideal: 50-60)",
+          "remediation": "Optimize your title length. Titles shorter than 50 characters may not convey enough information, while titles longer than 60 characters may be truncated."
+        },
+        {
+          "check_name": "Content Freshness",
+          "status": "warning",
+          "issue_detected": "No content date detected",
+          "remediation": "Add article:modified_time meta tag or include dateModified in your Schema.org markup."
+        }
+      ]
+    },
+    {
+      "category": "Content Quality",
+      "category_score": 85,
+      "issues": [
+        {
+          "check_name": "Author Attribution (E-E-A-T)",
+          "status": "warning",
+          "issue_detected": "No author attribution found",
+          "remediation": "Add author bylines with links to author bio pages. Use schema.org/Person markup for best results."
+        },
+        {
+          "check_name": "Table of Contents",
+          "status": "warning",
+          "issue_detected": "Long-form content (1629 words) without table of contents",
+          "remediation": "Add a table of contents with anchor links to major sections. This improves navigation and may appear as jump links in search results."
+        },
+        {
+          "check_name": "Trust Signals",
+          "status": "warning",
+          "issue_detected": "Good: 2/3 dimensions covered. Missing: Security",
+          "remediation": "Strengthen your Trust Triangle by adding signals for: Security."
+        }
+      ]
+    }
+  ]
+}

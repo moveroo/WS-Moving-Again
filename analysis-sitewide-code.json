@@ -1,0 +1,765 @@
+{
+  "analyzedAt": "2026-01-10T09:48:21.015Z",
+  "totalPages": 41,
+  "seoComponentIssues": [
+    {
+      "type": "meta-description-default",
+      "severity": "medium",
+      "issue": "Meta description has empty default fallback",
+      "location": "src/components/SEO.astro",
+      "line": 21,
+      "problem": "Pages without explicit description will have empty/very short meta description",
+      "fix": "Add better default or require description prop"
+    },
+    {
+      "type": "content-freshness-build-time",
+      "severity": "low",
+      "issue": "Content freshness uses build time, not actual page modification date",
+      "location": "src/components/SEO.astro",
+      "line": 53,
+      "problem": "May not be detected as \"fresh\" content by crawlers",
+      "fix": "Use actual page modification dates if available, or Git commit dates"
+    }
+  ],
+  "titleIssues": {
+    "tooLong": 34,
+    "tooShort": 3,
+    "missing": 0,
+    "total": 37,
+    "percentage": 90
+  },
+  "descriptionIssues": {
+    "tooShort": 4,
+    "tooLong": 9,
+    "missing": 0,
+    "total": 13,
+    "percentage": 32
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "issue": "Title Tag Length - Suffix makes titles too long",
+      "affectedPages": 34,
+      "fixLocation": "src/components/SEO.astro",
+      "fix": "Modify title generation to truncate before adding suffix:\n      \n      const maxTitleLength = 60;\n      const suffix = ` | ${siteName}`;\n      const maxTitleWithoutSuffix = maxTitleLength - suffix.length;\n      const truncatedTitle = title.length > maxTitleWithoutSuffix \n        ? title.substring(0, maxTitleWithoutSuffix - 3) + '...'\n        : title;\n      const pageTitle = truncatedTitle + suffix;"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "Meta Description - Missing or too short",
+      "affectedPages": 4,
+      "fixLocation": "src/components/SEO.astro + individual pages",
+      "fix": "1. Add validation/warning for missing descriptions\n      2. Add better default descriptions\n      3. Consider auto-generating from page content"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "Meta Description - Too long",
+      "affectedPages": 9,
+      "fixLocation": "src/components/SEO.astro",
+      "fix": "Auto-truncate descriptions to 160 chars:\n      \n      const truncatedDesc = description.length > 160\n        ? description.substring(0, 157) + '...'\n        : description;"
+    }
+  ],
+  "detailedPages": [
+    {
+      "file": "404.astro",
+      "hasTitle": false,
+      "hasDescription": false,
+      "titleLength": null,
+      "descriptionLength": null,
+      "issues": [
+        {
+          "type": "layout-missing",
+          "severity": "high",
+          "issue": "No Layout component found"
+        }
+      ]
+    },
+    {
+      "file": "[...slug].astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 16,
+      "descriptionLength": 15,
+      "issues": [
+        {
+          "type": "title-too-short",
+          "severity": "low",
+          "issue": "Title will be 31 chars (ideal: 50-60)",
+          "title": "route.data.title",
+          "totalLength": 31
+        },
+        {
+          "type": "description-too-short",
+          "severity": "medium",
+          "issue": "Description is 15 chars (ideal: 150-160)",
+          "description": "metaDescription..."
+        }
+      ]
+    },
+    {
+      "file": "adelaide.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 60,
+      "descriptionLength": 168,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 75 chars (ideal: 50-60)",
+          "title": "Backloading Adelaide | Interstate Removals SA | Moving Again",
+          "totalLength": 75
+        }
+      ]
+    },
+    {
+      "file": "backloading.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 63,
+      "descriptionLength": 159,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 78 chars (ideal: 50-60)",
+          "title": "Interstate Backloading | Save 40-60% on Removals | Moving Again",
+          "totalLength": 78
+        }
+      ]
+    },
+    {
+      "file": "ballarat.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 61,
+      "descriptionLength": 169,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 76 chars (ideal: 50-60)",
+          "title": "Backloading Ballarat | Interstate Removals VIC | Moving Again",
+          "totalLength": 76
+        }
+      ]
+    },
+    {
+      "file": "bendigo.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 60,
+      "descriptionLength": 168,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 75 chars (ideal: 50-60)",
+          "title": "Backloading Bendigo | Interstate Removals VIC | Moving Again",
+          "totalLength": 75
+        }
+      ]
+    },
+    {
+      "file": "brisbane.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 61,
+      "descriptionLength": 167,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 76 chars (ideal: 50-60)",
+          "title": "Backloading Brisbane | Interstate Removals QLD | Moving Again",
+          "totalLength": 76
+        }
+      ]
+    },
+    {
+      "file": "bunbury.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 59,
+      "descriptionLength": 163,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 74 chars (ideal: 50-60)",
+          "title": "Backloading Bunbury | Interstate Removals WA | Moving Again",
+          "totalLength": 74
+        }
+      ]
+    },
+    {
+      "file": "bundaberg.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 62,
+      "descriptionLength": 169,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 77 chars (ideal: 50-60)",
+          "title": "Backloading Bundaberg | Interstate Removals QLD | Moving Again",
+          "totalLength": 77
+        }
+      ]
+    },
+    {
+      "file": "cairns.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 59,
+      "descriptionLength": 178,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 74 chars (ideal: 50-60)",
+          "title": "Backloading Cairns | Interstate Removals QLD | Moving Again",
+          "totalLength": 74
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 178 chars (ideal: 150-160)",
+          "description": "Cairns backloading and interstate removals. Save u..."
+        }
+      ]
+    },
+    {
+      "file": "canberra.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 61,
+      "descriptionLength": 136,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 76 chars (ideal: 50-60)",
+          "title": "Backloading Canberra | Interstate Removals ACT | Moving Again",
+          "totalLength": 76
+        }
+      ]
+    },
+    {
+      "file": "car-transport.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 69,
+      "descriptionLength": 168,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 84 chars (ideal: 50-60)",
+          "title": "Car Transport Australia | Interstate Vehicle Transport | Moving Again",
+          "totalLength": 84
+        }
+      ]
+    },
+    {
+      "file": "contact.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 45,
+      "descriptionLength": 86,
+      "issues": [
+        {
+          "type": "description-too-short",
+          "severity": "medium",
+          "issue": "Description is 86 chars (ideal: 150-160)",
+          "description": "Get in touch with Moving Again for interstate movi..."
+        }
+      ]
+    },
+    {
+      "file": "darwin.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 58,
+      "descriptionLength": 163,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 73 chars (ideal: 50-60)",
+          "title": "Backloading Darwin | Interstate Removals NT | Moving Again",
+          "totalLength": 73
+        }
+      ]
+    },
+    {
+      "file": "furniture-removal-inventory-list.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 66,
+      "descriptionLength": 143,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 81 chars (ideal: 50-60)",
+          "title": "Furniture Removal Inventory List | Moving Checklist | Moving Again",
+          "totalLength": 81
+        }
+      ]
+    },
+    {
+      "file": "geelong.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 60,
+      "descriptionLength": 168,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 75 chars (ideal: 50-60)",
+          "title": "Backloading Geelong | Interstate Removals VIC | Moving Again",
+          "totalLength": 75
+        }
+      ]
+    },
+    {
+      "file": "gold-coast.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 63,
+      "descriptionLength": 170,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 78 chars (ideal: 50-60)",
+          "title": "Backloading Gold Coast | Interstate Removals QLD | Moving Again",
+          "totalLength": 78
+        }
+      ]
+    },
+    {
+      "file": "hobart.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 59,
+      "descriptionLength": 150,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 74 chars (ideal: 50-60)",
+          "title": "Backloading Hobart | Interstate Removals TAS | Moving Again",
+          "totalLength": 74
+        }
+      ]
+    },
+    {
+      "file": "how-many-boxes-do-i-need-for-my-move.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 70,
+      "descriptionLength": 138,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 85 chars (ideal: 50-60)",
+          "title": "How Many Boxes Do I Need for My Move? | Free Calculator | Moving Again",
+          "totalLength": 85
+        }
+      ]
+    },
+    {
+      "file": "index.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 24,
+      "descriptionLength": "dynamic",
+      "issues": [
+        {
+          "type": "title-too-short",
+          "severity": "low",
+          "issue": "Title will be 39 chars (ideal: 50-60)",
+          "title": "Moving Again | Australia",
+          "totalLength": 39
+        }
+      ]
+    },
+    {
+      "file": "launceston.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 63,
+      "descriptionLength": 163,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 78 chars (ideal: 50-60)",
+          "title": "Backloading Launceston | Interstate Removals TAS | Moving Again",
+          "totalLength": 78
+        }
+      ]
+    },
+    {
+      "file": "logan-city.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 63,
+      "descriptionLength": 184,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 78 chars (ideal: 50-60)",
+          "title": "Backloading Logan City | Interstate Removals QLD | Moving Again",
+          "totalLength": 78
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 184 chars (ideal: 150-160)",
+          "description": "Logan City backloading and interstate removals. Sa..."
+        }
+      ]
+    },
+    {
+      "file": "mackay.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 59,
+      "descriptionLength": 176,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 74 chars (ideal: 50-60)",
+          "title": "Backloading Mackay | Interstate Removals QLD | Moving Again",
+          "totalLength": 74
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 176 chars (ideal: 150-160)",
+          "description": "Mackay backloading and interstate removals. Save u..."
+        }
+      ]
+    },
+    {
+      "file": "mandurah.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 60,
+      "descriptionLength": 165,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 75 chars (ideal: 50-60)",
+          "title": "Backloading Mandurah | Interstate Removals WA | Moving Again",
+          "totalLength": 75
+        }
+      ]
+    },
+    {
+      "file": "melbourne.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 62,
+      "descriptionLength": 167,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 77 chars (ideal: 50-60)",
+          "title": "Backloading Melbourne | Interstate Removals VIC | Moving Again",
+          "totalLength": 77
+        }
+      ]
+    },
+    {
+      "file": "moving-pot-plants-interstate.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 76,
+      "descriptionLength": 141,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 91 chars (ideal: 50-60)",
+          "title": "Moving Pot Plants Interstate | How to Transport Plants Safely | Moving Again",
+          "totalLength": 91
+        }
+      ]
+    },
+    {
+      "file": "newcastle.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 62,
+      "descriptionLength": 176,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 77 chars (ideal: 50-60)",
+          "title": "Backloading Newcastle | Interstate Removals NSW | Moving Again",
+          "totalLength": 77
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 176 chars (ideal: 150-160)",
+          "description": "Newcastle backloading and interstate removals. Sav..."
+        }
+      ]
+    },
+    {
+      "file": "perth.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 57,
+      "descriptionLength": 174,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 72 chars (ideal: 50-60)",
+          "title": "Backloading Perth | Interstate Removals WA | Moving Again",
+          "totalLength": 72
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 174 chars (ideal: 150-160)",
+          "description": "Perth backloading and interstate removals. Save up..."
+        }
+      ]
+    },
+    {
+      "file": "privacy.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 29,
+      "descriptionLength": 149,
+      "issues": [
+        {
+          "type": "title-too-short",
+          "severity": "low",
+          "issue": "Title will be 44 chars (ideal: 50-60)",
+          "title": "Privacy Policy | Moving Again",
+          "totalLength": 44
+        }
+      ]
+    },
+    {
+      "file": "questions.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 54,
+      "descriptionLength": 157,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 69 chars (ideal: 50-60)",
+          "title": "Moving FAQs | Common Questions Answered | Moving Again",
+          "totalLength": 69
+        }
+      ]
+    },
+    {
+      "file": "reviews.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 51,
+      "descriptionLength": 122,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 66 chars (ideal: 50-60)",
+          "title": "Customer Reviews | Moving Again Interstate Removals",
+          "totalLength": 66
+        }
+      ]
+    },
+    {
+      "file": "rockhampton.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 64,
+      "descriptionLength": 181,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 79 chars (ideal: 50-60)",
+          "title": "Backloading Rockhampton | Interstate Removals QLD | Moving Again",
+          "totalLength": 79
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 181 chars (ideal: 150-160)",
+          "description": "Rockhampton backloading and interstate removals. S..."
+        }
+      ]
+    },
+    {
+      "file": "rockingham.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 62,
+      "descriptionLength": 154,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 77 chars (ideal: 50-60)",
+          "title": "Backloading Rockingham | Interstate Removals WA | Moving Again",
+          "totalLength": 77
+        }
+      ]
+    },
+    {
+      "file": "service-areas.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 75,
+      "descriptionLength": 199,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 90 chars (ideal: 50-60)",
+          "title": "Service Areas | Interstate Moving to All Australian Capitals | Moving Again",
+          "totalLength": 90
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 199 chars (ideal: 150-160)",
+          "description": "Interstate backloading services to all 8 Australia..."
+        }
+      ]
+    },
+    {
+      "file": "sydney.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 59,
+      "descriptionLength": 162,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 74 chars (ideal: 50-60)",
+          "title": "Backloading Sydney | Interstate Removals NSW | Moving Again",
+          "totalLength": 74
+        }
+      ]
+    },
+    {
+      "file": "terms-of-use.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 35,
+      "descriptionLength": 102,
+      "issues": [
+        {
+          "type": "description-too-short",
+          "severity": "medium",
+          "issue": "Description is 102 chars (ideal: 150-160)",
+          "description": "Terms of use for the Moving Again website. Please ..."
+        }
+      ]
+    },
+    {
+      "file": "terms.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 46,
+      "descriptionLength": 116,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 61 chars (ideal: 50-60)",
+          "title": "Terms and Conditions of Booking | Moving Again",
+          "totalLength": 61
+        },
+        {
+          "type": "description-too-short",
+          "severity": "medium",
+          "issue": "Description is 116 chars (ideal: 150-160)",
+          "description": "Terms and conditions for booking removalist servic..."
+        }
+      ]
+    },
+    {
+      "file": "toowoomba.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 62,
+      "descriptionLength": 178,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 77 chars (ideal: 50-60)",
+          "title": "Backloading Toowoomba | Interstate Removals QLD | Moving Again",
+          "totalLength": 77
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 178 chars (ideal: 150-160)",
+          "description": "Toowoomba backloading and interstate removals. Sav..."
+        }
+      ]
+    },
+    {
+      "file": "townsville.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 73,
+      "descriptionLength": 164,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 88 chars (ideal: 50-60)",
+          "title": "Backloading Townsville | Interstate Removals to & from QLD | Moving Again",
+          "totalLength": 88
+        }
+      ]
+    },
+    {
+      "file": "wollongong.astro",
+      "hasTitle": true,
+      "hasDescription": true,
+      "titleLength": 63,
+      "descriptionLength": 178,
+      "issues": [
+        {
+          "type": "title-too-long",
+          "severity": "medium",
+          "issue": "Title will be 78 chars (ideal: 50-60)",
+          "title": "Backloading Wollongong | Interstate Removals NSW | Moving Again",
+          "totalLength": 78
+        },
+        {
+          "type": "description-too-long",
+          "severity": "medium",
+          "issue": "Description is 178 chars (ideal: 150-160)",
+          "description": "Wollongong backloading and interstate removals. Sa..."
+        }
+      ]
+    }
+  ]
+}

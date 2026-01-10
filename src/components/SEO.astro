@@ -26,7 +26,15 @@ const {
 } = Astro.props;
 
 const siteName = import.meta.env.PUBLIC_SITE_NAME || 'Moving Again';
-const pageTitle = title ? `${title} | ${siteName}` : siteName;
+// Check if title already includes the suffix to avoid duplication
+// Check for both "Moving Again" (from generator) and siteName (from env)
+const suffix = ` | ${siteName}`;
+const movingAgainSuffix = ' | Moving Again';
+const pageTitle = title
+  ? title.endsWith(suffix) || title.endsWith(movingAgainSuffix)
+    ? title
+    : `${title}${suffix}`
+  : siteName;
 ---
 
 <!doctype html>

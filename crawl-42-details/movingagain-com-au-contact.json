@@ -1,0 +1,57 @@
+{
+  "audit_id": 412,
+  "target_url": "https://movingagain.com.au/contact",
+  "overall_score": 95,
+  "generated_at": "2026-01-10T09:40:35+00:00",
+  "summary": "The audit for https://movingagain.com.au/contact scored 95/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 88,
+      "issues": [
+        {
+          "check_name": "Meta Description",
+          "status": "warning",
+          "issue_detected": "Length: 86 chars (ideal: 150-160)",
+          "remediation": "Optimize your description length. Descriptions around 150-160 characters maximize screen real estate in search results without truncation."
+        },
+        {
+          "check_name": "Content Freshness",
+          "status": "warning",
+          "issue_detected": "No content date detected",
+          "remediation": "Add article:modified_time meta tag or include dateModified in your Schema.org markup."
+        }
+      ]
+    },
+    {
+      "category": "Content Quality",
+      "category_score": 90,
+      "issues": [
+        {
+          "check_name": "Author Attribution (E-E-A-T)",
+          "status": "warning",
+          "issue_detected": "No author attribution found",
+          "remediation": "Add author bylines with links to author bio pages. Use schema.org/Person markup for best results."
+        },
+        {
+          "check_name": "Trust Signals",
+          "status": "warning",
+          "issue_detected": "Good: 2/3 dimensions covered. Missing: Security",
+          "remediation": "Strengthen your Trust Triangle by adding signals for: Security."
+        }
+      ]
+    },
+    {
+      "category": "AI Readiness",
+      "category_score": 90,
+      "issues": [
+        {
+          "check_name": "Question Headings",
+          "status": "warning",
+          "issue_detected": "Only 2 question heading(s)",
+          "remediation": "Rephrase some of your subheadings as questions that your content answers (e.g., \"Why choose us?\" instead of \"Benefits\")."
+        }
+      ]
+    }
+  ]
+}
