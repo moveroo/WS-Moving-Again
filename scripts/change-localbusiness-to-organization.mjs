@@ -37,44 +37,54 @@ function findAllAstroFiles(dir) {
 function changeLocalBusinessToOrganization(filePath) {
   let content = fs.readFileSync(filePath, 'utf-8');
   const originalContent = content;
+  let fixed = false;
 
-  // Check if file uses LocalBusiness
-  if (!content.includes('LocalBusiness')) {
-    return { fixed: false, reason: 'No LocalBusiness found' };
+  // Check if file uses Organization schemaType (already changed) but still has address/priceRange
+  const hasOrganization = content.includes('schemaType="Organization"');
+  const hasAddress = content.includes('address:') && content.includes('PostalAddress');
+  const hasPriceRange = content.includes('priceRange:');
+
+  if (!hasOrganization && !content.includes('LocalBusiness')) {
+    return { fixed: false, reason: 'No LocalBusiness or Organization found' };
   }
 
-  // Change schemaType="LocalBusiness" to schemaType="Organization"
-  content = content.replace(/schemaType="LocalBusiness"/g, 'schemaType="Organization"');
-
-  // Update schemaData - remove address field, keep areaServed but update name
-  // Pattern: schemaData={{ name: 'Moving Again - City', address: {...}, areaServed: '...', priceRange: '...' }}
-  const schemaDataRegex = /schemaData=\{\{([^}]+)\}\}/s;
-  const match = content.match(schemaDataRegex);
-
-  if (match) {
-    let schemaDataContent = match[1];
-
-    // Remove address field (local-specific)
-    schemaDataContent = schemaDataContent.replace(/address:\s*\{[^}]+\},?\s*/g, '');
-
-    // Update name from "Moving Again - City" to just "Moving Again" or keep area-specific name
-    // Actually, let's keep the name but remove the address since Organization can still have areaServed
-    // Remove priceRange (not typically used in Organization)
-    schemaDataContent = schemaDataContent.replace(/priceRange:\s*['"$]+,\s*/g, '');
-    schemaDataContent = schemaDataContent.replace(/priceRange:\s*['"$]+/g, '');
-
-    // Clean up extra commas
-    schemaDataContent = schemaDataContent.replace(/,\s*,/g, ',');
-    schemaDataContent = schemaDataContent.replace(/,\s*\}/g, '}');
-    schemaDataContent = schemaDataContent.replace(/\{\s*,/g, '{');
-
-    // Update areaServed to be more general if it's too specific
-    // Keep areaServed as is - it's valid for Organization too
-
-    content = content.replace(schemaDataRegex, `schemaData={{${schemaDataContent}}}`);
+  // Change schemaType="LocalBusiness" to schemaType="Organization" if not already changed
+  if (content.includes('schemaType="LocalBusiness"')) {
+    content = content.replace(/schemaType="LocalBusiness"/g, 'schemaType="Organization"');
+    fixed = true;
   }
 
-  if (content !== originalContent) {
+  // Update schemaData - remove address and priceRange fields (multiline pattern)
+  // Pattern: schemaData={{ name: '...', address: {...}, areaServed: '...', priceRange: '...' }}
+  if (hasAddress || hasPriceRange) {
+    // Match schemaData with multiline support
+    const schemaDataRegex = /schemaData=\{\{([\s\S]*?)\}\}/;
+    const match = content.match(schemaDataRegex);
+
+    if (match) {
+      let schemaDataContent = match[1];
+
+      // Remove address field (multiline, local-specific)
+      schemaDataContent = schemaDataContent.replace(/address:\s*\{[\s\S]*?\},?\s*/g, '');
+
+      // Remove priceRange field
+      schemaDataContent = schemaDataContent.replace(/priceRange:\s*['"$]+,\s*/g, '');
+      schemaDataContent = schemaDataContent.replace(/priceRange:\s*['"$]+/g, '');
+
+      // Clean up extra commas and whitespace
+      schemaDataContent = schemaDataContent.replace(/,\s*,/g, ',');
+      schemaDataContent = schemaDataContent.replace(/,\s*\n\s*\}/g, '\n  }');
+      schemaDataContent = schemaDataContent.replace(/\{\s*,\s*\n/g, '{\n');
+      schemaDataContent = schemaDataContent.replace(/\n\s*,\s*\n\s*\}/g, '\n  }');
+
+      // Keep areaServed and name - both are valid for Organization
+
+      content = content.replace(schemaDataRegex, `schemaData={{${schemaDataContent}}}`);
+      fixed = true;
+    }
+  }
+
+  if (fixed && content !== originalContent) {
     if (!isDryRun) {
       fs.writeFileSync(filePath, content, 'utf-8');
     }
