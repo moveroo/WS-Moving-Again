@@ -18,23 +18,130 @@ const defaultCanonical = `${PRODUCTION_DOMAIN}${currentPath}`;
 
 const {
   title,
-  description = import.meta.env.PUBLIC_SITE_DESCRIPTION || '',
+  description: rawDescription = import.meta.env.PUBLIC_SITE_DESCRIPTION || '',
   image = import.meta.env.PUBLIC_SITE_IMAGE || '/logo.png',
   type = 'website',
   canonical = defaultCanonical,
   noindex = false,
 } = Astro.props;
 
+// SEO best practice: Descriptions should be 150-160 characters
+const DESC_MIN_LENGTH = 120;
+const DESC_MAX_LENGTH = 160;
+
+// Validate and optimize description length
+let description = rawDescription.trim();
+if (description.length > DESC_MAX_LENGTH) {
+  // Truncate at word boundary
+  const truncated = description.substring(0, DESC_MAX_LENGTH - 3);
+  const lastSpace = truncated.lastIndexOf(' ');
+  description =
+    lastSpace > DESC_MAX_LENGTH - 20
+      ? truncated.substring(0, lastSpace) + '...'
+      : truncated + '...';
+} else if (description.length < DESC_MIN_LENGTH && description.length > 0) {
+  // Add default description if too short
+  const defaultDesc =
+    "Australia's trusted interstate removalists. Save up to 60% with backloading services. Get your free quote today.";
+  description = description || defaultDesc;
+} else if (description.length === 0) {
+  // Use default if empty
+  description =
+    "Australia's trusted interstate removalists. Save up to 60% with backloading services. Get your free quote today.";
+}
+
 const siteName = import.meta.env.PUBLIC_SITE_NAME || 'Moving Again';
-// Check if title already includes the suffix to avoid duplication
-// Check for both "Moving Again" (from generator) and siteName (from env)
+// SEO best practice: Titles should be 50-60 characters
+const MAX_TITLE_LENGTH = 60;
 const suffix = ` | ${siteName}`;
 const movingAgainSuffix = ' | Moving Again';
-const pageTitle = title
-  ? title.endsWith(suffix) || title.endsWith(movingAgainSuffix)
-    ? title
-    : `${title}${suffix}`
-  : siteName;
+const MAX_TITLE_WITHOUT_SUFFIX = MAX_TITLE_LENGTH - suffix.length; // ~42 chars
+
+let pageTitle: string;
+if (title) {
+  // Check if title already has suffix
+  const hasSuffix = title.endsWith(suffix) || title.endsWith(movingAgainSuffix);
+
+  // Special case: If title starts with "Moving Again", ensure it stays
+  const startsWithMovingAgain = title.trim().startsWith('Moving Again');
+
+  if (hasSuffix) {
+    // Title already has suffix - truncate if too long
+    if (title.length > MAX_TITLE_LENGTH) {
+      // Remove suffix, truncate, then re-add
+      const withoutSuffix = title.replace(/\s*\|\s*Moving Again\s*$/, '').trim();
+      const truncated = withoutSuffix.substring(0, MAX_TITLE_WITHOUT_SUFFIX - 3);
+      const lastSpace = truncated.lastIndexOf(' ');
+      const cleanTitle =
+        lastSpace > MAX_TITLE_WITHOUT_SUFFIX - 20 ? truncated.substring(0, lastSpace) : truncated;
+      pageTitle = cleanTitle.trim() + suffix;
+    } else {
+      pageTitle = title;
+    }
+  } else {
+    // Title doesn't have suffix - truncate before adding
+    let cleanTitle = title.trim();
+
+    // If title starts with "Moving Again", ensure it's preserved
+    if (startsWithMovingAgain) {
+      // For titles starting with "Moving Again", we want: "Moving Again | [rest] | Moving Again"
+      // But that's redundant, so just ensure "Moving Again" is at the start
+      // If it's too long, truncate the middle part
+      if (cleanTitle.length > MAX_TITLE_LENGTH) {
+        // Keep "Moving Again" at start, truncate the rest
+        const rest = cleanTitle.substring(13).trim(); // After "Moving Again"
+        const maxRestLength = MAX_TITLE_LENGTH - 13 - suffix.length; // Space for "Moving Again " + suffix
+        if (rest.length > maxRestLength) {
+          const truncated = rest.substring(0, maxRestLength - 3);
+          const lastSpace = truncated.lastIndexOf(' ');
+          const truncatedRest =
+            lastSpace > maxRestLength - 20 ? truncated.substring(0, lastSpace) : truncated;
+          cleanTitle = `Moving Again ${truncatedRest.trim()}...`;
+        } else {
+          cleanTitle = `Moving Again ${rest}`;
+        }
+      }
+      // Don't add suffix if title already starts with "Moving Again" (avoid duplication)
+      pageTitle = cleanTitle;
+    } else {
+      // Normal title - truncate before adding suffix
+      if (cleanTitle.length > MAX_TITLE_WITHOUT_SUFFIX) {
+        const truncated = cleanTitle.substring(0, MAX_TITLE_WITHOUT_SUFFIX - 3);
+        const lastSpace = truncated.lastIndexOf(' ');
+        cleanTitle =
+          lastSpace > MAX_TITLE_WITHOUT_SUFFIX - 20 ? truncated.substring(0, lastSpace) : truncated;
+        cleanTitle = cleanTitle.trim() + '...';
+      }
+      pageTitle = cleanTitle + suffix;
+    }
+  }
+
+  // Final safety check - but preserve "Moving Again" if it's at the start
+  if (pageTitle.length > MAX_TITLE_LENGTH) {
+    if (pageTitle.startsWith('Moving Again')) {
+      // Keep "Moving Again" and truncate the rest
+      const rest = pageTitle.substring(13).trim();
+      const maxRestLength = MAX_TITLE_LENGTH - 13;
+      if (rest.length > maxRestLength) {
+        const truncated = rest.substring(0, maxRestLength - 3);
+        const lastSpace = truncated.lastIndexOf(' ');
+        pageTitle =
+          lastSpace > maxRestLength - 20
+            ? `Moving Again ${truncated.substring(0, lastSpace)}...`
+            : `Moving Again ${truncated}...`;
+      }
+    } else {
+      const truncated = pageTitle.substring(0, MAX_TITLE_LENGTH - 3);
+      const lastSpace = truncated.lastIndexOf(' ');
+      pageTitle =
+        lastSpace > MAX_TITLE_LENGTH - 20
+          ? truncated.substring(0, lastSpace) + '...'
+          : truncated + '...';
+    }
+  }
+} else {
+  pageTitle = siteName;
+}
 ---
 
 <!doctype html>
