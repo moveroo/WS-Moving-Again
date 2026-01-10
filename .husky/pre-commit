@@ -1,1 +1,30 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged (formats and lints staged files)
 npx lint-staged
+
+# Double-check: verify all staged files are formatted
+# This catches any files that might have been missed by lint-staged patterns
+staged_files=$(git diff --cached --name-only --diff-filter=ACM)
+
+if [ -n "$staged_files" ]; then
+  # Check formatting on all staged files
+  echo "🔍 Verifying formatting on staged files..."
+  for file in $staged_files; do
+    # Skip if file doesn't exist (might be deleted)
+    [ ! -f "$file" ] && continue
+    
+    # Check if file is a type that Prettier can format
+    case "$file" in
+      *.js|*.jsx|*.mjs|*.ts|*.tsx|*.astro|*.json|*.css|*.md|*.yaml|*.yml)
+        if ! npx prettier --check "$file" > /dev/null 2>&1; then
+          echo "❌ Formatting issue found in: $file"
+          echo "   Run 'npm run format' to fix, or 'npm run format:check' to see all issues"
+          exit 1
+        fi
+        ;;
+    esac
+  done
+  echo "✅ All staged files are properly formatted"
+fi
