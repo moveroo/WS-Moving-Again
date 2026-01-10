@@ -6,7 +6,6 @@
  */
 
 /* eslint-env node */
-/* eslint-disable no-console */
 
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
@@ -50,7 +49,15 @@ async function apiRequest(endpoint, options = {}) {
     throw new Error(`API Error: ${response.status} - ${error}`);
   }
 
-  return response.json();
+  // Check if response is JSON
+  const contentType = response.headers.get('content-type');
+  if (contentType && contentType.includes('application/json')) {
+    return response.json();
+  } else {
+    // If not JSON, return text (might be HTML error page)
+    const text = await response.text();
+    throw new Error(`API returned non-JSON response: ${text.substring(0, 200)}`);
+  }
 }
 
 // Run single page audit

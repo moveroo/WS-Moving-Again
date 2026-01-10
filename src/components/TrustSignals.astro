@@ -1,0 +1,76 @@
+---
+/**
+ * TrustSignals Component
+ *
+ * Displays security and trust signals to build customer confidence.
+ * Addresses the "Security dimension" missing from Trust Triangle.
+ *
+ * Usage:
+ * <TrustSignals />
+ */
+
+import { BRAND } from '../utils/brand';
+---
+
+<section class="py-8 bg-gray-50 border-t border-gray-200">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center text-brand-dark mb-8">
+        Your Security & Privacy Matters
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- SSL/HTTPS Security -->
+        <div class="bg-white p-6 rounded-xl border border-gray-200 text-center">
+          <div class="text-4xl mb-4">🔒</div>
+          <h3 class="font-bold text-brand-dark mb-2">Secure Website</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            This site uses SSL/TLS encryption to protect your data. Look for the padlock icon in
+            your browser.
+          </p>
+          <div class="flex items-center justify-center gap-2 text-xs text-gray-500">
+            <span>🔐</span>
+            <span>HTTPS Encrypted</span>
+          </div>
+        </div>
+
+        <!-- Privacy Protection -->
+        <div class="bg-white p-6 rounded-xl border border-gray-200 text-center">
+          <div class="text-4xl mb-4">🛡️</div>
+          <h3 class="font-bold text-brand-dark mb-2">Privacy Protected</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            We respect your privacy and protect your personal information. Your data is never shared
+            with third parties.
+          </p>
+          <a
+            href="/privacy/"
+            class="text-brand-red hover:underline text-sm font-medium inline-block"
+          >
+            View Privacy Policy →
+          </a>
+        </div>
+
+        <!-- Insurance & Licensing -->
+        <div class="bg-white p-6 rounded-xl border border-gray-200 text-center">
+          <div class="text-4xl mb-4">✅</div>
+          <h3 class="font-bold text-brand-dark mb-2">Fully Licensed & Insured</h3>
+          <p class="text-gray-600 text-sm mb-3">
+            {BRAND.yearsInBusiness} years of licensed operations. All moves include transit insurance.
+            Professional, reliable, and compliant.
+          </p>
+          <div class="flex items-center justify-center gap-2 text-xs text-gray-500">
+            <span>✓</span>
+            <span>Licensed & Insured</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Security Notes -->
+      <div class="mt-8 text-center">
+        <p class="text-sm text-gray-600">
+          <strong>Secure Payments:</strong> All quote requests and payments are processed through secure,
+          encrypted connections. We never store your payment information.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
