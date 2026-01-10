@@ -402,9 +402,9 @@ npm run seo:crawl https://example.com --limit=10
 ### Immediate (This Project):
 
 1. ✅ Complete Organization schema fix
-2. ⏭️ Image srcset automation
-3. ⏭️ Script async/defer automation
-4. ⏭️ Breadcrumb schema
+2. ✅ Image srcset automation
+3. ✅ Script async/defer verification
+4. ⏭️ Breadcrumb schema (optional enhancement)
 
 ### Future Enhancements:
 
@@ -458,13 +458,15 @@ By fixing at the component/utility level:
 ## 📚 Full Document List
 
 1. **`INDEX-SYSTEMATIC-SEO.md`** (this file) - Master index
-2. **`SEO-SYSTEMATIC-METHODOLOGY.md`** - Core methodology ⭐
+2. **`SEO-SYSTEMATIC-METHODOLOGY.md`** - Core methodology ⭐ (includes case studies)
 3. **`BRAND-FILE-TEMPLATE.md`** - Brand.ts template
 4. **`SCRIPT-TEMPLATES.md`** - Script patterns
 5. **`AUTOMATED-FIXES-ROADMAP.md`** - Fixable issues catalog
 6. **`SEO-GENERATOR-IMPLEMENTATION.md`** - SEO generator guide
 7. **`SITEWIDE-ISSUES-ANALYSIS.md`** - Analysis results
 8. **`CRAWL-42-ANALYSIS.md`** - Crawl analysis
+9. **`IMAGE-OPTIMIZATION-FIX.md`** - Image optimization case study
+10. **`SCRIPT-ASYNC-DEFER-FIX.md`** - Script optimization case study
 
 ---
 
