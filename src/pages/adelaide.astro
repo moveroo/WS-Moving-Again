@@ -96,14 +96,14 @@ const breadcrumbItems = [
         >
           Get an Adelaide Quote →
         </a>
-        <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-400">
+        <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-200">
           <div class="flex items-center gap-2">
-            <span class="text-green-400">✓</span><span
+            <span class="text-green-300">✓</span><span
               >{BRAND.yearsInBusiness} Years Experience</span
             >
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-green-400">✓</span><span>Transit Insurance Included</span>
+            <span class="text-green-300">✓</span><span>Transit Insurance Included</span>
           </div>
         </div>
       </div>
@@ -112,10 +112,10 @@ const breadcrumbItems = [
   <!-- Breadcrumb -->
   <nav class="py-4 bg-[#800005]" role="navigation">
     <div class="container mx-auto px-4">
-      <div class="flex items-center gap-2 text-sm text-white/80 flex-wrap">
-        <a href="/" class="hover:text-white">Home</a>
+      <div class="flex items-center gap-2 text-sm text-white flex-wrap">
+        <a href="/" class="hover:text-gray-200">Home</a>
         <span>›</span>
-        <a href="/service-areas/" class="hover:text-white">Service Areas</a>
+        <a href="/service-areas/" class="hover:text-gray-200">Service Areas</a>
         <span>›</span>
         <span class="text-white">Adelaide</span>
       </div>
@@ -164,7 +164,7 @@ const breadcrumbItems = [
               <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
                 Adelaide → {route.data.destination}
               </h3>
-              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+              <div class="mt-3 flex gap-4 text-sm text-gray-600">
                 <span>{route.data.transitDays || '3-7 days'}</span>
               </div>
             </a>
@@ -193,7 +193,7 @@ const breadcrumbItems = [
               <h3 class="font-bold text-brand-dark group-hover:text-brand-red transition-colors text-lg">
                 {route.data.origin} → Adelaide
               </h3>
-              <div class="mt-3 flex gap-4 text-sm text-gray-500">
+              <div class="mt-3 flex gap-4 text-sm text-gray-600">
                 <span>{route.data.transitDays || '3-7 days'}</span>
               </div>
             </a>
@@ -243,7 +243,7 @@ const breadcrumbItems = [
   <section class="py-20 bg-gradient-to-r from-brand-red to-brand-accent">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-white mb-6">Ready to Move from Adelaide?</h2>
-      <p class="text-white/80 mb-8 max-w-xl mx-auto">
+      <p class="text-white/90 mb-8 max-w-xl mx-auto">
         Get an instant quote for your Adelaide interstate move.
       </p>
       <a
