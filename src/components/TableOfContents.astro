@@ -1,0 +1,74 @@
+---
+/**
+ * TableOfContents Component
+ *
+ * Generates a table of contents from provided headings.
+ * Creates anchor links for easy navigation on long-form content.
+ *
+ * Usage:
+ * <TableOfContents headings={[
+ *   { id: 'how-it-works', text: 'How It Works', level: 2 },
+ *   { id: 'pricing', text: 'Pricing Guide', level: 2 },
+ * ]} />
+ */
+
+interface Heading {
+  id: string;
+  text: string;
+  level: number; // 2 for h2, 3 for h3
+}
+
+interface Props {
+  headings: Heading[]; // Required: List of headings
+  minHeadings?: number; // Minimum number of headings to show TOC (default: 3)
+  title?: string; // TOC title (default: "Table of Contents")
+}
+
+const { headings, minHeadings = 3, title = 'Table of Contents' } = Astro.props;
+
+// Only show TOC if we have enough headings
+const showTOC = headings.length >= minHeadings;
+---
+
+{
+  showTOC && (
+    <nav
+      class="toc-container bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8"
+      aria-label="Table of Contents"
+    >
+      <h2 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+        <span class="text-2xl">📑</span>
+        {title}
+      </h2>
+      <ol class="space-y-2">
+        {headings.map((heading) => (
+          <li
+            class={`${heading.level === 3 ? 'ml-6' : ''} ${
+              heading.level === 2 ? 'font-semibold' : 'font-normal'
+            }`}
+          >
+            <a
+              href={`#${heading.id}`}
+              class="text-brand-dark hover:text-brand-red transition-colors text-sm"
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<style>
+  /* Smooth scroll behavior for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Add IDs to headings when TOC is used */
+  :global(h2),
+  :global(h3) {
+    scroll-margin-top: 80px; /* Account for fixed header */
+  }
+</style>

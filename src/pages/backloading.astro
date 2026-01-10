@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 import { BRAND } from '../utils/brand';
 
 // Machine-readable facts for LLM extraction
@@ -44,6 +45,17 @@ const definitions = [
     definition:
       'A 48-hour timeframe when our truck will collect your items. Being flexible with pickup windows allows us to offer better pricing.',
   },
+];
+
+// Table of Contents headings
+const tocHeadings = [
+  { id: 'what-is-backloading', text: 'What Is Backloading?', level: 2 },
+  { id: 'how-it-works', text: 'How Backloading Works', level: 2 },
+  { id: 'popular-routes', text: 'Popular Backloading Routes', level: 2 },
+  { id: 'pricing-guide', text: 'Backloading Pricing Guide', level: 2 },
+  { id: 'items-protected', text: 'Your Items, Protected', level: 2 },
+  { id: 'preparing-for-move', text: 'Preparing for Your Backload Move', level: 2 },
+  { id: 'find-routes', text: 'Find Routes by City', level: 2 },
 ];
 
 const faqQuestions = [
@@ -157,11 +169,22 @@ const routes = [
     </div>
   </section>
 
+  <!-- Table of Contents -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <TableOfContents headings={tocHeadings} />
+      </div>
+    </div>
+  </section>
+
   <!-- What Is Backloading -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">What Is Backloading?</h2>
+        <h2 id="what-is-backloading" class="text-3xl font-bold text-brand-dark mb-8 text-center">
+          What Is Backloading?
+        </h2>
 
         <div class="prose prose-lg mx-auto">
           <p>
@@ -276,7 +299,9 @@ const routes = [
   <!-- How It Works -->
   <section id="how-it-works" class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">How Backloading Works</h2>
+      <h2 id="how-it-works" class="text-3xl font-bold text-center text-brand-dark mb-4">
+        How Backloading Works
+      </h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
         Three simple steps to save money on your interstate move
       </p>
@@ -349,7 +374,7 @@ const routes = [
   <!-- Popular Routes -->
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-brand-dark mb-4">
+      <h2 id="popular-routes" class="text-3xl font-bold text-center text-brand-dark mb-4">
         Popular Backloading Routes
       </h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -405,7 +430,7 @@ const routes = [
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">
+        <h2 id="pricing-guide" class="text-3xl font-bold text-brand-dark mb-8 text-center">
           Backloading Pricing Guide
         </h2>
 
@@ -501,7 +526,9 @@ const routes = [
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Your Items, Protected</h2>
+        <h2 id="items-protected" class="text-3xl font-bold text-center text-brand-dark mb-12">
+          Your Items, Protected
+        </h2>
 
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-2xl shadow-sm">
@@ -575,7 +602,7 @@ const routes = [
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-12 text-center">
+        <h2 id="preparing-for-move" class="text-3xl font-bold text-brand-dark mb-12 text-center">
           Preparing for Your Backload Move
         </h2>
 
@@ -723,7 +750,9 @@ const routes = [
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-dark mb-4 text-center">Find Routes by City</h2>
+        <h2 id="find-routes" class="text-3xl font-bold text-brand-dark mb-4 text-center">
+          Find Routes by City
+        </h2>
         <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Browse backloading routes from any Australian city. Each city hub page shows all available
           routes with transit times and service frequencies.
