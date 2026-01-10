@@ -1,5 +1,5 @@
 /**
- * Fix accessibility issues on city pages:
+ * Fix accessibility issues on all pages:
  * 1. Fix heading hierarchy (h3 before h2)
  * 2. Fix color contrast issues
  *
@@ -19,41 +19,15 @@ const pagesDir = join(projectRoot, 'src', 'pages');
 
 const isDryRun = process.argv.includes('--dry-run');
 
-const CITY_NAMES = [
-  'adelaide',
-  'ballarat',
-  'bendigo',
-  'brisbane',
-  'bunbury',
-  'bundaberg',
-  'cairns',
-  'canberra',
-  'darwin',
-  'geelong',
-  'gold-coast',
-  'hobart',
-  'launceston',
-  'logan-city',
-  'mackay',
-  'mandurah',
-  'melbourne',
-  'newcastle',
-  'perth',
-  'rockhampton',
-  'rockingham',
-  'sydney',
-  'toowoomba',
-  'townsville',
-  'wollongong',
-];
+// Files to skip (404, robots, etc.)
+const SKIP_FILES = ['404.astro', 'robots.txt.ts'];
 
-function findCityFiles(dir) {
+function findAllAstroFiles(dir) {
   const files = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const entry of entries) {
     if (entry.isFile() && entry.name.endsWith('.astro')) {
-      const filename = entry.name.replace('.astro', '');
-      if (CITY_NAMES.includes(filename)) {
+      if (!SKIP_FILES.includes(entry.name)) {
         files.push(join(dir, entry.name));
       }
     }
@@ -65,14 +39,14 @@ function fixAccessibilityIssues(filePath) {
   let content = fs.readFileSync(filePath, 'utf-8');
   const originalContent = content;
 
-  // Fix 1: Heading hierarchy - Change h3 in quarantine notice to h2
+  // Fix 1: Heading hierarchy - Change h3 in quarantine/state notice sections to h2
   // Pattern: <h3 class="font-bold text-yellow-800">Western Australia Quarantine Restrictions</h3>
-  // or similar patterns with different text
-  const h3BeforeH2Regex = /<h3 class="font-bold text-yellow-800">([^<]+)<\/h3>/;
+  // or <h3 class="font-bold text-yellow-800 mb-2">⚠️ South Australia</h3>
+  const h3BeforeH2Regex = /<h3 class="font-bold text-yellow-800[^"]*">([^<]+)<\/h3>/;
   if (h3BeforeH2Regex.test(content)) {
     content = content.replace(
-      /<h3 class="font-bold text-yellow-800">([^<]+)<\/h3>/,
-      '<h2 class="font-bold text-yellow-900 text-lg mb-2">$1</h2>'
+      /<h3 class="font-bold text-yellow-800([^"]*)">([^<]+)<\/h3>/,
+      '<h2 class="font-bold text-yellow-900 text-lg mb-2">$2</h2>'
     );
   }
 
@@ -138,16 +112,16 @@ function fixAccessibilityIssues(filePath) {
 }
 
 async function main() {
-  console.log('🔍 Finding city pages to fix accessibility issues...\n');
-  const cityFiles = findCityFiles(pagesDir);
-  console.log(`Found ${cityFiles.length} city pages\n`);
+  console.log('🔍 Finding all pages to fix accessibility issues...\n');
+  const allFiles = findAllAstroFiles(pagesDir);
+  console.log(`Found ${allFiles.length} pages\n`);
   if (isDryRun) {
     console.log('🔍 DRY RUN MODE\n');
   }
 
   const results = { fixed: [], skipped: [] };
 
-  for (const filePath of cityFiles) {
+  for (const filePath of allFiles) {
     const relativePath = filePath.replace(projectRoot + '/', '');
     console.log(`Processing: ${relativePath}`);
 

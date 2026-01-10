@@ -216,14 +216,14 @@ const faqSchema = {
   <!-- Breadcrumb -->
   <nav class="py-4 bg-[#800005]" role="navigation">
     <div class="container mx-auto px-4">
-      <div class="flex items-center gap-2 text-sm text-white/80 flex-wrap">
-        <a href="/" class="hover:text-white">Home</a>
+      <div class="flex items-center gap-2 text-sm text-white flex-wrap">
+        <a href="/" class="hover:text-gray-200">Home</a>
         <span>›</span>
-        <a href="/backloading/" class="hover:text-white">Backloading</a>
+        <a href="/backloading/" class="hover:text-gray-200">Backloading</a>
         <span>›</span>
         {
           originHubUrl ? (
-            <a href={originHubUrl} class="hover:text-white">
+            <a href={originHubUrl} class="hover:text-gray-200">
               {route.data.origin}
             </a>
           ) : (
@@ -233,7 +233,7 @@ const faqSchema = {
         <span>→</span>
         {
           destinationHubUrl ? (
-            <a href={destinationHubUrl} class="hover:text-white">
+            <a href={destinationHubUrl} class="hover:text-gray-200">
               {route.data.destination}
             </a>
           ) : (
