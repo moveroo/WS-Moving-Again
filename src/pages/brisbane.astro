@@ -50,6 +50,25 @@ const breadcrumbItems = [
   { name: 'Service Areas', url: 'https://movingagain.com.au/service-areas/' },
   { name: 'Brisbane', url: 'https://movingagain.com.au/brisbane/' },
 ];
+
+// FAQs for FAQPage schema
+const faqs = [
+  {
+    question: 'How long does it take to move from Brisbane to Sydney?',
+    answer:
+      'Brisbane to Sydney backloading typically takes 2-3 business days door-to-door. Our trucks run this route daily, making it one of our most affordable corridors.',
+  },
+  {
+    question: 'Do you service the Gold Coast?',
+    answer:
+      'Yes! The Gold Coast is a major hub for us with daily services. We cover all areas from Tweed Heads to Surfers Paradise and beyond.',
+  },
+  {
+    question: 'How much can I save with Brisbane backloading?',
+    answer:
+      'Most customers save 40-60% compared to a dedicated truck. The exact savings depend on your volume (cubic meters), destination, and timing flexibility.',
+  },
+];
 ---
 
 <Layout
@@ -69,6 +88,22 @@ const breadcrumbItems = [
   }}
   modifiedDate={pageDate}
 >
+  <!-- FAQPage Schema -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    })}
+  />
   <!-- BreadcrumbList Schema -->
   <script
     type="application/ld+json"

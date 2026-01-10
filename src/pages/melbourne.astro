@@ -49,6 +49,25 @@ const breadcrumbItems = [
   { name: 'Service Areas', url: 'https://movingagain.com.au/service-areas/' },
   { name: 'Melbourne', url: 'https://movingagain.com.au/melbourne/' },
 ];
+
+// FAQs for FAQPage schema
+const faqs = [
+  {
+    question: 'How long does it take to move from Melbourne to Sydney?',
+    answer:
+      'Melbourne to Sydney backloading typically takes 1-2 business days door-to-door. Our trucks run this route daily, making it one of our fastest and most affordable corridors.',
+  },
+  {
+    question: 'What areas in Melbourne do you service?',
+    answer:
+      'We cover all Melbourne metro areas including CBD, Eastern Suburbs, Mornington Peninsula, and Western Suburbs. We also service regional Victoria including Geelong, Ballarat, and Bendigo.',
+  },
+  {
+    question: 'How much can I save with Melbourne backloading?',
+    answer:
+      'Most customers save 40-60% compared to a dedicated truck. The exact savings depend on your volume (cubic meters), destination, and timing flexibility.',
+  },
+];
 ---
 
 <Layout
@@ -68,6 +87,22 @@ const breadcrumbItems = [
   }}
   modifiedDate={pageDate}
 >
+  <!-- FAQPage Schema -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    })}
+  />
   <!-- BreadcrumbList Schema -->
   <script
     type="application/ld+json"

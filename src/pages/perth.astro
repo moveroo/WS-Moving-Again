@@ -42,6 +42,25 @@ const popularRoutes = [
   { city: 'Gold Coast', slug: '/perth-gold-coast/', transit: '7-9 days', frequency: 'Weekly' },
 ];
 
+// FAQs for FAQPage schema
+const faqs = [
+  {
+    question: 'How long does it take to move from Perth to Sydney?',
+    answer:
+      "Perth to Sydney backloading typically takes 6-8 business days. It's a 4,000km journey across the Nullarbor, so we ensure everything is properly secured for the trip.",
+  },
+  {
+    question: "What can't I take to WA due to quarantine?",
+    answer:
+      "WA has strict quarantine to protect agriculture. Items that cannot enter include: fresh fruit and vegetables, plants and soil, honey, and some seeds. We'll advise you during the quote process.",
+  },
+  {
+    question: 'How much can I save with Perth backloading?',
+    answer:
+      'Most customers save 40-60% compared to a dedicated truck. Given the long distances from Perth to the east coast, these savings can be significant.',
+  },
+];
+
 // Breadcrumb navigation
 const breadcrumbItems = [
   { name: 'Home', url: 'https://movingagain.com.au/' },
@@ -78,6 +97,22 @@ const breadcrumbItems = [
         position: index + 1,
         name: item.name,
         item: item.url,
+      })),
+    })}
+  />
+  <!-- FAQPage Schema -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
       })),
     })}
   />
