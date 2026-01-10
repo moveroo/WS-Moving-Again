@@ -4,6 +4,13 @@ import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
 import TrustSignals from '../components/TrustSignals.astro';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 // Machine-readable facts for LLM extraction
 const pageFacts = {
   service: 'Interstate moving',
@@ -139,6 +146,7 @@ const timeline = [
   description="Everything you need to know about interstate moving in Australia. Routes, costs, timelines, packing tips, and how to save up to 60% with backloading."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
+  modifiedDate={pageDate}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">

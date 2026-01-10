@@ -1,0 +1,2590 @@
+{
+  "generatedAt": "2026-01-10T12:17:20.017Z",
+  "totalPages": 41,
+  "suggestions": [
+    {
+      "file": "rockhampton.astro",
+      "cityName": "Rockhampton",
+      "state": "QLD",
+      "wordCount": 170,
+      "title": "Backloading Rockhampton | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "170 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Rockhampton\" section with local information",
+            "Include specific transit times from Rockhampton to major cities",
+            "Add local landmarks or areas served in Rockhampton",
+            "Include Rockhampton-specific moving tips or considerations",
+            "Add information about Rockhampton's population, economy, or growth",
+            "Include testimonials or case studies from Rockhampton moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 75% similar to mackay.astro",
+          "suggestions": [
+            "Add Rockhampton-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Rockhampton CBD, suburbs, industrial areas",
+            "Add Rockhampton-specific transit information (e.g., \"From Rockhampton to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Rockhampton-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Rockhampton",
+            "Add local statistics or data about Rockhampton",
+            "Include Rockhampton-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Rockhampton-specific language",
+            "Customize CTAs to mention Rockhampton specifically",
+            "Add Rockhampton-specific examples in place of generic ones",
+            "Include Rockhampton in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Rockhampton-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Rockhampton interstate removalists\"",
+            "Add FAQ section with Rockhampton-specific questions",
+            "Include schema markup for LocalBusiness in Rockhampton"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Rockhampton?\" section",
+            "Include a \"Popular Routes from Rockhampton\" section",
+            "Add a \"Rockhampton Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Rockhampton?\" section with tips",
+            "Add a \"Rockhampton Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "wollongong.astro",
+      "cityName": "Wollongong",
+      "state": "NSW",
+      "wordCount": 171,
+      "title": "Backloading Wollongong | Interstate Removals NSW | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "171 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Wollongong\" section with local information",
+            "Include specific transit times from Wollongong to major cities",
+            "Add local landmarks or areas served in Wollongong",
+            "Include Wollongong-specific moving tips or considerations",
+            "Add information about Wollongong's population, economy, or growth",
+            "Include testimonials or case studies from Wollongong moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 76% similar to logan-city.astro",
+          "suggestions": [
+            "Add Wollongong-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Wollongong CBD, suburbs, industrial areas",
+            "Add Wollongong-specific transit information (e.g., \"From Wollongong to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Wollongong-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Wollongong",
+            "Add local statistics or data about Wollongong",
+            "Include Wollongong-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Wollongong-specific language",
+            "Customize CTAs to mention Wollongong specifically",
+            "Add Wollongong-specific examples in place of generic ones",
+            "Include Wollongong in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Wollongong-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Wollongong interstate removalists\"",
+            "Add FAQ section with Wollongong-specific questions",
+            "Include schema markup for LocalBusiness in Wollongong"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Wollongong?\" section",
+            "Include a \"Popular Routes from Wollongong\" section",
+            "Add a \"Wollongong Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Wollongong?\" section with tips",
+            "Add a \"Wollongong Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "bendigo.astro",
+      "cityName": "Bendigo",
+      "state": "VIC",
+      "wordCount": 173,
+      "title": "Backloading Bendigo | Interstate Removals VIC | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "173 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Bendigo\" section with local information",
+            "Include specific transit times from Bendigo to major cities",
+            "Add local landmarks or areas served in Bendigo",
+            "Include Bendigo-specific moving tips or considerations",
+            "Add information about Bendigo's population, economy, or growth",
+            "Include testimonials or case studies from Bendigo moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 83% similar to ballarat.astro",
+          "suggestions": [
+            "Add Bendigo-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Bendigo CBD, suburbs, industrial areas",
+            "Add Bendigo-specific transit information (e.g., \"From Bendigo to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Bendigo-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Bendigo",
+            "Add local statistics or data about Bendigo",
+            "Include Bendigo-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Bendigo-specific language",
+            "Customize CTAs to mention Bendigo specifically",
+            "Add Bendigo-specific examples in place of generic ones",
+            "Include Bendigo in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Bendigo-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Bendigo interstate removalists\"",
+            "Add FAQ section with Bendigo-specific questions",
+            "Include schema markup for LocalBusiness in Bendigo"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Bendigo?\" section",
+            "Include a \"Popular Routes from Bendigo\" section",
+            "Add a \"Bendigo Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Bendigo?\" section with tips",
+            "Add a \"Bendigo Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "newcastle.astro",
+      "cityName": "Newcastle",
+      "state": "NSW",
+      "wordCount": 173,
+      "title": "Backloading Newcastle | Interstate Removals NSW | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "173 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Newcastle\" section with local information",
+            "Include specific transit times from Newcastle to major cities",
+            "Add local landmarks or areas served in Newcastle",
+            "Include Newcastle-specific moving tips or considerations",
+            "Add information about Newcastle's population, economy, or growth",
+            "Include testimonials or case studies from Newcastle moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 76% similar to toowoomba.astro",
+          "suggestions": [
+            "Add Newcastle-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Newcastle CBD, suburbs, industrial areas",
+            "Add Newcastle-specific transit information (e.g., \"From Newcastle to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Newcastle-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Newcastle",
+            "Add local statistics or data about Newcastle",
+            "Include Newcastle-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Newcastle-specific language",
+            "Customize CTAs to mention Newcastle specifically",
+            "Add Newcastle-specific examples in place of generic ones",
+            "Include Newcastle in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Newcastle-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Newcastle interstate removalists\"",
+            "Add FAQ section with Newcastle-specific questions",
+            "Include schema markup for LocalBusiness in Newcastle"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Newcastle?\" section",
+            "Include a \"Popular Routes from Newcastle\" section",
+            "Add a \"Newcastle Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Newcastle?\" section with tips",
+            "Add a \"Newcastle Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "ballarat.astro",
+      "cityName": "Ballarat",
+      "state": "VIC",
+      "wordCount": 174,
+      "title": "Backloading Ballarat | Interstate Removals VIC | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "174 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Ballarat\" section with local information",
+            "Include specific transit times from Ballarat to major cities",
+            "Add local landmarks or areas served in Ballarat",
+            "Include Ballarat-specific moving tips or considerations",
+            "Add information about Ballarat's population, economy, or growth",
+            "Include testimonials or case studies from Ballarat moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 83% similar to bendigo.astro",
+          "suggestions": [
+            "Add Ballarat-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Ballarat CBD, suburbs, industrial areas",
+            "Add Ballarat-specific transit information (e.g., \"From Ballarat to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Ballarat-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Ballarat",
+            "Add local statistics or data about Ballarat",
+            "Include Ballarat-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Ballarat-specific language",
+            "Customize CTAs to mention Ballarat specifically",
+            "Add Ballarat-specific examples in place of generic ones",
+            "Include Ballarat in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Ballarat-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Ballarat interstate removalists\"",
+            "Add FAQ section with Ballarat-specific questions",
+            "Include schema markup for LocalBusiness in Ballarat"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Ballarat?\" section",
+            "Include a \"Popular Routes from Ballarat\" section",
+            "Add a \"Ballarat Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Ballarat?\" section with tips",
+            "Add a \"Ballarat Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "geelong.astro",
+      "cityName": "Geelong",
+      "state": "VIC",
+      "wordCount": 174,
+      "title": "Backloading Geelong | Interstate Removals VIC | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "174 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Geelong\" section with local information",
+            "Include specific transit times from Geelong to major cities",
+            "Add local landmarks or areas served in Geelong",
+            "Include Geelong-specific moving tips or considerations",
+            "Add information about Geelong's population, economy, or growth",
+            "Include testimonials or case studies from Geelong moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 71% similar to newcastle.astro",
+          "suggestions": [
+            "Add Geelong-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Geelong CBD, suburbs, industrial areas",
+            "Add Geelong-specific transit information (e.g., \"From Geelong to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Geelong-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Geelong",
+            "Add local statistics or data about Geelong",
+            "Include Geelong-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Geelong-specific language",
+            "Customize CTAs to mention Geelong specifically",
+            "Add Geelong-specific examples in place of generic ones",
+            "Include Geelong in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Geelong-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Geelong interstate removalists\"",
+            "Add FAQ section with Geelong-specific questions",
+            "Include schema markup for LocalBusiness in Geelong"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Geelong?\" section",
+            "Include a \"Popular Routes from Geelong\" section",
+            "Add a \"Geelong Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Geelong?\" section with tips",
+            "Add a \"Geelong Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "canberra.astro",
+      "cityName": "Canberra",
+      "state": "ACT",
+      "wordCount": 177,
+      "title": "Backloading Canberra | Interstate Removals ACT | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "177 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Canberra\" section with local information",
+            "Include specific transit times from Canberra to major cities",
+            "Add local landmarks or areas served in Canberra",
+            "Include Canberra-specific moving tips or considerations",
+            "Add information about Canberra's population, economy, or growth",
+            "Include testimonials or case studies from Canberra moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 57% similar to adelaide.astro",
+          "suggestions": [
+            "Add Canberra-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Canberra CBD, suburbs, industrial areas",
+            "Add Canberra-specific transit information (e.g., \"From Canberra to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Canberra-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Canberra",
+            "Add local statistics or data about Canberra",
+            "Include Canberra-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Canberra-specific language",
+            "Customize CTAs to mention Canberra specifically",
+            "Add Canberra-specific examples in place of generic ones",
+            "Include Canberra in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Canberra-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Canberra interstate removalists\"",
+            "Add FAQ section with Canberra-specific questions",
+            "Include schema markup for LocalBusiness in Canberra"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Canberra?\" section",
+            "Include a \"Popular Routes from Canberra\" section",
+            "Add a \"Canberra Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Canberra?\" section with tips",
+            "Add a \"Canberra Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "logan-city.astro",
+      "cityName": "Logan City",
+      "state": "QLD",
+      "wordCount": 178,
+      "title": "Backloading Logan City | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "178 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Logan City\" section with local information",
+            "Include specific transit times from Logan City to major cities",
+            "Add local landmarks or areas served in Logan City",
+            "Include Logan City-specific moving tips or considerations",
+            "Add information about Logan City's population, economy, or growth",
+            "Include testimonials or case studies from Logan City moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 76% similar to ballarat.astro",
+          "suggestions": [
+            "Add Logan City-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Logan City CBD, suburbs, industrial areas",
+            "Add Logan City-specific transit information (e.g., \"From Logan City to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Logan City-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Logan City",
+            "Add local statistics or data about Logan City",
+            "Include Logan City-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Logan City-specific language",
+            "Customize CTAs to mention Logan City specifically",
+            "Add Logan City-specific examples in place of generic ones",
+            "Include Logan City in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Logan City-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Logan City interstate removalists\"",
+            "Add FAQ section with Logan City-specific questions",
+            "Include schema markup for LocalBusiness in Logan City"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Logan City?\" section",
+            "Include a \"Popular Routes from Logan City\" section",
+            "Add a \"Logan City Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Logan City?\" section with tips",
+            "Add a \"Logan City Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "rockingham.astro",
+      "cityName": "Rockingham",
+      "state": "WA",
+      "wordCount": 178,
+      "title": "Backloading Rockingham | Interstate Removals WA | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "178 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Rockingham\" section with local information",
+            "Include specific transit times from Rockingham to major cities",
+            "Add local landmarks or areas served in Rockingham",
+            "Include Rockingham-specific moving tips or considerations",
+            "Add information about Rockingham's population, economy, or growth",
+            "Include testimonials or case studies from Rockingham moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 71% similar to bunbury.astro",
+          "suggestions": [
+            "Add Rockingham-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Rockingham CBD, suburbs, industrial areas",
+            "Add Rockingham-specific transit information (e.g., \"From Rockingham to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Rockingham-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Rockingham",
+            "Add local statistics or data about Rockingham",
+            "Include Rockingham-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Rockingham-specific language",
+            "Customize CTAs to mention Rockingham specifically",
+            "Add Rockingham-specific examples in place of generic ones",
+            "Include Rockingham in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Rockingham-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Rockingham interstate removalists\"",
+            "Add FAQ section with Rockingham-specific questions",
+            "Include schema markup for LocalBusiness in Rockingham"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Rockingham?\" section",
+            "Include a \"Popular Routes from Rockingham\" section",
+            "Add a \"Rockingham Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Rockingham?\" section with tips",
+            "Add a \"Rockingham Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "bundaberg.astro",
+      "cityName": "Bundaberg",
+      "state": "QLD",
+      "wordCount": 180,
+      "title": "Backloading Bundaberg | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "180 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Bundaberg\" section with local information",
+            "Include specific transit times from Bundaberg to major cities",
+            "Add local landmarks or areas served in Bundaberg",
+            "Include Bundaberg-specific moving tips or considerations",
+            "Add information about Bundaberg's population, economy, or growth",
+            "Include testimonials or case studies from Bundaberg moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 86% similar to cairns.astro",
+          "suggestions": [
+            "Add Bundaberg-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Bundaberg CBD, suburbs, industrial areas",
+            "Add Bundaberg-specific transit information (e.g., \"From Bundaberg to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Bundaberg-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Bundaberg",
+            "Add local statistics or data about Bundaberg",
+            "Include Bundaberg-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Bundaberg-specific language",
+            "Customize CTAs to mention Bundaberg specifically",
+            "Add Bundaberg-specific examples in place of generic ones",
+            "Include Bundaberg in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Bundaberg-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Bundaberg interstate removalists\"",
+            "Add FAQ section with Bundaberg-specific questions",
+            "Include schema markup for LocalBusiness in Bundaberg"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Bundaberg?\" section",
+            "Include a \"Popular Routes from Bundaberg\" section",
+            "Add a \"Bundaberg Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Bundaberg?\" section with tips",
+            "Add a \"Bundaberg Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "bunbury.astro",
+      "cityName": "Bunbury",
+      "state": "WA",
+      "wordCount": 181,
+      "title": "Backloading Bunbury | Interstate Removals WA | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "181 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Bunbury\" section with local information",
+            "Include specific transit times from Bunbury to major cities",
+            "Add local landmarks or areas served in Bunbury",
+            "Include Bunbury-specific moving tips or considerations",
+            "Add information about Bunbury's population, economy, or growth",
+            "Include testimonials or case studies from Bunbury moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 71% similar to rockingham.astro",
+          "suggestions": [
+            "Add Bunbury-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Bunbury CBD, suburbs, industrial areas",
+            "Add Bunbury-specific transit information (e.g., \"From Bunbury to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Bunbury-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Bunbury",
+            "Add local statistics or data about Bunbury",
+            "Include Bunbury-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Bunbury-specific language",
+            "Customize CTAs to mention Bunbury specifically",
+            "Add Bunbury-specific examples in place of generic ones",
+            "Include Bunbury in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Bunbury-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Bunbury interstate removalists\"",
+            "Add FAQ section with Bunbury-specific questions",
+            "Include schema markup for LocalBusiness in Bunbury"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Bunbury?\" section",
+            "Include a \"Popular Routes from Bunbury\" section",
+            "Add a \"Bunbury Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Bunbury?\" section with tips",
+            "Add a \"Bunbury Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "mackay.astro",
+      "cityName": "Mackay",
+      "state": "QLD",
+      "wordCount": 183,
+      "title": "Backloading Mackay | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "183 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Mackay\" section with local information",
+            "Include specific transit times from Mackay to major cities",
+            "Add local landmarks or areas served in Mackay",
+            "Include Mackay-specific moving tips or considerations",
+            "Add information about Mackay's population, economy, or growth",
+            "Include testimonials or case studies from Mackay moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 78% similar to cairns.astro",
+          "suggestions": [
+            "Add Mackay-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Mackay CBD, suburbs, industrial areas",
+            "Add Mackay-specific transit information (e.g., \"From Mackay to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Mackay-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Mackay",
+            "Add local statistics or data about Mackay",
+            "Include Mackay-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Mackay-specific language",
+            "Customize CTAs to mention Mackay specifically",
+            "Add Mackay-specific examples in place of generic ones",
+            "Include Mackay in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Mackay-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Mackay interstate removalists\"",
+            "Add FAQ section with Mackay-specific questions",
+            "Include schema markup for LocalBusiness in Mackay"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Mackay?\" section",
+            "Include a \"Popular Routes from Mackay\" section",
+            "Add a \"Mackay Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Mackay?\" section with tips",
+            "Add a \"Mackay Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "mandurah.astro",
+      "cityName": "Mandurah",
+      "state": "WA",
+      "wordCount": 183,
+      "title": "Backloading Mandurah | Interstate Removals WA | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "183 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Mandurah\" section with local information",
+            "Include specific transit times from Mandurah to major cities",
+            "Add local landmarks or areas served in Mandurah",
+            "Include Mandurah-specific moving tips or considerations",
+            "Add information about Mandurah's population, economy, or growth",
+            "Include testimonials or case studies from Mandurah moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 53% similar to bunbury.astro",
+          "suggestions": [
+            "Add Mandurah-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Mandurah CBD, suburbs, industrial areas",
+            "Add Mandurah-specific transit information (e.g., \"From Mandurah to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Mandurah-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Mandurah",
+            "Add local statistics or data about Mandurah",
+            "Include Mandurah-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Mandurah-specific language",
+            "Customize CTAs to mention Mandurah specifically",
+            "Add Mandurah-specific examples in place of generic ones",
+            "Include Mandurah in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Mandurah-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Mandurah interstate removalists\"",
+            "Add FAQ section with Mandurah-specific questions",
+            "Include schema markup for LocalBusiness in Mandurah"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Mandurah?\" section",
+            "Include a \"Popular Routes from Mandurah\" section",
+            "Add a \"Mandurah Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Mandurah?\" section with tips",
+            "Add a \"Mandurah Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "toowoomba.astro",
+      "cityName": "Toowoomba",
+      "state": "QLD",
+      "wordCount": 183,
+      "title": "Backloading Toowoomba | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "183 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Toowoomba\" section with local information",
+            "Include specific transit times from Toowoomba to major cities",
+            "Add local landmarks or areas served in Toowoomba",
+            "Include Toowoomba-specific moving tips or considerations",
+            "Add information about Toowoomba's population, economy, or growth",
+            "Include testimonials or case studies from Toowoomba moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 78% similar to ballarat.astro",
+          "suggestions": [
+            "Add Toowoomba-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Toowoomba CBD, suburbs, industrial areas",
+            "Add Toowoomba-specific transit information (e.g., \"From Toowoomba to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Toowoomba-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Toowoomba",
+            "Add local statistics or data about Toowoomba",
+            "Include Toowoomba-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Toowoomba-specific language",
+            "Customize CTAs to mention Toowoomba specifically",
+            "Add Toowoomba-specific examples in place of generic ones",
+            "Include Toowoomba in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Toowoomba-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Toowoomba interstate removalists\"",
+            "Add FAQ section with Toowoomba-specific questions",
+            "Include schema markup for LocalBusiness in Toowoomba"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Toowoomba?\" section",
+            "Include a \"Popular Routes from Toowoomba\" section",
+            "Add a \"Toowoomba Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Toowoomba?\" section with tips",
+            "Add a \"Toowoomba Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "cairns.astro",
+      "cityName": "Cairns",
+      "state": "QLD",
+      "wordCount": 185,
+      "title": "Backloading Cairns | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "185 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Cairns\" section with local information",
+            "Include specific transit times from Cairns to major cities",
+            "Add local landmarks or areas served in Cairns",
+            "Include Cairns-specific moving tips or considerations",
+            "Add information about Cairns's population, economy, or growth",
+            "Include testimonials or case studies from Cairns moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 86% similar to bundaberg.astro",
+          "suggestions": [
+            "Add Cairns-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Cairns CBD, suburbs, industrial areas",
+            "Add Cairns-specific transit information (e.g., \"From Cairns to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Cairns-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Cairns",
+            "Add local statistics or data about Cairns",
+            "Include Cairns-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Cairns-specific language",
+            "Customize CTAs to mention Cairns specifically",
+            "Add Cairns-specific examples in place of generic ones",
+            "Include Cairns in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Cairns-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Cairns interstate removalists\"",
+            "Add FAQ section with Cairns-specific questions",
+            "Include schema markup for LocalBusiness in Cairns"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Cairns?\" section",
+            "Include a \"Popular Routes from Cairns\" section",
+            "Add a \"Cairns Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Cairns?\" section with tips",
+            "Add a \"Cairns Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "gold-coast.astro",
+      "cityName": "Gold Coast",
+      "state": "QLD",
+      "wordCount": 193,
+      "title": "Backloading Gold Coast | Interstate Removals QLD | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "193 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Gold Coast\" section with local information",
+            "Include specific transit times from Gold Coast to major cities",
+            "Add local landmarks or areas served in Gold Coast",
+            "Include Gold Coast-specific moving tips or considerations",
+            "Add information about Gold Coast's population, economy, or growth",
+            "Include testimonials or case studies from Gold Coast moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 72% similar to newcastle.astro",
+          "suggestions": [
+            "Add Gold Coast-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Gold Coast CBD, suburbs, industrial areas",
+            "Add Gold Coast-specific transit information (e.g., \"From Gold Coast to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Gold Coast-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Gold Coast",
+            "Add local statistics or data about Gold Coast",
+            "Include Gold Coast-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Gold Coast-specific language",
+            "Customize CTAs to mention Gold Coast specifically",
+            "Add Gold Coast-specific examples in place of generic ones",
+            "Include Gold Coast in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Gold Coast-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Gold Coast interstate removalists\"",
+            "Add FAQ section with Gold Coast-specific questions",
+            "Include schema markup for LocalBusiness in Gold Coast"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Gold Coast?\" section",
+            "Include a \"Popular Routes from Gold Coast\" section",
+            "Add a \"Gold Coast Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Gold Coast?\" section with tips",
+            "Add a \"Gold Coast Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "darwin.astro",
+      "cityName": "Darwin",
+      "state": "NT",
+      "wordCount": 201,
+      "title": "Backloading Darwin | Interstate Removals NT | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "201 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Darwin\" section with local information",
+            "Include specific transit times from Darwin to major cities",
+            "Add local landmarks or areas served in Darwin",
+            "Include Darwin-specific moving tips or considerations",
+            "Add information about Darwin's population, economy, or growth",
+            "Include testimonials or case studies from Darwin moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 57% similar to mackay.astro",
+          "suggestions": [
+            "Add Darwin-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Darwin CBD, suburbs, industrial areas",
+            "Add Darwin-specific transit information (e.g., \"From Darwin to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Darwin-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Darwin",
+            "Add local statistics or data about Darwin",
+            "Include Darwin-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Darwin-specific language",
+            "Customize CTAs to mention Darwin specifically",
+            "Add Darwin-specific examples in place of generic ones",
+            "Include Darwin in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Darwin-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Darwin interstate removalists\"",
+            "Add FAQ section with Darwin-specific questions",
+            "Include schema markup for LocalBusiness in Darwin"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Darwin?\" section",
+            "Include a \"Popular Routes from Darwin\" section",
+            "Add a \"Darwin Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Darwin?\" section with tips",
+            "Add a \"Darwin Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "adelaide.astro",
+      "cityName": "Adelaide",
+      "state": "SA",
+      "wordCount": 203,
+      "title": "Backloading Adelaide | Interstate Removals SA | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "203 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Adelaide\" section with local information",
+            "Include specific transit times from Adelaide to major cities",
+            "Add local landmarks or areas served in Adelaide",
+            "Include Adelaide-specific moving tips or considerations",
+            "Add information about Adelaide's population, economy, or growth",
+            "Include testimonials or case studies from Adelaide moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 58% similar to rockhampton.astro",
+          "suggestions": [
+            "Add Adelaide-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Adelaide CBD, suburbs, industrial areas",
+            "Add Adelaide-specific transit information (e.g., \"From Adelaide to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Adelaide-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Adelaide",
+            "Add local statistics or data about Adelaide",
+            "Include Adelaide-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 20 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Adelaide-specific language",
+            "Customize CTAs to mention Adelaide specifically",
+            "Add Adelaide-specific examples in place of generic ones",
+            "Include Adelaide in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Adelaide-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Adelaide interstate removalists\"",
+            "Add FAQ section with Adelaide-specific questions",
+            "Include schema markup for LocalBusiness in Adelaide"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Adelaide?\" section",
+            "Include a \"Popular Routes from Adelaide\" section",
+            "Add a \"Adelaide Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Adelaide?\" section with tips",
+            "Add a \"Adelaide Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "launceston.astro",
+      "cityName": "Launceston",
+      "state": "TAS",
+      "wordCount": 209,
+      "title": "Backloading Launceston | Interstate Removals TAS | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "209 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Launceston\" section with local information",
+            "Include specific transit times from Launceston to major cities",
+            "Add local landmarks or areas served in Launceston",
+            "Include Launceston-specific moving tips or considerations",
+            "Add information about Launceston's population, economy, or growth",
+            "Include testimonials or case studies from Launceston moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 76% similar to hobart.astro",
+          "suggestions": [
+            "Add Launceston-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Launceston CBD, suburbs, industrial areas",
+            "Add Launceston-specific transit information (e.g., \"From Launceston to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Launceston-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Launceston",
+            "Add local statistics or data about Launceston",
+            "Include Launceston-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 14 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Launceston-specific language",
+            "Customize CTAs to mention Launceston specifically",
+            "Add Launceston-specific examples in place of generic ones",
+            "Include Launceston in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Launceston-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Launceston interstate removalists\"",
+            "Add FAQ section with Launceston-specific questions",
+            "Include schema markup for LocalBusiness in Launceston"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Launceston?\" section",
+            "Include a \"Popular Routes from Launceston\" section",
+            "Add a \"Launceston Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Launceston?\" section with tips",
+            "Add a \"Launceston Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "hobart.astro",
+      "cityName": "Hobart",
+      "state": "TAS",
+      "wordCount": 228,
+      "title": "Backloading Hobart | Interstate Removals TAS | Moving Again",
+      "similarPages": 5,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "228 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Hobart\" section with local information",
+            "Include specific transit times from Hobart to major cities",
+            "Add local landmarks or areas served in Hobart",
+            "Include Hobart-specific moving tips or considerations",
+            "Add information about Hobart's population, economy, or growth",
+            "Include testimonials or case studies from Hobart moves"
+          ]
+        },
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 76% similar to launceston.astro",
+          "suggestions": [
+            "Add Hobart-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Hobart CBD, suburbs, industrial areas",
+            "Add Hobart-specific transit information (e.g., \"From Hobart to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Hobart-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Hobart",
+            "Add local statistics or data about Hobart",
+            "Include Hobart-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 14 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Hobart-specific language",
+            "Customize CTAs to mention Hobart specifically",
+            "Add Hobart-specific examples in place of generic ones",
+            "Include Hobart in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Hobart-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Hobart interstate removalists\"",
+            "Add FAQ section with Hobart-specific questions",
+            "Include schema markup for LocalBusiness in Hobart"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Hobart?\" section",
+            "Include a \"Popular Routes from Hobart\" section",
+            "Add a \"Hobart Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Hobart?\" section with tips",
+            "Add a \"Hobart Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "404.astro",
+      "cityName": "404",
+      "state": null,
+      "wordCount": 20,
+      "title": "Page Not Found",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "20 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About 404\" section with local information",
+            "Include specific transit times from 404 to major cities",
+            "Add local landmarks or areas served in 404",
+            "Include 404-specific moving tips or considerations",
+            "Add information about 404's population, economy, or growth",
+            "Include testimonials or case studies from 404 moves"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more 404-related keywords naturally throughout content",
+            "Include long-tail keywords like \"404 interstate removalists\"",
+            "Add FAQ section with 404-specific questions",
+            "Include schema markup for LocalBusiness in 404"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for 404?\" section",
+            "Include a \"Popular Routes from 404\" section",
+            "Add a \"404 Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from 404?\" section with tips",
+            "Add a \"404 Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "[...slug].astro",
+      "cityName": "[...Slug]",
+      "state": null,
+      "wordCount": 61,
+      "title": "More routes from ${route.data.origin}",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "61 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About [...Slug]\" section with local information",
+            "Include specific transit times from [...Slug] to major cities",
+            "Add local landmarks or areas served in [...Slug]",
+            "Include [...Slug]-specific moving tips or considerations",
+            "Add information about [...Slug]'s population, economy, or growth",
+            "Include testimonials or case studies from [...Slug] moves"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more [...Slug]-related keywords naturally throughout content",
+            "Include long-tail keywords like \"[...Slug] interstate removalists\"",
+            "Add FAQ section with [...Slug]-specific questions",
+            "Include schema markup for LocalBusiness in [...Slug]"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for [...Slug]?\" section",
+            "Include a \"Popular Routes from [...Slug]\" section",
+            "Add a \"[...Slug] Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from [...Slug]?\" section with tips",
+            "Add a \"[...Slug] Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "reviews.astro",
+      "cityName": "Reviews",
+      "state": null,
+      "wordCount": 102,
+      "title": "Customer Reviews | Moving Again Interstate Removals",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "102 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Reviews\" section with local information",
+            "Include specific transit times from Reviews to major cities",
+            "Add local landmarks or areas served in Reviews",
+            "Include Reviews-specific moving tips or considerations",
+            "Add information about Reviews's population, economy, or growth",
+            "Include testimonials or case studies from Reviews moves"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Reviews-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Reviews interstate removalists\"",
+            "Add FAQ section with Reviews-specific questions",
+            "Include schema markup for LocalBusiness in Reviews"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Reviews?\" section",
+            "Include a \"Popular Routes from Reviews\" section",
+            "Add a \"Reviews Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Reviews?\" section with tips",
+            "Add a \"Reviews Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "questions.astro",
+      "cityName": "Questions",
+      "state": null,
+      "wordCount": 112,
+      "title": "Moving FAQs | Common Questions Answered | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "112 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Questions\" section with local information",
+            "Include specific transit times from Questions to major cities",
+            "Add local landmarks or areas served in Questions",
+            "Include Questions-specific moving tips or considerations",
+            "Add information about Questions's population, economy, or growth",
+            "Include testimonials or case studies from Questions moves"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 1 common phrases found on many other pages",
+          "examples": ["quote for your"],
+          "suggestions": [
+            "Replace generic phrases with Questions-specific language",
+            "Customize CTAs to mention Questions specifically",
+            "Add Questions-specific examples in place of generic ones",
+            "Include Questions in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Questions-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Questions interstate removalists\"",
+            "Add FAQ section with Questions-specific questions",
+            "Include schema markup for LocalBusiness in Questions"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Questions?\" section",
+            "Include a \"Popular Routes from Questions\" section",
+            "Add a \"Questions Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Questions?\" section with tips",
+            "Add a \"Questions Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "service-areas.astro",
+      "cityName": "Service Areas",
+      "state": null,
+      "wordCount": 290,
+      "title": "Service Areas | Interstate Moving to All Australian Capitals | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "expand",
+          "priority": "high",
+          "title": "Expand Content",
+          "current": "290 words",
+          "target": "300-500 words minimum",
+          "suggestions": [
+            "Add a \"About Service Areas\" section with local information",
+            "Include specific transit times from Service Areas to major cities",
+            "Add local landmarks or areas served in Service Areas",
+            "Include Service Areas-specific moving tips or considerations",
+            "Add information about Service Areas's population, economy, or growth",
+            "Include testimonials or case studies from Service Areas moves"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 1 common phrases found on many other pages",
+          "examples": ["quote for your"],
+          "suggestions": [
+            "Replace generic phrases with Service Areas-specific language",
+            "Customize CTAs to mention Service Areas specifically",
+            "Add Service Areas-specific examples in place of generic ones",
+            "Include Service Areas in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Service Areas-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Service Areas interstate removalists\"",
+            "Add FAQ section with Service Areas-specific questions",
+            "Include schema markup for LocalBusiness in Service Areas"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Service Areas?\" section",
+            "Include a \"Popular Routes from Service Areas\" section",
+            "Add a \"Service Areas Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Service Areas?\" section with tips",
+            "Add a \"Service Areas Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "melbourne.astro",
+      "cityName": "Melbourne",
+      "state": "VIC",
+      "wordCount": 421,
+      "title": "Backloading Melbourne | Interstate Removals VIC | Moving Again",
+      "similarPages": 3,
+      "suggestions": [
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 62% similar to sydney.astro",
+          "suggestions": [
+            "Add Melbourne-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Melbourne CBD, suburbs, industrial areas",
+            "Add Melbourne-specific transit information (e.g., \"From Melbourne to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Melbourne-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Melbourne",
+            "Add local statistics or data about Melbourne",
+            "Include Melbourne-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 19 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Melbourne-specific language",
+            "Customize CTAs to mention Melbourne specifically",
+            "Add Melbourne-specific examples in place of generic ones",
+            "Include Melbourne in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Melbourne-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Melbourne interstate removalists\"",
+            "Add FAQ section with Melbourne-specific questions",
+            "Include schema markup for LocalBusiness in Melbourne"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Melbourne?\" section",
+            "Include a \"Popular Routes from Melbourne\" section",
+            "Add a \"Melbourne Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Melbourne?\" section with tips",
+            "Add a \"Melbourne Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "brisbane.astro",
+      "cityName": "Brisbane",
+      "state": "QLD",
+      "wordCount": 438,
+      "title": "Backloading Brisbane | Interstate Removals QLD | Moving Again",
+      "similarPages": 3,
+      "suggestions": [
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 47% similar to melbourne.astro",
+          "suggestions": [
+            "Add Brisbane-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Brisbane CBD, suburbs, industrial areas",
+            "Add Brisbane-specific transit information (e.g., \"From Brisbane to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Brisbane-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Brisbane",
+            "Add local statistics or data about Brisbane",
+            "Include Brisbane-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 13 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "backloading services from"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Brisbane-specific language",
+            "Customize CTAs to mention Brisbane specifically",
+            "Add Brisbane-specific examples in place of generic ones",
+            "Include Brisbane in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Brisbane-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Brisbane interstate removalists\"",
+            "Add FAQ section with Brisbane-specific questions",
+            "Include schema markup for LocalBusiness in Brisbane"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Brisbane?\" section",
+            "Include a \"Popular Routes from Brisbane\" section",
+            "Add a \"Brisbane Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Brisbane?\" section with tips",
+            "Add a \"Brisbane Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "sydney.astro",
+      "cityName": "Sydney",
+      "state": "NSW",
+      "wordCount": 441,
+      "title": "Backloading Sydney | Interstate Removals NSW | Moving Again",
+      "similarPages": 3,
+      "suggestions": [
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 62% similar to melbourne.astro",
+          "suggestions": [
+            "Add Sydney-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Sydney CBD, suburbs, industrial areas",
+            "Add Sydney-specific transit information (e.g., \"From Sydney to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Sydney-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Sydney",
+            "Add local statistics or data about Sydney",
+            "Include Sydney-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 19 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Sydney-specific language",
+            "Customize CTAs to mention Sydney specifically",
+            "Add Sydney-specific examples in place of generic ones",
+            "Include Sydney in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Sydney-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Sydney interstate removalists\"",
+            "Add FAQ section with Sydney-specific questions",
+            "Include schema markup for LocalBusiness in Sydney"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Sydney?\" section",
+            "Include a \"Popular Routes from Sydney\" section",
+            "Add a \"Sydney Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Sydney?\" section with tips",
+            "Add a \"Sydney Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "perth.astro",
+      "cityName": "Perth",
+      "state": "WA",
+      "wordCount": 461,
+      "title": "Backloading Perth | Interstate Removals WA | Moving Again",
+      "similarPages": 3,
+      "suggestions": [
+        {
+          "type": "uniqueness",
+          "priority": "high",
+          "title": "Make Content More Unique",
+          "issue": "Content is 42% similar to melbourne.astro",
+          "suggestions": [
+            "Add Perth-specific details (population, growth, economy)",
+            "Include unique local landmarks or areas: Perth CBD, suburbs, industrial areas",
+            "Add Perth-specific transit information (e.g., \"From Perth to Sydney: 2-3 days\")",
+            "Include local moving considerations (parking, access, regulations)",
+            "Add Perth-specific service areas or coverage zones",
+            "Include unique selling points for moving to/from Perth",
+            "Add local statistics or data about Perth",
+            "Include Perth-specific FAQs or common questions"
+          ]
+        },
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 19 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities",
+            "regular backloading services",
+            "what routes are"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Perth-specific language",
+            "Customize CTAs to mention Perth specifically",
+            "Add Perth-specific examples in place of generic ones",
+            "Include Perth in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Perth-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Perth interstate removalists\"",
+            "Add FAQ section with Perth-specific questions",
+            "Include schema markup for LocalBusiness in Perth"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Perth?\" section",
+            "Include a \"Popular Routes from Perth\" section",
+            "Add a \"Perth Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Perth?\" section with tips",
+            "Add a \"Perth Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "contact.astro",
+      "cityName": "Contact",
+      "state": null,
+      "wordCount": 328,
+      "title": "Contact Us | Moving Again Interstate Removals",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 3 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Contact-specific language",
+            "Customize CTAs to mention Contact specifically",
+            "Add Contact-specific examples in place of generic ones",
+            "Include Contact in headings and subheadings"
+          ]
+        },
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Contact-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Contact interstate removalists\"",
+            "Add FAQ section with Contact-specific questions",
+            "Include schema markup for LocalBusiness in Contact"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Contact?\" section",
+            "Include a \"Popular Routes from Contact\" section",
+            "Add a \"Contact Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Contact?\" section with tips",
+            "Add a \"Contact Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "furniture-removal-inventory-list.astro",
+      "cityName": "Furniture Removal Inventory List",
+      "state": null,
+      "wordCount": 439,
+      "title": "Furniture Removal Inventory List | Moving Checklist | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Furniture Removal Inventory List-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Furniture Removal Inventory List interstate removalists\"",
+            "Add FAQ section with Furniture Removal Inventory List-specific questions",
+            "Include schema markup for LocalBusiness in Furniture Removal Inventory List"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Furniture Removal Inventory List?\" section",
+            "Include a \"Popular Routes from Furniture Removal Inventory List\" section",
+            "Add a \"Furniture Removal Inventory List Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Furniture Removal Inventory List?\" section with tips",
+            "Add a \"Furniture Removal Inventory List Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "moving-pot-plants-interstate.astro",
+      "cityName": "Moving Pot Plants Interstate",
+      "state": null,
+      "wordCount": 485,
+      "title": "Moving Pot Plants Interstate | How to Transport Plants Safely | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "seo",
+          "priority": "medium",
+          "title": "SEO Optimization",
+          "suggestions": [
+            "Add more Moving Pot Plants Interstate-related keywords naturally throughout content",
+            "Include long-tail keywords like \"Moving Pot Plants Interstate interstate removalists\"",
+            "Add FAQ section with Moving Pot Plants Interstate-specific questions",
+            "Include schema markup for LocalBusiness in Moving Pot Plants Interstate"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Moving Pot Plants Interstate?\" section",
+            "Include a \"Popular Routes from Moving Pot Plants Interstate\" section",
+            "Add a \"Moving Pot Plants Interstate Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Moving Pot Plants Interstate?\" section with tips",
+            "Add a \"Moving Pot Plants Interstate Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "townsville.astro",
+      "cityName": "Townsville",
+      "state": "QLD",
+      "wordCount": 513,
+      "title": "Backloading Townsville | Interstate Removals to & from QLD | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 8 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "regular backloading services",
+            "what routes are",
+            "routes are available",
+            "are available from"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Townsville-specific language",
+            "Customize CTAs to mention Townsville specifically",
+            "Add Townsville-specific examples in place of generic ones",
+            "Include Townsville in headings and subheadings"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Townsville?\" section",
+            "Include a \"Popular Routes from Townsville\" section",
+            "Add a \"Townsville Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Townsville?\" section with tips",
+            "Add a \"Townsville Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "index.astro",
+      "cityName": "Index",
+      "state": null,
+      "wordCount": 575,
+      "title": "Moving Again | Interstate Removalists",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Index?\" section",
+            "Include a \"Popular Routes from Index\" section",
+            "Add a \"Index Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Index?\" section with tips",
+            "Add a \"Index Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "car-transport.astro",
+      "cityName": "Car Transport",
+      "state": null,
+      "wordCount": 635,
+      "title": "Car Transport Australia | Interstate Vehicle Transport | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Car Transport?\" section",
+            "Include a \"Popular Routes from Car Transport\" section",
+            "Add a \"Car Transport Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Car Transport?\" section with tips",
+            "Add a \"Car Transport Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "how-many-boxes-do-i-need-for-my-move.astro",
+      "cityName": "How Many Boxes Do I Need For My Move",
+      "state": null,
+      "wordCount": 662,
+      "title": "How Many Boxes Do I Need for My Move? | Free Calculator | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 6 common phrases found on many other pages",
+          "examples": [
+            "what routes are",
+            "routes are available",
+            "are available from",
+            "what routes are available",
+            "routes are available from"
+          ],
+          "suggestions": [
+            "Replace generic phrases with How Many Boxes Do I Need For My Move-specific language",
+            "Customize CTAs to mention How Many Boxes Do I Need For My Move specifically",
+            "Add How Many Boxes Do I Need For My Move-specific examples in place of generic ones",
+            "Include How Many Boxes Do I Need For My Move in headings and subheadings"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for How Many Boxes Do I Need For My Move?\" section",
+            "Include a \"Popular Routes from How Many Boxes Do I Need For My Move\" section",
+            "Add a \"How Many Boxes Do I Need For My Move Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from How Many Boxes Do I Need For My Move?\" section with tips",
+            "Add a \"How Many Boxes Do I Need For My Move Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "moving-interstate.astro",
+      "cityName": "Moving Interstate",
+      "state": null,
+      "wordCount": 941,
+      "title": "Interstate Moving Australia | Complete ${currentYear} Guide | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 3 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Moving Interstate-specific language",
+            "Customize CTAs to mention Moving Interstate specifically",
+            "Add Moving Interstate-specific examples in place of generic ones",
+            "Include Moving Interstate in headings and subheadings"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Moving Interstate?\" section",
+            "Include a \"Popular Routes from Moving Interstate\" section",
+            "Add a \"Moving Interstate Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Moving Interstate?\" section with tips",
+            "Add a \"Moving Interstate Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "backloading.astro",
+      "cityName": "Backloading",
+      "state": null,
+      "wordCount": 1141,
+      "title": "Interstate Backloading | Save 40-60% on Removals | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "customize",
+          "priority": "medium",
+          "title": "Customize Common Phrases",
+          "issue": "Uses 3 common phrases found on many other pages",
+          "examples": [
+            "major australian cities",
+            "all major australian",
+            "all major australian cities"
+          ],
+          "suggestions": [
+            "Replace generic phrases with Backloading-specific language",
+            "Customize CTAs to mention Backloading specifically",
+            "Add Backloading-specific examples in place of generic ones",
+            "Include Backloading in headings and subheadings"
+          ]
+        },
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Backloading?\" section",
+            "Include a \"Popular Routes from Backloading\" section",
+            "Add a \"Backloading Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Backloading?\" section with tips",
+            "Add a \"Backloading Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "privacy.astro",
+      "cityName": "Privacy",
+      "state": null,
+      "wordCount": 1301,
+      "title": "Privacy Policy | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Privacy?\" section",
+            "Include a \"Popular Routes from Privacy\" section",
+            "Add a \"Privacy Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Privacy?\" section with tips",
+            "Add a \"Privacy Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "terms-of-use.astro",
+      "cityName": "Terms Of Use",
+      "state": null,
+      "wordCount": 1458,
+      "title": "Terms of Use | Moving Again Website",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Terms Of Use?\" section",
+            "Include a \"Popular Routes from Terms Of Use\" section",
+            "Add a \"Terms Of Use Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Terms Of Use?\" section with tips",
+            "Add a \"Terms Of Use Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "terms.astro",
+      "cityName": "Terms",
+      "state": null,
+      "wordCount": 2505,
+      "title": "Terms and Conditions of Booking | Moving Again",
+      "similarPages": 0,
+      "suggestions": [
+        {
+          "type": "structure",
+          "priority": "low",
+          "title": "Content Structure",
+          "suggestions": [
+            "Add a \"Why Choose Moving Again for Terms?\" section",
+            "Include a \"Popular Routes from Terms\" section",
+            "Add a \"Terms Service Areas\" section with suburbs/regions",
+            "Include a \"Moving to/from Terms?\" section with tips",
+            "Add a \"Terms Moving Costs\" or pricing section"
+          ]
+        }
+      ]
+    }
+  ]
+}

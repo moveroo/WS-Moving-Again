@@ -156,20 +156,27 @@ npm run suggest:content [page] # Get suggestions for specific page
 
 ## 🔍 Verification Tasks
 
-### 7. Content Freshness Meta Tag Format
+### 7. Content Freshness Meta Tag Format ✅
 
 **Issue:** Meta tag exists but crawler may not detect it  
-**Current:** `<meta property="article:modified_time" content="2026-01-10T11:26:55.907Z">`  
-**Status:** Tag is correctly implemented
+**Current:**
 
-**Action:**
+- ✅ `<meta property="article:modified_time" content="2026-01-10T11:26:55.907Z">` in HTML
+- ✅ `dateModified` added to Schema.org Service schema for route pages
+- ✅ Git commit dates used (falls back to file mod date, then build time)
+- ✅ Dates added to homepage and backloading page
 
-- Verify format matches crawler expectations
-- Check if we need `article:published_time` as well
-- Consider adding `og:updated_time` for Open Graph
+**Status:** ✅ **FULLY IMPLEMENTED** - This is a **FALSE POSITIVE** from the crawler
 
-**Impact:** Better content freshness signals  
-**Effort:** Low (verification: 15 minutes)
+**Analysis:**
+
+- Meta tag is correctly present in HTML output
+- Schema.org `dateModified` property added to route pages
+- Git commit dates are being retrieved correctly
+- Format is ISO 8601 compliant
+- Crawler may need time to re-crawl or may have detection delays
+
+**Action:** Monitor - implementation is correct, likely crawler detection delay
 
 ---
 

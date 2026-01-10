@@ -1,0 +1,64 @@
+{
+  "analyzedAt": "2026-01-10T12:11:53.190Z",
+  "summary": {
+    "totalImages": 5,
+    "goodAlt": 5,
+    "genericAlt": 0,
+    "missingAlt": 0,
+    "needsImprovement": 0
+  },
+  "missingAlt": [],
+  "genericAlt": [],
+  "allImages": [
+    {
+      "file": "src/components/Header.astro",
+      "tag": "<img\n          src=\"/logo.svg\"\n          alt=\"Moving Again logo\"\n          class=\"h-14 md:h-16 w-auto\"\n          width=\"64\"\n          height=\"64\"\n          loading=\"eager\"\n          decoding=\"async\"\n        />",
+      "src": "/logo.svg",
+      "alt": "Moving Again logo",
+      "hasAlt": true,
+      "altText": "Moving Again logo",
+      "isGeneric": false,
+      "suggestion": null
+    },
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "tag": "<OptimizedImage src=\"/logo.svg\" alt=\"Moving Again logo\" width={200} height={50} />",
+      "src": "/logo.svg",
+      "alt": "Moving Again logo",
+      "hasAlt": true,
+      "altText": "Moving Again logo",
+      "isGeneric": false,
+      "suggestion": null
+    },
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "tag": "<OptimizedImage src=\"/image.jpg\" alt=\"Description\" width={800} height={600} />",
+      "src": "/image.jpg",
+      "alt": "Description",
+      "hasAlt": true,
+      "altText": "Description",
+      "isGeneric": false,
+      "suggestion": null
+    },
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "tag": "<img\n      src={src}\n      alt={alt}\n      width={width}\n      height={height}\n      class={className}\n      loading={loading}\n      decoding=\"async\"\n    />",
+      "src": "src",
+      "alt": "alt",
+      "hasAlt": true,
+      "altText": "alt",
+      "isGeneric": false,
+      "suggestion": null
+    },
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "tag": "<img\n      src={src}\n      alt={alt}\n      width={width}\n      height={height}\n      class={className}\n      loading={loading}\n      decoding=\"async\"\n      srcset={srcset}\n      sizes={sizes || '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px'}\n    />",
+      "src": "src",
+      "alt": "alt",
+      "hasAlt": true,
+      "altText": "alt",
+      "isGeneric": false,
+      "suggestion": null
+    }
+  ]
+}

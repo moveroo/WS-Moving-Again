@@ -1,11 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { BRAND } from '../utils/brand';
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date for homepage
+const currentFile = fileURLToPath(import.meta.url);
+const homepageDate = getContentDate(currentFile);
 ---
 
 <Layout
   title="Moving Again | Interstate Removalists"
   description={`Australia's trusted interstate removalists since 1995. Save up to 60% with backloading, car transport & container shipping. ${BRAND.yearsInBusiness} years experience. Free quotes.`}
+  modifiedDate={homepageDate}
 >
   <!-- Hero Section -->
   <section

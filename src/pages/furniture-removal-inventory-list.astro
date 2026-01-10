@@ -1,6 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 const faqQuestions = [
   {
     question: 'Why do I need a furniture inventory for my move?',
@@ -115,6 +122,7 @@ const roomInventory = {
   description="Complete room-by-room furniture inventory checklist for your move. Use our list to create an accurate moving inventory and get a precise quote."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
+  modifiedDate={pageDate}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">

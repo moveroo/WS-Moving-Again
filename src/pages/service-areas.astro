@@ -12,6 +12,12 @@ import {
   getMigrationTrend,
   CITY_POPULATION,
 } from '../utils/migration-stats';
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
 
 // City hub data
 const cityHubs = [
@@ -198,6 +204,7 @@ const pageFacts = {
   description={`Interstate backloading services to all 8 Australian capital cities. See real migration data, transit times, and get quotes for Sydney, Melbourne, Brisbane, Perth, Adelaide, Hobart, Darwin & Canberra.`}
   schemaType="FAQPage"
   schemaData={{ questions: faqs }}
+  modifiedDate={pageDate}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">

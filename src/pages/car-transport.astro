@@ -3,6 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
 import TrustSignals from '../components/TrustSignals.astro';
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date for car-transport page
+const currentFile = fileURLToPath(import.meta.url);
+const carTransportDate = getContentDate(currentFile);
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -151,6 +157,7 @@ const routes = [
 <Layout
   title="Car Transport Australia | Interstate Vehicle Transport | Moving Again"
   description="Professional interstate car transport across Australia. Open and enclosed carriers available. Get an instant quote for door-to-door or depot-to-depot vehicle transport."
+  modifiedDate={carTransportDate}
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
 >

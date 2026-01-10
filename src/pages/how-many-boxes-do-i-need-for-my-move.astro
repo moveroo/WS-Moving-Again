@@ -1,6 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 const faqQuestions = [
   {
     question: 'How many boxes do I need for a 3 bedroom house?',
@@ -128,6 +135,7 @@ const roomEstimates = [
   description="Calculate how many moving boxes you need based on your home size. Room-by-room guide with packing materials checklist for every move size."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
+  modifiedDate={pageDate}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">

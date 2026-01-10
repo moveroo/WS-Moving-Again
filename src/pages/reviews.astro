@@ -2,6 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import { BRAND } from '../utils/brand';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 // Realistic reviews - balanced, not over the top
 const reviews = [
   {
@@ -101,6 +108,7 @@ const averageRating = (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.l
       reviewCount: reviews.length,
     },
   }}
+  modifiedDate={pageDate}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">

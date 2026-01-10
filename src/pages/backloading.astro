@@ -5,6 +5,12 @@ import Definitions from '../components/Definitions.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date for backloading page
+const currentFile = fileURLToPath(import.meta.url);
+const backloadingDate = getContentDate(currentFile);
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -119,6 +125,7 @@ const routes = [
   description="Share truck space and save up to 60% on interstate removals. Professional backloading services across Australia. Door-to-door, fully insured, 2-7 day delivery."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
+  modifiedDate={backloadingDate}
 >
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">

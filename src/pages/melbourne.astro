@@ -5,6 +5,13 @@ import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
 import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 // Machine-readable facts for LLM extraction
 const pageFacts = {
   service: 'Interstate backloading',
@@ -50,8 +57,9 @@ const popularRoutes = [
       addressCountry: 'AU',
     },
     areaServed: 'Victoria',
-    priceRange: '$$',
+    priceRange: '$',
   }}
+  modifiedDate={pageDate}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">

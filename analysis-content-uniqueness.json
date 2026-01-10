@@ -1,0 +1,2305 @@
+{
+  "analyzedAt": "2026-01-10T12:18:08.714Z",
+  "summary": {
+    "totalPages": 41,
+    "thinContent": 25,
+    "goodContent": 12,
+    "excellentContent": 4,
+    "highSimilarityPairs": 193,
+    "mediumSimilarityPairs": 0,
+    "averageWordCount": 415
+  },
+  "thinContent": [
+    {
+      "file": "404.astro",
+      "wordCount": 20,
+      "title": "Page Not Found"
+    },
+    {
+      "file": "[...slug].astro",
+      "wordCount": 61,
+      "title": "More routes from ${route.data.origin}"
+    },
+    {
+      "file": "reviews.astro",
+      "wordCount": 102,
+      "title": "Customer Reviews | Moving Again Interstate Removals"
+    },
+    {
+      "file": "questions.astro",
+      "wordCount": 112,
+      "title": "Moving FAQs | Common Questions Answered | Moving Again"
+    },
+    {
+      "file": "rockhampton.astro",
+      "wordCount": 170,
+      "title": "Backloading Rockhampton | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "wollongong.astro",
+      "wordCount": 171,
+      "title": "Backloading Wollongong | Interstate Removals NSW | Moving Again"
+    },
+    {
+      "file": "bendigo.astro",
+      "wordCount": 173,
+      "title": "Backloading Bendigo | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "newcastle.astro",
+      "wordCount": 173,
+      "title": "Backloading Newcastle | Interstate Removals NSW | Moving Again"
+    },
+    {
+      "file": "ballarat.astro",
+      "wordCount": 174,
+      "title": "Backloading Ballarat | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "geelong.astro",
+      "wordCount": 174,
+      "title": "Backloading Geelong | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "canberra.astro",
+      "wordCount": 177,
+      "title": "Backloading Canberra | Interstate Removals ACT | Moving Again"
+    },
+    {
+      "file": "logan-city.astro",
+      "wordCount": 178,
+      "title": "Backloading Logan City | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "rockingham.astro",
+      "wordCount": 178,
+      "title": "Backloading Rockingham | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "bundaberg.astro",
+      "wordCount": 180,
+      "title": "Backloading Bundaberg | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "bunbury.astro",
+      "wordCount": 181,
+      "title": "Backloading Bunbury | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "mackay.astro",
+      "wordCount": 183,
+      "title": "Backloading Mackay | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "mandurah.astro",
+      "wordCount": 183,
+      "title": "Backloading Mandurah | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "toowoomba.astro",
+      "wordCount": 183,
+      "title": "Backloading Toowoomba | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "cairns.astro",
+      "wordCount": 185,
+      "title": "Backloading Cairns | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "gold-coast.astro",
+      "wordCount": 193,
+      "title": "Backloading Gold Coast | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "darwin.astro",
+      "wordCount": 201,
+      "title": "Backloading Darwin | Interstate Removals NT | Moving Again"
+    },
+    {
+      "file": "adelaide.astro",
+      "wordCount": 203,
+      "title": "Backloading Adelaide | Interstate Removals SA | Moving Again"
+    },
+    {
+      "file": "launceston.astro",
+      "wordCount": 209,
+      "title": "Backloading Launceston | Interstate Removals TAS | Moving Again"
+    },
+    {
+      "file": "hobart.astro",
+      "wordCount": 228,
+      "title": "Backloading Hobart | Interstate Removals TAS | Moving Again"
+    },
+    {
+      "file": "service-areas.astro",
+      "wordCount": 290,
+      "title": "Service Areas | Interstate Moving to All Australian Capitals | Moving Again"
+    }
+  ],
+  "highSimilarity": [
+    {
+      "page1": "bundaberg.astro",
+      "page2": "cairns.astro",
+      "similarity": 86,
+      "wordCount1": 180,
+      "wordCount2": 185
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "bendigo.astro",
+      "similarity": 83,
+      "wordCount1": 174,
+      "wordCount2": 173
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 78,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "mackay.astro",
+      "similarity": 78,
+      "wordCount1": 185,
+      "wordCount2": 183
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "logan-city.astro",
+      "similarity": 76,
+      "wordCount1": 174,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "logan-city.astro",
+      "similarity": 76,
+      "wordCount1": 173,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "mackay.astro",
+      "similarity": 76,
+      "wordCount1": 180,
+      "wordCount2": 183
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "launceston.astro",
+      "similarity": 76,
+      "wordCount1": 228,
+      "wordCount2": 209
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 76,
+      "wordCount1": 178,
+      "wordCount2": 183
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "wollongong.astro",
+      "similarity": 76,
+      "wordCount1": 178,
+      "wordCount2": 171
+    },
+    {
+      "page1": "newcastle.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 76,
+      "wordCount1": 173,
+      "wordCount2": 183
+    },
+    {
+      "page1": "newcastle.astro",
+      "page2": "wollongong.astro",
+      "similarity": 76,
+      "wordCount1": 173,
+      "wordCount2": 171
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "newcastle.astro",
+      "similarity": 75,
+      "wordCount1": 183,
+      "wordCount2": 173
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 75,
+      "wordCount1": 183,
+      "wordCount2": 170
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "wollongong.astro",
+      "similarity": 74,
+      "wordCount1": 174,
+      "wordCount2": 171
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 74,
+      "wordCount1": 173,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "wollongong.astro",
+      "similarity": 74,
+      "wordCount1": 173,
+      "wordCount2": 171
+    },
+    {
+      "page1": "toowoomba.astro",
+      "page2": "wollongong.astro",
+      "similarity": 74,
+      "wordCount1": 183,
+      "wordCount2": 171
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 73,
+      "wordCount1": 183,
+      "wordCount2": 183
+    },
+    {
+      "page1": "newcastle.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 73,
+      "wordCount1": 173,
+      "wordCount2": 170
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "newcastle.astro",
+      "similarity": 72,
+      "wordCount1": 193,
+      "wordCount2": 173
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "newcastle.astro",
+      "similarity": 71,
+      "wordCount1": 174,
+      "wordCount2": 173
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "newcastle.astro",
+      "similarity": 71,
+      "wordCount1": 173,
+      "wordCount2": 173
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "rockingham.astro",
+      "similarity": 71,
+      "wordCount1": 181,
+      "wordCount2": 178
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "newcastle.astro",
+      "similarity": 71,
+      "wordCount1": 185,
+      "wordCount2": 173
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 71,
+      "wordCount1": 185,
+      "wordCount2": 170
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "newcastle.astro",
+      "similarity": 71,
+      "wordCount1": 174,
+      "wordCount2": 173
+    },
+    {
+      "page1": "rockhampton.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 71,
+      "wordCount1": 170,
+      "wordCount2": 183
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 70,
+      "wordCount1": 174,
+      "wordCount2": 193
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 70,
+      "wordCount1": 173,
+      "wordCount2": 193
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 70,
+      "wordCount1": 193,
+      "wordCount2": 183
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "wollongong.astro",
+      "similarity": 70,
+      "wordCount1": 193,
+      "wordCount2": 171
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "bunbury.astro",
+      "similarity": 69,
+      "wordCount1": 174,
+      "wordCount2": 181
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "geelong.astro",
+      "similarity": 69,
+      "wordCount1": 174,
+      "wordCount2": 174
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "bunbury.astro",
+      "similarity": 69,
+      "wordCount1": 173,
+      "wordCount2": 181
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "geelong.astro",
+      "similarity": 69,
+      "wordCount1": 173,
+      "wordCount2": 174
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 69,
+      "wordCount1": 181,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "wollongong.astro",
+      "similarity": 69,
+      "wordCount1": 181,
+      "wordCount2": 171
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "newcastle.astro",
+      "similarity": 69,
+      "wordCount1": 180,
+      "wordCount2": 173
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 69,
+      "wordCount1": 180,
+      "wordCount2": 170
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 69,
+      "wordCount1": 185,
+      "wordCount2": 183
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "mackay.astro",
+      "similarity": 69,
+      "wordCount1": 193,
+      "wordCount2": 183
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "newcastle.astro",
+      "similarity": 69,
+      "wordCount1": 178,
+      "wordCount2": 173
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "mackay.astro",
+      "similarity": 68,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "mackay.astro",
+      "similarity": 68,
+      "wordCount1": 173,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "logan-city.astro",
+      "similarity": 68,
+      "wordCount1": 181,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 68,
+      "wordCount1": 180,
+      "wordCount2": 183
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "logan-city.astro",
+      "similarity": 68,
+      "wordCount1": 193,
+      "wordCount2": 178
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 68,
+      "wordCount1": 193,
+      "wordCount2": 170
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "wollongong.astro",
+      "similarity": 68,
+      "wordCount1": 183,
+      "wordCount2": 171
+    },
+    {
+      "page1": "newcastle.astro",
+      "page2": "rockingham.astro",
+      "similarity": 68,
+      "wordCount1": 173,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 67,
+      "wordCount1": 174,
+      "wordCount2": 170
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "rockingham.astro",
+      "similarity": 67,
+      "wordCount1": 174,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 67,
+      "wordCount1": 173,
+      "wordCount2": 170
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "rockingham.astro",
+      "similarity": 67,
+      "wordCount1": 173,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "newcastle.astro",
+      "similarity": 67,
+      "wordCount1": 181,
+      "wordCount2": 173
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "rockingham.astro",
+      "similarity": 67,
+      "wordCount1": 174,
+      "wordCount2": 178
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "mackay.astro",
+      "similarity": 67,
+      "wordCount1": 178,
+      "wordCount2": 183
+    },
+    {
+      "page1": "rockhampton.astro",
+      "page2": "wollongong.astro",
+      "similarity": 67,
+      "wordCount1": 170,
+      "wordCount2": 171
+    },
+    {
+      "page1": "rockingham.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 67,
+      "wordCount1": 178,
+      "wordCount2": 183
+    },
+    {
+      "page1": "rockingham.astro",
+      "page2": "wollongong.astro",
+      "similarity": 67,
+      "wordCount1": 178,
+      "wordCount2": 171
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 66,
+      "wordCount1": 181,
+      "wordCount2": 193
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 66,
+      "wordCount1": 185,
+      "wordCount2": 193
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "rockingham.astro",
+      "similarity": 66,
+      "wordCount1": 183,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "cairns.astro",
+      "similarity": 65,
+      "wordCount1": 174,
+      "wordCount2": 185
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "cairns.astro",
+      "similarity": 65,
+      "wordCount1": 173,
+      "wordCount2": 185
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "geelong.astro",
+      "similarity": 65,
+      "wordCount1": 181,
+      "wordCount2": 174
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "rockingham.astro",
+      "similarity": 65,
+      "wordCount1": 180,
+      "wordCount2": 178
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "wollongong.astro",
+      "similarity": 65,
+      "wordCount1": 185,
+      "wordCount2": 171
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 65,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "wollongong.astro",
+      "similarity": 65,
+      "wordCount1": 174,
+      "wordCount2": 171
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 65,
+      "wordCount1": 178,
+      "wordCount2": 170
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "rockingham.astro",
+      "similarity": 65,
+      "wordCount1": 178,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "mackay.astro",
+      "similarity": 64,
+      "wordCount1": 181,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 64,
+      "wordCount1": 180,
+      "wordCount2": 193
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "mackay.astro",
+      "similarity": 64,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "rockhampton.astro",
+      "page2": "rockingham.astro",
+      "similarity": 64,
+      "wordCount1": 170,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "bundaberg.astro",
+      "similarity": 63,
+      "wordCount1": 174,
+      "wordCount2": 180
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "bundaberg.astro",
+      "similarity": 63,
+      "wordCount1": 173,
+      "wordCount2": 180
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 63,
+      "wordCount1": 181,
+      "wordCount2": 170
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "wollongong.astro",
+      "similarity": 63,
+      "wordCount1": 180,
+      "wordCount2": 171
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "logan-city.astro",
+      "similarity": 63,
+      "wordCount1": 185,
+      "wordCount2": 178
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "rockingham.astro",
+      "similarity": 63,
+      "wordCount1": 185,
+      "wordCount2": 178
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "logan-city.astro",
+      "similarity": 63,
+      "wordCount1": 174,
+      "wordCount2": 178
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 63,
+      "wordCount1": 174,
+      "wordCount2": 170
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "rockingham.astro",
+      "similarity": 63,
+      "wordCount1": 193,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "logan-city.astro",
+      "similarity": 62,
+      "wordCount1": 180,
+      "wordCount2": 178
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 62,
+      "wordCount1": 174,
+      "wordCount2": 193
+    },
+    {
+      "page1": "melbourne.astro",
+      "page2": "sydney.astro",
+      "similarity": 62,
+      "wordCount1": 421,
+      "wordCount2": 441
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "cairns.astro",
+      "similarity": 61,
+      "wordCount1": 181,
+      "wordCount2": 185
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "geelong.astro",
+      "similarity": 61,
+      "wordCount1": 185,
+      "wordCount2": 174
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "bundaberg.astro",
+      "similarity": 60,
+      "wordCount1": 181,
+      "wordCount2": 180
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "geelong.astro",
+      "similarity": 60,
+      "wordCount1": 180,
+      "wordCount2": 174
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 58,
+      "wordCount1": 203,
+      "wordCount2": 170
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "bendigo.astro",
+      "similarity": 57,
+      "wordCount1": 203,
+      "wordCount2": 173
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "bunbury.astro",
+      "similarity": 57,
+      "wordCount1": 203,
+      "wordCount2": 181
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "canberra.astro",
+      "similarity": 57,
+      "wordCount1": 203,
+      "wordCount2": 177
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "geelong.astro",
+      "similarity": 57,
+      "wordCount1": 203,
+      "wordCount2": 174
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "mackay.astro",
+      "similarity": 57,
+      "wordCount1": 201,
+      "wordCount2": 183
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "mackay.astro",
+      "similarity": 56,
+      "wordCount1": 203,
+      "wordCount2": 183
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 56,
+      "wordCount1": 201,
+      "wordCount2": 193
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "newcastle.astro",
+      "similarity": 56,
+      "wordCount1": 201,
+      "wordCount2": 173
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 56,
+      "wordCount1": 201,
+      "wordCount2": 170
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "newcastle.astro",
+      "similarity": 55,
+      "wordCount1": 203,
+      "wordCount2": 173
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "rockingham.astro",
+      "similarity": 55,
+      "wordCount1": 203,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "darwin.astro",
+      "similarity": 55,
+      "wordCount1": 181,
+      "wordCount2": 201
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "darwin.astro",
+      "similarity": 55,
+      "wordCount1": 185,
+      "wordCount2": 201
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 55,
+      "wordCount1": 177,
+      "wordCount2": 170
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "geelong.astro",
+      "similarity": 55,
+      "wordCount1": 201,
+      "wordCount2": 174
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 55,
+      "wordCount1": 201,
+      "wordCount2": 183
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "wollongong.astro",
+      "similarity": 55,
+      "wordCount1": 201,
+      "wordCount2": 171
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "darwin.astro",
+      "similarity": 54,
+      "wordCount1": 203,
+      "wordCount2": 201
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 54,
+      "wordCount1": 203,
+      "wordCount2": 193
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "darwin.astro",
+      "similarity": 54,
+      "wordCount1": 177,
+      "wordCount2": 201
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "gold-coast.astro",
+      "similarity": 54,
+      "wordCount1": 177,
+      "wordCount2": 193
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "ballarat.astro",
+      "similarity": 53,
+      "wordCount1": 203,
+      "wordCount2": 174
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "cairns.astro",
+      "similarity": 53,
+      "wordCount1": 203,
+      "wordCount2": 185
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 53,
+      "wordCount1": 203,
+      "wordCount2": 183
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "wollongong.astro",
+      "similarity": 53,
+      "wordCount1": 203,
+      "wordCount2": 171
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "canberra.astro",
+      "similarity": 53,
+      "wordCount1": 181,
+      "wordCount2": 177
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "mandurah.astro",
+      "similarity": 53,
+      "wordCount1": 181,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "darwin.astro",
+      "similarity": 53,
+      "wordCount1": 180,
+      "wordCount2": 201
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "geelong.astro",
+      "similarity": 53,
+      "wordCount1": 177,
+      "wordCount2": 174
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "bundaberg.astro",
+      "similarity": 52,
+      "wordCount1": 203,
+      "wordCount2": 180
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "logan-city.astro",
+      "similarity": 52,
+      "wordCount1": 203,
+      "wordCount2": 178
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "logan-city.astro",
+      "similarity": 52,
+      "wordCount1": 177,
+      "wordCount2": 178
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "mackay.astro",
+      "similarity": 52,
+      "wordCount1": 177,
+      "wordCount2": 183
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "rockingham.astro",
+      "similarity": 52,
+      "wordCount1": 201,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "darwin.astro",
+      "similarity": 51,
+      "wordCount1": 174,
+      "wordCount2": 201
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "darwin.astro",
+      "similarity": 51,
+      "wordCount1": 173,
+      "wordCount2": 201
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "newcastle.astro",
+      "similarity": 51,
+      "wordCount1": 177,
+      "wordCount2": 173
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "rockingham.astro",
+      "similarity": 51,
+      "wordCount1": 177,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "canberra.astro",
+      "similarity": 50,
+      "wordCount1": 174,
+      "wordCount2": 177
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "canberra.astro",
+      "similarity": 50,
+      "wordCount1": 173,
+      "wordCount2": 177
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "canberra.astro",
+      "similarity": 50,
+      "wordCount1": 185,
+      "wordCount2": 177
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 50,
+      "wordCount1": 177,
+      "wordCount2": 183
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "wollongong.astro",
+      "similarity": 50,
+      "wordCount1": 177,
+      "wordCount2": 171
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "logan-city.astro",
+      "similarity": 50,
+      "wordCount1": 201,
+      "wordCount2": 178
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "canberra.astro",
+      "similarity": 49,
+      "wordCount1": 180,
+      "wordCount2": 177
+    },
+    {
+      "page1": "mandurah.astro",
+      "page2": "rockingham.astro",
+      "similarity": 48,
+      "wordCount1": 183,
+      "wordCount2": 178
+    },
+    {
+      "page1": "brisbane.astro",
+      "page2": "melbourne.astro",
+      "similarity": 47,
+      "wordCount1": 438,
+      "wordCount2": 421
+    },
+    {
+      "page1": "brisbane.astro",
+      "page2": "sydney.astro",
+      "similarity": 47,
+      "wordCount1": 438,
+      "wordCount2": 441
+    },
+    {
+      "page1": "logan-city.astro",
+      "page2": "mandurah.astro",
+      "similarity": 47,
+      "wordCount1": 178,
+      "wordCount2": 183
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "mandurah.astro",
+      "similarity": 45,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "mandurah.astro",
+      "similarity": 45,
+      "wordCount1": 173,
+      "wordCount2": 183
+    },
+    {
+      "page1": "mandurah.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 45,
+      "wordCount1": 183,
+      "wordCount2": 183
+    },
+    {
+      "page1": "mandurah.astro",
+      "page2": "wollongong.astro",
+      "similarity": 45,
+      "wordCount1": 183,
+      "wordCount2": 171
+    },
+    {
+      "page1": "mackay.astro",
+      "page2": "mandurah.astro",
+      "similarity": 44,
+      "wordCount1": 183,
+      "wordCount2": 183
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "mandurah.astro",
+      "similarity": 43,
+      "wordCount1": 203,
+      "wordCount2": 183
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "mandurah.astro",
+      "similarity": 43,
+      "wordCount1": 193,
+      "wordCount2": 183
+    },
+    {
+      "page1": "mandurah.astro",
+      "page2": "newcastle.astro",
+      "similarity": 43,
+      "wordCount1": 183,
+      "wordCount2": 173
+    },
+    {
+      "page1": "mandurah.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 43,
+      "wordCount1": 183,
+      "wordCount2": 170
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "mandurah.astro",
+      "similarity": 42,
+      "wordCount1": 180,
+      "wordCount2": 183
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "mandurah.astro",
+      "similarity": 42,
+      "wordCount1": 185,
+      "wordCount2": 183
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "mandurah.astro",
+      "similarity": 42,
+      "wordCount1": 174,
+      "wordCount2": 183
+    },
+    {
+      "page1": "melbourne.astro",
+      "page2": "perth.astro",
+      "similarity": 42,
+      "wordCount1": 421,
+      "wordCount2": 461
+    },
+    {
+      "page1": "perth.astro",
+      "page2": "sydney.astro",
+      "similarity": 42,
+      "wordCount1": 461,
+      "wordCount2": 441
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "mandurah.astro",
+      "similarity": 41,
+      "wordCount1": 201,
+      "wordCount2": 183
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "mandurah.astro",
+      "similarity": 40,
+      "wordCount1": 177,
+      "wordCount2": 183
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "launceston.astro",
+      "similarity": 39,
+      "wordCount1": 181,
+      "wordCount2": 209
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "launceston.astro",
+      "similarity": 39,
+      "wordCount1": 174,
+      "wordCount2": 209
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "hobart.astro",
+      "similarity": 38,
+      "wordCount1": 203,
+      "wordCount2": 228
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "newcastle.astro",
+      "similarity": 38,
+      "wordCount1": 209,
+      "wordCount2": 173
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "rockingham.astro",
+      "similarity": 38,
+      "wordCount1": 209,
+      "wordCount2": 178
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "launceston.astro",
+      "similarity": 37,
+      "wordCount1": 174,
+      "wordCount2": 209
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "launceston.astro",
+      "similarity": 37,
+      "wordCount1": 173,
+      "wordCount2": 209
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "logan-city.astro",
+      "similarity": 37,
+      "wordCount1": 209,
+      "wordCount2": 178
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 37,
+      "wordCount1": 209,
+      "wordCount2": 183
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "wollongong.astro",
+      "similarity": 37,
+      "wordCount1": 209,
+      "wordCount2": 171
+    },
+    {
+      "page1": "gold-coast.astro",
+      "page2": "launceston.astro",
+      "similarity": 36,
+      "wordCount1": 193,
+      "wordCount2": 209
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "mackay.astro",
+      "similarity": 36,
+      "wordCount1": 209,
+      "wordCount2": 183
+    },
+    {
+      "page1": "adelaide.astro",
+      "page2": "launceston.astro",
+      "similarity": 35,
+      "wordCount1": 203,
+      "wordCount2": 209
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "launceston.astro",
+      "similarity": 35,
+      "wordCount1": 185,
+      "wordCount2": 209
+    },
+    {
+      "page1": "geelong.astro",
+      "page2": "hobart.astro",
+      "similarity": 35,
+      "wordCount1": 174,
+      "wordCount2": 228
+    },
+    {
+      "page1": "launceston.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 35,
+      "wordCount1": 209,
+      "wordCount2": 170
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "launceston.astro",
+      "similarity": 34,
+      "wordCount1": 180,
+      "wordCount2": 209
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "launceston.astro",
+      "similarity": 34,
+      "wordCount1": 201,
+      "wordCount2": 209
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "hobart.astro",
+      "similarity": 33,
+      "wordCount1": 177,
+      "wordCount2": 228
+    },
+    {
+      "page1": "canberra.astro",
+      "page2": "launceston.astro",
+      "similarity": 33,
+      "wordCount1": 177,
+      "wordCount2": 209
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "rockhampton.astro",
+      "similarity": 33,
+      "wordCount1": 228,
+      "wordCount2": 170
+    },
+    {
+      "page1": "darwin.astro",
+      "page2": "hobart.astro",
+      "similarity": 32,
+      "wordCount1": 201,
+      "wordCount2": 228
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "mackay.astro",
+      "similarity": 32,
+      "wordCount1": 228,
+      "wordCount2": 183
+    },
+    {
+      "page1": "ballarat.astro",
+      "page2": "hobart.astro",
+      "similarity": 31,
+      "wordCount1": 174,
+      "wordCount2": 228
+    },
+    {
+      "page1": "bendigo.astro",
+      "page2": "hobart.astro",
+      "similarity": 31,
+      "wordCount1": 173,
+      "wordCount2": 228
+    },
+    {
+      "page1": "brisbane.astro",
+      "page2": "perth.astro",
+      "similarity": 31,
+      "wordCount1": 438,
+      "wordCount2": 461
+    },
+    {
+      "page1": "bunbury.astro",
+      "page2": "hobart.astro",
+      "similarity": 31,
+      "wordCount1": 181,
+      "wordCount2": 228
+    },
+    {
+      "page1": "cairns.astro",
+      "page2": "hobart.astro",
+      "similarity": 31,
+      "wordCount1": 185,
+      "wordCount2": 228
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "newcastle.astro",
+      "similarity": 31,
+      "wordCount1": 228,
+      "wordCount2": 173
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "rockingham.astro",
+      "similarity": 31,
+      "wordCount1": 228,
+      "wordCount2": 178
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "toowoomba.astro",
+      "similarity": 31,
+      "wordCount1": 228,
+      "wordCount2": 183
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "wollongong.astro",
+      "similarity": 31,
+      "wordCount1": 228,
+      "wordCount2": 171
+    },
+    {
+      "page1": "bundaberg.astro",
+      "page2": "hobart.astro",
+      "similarity": 30,
+      "wordCount1": 180,
+      "wordCount2": 228
+    },
+    {
+      "page1": "hobart.astro",
+      "page2": "logan-city.astro",
+      "similarity": 30,
+      "wordCount1": 228,
+      "wordCount2": 178
+    }
+  ],
+  "mediumSimilarity": [],
+  "commonPhrases": [
+    {
+      "phrase": "major australian cities",
+      "pageCount": 28,
+      "pages": [
+        "adelaide.astro",
+        "backloading.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "contact.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "moving-interstate.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "all major australian",
+      "pageCount": 27,
+      "pages": [
+        "adelaide.astro",
+        "backloading.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "contact.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "moving-interstate.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "all major australian cities",
+      "pageCount": 27,
+      "pages": [
+        "adelaide.astro",
+        "backloading.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "contact.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "moving-interstate.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "regular backloading services",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "what routes are",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "routes are available",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "are available from",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "what routes are available",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "routes are available from",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "what routes are available from",
+      "pageCount": 25,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "how-many-boxes-do-i-need-for-my-move.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "townsville.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "backloading services from",
+      "pageCount": 24,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "quote for your",
+      "pageCount": 24,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "questions.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "service-areas.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "ready move from",
+      "pageCount": 24,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "regular backloading services from",
+      "pageCount": 24,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "get instant quote",
+      "pageCount": 22,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "instant quote for",
+      "pageCount": 22,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "get instant quote for",
+      "pageCount": 22,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "instant quote for your",
+      "pageCount": 22,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "get instant quote for your",
+      "pageCount": 22,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "brisbane.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "melbourne.astro",
+        "newcastle.astro",
+        "perth.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "sydney.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    },
+    {
+      "phrase": "net migration ({migration_data_period})",
+      "pageCount": 20,
+      "pages": [
+        "adelaide.astro",
+        "ballarat.astro",
+        "bendigo.astro",
+        "bunbury.astro",
+        "bundaberg.astro",
+        "cairns.astro",
+        "canberra.astro",
+        "darwin.astro",
+        "geelong.astro",
+        "gold-coast.astro",
+        "hobart.astro",
+        "launceston.astro",
+        "logan-city.astro",
+        "mackay.astro",
+        "mandurah.astro",
+        "newcastle.astro",
+        "rockhampton.astro",
+        "rockingham.astro",
+        "toowoomba.astro",
+        "wollongong.astro"
+      ]
+    }
+  ],
+  "allPages": [
+    {
+      "file": "404.astro",
+      "wordCount": 20,
+      "title": "Page Not Found"
+    },
+    {
+      "file": "[...slug].astro",
+      "wordCount": 61,
+      "title": "More routes from ${route.data.origin}"
+    },
+    {
+      "file": "adelaide.astro",
+      "wordCount": 203,
+      "title": "Backloading Adelaide | Interstate Removals SA | Moving Again"
+    },
+    {
+      "file": "backloading.astro",
+      "wordCount": 1141,
+      "title": "Interstate Backloading | Save 40-60% on Removals | Moving Again"
+    },
+    {
+      "file": "ballarat.astro",
+      "wordCount": 174,
+      "title": "Backloading Ballarat | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "bendigo.astro",
+      "wordCount": 173,
+      "title": "Backloading Bendigo | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "brisbane.astro",
+      "wordCount": 438,
+      "title": "Backloading Brisbane | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "bunbury.astro",
+      "wordCount": 181,
+      "title": "Backloading Bunbury | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "bundaberg.astro",
+      "wordCount": 180,
+      "title": "Backloading Bundaberg | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "cairns.astro",
+      "wordCount": 185,
+      "title": "Backloading Cairns | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "canberra.astro",
+      "wordCount": 177,
+      "title": "Backloading Canberra | Interstate Removals ACT | Moving Again"
+    },
+    {
+      "file": "car-transport.astro",
+      "wordCount": 635,
+      "title": "Car Transport Australia | Interstate Vehicle Transport | Moving Again"
+    },
+    {
+      "file": "contact.astro",
+      "wordCount": 328,
+      "title": "Contact Us | Moving Again Interstate Removals"
+    },
+    {
+      "file": "darwin.astro",
+      "wordCount": 201,
+      "title": "Backloading Darwin | Interstate Removals NT | Moving Again"
+    },
+    {
+      "file": "furniture-removal-inventory-list.astro",
+      "wordCount": 439,
+      "title": "Furniture Removal Inventory List | Moving Checklist | Moving Again"
+    },
+    {
+      "file": "geelong.astro",
+      "wordCount": 174,
+      "title": "Backloading Geelong | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "gold-coast.astro",
+      "wordCount": 193,
+      "title": "Backloading Gold Coast | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "hobart.astro",
+      "wordCount": 228,
+      "title": "Backloading Hobart | Interstate Removals TAS | Moving Again"
+    },
+    {
+      "file": "how-many-boxes-do-i-need-for-my-move.astro",
+      "wordCount": 662,
+      "title": "How Many Boxes Do I Need for My Move? | Free Calculator | Moving Again"
+    },
+    {
+      "file": "index.astro",
+      "wordCount": 575,
+      "title": "Moving Again | Interstate Removalists"
+    },
+    {
+      "file": "launceston.astro",
+      "wordCount": 209,
+      "title": "Backloading Launceston | Interstate Removals TAS | Moving Again"
+    },
+    {
+      "file": "logan-city.astro",
+      "wordCount": 178,
+      "title": "Backloading Logan City | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "mackay.astro",
+      "wordCount": 183,
+      "title": "Backloading Mackay | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "mandurah.astro",
+      "wordCount": 183,
+      "title": "Backloading Mandurah | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "melbourne.astro",
+      "wordCount": 421,
+      "title": "Backloading Melbourne | Interstate Removals VIC | Moving Again"
+    },
+    {
+      "file": "moving-interstate.astro",
+      "wordCount": 941,
+      "title": "Interstate Moving Australia | Complete ${currentYear} Guide | Moving Again"
+    },
+    {
+      "file": "moving-pot-plants-interstate.astro",
+      "wordCount": 485,
+      "title": "Moving Pot Plants Interstate | How to Transport Plants Safely | Moving Again"
+    },
+    {
+      "file": "newcastle.astro",
+      "wordCount": 173,
+      "title": "Backloading Newcastle | Interstate Removals NSW | Moving Again"
+    },
+    {
+      "file": "perth.astro",
+      "wordCount": 461,
+      "title": "Backloading Perth | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "privacy.astro",
+      "wordCount": 1301,
+      "title": "Privacy Policy | Moving Again"
+    },
+    {
+      "file": "questions.astro",
+      "wordCount": 112,
+      "title": "Moving FAQs | Common Questions Answered | Moving Again"
+    },
+    {
+      "file": "reviews.astro",
+      "wordCount": 102,
+      "title": "Customer Reviews | Moving Again Interstate Removals"
+    },
+    {
+      "file": "rockhampton.astro",
+      "wordCount": 170,
+      "title": "Backloading Rockhampton | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "rockingham.astro",
+      "wordCount": 178,
+      "title": "Backloading Rockingham | Interstate Removals WA | Moving Again"
+    },
+    {
+      "file": "service-areas.astro",
+      "wordCount": 290,
+      "title": "Service Areas | Interstate Moving to All Australian Capitals | Moving Again"
+    },
+    {
+      "file": "sydney.astro",
+      "wordCount": 441,
+      "title": "Backloading Sydney | Interstate Removals NSW | Moving Again"
+    },
+    {
+      "file": "terms-of-use.astro",
+      "wordCount": 1458,
+      "title": "Terms of Use | Moving Again Website"
+    },
+    {
+      "file": "terms.astro",
+      "wordCount": 2505,
+      "title": "Terms and Conditions of Booking | Moving Again"
+    },
+    {
+      "file": "toowoomba.astro",
+      "wordCount": 183,
+      "title": "Backloading Toowoomba | Interstate Removals QLD | Moving Again"
+    },
+    {
+      "file": "townsville.astro",
+      "wordCount": 513,
+      "title": "Backloading Townsville | Interstate Removals to & from QLD | Moving Again"
+    },
+    {
+      "file": "wollongong.astro",
+      "wordCount": 171,
+      "title": "Backloading Wollongong | Interstate Removals NSW | Moving Again"
+    }
+  ]
+}

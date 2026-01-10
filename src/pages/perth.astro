@@ -4,6 +4,12 @@ import FactBox from '../components/FactBox.astro';
 import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
 import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date for Perth page
+const currentFile = fileURLToPath(import.meta.url);
+const perthDate = getContentDate(currentFile);
 
 const pageFacts = {
   service: 'Interstate backloading',
@@ -41,6 +47,7 @@ const popularRoutes = [
   title="Backloading Perth | Interstate Removals WA | Moving Again"
   description="Perth backloading and interstate removals. Save up to 60% on moves to/from Western Australia. Weekly services to Melbourne, Sydney & all capitals. Transit insurance included."
   schemaType="LocalBusiness"
+  modifiedDate={perthDate}
   schemaData={{
     name: 'Moving Again - Perth',
     address: {

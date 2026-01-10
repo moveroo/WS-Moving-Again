@@ -1,10 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
 ---
 
 <Layout
   title="Privacy Policy | Moving Again"
   description="Privacy Policy of Moving Again. This outlines details of what information we keep and use when preparing your quote and how long information is kept."
+  modifiedDate={pageDate}
 >
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">

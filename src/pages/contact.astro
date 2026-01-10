@@ -1,11 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { BRAND } from '../utils/brand';
+
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
 ---
 
 <Layout
   title="Contact Us | Moving Again Interstate Removals"
   description="Get in touch with Moving Again for interstate moving quotes, questions, or support. We're here to help with your backloading and removalist needs."
+  modifiedDate={pageDate}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">

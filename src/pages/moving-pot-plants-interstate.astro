@@ -1,6 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import { getContentDate } from '../utils/fileDates';
+import { fileURLToPath } from 'url';
+
+// Get content modification date
+const currentFile = fileURLToPath(import.meta.url);
+const pageDate = getContentDate(currentFile);
+
 const faqQuestions = [
   {
     question: 'Can I move plants interstate in Australia?',
@@ -30,6 +37,7 @@ const faqQuestions = [
   description="Complete guide to moving pot plants interstate in Australia. Learn how to prepare, pack, and transport your plants safely across state lines."
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
+  modifiedDate={pageDate}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-green-800 to-green-900 text-white py-16">
