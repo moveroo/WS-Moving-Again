@@ -16,7 +16,12 @@
     "seo:page": "node scripts/seo-audit.mjs page",
     "seo:crawl": "node scripts/seo-audit.mjs crawl",
     "seo:status": "node scripts/seo-audit.mjs status",
-    "seo:list": "node scripts/seo-audit.mjs list"
+    "seo:list": "node scripts/seo-audit.mjs list",
+    "analyze:headings": "node scripts/analyze-question-headings.mjs",
+    "analyze:duplicates": "node scripts/detect-duplicate-seo.mjs",
+    "analyze:alt-text": "node scripts/analyze-image-alt-text.mjs",
+    "analyze:content": "node scripts/analyze-content-uniqueness.mjs",
+    "suggest:content": "node scripts/suggest-content-improvements.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
