@@ -85,9 +85,16 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
 
   <!-- App Structure -->
   <div class="flex flex-col min-h-screen bg-brand-light font-sans text-brand-dark">
+    <!-- Skip Navigation Link -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-red focus:text-white focus:font-bold focus:rounded-brand focus:shadow-lg"
+    >
+      Skip to content
+    </a>
     <Header />
 
-    <main class="flex-grow">
+    <main id="main-content" class="flex-grow">
       <slot />
     </main>
 

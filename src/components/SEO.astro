@@ -49,6 +49,9 @@ const pageTitle = title ? `${title} | ${siteName}` : siteName;
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
 
+    <!-- Content Freshness - Use build time as last modified date -->
+    <meta property="article:modified_time" content={new Date().toISOString()} />
+
     <title>{pageTitle}</title>
     <meta name="title" content={pageTitle} />
 
@@ -68,6 +71,8 @@ const pageTitle = title ? `${title} | ${siteName}` : siteName;
     <meta property="twitter:title" content={pageTitle} />
     <meta property="twitter:description" content={description} />
     {image && <meta property="twitter:image" content={new URL(image, Astro.url)} />}
+    <!-- Twitter Site Attribution - Add when Twitter account is available -->
+    <!-- <meta name="twitter:site" content="@movingagain" /> -->
 
     <slot name="head" />
   </head>
