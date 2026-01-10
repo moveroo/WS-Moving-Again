@@ -1,0 +1,67 @@
+---
+/**
+ * OptimizedImage Component
+ *
+ * Provides responsive image support with srcset, lazy loading, and proper attributes.
+ * Automatically handles SVG (no srcset needed) and raster images (with srcset).
+ *
+ * Usage:
+ * <OptimizedImage src="/logo.svg" alt="Logo" width={200} height={50} />
+ * <OptimizedImage src="/image.jpg" alt="Description" width={800} height={600} />
+ */
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  sizes?: string;
+  // For raster images, provide multiple sizes for srcset
+  srcset?: string;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  class: className = '',
+  loading = 'lazy',
+  sizes,
+  srcset,
+} = Astro.props;
+
+// Check if image is SVG (SVGs don't need srcset)
+const isSvg = src.toLowerCase().endsWith('.svg');
+
+// For SVG, use simple img tag (SVGs are scalable)
+// For raster images, add srcset if provided
+---
+
+{
+  isSvg ? (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      class={className}
+      loading={loading}
+      decoding="async"
+    />
+  ) : (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      class={className}
+      loading={loading}
+      decoding="async"
+      srcset={srcset}
+      sizes={sizes || '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px'}
+    />
+  )
+}

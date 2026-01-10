@@ -1,0 +1,38 @@
+{
+  "analyzedAt": "2026-01-10T11:00:39.401Z",
+  "totalFiles": 58,
+  "totalImages": 2,
+  "imagesWithIssues": 2,
+  "issuesByType": {
+    "missingSrcset": 0,
+    "missingAlt": 0,
+    "missingWidth": 0,
+    "missingHeight": 0,
+    "missingLoading": 0,
+    "missingDecoding": 0
+  },
+  "detailedIssues": [
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "line": 44,
+      "tag": "<img\n    src={src}\n    alt={alt}\n    width={width}\n    height={height}\n    class={className}\n    loading={loading}\n    decoding=\"async\"\n  />",
+      "issues": [
+        {
+          "type": "missing-src",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "file": "src/components/OptimizedImage.astro",
+      "line": 54,
+      "tag": "<img\n    src={src}\n    alt={alt}\n    width={width}\n    height={height}\n    class={className}\n    loading={loading}\n    decoding=\"async\"\n    srcset={srcset}\n    sizes={sizes || '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px'}\n  />",
+      "issues": [
+        {
+          "type": "missing-src",
+          "severity": "critical"
+        }
+      ]
+    }
+  ]
+}
