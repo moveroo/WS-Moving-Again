@@ -9,7 +9,6 @@ import { getPopularRoutesForCity } from '../utils/routeDiscovery';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -57,11 +56,20 @@ const breadcrumbItems = [
   }}
   modifiedDate={pageDate}
 >
-  <!-- Breadcrumb Navigation -->
-  <div class="container mx-auto px-4 py-4">
-    <Breadcrumbs items={breadcrumbItems} />
-  </div>
-
+  <!-- BreadcrumbList Schema -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbItems.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    })}
+  />
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
@@ -95,6 +103,18 @@ const breadcrumbItems = [
       </div>
     </div>
   </section>
+  <!-- Breadcrumb -->
+  <nav class="py-4 bg-[#800005]" role="navigation">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center gap-2 text-sm text-white/80 flex-wrap">
+        <a href="/" class="hover:text-white">Home</a>
+        <span>›</span>
+        <a href="/service-areas/" class="hover:text-white">Service Areas</a>
+        <span>›</span>
+        <span class="text-white">Darwin</span>
+      </div>
+    </div>
+  </nav>
 
   <section class="py-12 bg-white border-b">
     <div class="container mx-auto px-4">
