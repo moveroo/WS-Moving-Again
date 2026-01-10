@@ -429,6 +429,39 @@ foundingDate: BRAND.foundingYear.toString();
 
 ---
 
+### Case Study 5: BreadcrumbList Schema Implementation
+
+**Issue:** Missing BreadcrumbList schema on all route pages  
+**Affected:** 300+ route pages  
+**Methodology Applied:** Pattern 1 (Component-Level) + Utility-Based Generation
+
+**Implementation:**
+
+1. **Analysis:** Identified missing BreadcrumbList schema across all route pages
+2. **Root Cause:** No breadcrumb schema generation in route page template
+3. **Fix Location:** `src/pages/[...slug].astro`
+4. **Solution:**
+   - Generated breadcrumb items from route data programmatically
+   - Structure: Home → Backloading → [Origin City] → [Route Name]
+   - Used hub page URLs when available for better internal linking
+   - Added JSON-LD schema in body with other schemas
+
+**Result:**
+
+- ✅ All 300+ route pages now have BreadcrumbList schema
+- ✅ One template change fixed all route pages
+- ✅ Breadcrumb structure automatically generated from route data
+
+**Files Changed:**
+
+- `src/pages/[...slug].astro` - Added breadcrumb generation and schema
+
+**Time Saved:** Manual fix would take ~300 pages × 5 min = 25 hours. Systematic fix took 15 minutes.
+
+**Key Learning:** Generate structured data from existing data sources (route data) rather than hardcoding.
+
+---
+
 ## 📋 Standard Workflow
 
 ### For Each New Issue:
