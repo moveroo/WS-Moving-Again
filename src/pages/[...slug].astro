@@ -12,6 +12,7 @@ import { generateFAQsForRoute } from '../utils/faqGenerator';
 import { getRelatedRoutes } from '../utils/relatedRoutes';
 import { getCityHubUrl } from '../utils/hubPages';
 import { generateRouteSEO } from '../utils/seoGenerator';
+import { getContentCollectionDate } from '../utils/fileDates';
 
 export async function getStaticPaths() {
   const routes = await getCollection('routes');
@@ -47,6 +48,9 @@ const breadcrumbItems = [
     url: `${siteUrl}/${route.data.slugFs}/`,
   },
 ];
+
+// Get content modification date (Git commit date, file mod date, or build time)
+const contentDate = getContentCollectionDate('routes', route.id);
 
 // Generate SEO-optimized title and description
 // Always use generated SEO for route pages to ensure optimal length and format
@@ -109,7 +113,7 @@ const faqSchema = {
 };
 ---
 
-<Layout title={pageTitle} description={metaDescription}>
+<Layout title={pageTitle} description={metaDescription} modifiedDate={contentDate}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <!-- BreadcrumbList Schema -->

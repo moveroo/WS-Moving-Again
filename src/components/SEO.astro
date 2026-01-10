@@ -7,6 +7,7 @@ interface Props {
   canonical?: string;
   noindex?: boolean;
   lang?: string;
+  modifiedDate?: string; // ISO date string (Git commit date, file mod date, or build time)
 }
 
 // Production domain - always use this for canonical URLs
@@ -23,6 +24,7 @@ const {
   type = 'website',
   canonical = defaultCanonical,
   noindex = false,
+  modifiedDate,
 } = Astro.props;
 
 // SEO best practice: Descriptions should be 150-160 characters
@@ -164,8 +166,8 @@ if (title) {
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
 
-    <!-- Content Freshness - Use build time as last modified date -->
-    <meta property="article:modified_time" content={new Date().toISOString()} />
+    <!-- Content Freshness - Use provided date, Git commit date, file mod date, or build time -->
+    <meta property="article:modified_time" content={modifiedDate || new Date().toISOString()} />
 
     <title>{pageTitle}</title>
     <meta name="title" content={pageTitle} />
