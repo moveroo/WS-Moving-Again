@@ -36,6 +36,18 @@ const destinationRelated = getRelatedRoutes(allRoutes, route, 'destination', 10)
 const originHubUrl = getCityHubUrl(route.data.origin);
 const destinationHubUrl = getCityHubUrl(route.data.destination);
 
+// Generate breadcrumb items for schema
+const siteUrl = import.meta.env.SITE || 'https://movingagain.com.au';
+const breadcrumbItems = [
+  { name: 'Home', url: `${siteUrl}/` },
+  { name: 'Backloading', url: `${siteUrl}/backloading/` },
+  ...(originHubUrl ? [{ name: route.data.origin, url: `${siteUrl}${originHubUrl}` }] : []),
+  {
+    name: `${route.data.origin} to ${route.data.destination}`,
+    url: `${siteUrl}/${route.data.slugFs}/`,
+  },
+];
+
 // Generate SEO-optimized title and description
 // Always use generated SEO for route pages to ensure optimal length and format
 const seo = generateRouteSEO({
@@ -100,6 +112,20 @@ const faqSchema = {
 <Layout title={pageTitle} description={metaDescription}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <!-- BreadcrumbList Schema -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbItems.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    })}
+  />
   <!-- Machine-readable facts for LLM extraction -->
   <script type="application/json" id="route-facts" set:html={JSON.stringify(routeFacts)} />
 
