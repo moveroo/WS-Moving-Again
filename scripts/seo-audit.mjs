@@ -5,6 +5,9 @@
  * Run with: npm run seo:audit [command] [args]
  */
 
+/* eslint-env node */
+/* eslint-disable no-console */
+
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -90,21 +93,43 @@ async function runPageAudit(url) {
 }
 
 // Run full site crawl
-async function runCrawl(domain) {
-  console.log(`\n🕷️  Starting crawl: ${domain}\n`);
+async function runCrawl(domain, options = {}) {
+  const { limit = 10, depth = 5, urls = [] } = options;
+  
+  const isDiscoveryMode = limit <= 10;
+  const mode = isDiscoveryMode ? 'Discovery Mode' : 'Full Crawl';
+  
+  console.log(`\n🕷️  Starting ${mode}: ${domain}\n`);
+  if (isDiscoveryMode) {
+    console.log('💡 Discovery Mode: Lightweight scan focusing on site-wide issues (10 pages)\n');
+  }
+
+  // Build request body
+  const requestBody = { domain, depth, limit };
+  
+  // Add priority URLs if provided (up to 10)
+  if (urls.length > 0) {
+    if (urls.length > 10) {
+      console.warn('⚠️  Warning: Only first 10 URLs will be used as priority entry points');
+      requestBody.urls = urls.slice(0, 10);
+    } else {
+      requestBody.urls = urls;
+    }
+    console.log(`📌 Priority URLs: ${requestBody.urls.length} specified\n`);
+  }
 
   // Start crawl
-  const { data } = await apiRequest('/crawls', {
+  const response = await apiRequest('/crawls', {
     method: 'POST',
-    body: JSON.stringify({
-      domain,
-      depth: 5,
-      limit: 100
-    })
+    body: JSON.stringify(requestBody)
   });
 
-  const crawlId = data.id;
+  // Handle response structure (may be wrapped in 'data' or direct)
+  const crawlData = response.data || response;
+  const crawlId = crawlData.id;
+  
   console.log(`📋 Crawl ID: ${crawlId}`);
+  console.log(`📊 Status: ${crawlData.status}`);
   console.log('⏳ Waiting for crawl to complete...');
 
   // Poll for results
@@ -219,8 +244,9 @@ function displayCrawlResults(crawl) {
   console.log('📊 CRAWL RESULTS');
   console.log('='.repeat(60));
   
-  console.log(`\n🎯 Health Score: ${crawl.score}/100`);
+  console.log(`\n🎯 Health Score: ${crawl.score !== null && crawl.score !== undefined ? `${crawl.score}/100` : 'N/A (Discovery Mode)'}`);
   console.log(`📄 Pages Processed: ${crawl.progress?.processed || 0}`);
+  console.log(`📊 Total Pages Found: ${crawl.progress?.total || 0}`);
   console.log(`❌ Failed Pages: ${crawl.progress?.failed || 0}`);
   
   if (crawl.timestamps) {
@@ -229,11 +255,14 @@ function displayCrawlResults(crawl) {
   }
 
   if (crawl.issues && crawl.issues.length > 0) {
-    console.log(`\n⚠️  Issues Found: ${crawl.issues.length} types\n`);
+    console.log(`\n⚠️  Issues Found: ${crawl.issues_count || crawl.issues.length} types\n`);
     
     crawl.issues.forEach(issue => {
-      console.log(`\n${issue.type || 'Unknown Issue'}:`);
-      console.log(`  Count: ${issue.count}`);
+      const issueType = issue.type || 'Unknown Issue';
+      const issueName = issueType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      
+      console.log(`\n${issueName}:`);
+      console.log(`  Count: ${issue.count || 'N/A'}`);
       console.log(`  Message: ${issue.message || 'No description'}`);
       
       if (issue.data && issue.data.length > 0) {
@@ -257,7 +286,8 @@ function displayCrawlResults(crawl) {
     
     sortedAudits.forEach(audit => {
       const score = audit.score !== undefined ? `${audit.score}/100` : 'N/A';
-      console.log(`  ${score.padEnd(6)} - ${audit.url}`);
+      const url = audit.url || audit.target_url || 'Unknown URL';
+      console.log(`  ${score.padEnd(6)} - ${url}`);
     });
   }
 
@@ -278,13 +308,29 @@ switch (command) {
     runPageAudit(arg).catch(console.error);
     break;
 
-  case 'crawl':
+  case 'crawl': {
     if (!arg) {
       console.error('❌ Please provide a domain: npm run seo:crawl https://example.com');
+      console.error('   Optional: Add --limit=100 for full crawl (default: 10 pages, Discovery Mode)');
+      console.error('   Optional: Add --urls=url1,url2 for priority URLs');
       process.exit(1);
     }
-    runCrawl(arg).catch(console.error);
+    
+    // Parse optional parameters
+    const limitArg = process.argv.find(a => a.startsWith('--limit='));
+    const urlsArg = process.argv.find(a => a.startsWith('--urls='));
+    
+    const options = {};
+    if (limitArg) {
+      options.limit = parseInt(limitArg.split('=')[1], 10);
+    }
+    if (urlsArg) {
+      options.urls = urlsArg.split('=')[1].split(',').map(u => u.trim());
+    }
+    
+    runCrawl(arg, options).catch(console.error);
     break;
+  }
 
   case 'status':
     if (!arg) {
@@ -304,17 +350,31 @@ switch (command) {
 SEO Technical Crawler - Usage
 
 Commands:
-  npm run seo:page <url>        Audit a single page
-  npm run seo:crawl <domain>     Run full site crawl
-  npm run seo:status <id>        Check crawl status
-  npm run seo:list               List all crawls
-  npm run seo:audit help         Show this help
+  npm run seo:page <url>                    Audit a single page
+  npm run seo:crawl <domain>                 Run discovery crawl (10 pages, default)
+  npm run seo:crawl <domain> --limit=100     Run full crawl (up to 500 pages)
+  npm run seo:crawl <domain> --urls=url1,url2  Specify priority URLs (up to 10)
+  npm run seo:status <id>                    Check crawl status
+  npm run seo:list                           List all crawls
+  npm run seo:audit help                     Show this help
 
 Examples:
   npm run seo:page https://movingagain.com.au/contact/
   npm run seo:crawl https://movingagain.com.au
+  npm run seo:crawl https://movingagain.com.au --limit=100
+  npm run seo:crawl https://movingagain.com.au --urls=https://movingagain.com.au/,https://movingagain.com.au/backloading
   npm run seo:status 42
   npm run seo:list
+
+Discovery Mode (default):
+  - Lightweight scan: 10 pages
+  - Focuses on site-wide issues (orphans, duplicates, AI readiness)
+  - Fast results
+
+Full Crawl:
+  - Use --limit=100 or higher (max 500)
+  - Comprehensive analysis of all pages
+  - Takes longer but provides complete coverage
 
 Environment:
   Make sure SEO_AUDITOR_TOKEN is set in .env file
