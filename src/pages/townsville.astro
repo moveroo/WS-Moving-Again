@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
+import TrustSignals from '../components/TrustSignals.astro';
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -336,6 +337,10 @@ const pageFacts = {
 
   <!-- Machine-readable facts for AI extraction -->
   <FactBox facts={pageFacts} />
+
+  <!-- Security Trust Signals -->
+
+  <TrustSignals />
 
   <!-- CTA -->
   <section class="py-20 bg-brand-dark">

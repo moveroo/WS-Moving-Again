@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
 
 // Machine-readable facts for LLM extraction
@@ -1012,6 +1013,9 @@ const routes = [
 
   <!-- Machine-readable facts for AI extraction -->
   <FactBox facts={pageFacts} />
+
+  <!-- Security Trust Signals -->
+  <TrustSignals />
 
   <!-- CTA Section -->
   <section class="py-20 bg-brand-dark">

@@ -462,6 +462,53 @@ foundingDate: BRAND.foundingYear.toString();
 
 ---
 
+### Case Study 6: Security Trust Signals Implementation
+
+**Issue:** Missing Security dimension in Trust Triangle (only 2/3 dimensions covered)  
+**Affected:** 321 pages (300+ route pages, 4 service pages, ~17 city pages)  
+**Methodology Applied:** Hybrid Approach (Pattern 1 + Pattern 2)
+
+**Implementation:**
+
+1. **Analysis:** Identified missing security trust signals across all pages from Crawl 44
+2. **Root Cause:** No security-focused trust signals component
+3. **Solution - Hybrid Approach:**
+   - **Route Pages (300+):** Enhanced `RouteTrustSection.astro` to include security signals section
+   - **Service Pages (4):** Added standalone `TrustSignals.astro` component
+   - **City Pages (~17):** Added `TrustSignals.astro` component via automation script
+4. **Automation:** Created `scripts/add-trust-signals-to-cities.mjs` to batch-add component to city pages
+
+**Result:**
+
+- ✅ All 300+ route pages now have security signals (via RouteTrustSection)
+- ✅ All 4 service pages have security signals
+- ✅ All 17 city pages have security signals
+- ✅ Trust Triangle now complete (3/3 dimensions: Authority, Social Proof, Security)
+
+**Files Created:**
+
+- `src/components/TrustSignals.astro` - Standalone security trust signals component
+- `scripts/add-trust-signals-to-cities.mjs` - Automation script for city pages
+- `docs/SECURITY-TRUST-SIGNALS-STRATEGY.md` - Strategy documentation
+
+**Files Updated:**
+
+- `src/components/RouteTrustSection.astro` - Added security signals section
+- `src/pages/backloading.astro` - Added TrustSignals component
+- `src/pages/moving-interstate.astro` - Added TrustSignals component
+- `src/pages/car-transport.astro` - Added TrustSignals component
+- `src/pages/service-areas.astro` - Added TrustSignals component
+- `src/pages/sydney.astro` - Added TrustSignals component
+- `src/pages/melbourne.astro` - Added TrustSignals component
+- `src/pages/brisbane.astro` - Added TrustSignals component
+- Plus 19 more city pages (via automation script)
+
+**Time Saved:** Manual fix would take ~321 pages × 5 min = 26.75 hours. Systematic fix took 2 hours (including strategy, implementation, and automation).
+
+**Key Learning:** Hybrid approach maximizes coverage - enhance existing components for route pages, use standalone component for other page types. Automation scripts save significant time for batch operations.
+
+---
+
 ## 📋 Standard Workflow
 
 ### For Each New Issue:

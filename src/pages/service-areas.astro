@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
+import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
 import {
   NET_INTERSTATE_MIGRATION,
@@ -521,6 +522,9 @@ const pageFacts = {
 
   <!-- Machine-readable facts -->
   <FactBox facts={pageFacts} />
+
+  <!-- Security Trust Signals -->
+  <TrustSignals />
 
   <!-- CTA Section -->
   <section class="py-20 bg-gradient-to-r from-brand-red to-brand-accent">
