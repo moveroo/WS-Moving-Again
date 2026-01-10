@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "total": 41,
+    "ideal": 36,
+    "tooShort": 2,
+    "tooLong": 0,
+    "missing": 3
+  },
+  "tooLong": [],
+  "tooShort": [
+    {
+      "file": "src/pages/404.astro",
+      "url": "https://movingagain.com.au/404/",
+      "description": "The page you",
+      "length": 12
+    },
+    {
+      "file": "src/pages/contact.astro",
+      "url": "https://movingagain.com.au/contact/",
+      "description": "Get in touch with Moving Again for interstate moving quotes, questions, or support. We",
+      "length": 86
+    }
+  ],
+  "missing": [
+    {
+      "file": "src/pages/[...slug].astro",
+      "url": "https://movingagain.com.au/[...slug]/"
+    },
+    {
+      "file": "src/pages/index.astro",
+      "url": "https://movingagain.com.au/"
+    },
+    {
+      "file": "src/pages/service-areas.astro",
+      "url": "https://movingagain.com.au/service-areas/"
+    }
+  ]
+}

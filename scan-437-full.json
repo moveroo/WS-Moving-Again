@@ -1,0 +1,99 @@
+{
+  "audit_id": 437,
+  "target_url": "https://movingagain.com.au/perth",
+  "overall_score": 96,
+  "generated_at": "2026-01-10T23:13:32+00:00",
+  "summary": "The audit for https://movingagain.com.au/perth scored 96/100. Below is the list of issues requiring attention.",
+  "action_items": [
+    {
+      "category": "Meta Tags",
+      "category_score": 94,
+      "issues": [
+        {
+          "check_name": "Meta Description",
+          "status": "warning",
+          "issue_detected": "Length: 161 chars (ideal: 150-160)",
+          "remediation": "Optimize your description length. Descriptions around 150-160 characters maximize screen real estate in search results without truncation."
+        }
+      ]
+    },
+    {
+      "category": "Accessibility",
+      "category_score": 90,
+      "issues": [
+        {
+          "check_name": "ARIA Attributes",
+          "status": "warning",
+          "issue_detected": "2 ARIA attributes - could improve",
+          "remediation": "Consider using more ARIA attributes (like `aria-label` or `role`) to enhance accessibility for screen readers."
+        }
+      ]
+    },
+    {
+      "category": "Mobile Optimization",
+      "category_score": 92,
+      "issues": [
+        {
+          "check_name": "Mobile Web App Meta",
+          "status": "warning",
+          "issue_detected": "No mobile web app meta tags",
+          "remediation": "If you want PWA features, add standard mobile web app meta tags."
+        }
+      ]
+    },
+    {
+      "category": "Performance Hints",
+      "category_score": 95,
+      "issues": [
+        {
+          "check_name": "Critical CSS",
+          "status": "warning",
+          "issue_detected": "No inline critical CSS detected",
+          "remediation": "Consider inlining above-the-fold CSS to improve First Contentful Paint."
+        }
+      ]
+    },
+    {
+      "category": "Advanced SEO",
+      "category_score": 92,
+      "issues": [
+        {
+          "check_name": "Hreflang Tags",
+          "status": "warning",
+          "issue_detected": "No hreflang tags detected",
+          "remediation": "If you have multiple language or regional versions of your site, add `<link rel=\"alternate\" hreflang=\"x\" href=\"y\" />` tags."
+        }
+      ]
+    },
+    {
+      "category": "Structured Data",
+      "category_score": 78,
+      "issues": [
+        {
+          "check_name": "Review/Rating Markup",
+          "status": "warning",
+          "issue_detected": "No review/rating markup",
+          "remediation": "If this page represents a product or local business, add `aggregateRating` schema to be eligible for star snippets."
+        },
+        {
+          "check_name": "BreadcrumbList Schema",
+          "status": "warning",
+          "issue_detected": "No BreadcrumbList schema found",
+          "remediation": "Add BreadcrumbList schema to display breadcrumb trails in search results. Include itemListElement with name, item URL, and position."
+        },
+        {
+          "check_name": "FAQ & HowTo Schema Opportunities",
+          "status": "warning",
+          "issue_detected": "FAQ content detected (8 Q&A pairs) - add FAQPage schema",
+          "remediation": "Add structured data to get rich snippets in search results."
+        },
+        {
+          "check_name": "Local SEO (NAP)",
+          "status": "warning",
+          "issue_detected": "LocalBusiness missing: telephone",
+          "remediation": "Add missing NAP fields to your LocalBusiness schema for better local SEO."
+        }
+      ]
+    }
+  ]
+}

@@ -46,7 +46,11 @@ const navItems = [
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+      <nav
+        class="hidden md:flex items-center gap-6 lg:gap-8"
+        role="navigation"
+        aria-label="Main navigation"
+      >
         {
           navItems.map((item) => (
             <a
@@ -111,7 +115,11 @@ const navItems = [
       </svg>
     </button>
 
-    <nav class="flex flex-col items-center gap-6 text-center">
+    <nav
+      class="flex flex-col items-center gap-6 text-center"
+      role="navigation"
+      aria-label="Mobile navigation"
+    >
       {
         navItems.map((item) => (
           <a
