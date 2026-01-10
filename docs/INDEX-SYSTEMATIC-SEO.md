@@ -475,8 +475,9 @@ By fixing at the component/utility level:
 6. **`SEO-GENERATOR-IMPLEMENTATION.md`** - SEO generator guide
 7. **`SITEWIDE-ISSUES-ANALYSIS.md`** - Analysis results
 8. **`CRAWL-42-ANALYSIS.md`** - Crawl analysis
-9. **`IMAGE-OPTIMIZATION-FIX.md`** - Image optimization case study
-10. **`SCRIPT-ASYNC-DEFER-FIX.md`** - Script optimization case study
+9. **`CONTENT-UNIQUENESS-ANALYSIS.md`** - Content uniqueness analysis guide
+10. **`IMAGE-OPTIMIZATION-FIX.md`** - Image optimization case study
+11. **`SCRIPT-ASYNC-DEFER-FIX.md`** - Script optimization case study
 
 ---
 

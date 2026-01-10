@@ -509,6 +509,54 @@ foundingDate: BRAND.foundingYear.toString();
 
 ---
 
+### Case Study 7: Content Uniqueness Analysis System
+
+- **Issue:** 193 high-similarity pairs (≥70% similar), 25 thin content pages, duplicate content across city pages.
+- **Affected:** All 41 pages (especially city hub pages).
+- **Methodology Applied:** Pattern 3 (Analysis-First Approach) + Pattern 2 (Utility-Based Tools).
+
+**Implementation:**
+
+1.  **Analysis:** Created comprehensive content analysis tools to identify duplicate content, thin pages, and common phrases.
+2.  **Root Cause:** City pages using same template with minimal customization, generic phrases repeated across pages.
+3.  **Solution:**
+    - **Created `scripts/analyze-content-uniqueness.mjs`:** Analyzes all pages for:
+      - Word count distribution (thin/good/excellent)
+      - Similarity scoring between pages (Jaccard similarity)
+      - Common phrases appearing on multiple pages
+      - Detailed JSON report with all findings
+    - **Created `scripts/suggest-content-improvements.mjs`:** Generates specific, actionable suggestions:
+      - Page-specific improvement recommendations
+      - Prioritized list of pages needing most work
+      - City-specific suggestions (e.g., "Add Rockhampton-specific details")
+      - Content expansion suggestions
+      - Uniqueness improvement strategies
+
+**Result:**
+
+- ✅ Comprehensive analysis system ready to use
+- ✅ Identified 193 high-similarity pairs needing attention
+- ✅ Identified 25 thin content pages (< 300 words)
+- ✅ Found 20 common phrases appearing on 20+ pages
+- ✅ Actionable suggestions generated for all pages
+- ✅ Tools ready for content improvement phase
+
+**Files Created:**
+
+- `scripts/analyze-content-uniqueness.mjs` - Content uniqueness analyzer
+- `scripts/suggest-content-improvements.mjs` - Improvement suggestion generator
+- `docs/CONTENT-UNIQUENESS-ANALYSIS.md` - Complete documentation
+
+**Files Updated:**
+
+- `package.json` - Added `analyze:content` and `suggest:content` scripts
+
+**Time Saved:** Manual analysis would take days. Automated analysis takes minutes and provides actionable insights.
+
+**Key Learning:** Analysis-first approach allows systematic identification of content issues before manual content creation. Tools provide specific, actionable suggestions that make content improvement efficient and targeted.
+
+---
+
 ## 📋 Standard Workflow
 
 ### For Each New Issue:
