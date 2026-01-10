@@ -7,6 +7,7 @@ import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -42,6 +43,13 @@ const popularRoutes = [
   { city: 'Adelaide', slug: '/sydney-adelaide/', transit: '2-3 days', frequency: 'Weekly' },
   { city: 'Canberra', slug: '/sydney-canberra/', transit: '1 day', frequency: 'Daily' },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Service Areas', url: 'https://movingagain.com.au/service-areas/' },
+  { name: 'Sydney', url: 'https://movingagain.com.au/sydney/' },
+];
 ---
 
 <Layout
@@ -61,6 +69,11 @@ const popularRoutes = [
   }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">

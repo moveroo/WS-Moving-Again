@@ -4,6 +4,7 @@ import { BRAND } from '../utils/brand';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -94,6 +95,12 @@ const reviews = [
 ];
 
 const averageRating = (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1);
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Reviews', url: 'https://movingagain.com.au/reviews/' },
+];
 ---
 
 <Layout
@@ -110,6 +117,11 @@ const averageRating = (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.l
   }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
     <div class="container mx-auto px-4">

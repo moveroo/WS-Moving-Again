@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -150,6 +151,12 @@ const generalFaqs = [
 ];
 
 const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...generalFaqs];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Questions', url: 'https://movingagain.com.au/questions/' },
+];
 ---
 
 <Layout
@@ -159,6 +166,11 @@ const allFaqs = [...backloadingFaqs, ...interstateFaqs, ...carTransportFaqs, ...
   schemaData={{ questions: allFaqs }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
     <div class="container mx-auto px-4">

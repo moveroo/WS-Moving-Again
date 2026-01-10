@@ -6,6 +6,7 @@ import { BRAND } from '../utils/brand';
 import { formatMigration, MIGRATION_DATA_PERIOD } from '../utils/migration-stats';
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date for Perth page
 const currentFile = fileURLToPath(import.meta.url);
@@ -41,6 +42,13 @@ const popularRoutes = [
   { city: 'Darwin', slug: '/perth-darwin/', transit: '4-6 days', frequency: 'Fortnightly' },
   { city: 'Gold Coast', slug: '/perth-gold-coast/', transit: '7-9 days', frequency: 'Weekly' },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Service Areas', url: 'https://movingagain.com.au/service-areas/' },
+  { name: 'Perth', url: 'https://movingagain.com.au/perth/' },
+];
 ---
 
 <Layout
@@ -60,6 +68,11 @@ const popularRoutes = [
     priceRange: '$$',
   }}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">

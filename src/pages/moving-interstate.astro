@@ -6,6 +6,7 @@ import TrustSignals from '../components/TrustSignals.astro';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -139,6 +140,12 @@ const timeline = [
   { weeks: '2-1 weeks', tasks: 'Pack most items, confirm moving details, prepare appliances' },
   { weeks: 'Moving week', tasks: 'Final packing, essentials bag, walkthrough, keys handover' },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Moving Interstate', url: 'https://movingagain.com.au/moving-interstate/' },
+];
 ---
 
 <Layout
@@ -148,6 +155,11 @@ const timeline = [
   schemaData={{ questions: faqQuestions }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">

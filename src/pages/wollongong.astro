@@ -9,6 +9,7 @@ import { getPopularRoutesForCity } from '../utils/routeDiscovery';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -28,6 +29,13 @@ const pageFacts = {
   typical_savings: '40-60%',
   transit_insurance_included: true,
 };
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Service Areas', url: 'https://movingagain.com.au/service-areas/' },
+  { name: 'Wollongong', url: 'https://movingagain.com.au/wollongong/' },
+];
 ---
 
 <Layout
@@ -47,6 +55,11 @@ const pageFacts = {
   }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">

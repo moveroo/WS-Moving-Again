@@ -7,6 +7,7 @@ import TrustSignals from '../components/TrustSignals.astro';
 import { BRAND } from '../utils/brand';
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date for backloading page
 const currentFile = fileURLToPath(import.meta.url);
@@ -118,6 +119,12 @@ const routes = [
   { from: 'Brisbane', to: 'Cairns', days: '2-3', frequency: '3x Weekly' },
   { from: 'Sydney', to: 'Canberra', days: '1-2', frequency: 'Daily' },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Backloading', url: 'https://movingagain.com.au/backloading/' },
+];
 ---
 
 <Layout
@@ -127,6 +134,11 @@ const routes = [
   schemaData={{ questions: faqQuestions }}
   modifiedDate={backloadingDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">

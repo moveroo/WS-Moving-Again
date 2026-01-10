@@ -4,10 +4,17 @@ import { BRAND } from '../utils/brand';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
 const pageDate = getContentDate(currentFile);
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Contact Us', url: 'https://movingagain.com.au/contact/' },
+];
 ---
 
 <Layout
@@ -15,6 +22,11 @@ const pageDate = getContentDate(currentFile);
   description="Get in touch with Moving Again for interstate moving quotes, questions, or support. We're here to help with your move across Australia.'re here to help with your backloading and removalist needs."
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-16">
     <div class="container mx-auto px-4">

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
@@ -30,6 +31,15 @@ const faqQuestions = [
       "Fruit trees, some palms, and plants with soil from certain regions may be restricted. Western Australia and Tasmania have stricter rules. Always check the destination state's quarantine requirements.",
   },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  {
+    name: 'Moving Pot Plants Interstate',
+    url: 'https://movingagain.com.au/moving-pot-plants-interstate/',
+  },
+];
 ---
 
 <Layout
@@ -39,6 +49,11 @@ const faqQuestions = [
   schemaData={{ questions: faqQuestions }}
   modifiedDate={pageDate}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero -->
   <section class="bg-gradient-to-br from-green-800 to-green-900 text-white py-16">
     <div class="container mx-auto px-4">

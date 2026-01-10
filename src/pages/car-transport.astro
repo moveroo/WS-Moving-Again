@@ -5,6 +5,7 @@ import Definitions from '../components/Definitions.astro';
 import TrustSignals from '../components/TrustSignals.astro';
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 // Get content modification date for car-transport page
 const currentFile = fileURLToPath(import.meta.url);
@@ -152,6 +153,12 @@ const routes = [
     enclosedPrice: '$900-1,200',
   },
 ];
+
+// Breadcrumb navigation
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Car Transport', url: 'https://movingagain.com.au/car-transport/' },
+];
 ---
 
 <Layout
@@ -161,6 +168,11 @@ const routes = [
   schemaType="FAQPage"
   schemaData={{ questions: faqQuestions }}
 >
+  <!-- Breadcrumb Navigation -->
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-brand-dark to-gray-900 text-white py-20">
     <div class="container mx-auto px-4">
