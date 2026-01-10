@@ -1,0 +1,2302 @@
+{
+  "analyzedAt": "2026-01-10T12:05:46.037Z",
+  "summary": {
+    "totalPages": 41,
+    "pagesWithHeadings": 41,
+    "totalHeadings": 463,
+    "totalQuestions": 71,
+    "totalStatements": 392,
+    "questionPercentage": 15,
+    "pagesWithSuggestions": 41
+  },
+  "detailedPages": [
+    {
+      "file": "404.astro",
+      "totalHeadings": 1,
+      "questionHeadings": 0,
+      "statementHeadings": 1,
+      "suggestions": [
+        {
+          "original": "Page Not Found",
+          "suggested": "How Does Page Not Found Work?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "file": "[...slug].astro",
+      "totalHeadings": 1,
+      "questionHeadings": 0,
+      "statementHeadings": 1,
+      "suggestions": [
+        {
+          "original": "Explore More Routes",
+          "suggested": "What More Routes Are Available?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "file": "adelaide.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Adelaide",
+          "suggested": "What Routes Are Available from Adelaide?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Adelaide",
+          "suggested": "What Routes Are Available to Adelaide?",
+          "level": 2
+        },
+        {
+          "original": "Adelaide: Where East Meets West",
+          "suggested": "What Routes Are Available from Adelaide?",
+          "level": 2
+        },
+        {
+          "original": "Adelaide → {route.data.destination}",
+          "suggested": "What Are Adelaide → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Adelaide",
+          "suggested": "What Are {route.data.origin} → Adelaide?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "backloading.astro",
+      "totalHeadings": 47,
+      "questionHeadings": 7,
+      "statementHeadings": 40,
+      "suggestions": [
+        {
+          "original": "Backloading vs. Dedicated Truck",
+          "suggested": "What Is the Difference Between Backloading and Dedicated Truck?",
+          "level": 2
+        },
+        {
+          "original": "Popular Backloading Routes",
+          "suggested": "What Are the Popular Backloading Routes?",
+          "level": 2
+        },
+        {
+          "original": "Backloading Pricing Guide",
+          "suggested": "What Is the Backloading Pricing Guide?",
+          "level": 2
+        },
+        {
+          "original": "Your Items, Protected",
+          "suggested": "How Does Your Items, Protected Work?",
+          "level": 2
+        },
+        {
+          "original": "Preparing for Your Backload Move",
+          "suggested": "How Does Preparing For Your Backload Move Work?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Find Routes by City",
+          "suggested": "What Are Find Routes By City?",
+          "level": 2
+        },
+        {
+          "original": "Nationwide Backloading Coverage",
+          "suggested": "What Areas Do You Cover?",
+          "level": 2
+        },
+        {
+          "original": "Tell Us Your Inventory",
+          "suggested": "How Does Tell Us Your Inventory Work?",
+          "level": 3
+        },
+        {
+          "original": "We Match Your Load",
+          "suggested": "How Does We Match Your Load Work?",
+          "level": 3
+        },
+        {
+          "original": "Professional Pickup & Delivery",
+          "suggested": "How Does Professional Pickup & Delivery Work?",
+          "level": 3
+        },
+        {
+          "original": "Sample Price Ranges",
+          "suggested": "How Does Sample Price Ranges Work?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "level": 3
+        },
+        {
+          "original": "\"Shared\" Doesn't Mean \"Mixed\"",
+          "suggested": "How Does \"shared\" Doesn't Mean \"mixed\" Work?",
+          "level": 3
+        },
+        {
+          "original": "Professional Removalists",
+          "suggested": "What Are Professional Removalists?",
+          "level": 3
+        },
+        {
+          "original": "Transparent Process",
+          "suggested": "How Does the Transparent Process Work?",
+          "level": 3
+        },
+        {
+          "original": "Before Moving Day",
+          "suggested": "How Does Before Moving Day Work?",
+          "level": 3
+        },
+        {
+          "original": "Optional Extras",
+          "suggested": "What Are Optional Extras?",
+          "level": 3
+        },
+        {
+          "original": "Sydney",
+          "suggested": "What Is Sydney?",
+          "level": 3
+        },
+        {
+          "original": "Melbourne",
+          "suggested": "What Is Melbourne?",
+          "level": 3
+        },
+        {
+          "original": "Brisbane",
+          "suggested": "What Is Brisbane?",
+          "level": 3
+        },
+        {
+          "original": "Perth",
+          "suggested": "What Is Perth?",
+          "level": 3
+        },
+        {
+          "original": "Adelaide",
+          "suggested": "What Is Adelaide?",
+          "level": 3
+        },
+        {
+          "original": "Hobart",
+          "suggested": "What Is Hobart?",
+          "level": 3
+        },
+        {
+          "original": "Darwin",
+          "suggested": "What Is Darwin?",
+          "level": 3
+        },
+        {
+          "original": "Gold Coast",
+          "suggested": "What Is Gold Coast?",
+          "level": 3
+        },
+        {
+          "original": "Newcastle",
+          "suggested": "What Is Newcastle?",
+          "level": 3
+        },
+        {
+          "original": "Geelong",
+          "suggested": "What Is Geelong?",
+          "level": 3
+        },
+        {
+          "original": "Ballarat",
+          "suggested": "What Is Ballarat?",
+          "level": 3
+        },
+        {
+          "original": "Bendigo",
+          "suggested": "What Is Bendigo?",
+          "level": 3
+        },
+        {
+          "original": "All Cities",
+          "suggested": "What Are All Cities?",
+          "level": 3
+        },
+        {
+          "original": "State Hubs",
+          "suggested": "What Are State Hubs?",
+          "level": 3
+        },
+        {
+          "original": "Western Australia",
+          "suggested": "What Is Western Australia?",
+          "level": 3
+        },
+        {
+          "original": "Queensland",
+          "suggested": "What Is Queensland?",
+          "level": 3
+        },
+        {
+          "original": "New South Wales",
+          "suggested": "How Does New South Wales Work?",
+          "level": 3
+        },
+        {
+          "original": "Victoria",
+          "suggested": "What Is Victoria?",
+          "level": 3
+        },
+        {
+          "original": "South Australia",
+          "suggested": "What Is South Australia?",
+          "level": 3
+        },
+        {
+          "original": "Tasmania",
+          "suggested": "What Is Tasmania?",
+          "level": 3
+        },
+        {
+          "original": "Northern Territory",
+          "suggested": "What Is Northern Territory?",
+          "level": 3
+        },
+        {
+          "original": "ACT",
+          "suggested": "What Is Act?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "ballarat.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Ballarat",
+          "suggested": "What Routes Are Available from Ballarat?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Ballarat",
+          "suggested": "What Routes Are Available to Ballarat?",
+          "level": 2
+        },
+        {
+          "original": "Ballarat: Victoria's Goldfields Hub",
+          "suggested": "What Routes Are Available from Ballarat?",
+          "level": 2
+        },
+        {
+          "original": "Ballarat → {route.data.destination}",
+          "suggested": "What Are Ballarat → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Ballarat",
+          "suggested": "What Are {route.data.origin} → Ballarat?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "bendigo.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Bendigo",
+          "suggested": "What Routes Are Available from Bendigo?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Bendigo",
+          "suggested": "What Routes Are Available to Bendigo?",
+          "level": 2
+        },
+        {
+          "original": "Bendigo: Central Victoria's Gateway",
+          "suggested": "What Routes Are Available from Bendigo?",
+          "level": 2
+        },
+        {
+          "original": "Bendigo → {route.data.destination}",
+          "suggested": "What Are Bendigo → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Bendigo",
+          "suggested": "What Are {route.data.origin} → Bendigo?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "brisbane.astro",
+      "totalHeadings": 10,
+      "questionHeadings": 3,
+      "statementHeadings": 7,
+      "suggestions": [
+        {
+          "original": "Popular Brisbane Routes",
+          "suggested": "What Are the Popular Brisbane Routes?",
+          "level": 2
+        },
+        {
+          "original": "Brisbane & QLD Coverage",
+          "suggested": "What Areas Do You Cover?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Brisbane → {route.city}",
+          "suggested": "What Are Brisbane → {route.city}?",
+          "level": 3
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "level": 3
+        },
+        {
+          "original": "QLD Lifestyle Experts",
+          "suggested": "How Does Qld Lifestyle Experts Work?",
+          "level": 3
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "bunbury.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Bunbury",
+          "suggested": "What Routes Are Available from Bunbury?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Bunbury",
+          "suggested": "What Routes Are Available to Bunbury?",
+          "level": 2
+        },
+        {
+          "original": "Bunbury: South West Gateway",
+          "suggested": "What Routes Are Available from Bunbury?",
+          "level": 2
+        },
+        {
+          "original": "Bunbury → {route.data.destination}",
+          "suggested": "What Are Bunbury → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Bunbury",
+          "suggested": "What Are {route.data.origin} → Bunbury?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "bundaberg.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Bundaberg",
+          "suggested": "What Routes Are Available from Bundaberg?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Bundaberg",
+          "suggested": "What Routes Are Available to Bundaberg?",
+          "level": 2
+        },
+        {
+          "original": "Bundaberg: Wide Bay Gateway",
+          "suggested": "What Routes Are Available from Bundaberg?",
+          "level": 2
+        },
+        {
+          "original": "Bundaberg → {route.data.destination}",
+          "suggested": "What Are Bundaberg → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Bundaberg",
+          "suggested": "What Are {route.data.origin} → Bundaberg?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "cairns.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Cairns",
+          "suggested": "What Routes Are Available from Cairns?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Cairns",
+          "suggested": "What Routes Are Available to Cairns?",
+          "level": 2
+        },
+        {
+          "original": "Cairns: Tropical North Queensland Hub",
+          "suggested": "What Routes Are Available from Cairns?",
+          "level": 2
+        },
+        {
+          "original": "Cairns → {route.data.destination}",
+          "suggested": "What Are Cairns → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Cairns",
+          "suggested": "What Are {route.data.origin} → Cairns?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "canberra.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 3,
+      "statementHeadings": 3,
+      "suggestions": [
+        {
+          "original": "Routes from Canberra",
+          "suggested": "What Routes Are Available from Canberra?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Canberra",
+          "suggested": "What Routes Are Available to Canberra?",
+          "level": 2
+        },
+        {
+          "original": "{route.data.origin} → Canberra",
+          "suggested": "What Are {route.data.origin} → Canberra?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "car-transport.astro",
+      "totalHeadings": 24,
+      "questionHeadings": 3,
+      "statementHeadings": 21,
+      "suggestions": [
+        {
+          "original": "Open vs Enclosed Transport",
+          "suggested": "What Is the Difference Between Open and Enclosed Transport?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Routes & Pricing",
+          "suggested": "How Much Does Interstate Routes & Cost?",
+          "level": 2
+        },
+        {
+          "original": "Vehicle Transport Insurance",
+          "suggested": "How Does Vehicle Transport Insurance Work?",
+          "level": 2
+        },
+        {
+          "original": "Preparing Your Vehicle for Transport",
+          "suggested": "How Does Preparing Your Vehicle For Transport Work?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Get a Quote",
+          "suggested": "How Does Get A Quote Work?",
+          "level": 3
+        },
+        {
+          "original": "Book & Prepare",
+          "suggested": "How Does Book & Prepare Work?",
+          "level": 3
+        },
+        {
+          "original": "Collection",
+          "suggested": "What Is Collection?",
+          "level": 3
+        },
+        {
+          "original": "Delivery",
+          "suggested": "What Is Delivery?",
+          "level": 3
+        },
+        {
+          "original": "Open Transport",
+          "suggested": "What Is Open Transport?",
+          "level": 3
+        },
+        {
+          "original": "Enclosed Transport",
+          "suggested": "What Is Enclosed Transport?",
+          "level": 3
+        },
+        {
+          "original": "📍 Distance",
+          "suggested": "What Is 📍 Distance?",
+          "level": 3
+        },
+        {
+          "original": "🚗 Vehicle Size",
+          "suggested": "How Does 🚗 Vehicle Size Work?",
+          "level": 3
+        },
+        {
+          "original": "🛡️ Transport Type",
+          "suggested": "How Does 🛡️ Transport Type Work?",
+          "level": 3
+        },
+        {
+          "original": "📅 Timing",
+          "suggested": "What Is 📅 Timing?",
+          "level": 3
+        },
+        {
+          "original": "🏠 Pickup/Delivery",
+          "suggested": "What Is 🏠 Pickup/delivery?",
+          "level": 3
+        },
+        {
+          "original": "⚙️ Vehicle Condition",
+          "suggested": "How Does ⚙️ Vehicle Condition Work?",
+          "level": 3
+        },
+        {
+          "original": "Carrier Transit Insurance",
+          "suggested": "How Does Carrier Transit Insurance Work?",
+          "level": 3
+        },
+        {
+          "original": "Full Vehicle Transport Insurance",
+          "suggested": "How Does Full Vehicle Transport Insurance Work?",
+          "level": 3
+        },
+        {
+          "original": "Before Collection",
+          "suggested": "What Is Before Collection?",
+          "level": 3
+        },
+        {
+          "original": "On Delivery",
+          "suggested": "What Is On Delivery?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "contact.astro",
+      "totalHeadings": 12,
+      "questionHeadings": 3,
+      "statementHeadings": 9,
+      "suggestions": [
+        {
+          "original": "Get a Quote",
+          "suggested": "How Does Get A Quote Work?",
+          "level": 2
+        },
+        {
+          "original": "Call Us",
+          "suggested": "What Are Call Us?",
+          "level": 2
+        },
+        {
+          "original": "Email Us",
+          "suggested": "What Are Email Us?",
+          "level": 2
+        },
+        {
+          "original": "Send Us a Message",
+          "suggested": "How Does Send Us A Message Work?",
+          "level": 2
+        },
+        {
+          "original": "Our Office",
+          "suggested": "What Is Our Office?",
+          "level": 2
+        },
+        {
+          "original": "Quick Links",
+          "suggested": "What Are Quick Links?",
+          "level": 2
+        },
+        {
+          "original": "Quick Response",
+          "suggested": "What Is Quick Response?",
+          "level": 3
+        },
+        {
+          "original": "Clear Communication",
+          "suggested": "What Is Clear Communication?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "darwin.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Darwin",
+          "suggested": "What Routes Are Available from Darwin?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Darwin",
+          "suggested": "What Routes Are Available to Darwin?",
+          "level": 2
+        },
+        {
+          "original": "Darwin: Top End Hub",
+          "suggested": "What Routes Are Available from Darwin?",
+          "level": 2
+        },
+        {
+          "original": "Darwin → {route.data.destination}",
+          "suggested": "What Are Darwin → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Darwin",
+          "suggested": "What Are {route.data.origin} → Darwin?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "furniture-removal-inventory-list.astro",
+      "totalHeadings": 15,
+      "questionHeadings": 3,
+      "statementHeadings": 12,
+      "suggestions": [
+        {
+          "original": "Before You Start Your Inventory",
+          "suggested": "How Does Before You Start Your Inventory Work?",
+          "level": 2
+        },
+        {
+          "original": "Room-by-Room Inventory Checklist",
+          "suggested": "How Does Room-by-room Inventory Checklist Work?",
+          "level": 2
+        },
+        {
+          "original": "Access Issues to Report",
+          "suggested": "How Does Access Issues To Report Work?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Related Resources",
+          "suggested": "What Are Related Resources?",
+          "level": 2
+        },
+        {
+          "original": "Consider Your New Home",
+          "suggested": "How Does Consider Your New Home Work?",
+          "level": 3
+        },
+        {
+          "original": "Measure Large Items",
+          "suggested": "How Does Measure Large Items Work?",
+          "level": 3
+        },
+        {
+          "original": "At Pickup Location",
+          "suggested": "How Does At Pickup Location Work?",
+          "level": 3
+        },
+        {
+          "original": "At Delivery Location",
+          "suggested": "How Does At Delivery Location Work?",
+          "level": 3
+        },
+        {
+          "original": "Interstate Moving Guide",
+          "suggested": "What Is the Interstate Moving Guide?",
+          "level": 3
+        },
+        {
+          "original": "Box Calculator",
+          "suggested": "What Is Box Calculator?",
+          "level": 3
+        },
+        {
+          "original": "Save with Backloading",
+          "suggested": "How Does Save With Backloading Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "geelong.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Geelong",
+          "suggested": "What Routes Are Available from Geelong?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Geelong",
+          "suggested": "What Routes Are Available to Geelong?",
+          "level": 2
+        },
+        {
+          "original": "Geelong: Victoria's Coastal Gateway",
+          "suggested": "What Routes Are Available from Geelong?",
+          "level": 2
+        },
+        {
+          "original": "Geelong → {route.data.destination}",
+          "suggested": "What Are Geelong → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Geelong",
+          "suggested": "What Are {route.data.origin} → Geelong?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "gold-coast.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Gold Coast",
+          "suggested": "What Routes Are Available from Gold Coast?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Gold Coast",
+          "suggested": "What Routes Are Available to Gold Coast?",
+          "level": 2
+        },
+        {
+          "original": "Gold Coast: Queensland's Lifestyle Capital",
+          "suggested": "What Routes Are Available from Gold Coast?",
+          "level": 2
+        },
+        {
+          "original": "Gold Coast → {route.data.destination}",
+          "suggested": "What Are Gold Coast → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Gold Coast",
+          "suggested": "What Are {route.data.origin} → Gold Coast?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "hobart.astro",
+      "totalHeadings": 7,
+      "questionHeadings": 1,
+      "statementHeadings": 6,
+      "suggestions": [
+        {
+          "original": "Routes from Hobart",
+          "suggested": "What Routes Are Available from Hobart?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Hobart",
+          "suggested": "What Routes Are Available to Hobart?",
+          "level": 2
+        },
+        {
+          "original": "Hobart: Tasmania's Southern Hub",
+          "suggested": "What Routes Are Available from Hobart?",
+          "level": 2
+        },
+        {
+          "original": "Tasmania Quarantine Restrictions",
+          "suggested": "How Does Tasmania Quarantine Restrictions Work?",
+          "level": 3
+        },
+        {
+          "original": "Hobart → {route.data.destination}",
+          "suggested": "What Are Hobart → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Hobart",
+          "suggested": "What Are {route.data.origin} → Hobart?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "how-many-boxes-do-i-need-for-my-move.astro",
+      "totalHeadings": 22,
+      "questionHeadings": 1,
+      "statementHeadings": 21,
+      "suggestions": [
+        {
+          "original": "Estimating Your Moving Boxes",
+          "suggested": "How Does Estimating Your Moving Boxes Work?",
+          "level": 2
+        },
+        {
+          "original": "Box Calculator by Home Size",
+          "suggested": "How Does Box Calculator By Home Size Work?",
+          "level": 2
+        },
+        {
+          "original": "Room-by-Room Box Estimates",
+          "suggested": "How Does Room-by-room Box Estimates Work?",
+          "level": 2
+        },
+        {
+          "original": "Types of Moving Boxes",
+          "suggested": "How Does Types Of Moving Boxes Work?",
+          "level": 2
+        },
+        {
+          "original": "Essential Packing Materials",
+          "suggested": "How Does Essential Packing Materials Work?",
+          "level": 2
+        },
+        {
+          "original": "Packing Tips for Success",
+          "suggested": "How Does Packing Tips For Success Work?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "More Moving Resources",
+          "suggested": "How Does More Moving Resources Work?",
+          "level": 2
+        },
+        {
+          "original": "💡 Pro Tip: You Can Adjust Later",
+          "suggested": "What Routes Are Available from 💡 Pro Tip?",
+          "level": 3
+        },
+        {
+          "original": "Standard Removal Carton",
+          "suggested": "How Does Standard Removal Carton Work?",
+          "level": 3
+        },
+        {
+          "original": "Book Box (Small/Heavy)",
+          "suggested": "How Does Book Box (small/heavy) Work?",
+          "level": 3
+        },
+        {
+          "original": "Wardrobe Box",
+          "suggested": "What Is Wardrobe Box?",
+          "level": 3
+        },
+        {
+          "original": "Picture/Mirror Box",
+          "suggested": "What Is Picture/mirror Box?",
+          "level": 3
+        },
+        {
+          "original": "Packing Paper",
+          "suggested": "What Is Packing Paper?",
+          "level": 3
+        },
+        {
+          "original": "Bubble Wrap",
+          "suggested": "What Is Bubble Wrap?",
+          "level": 3
+        },
+        {
+          "original": "Tape & Markers",
+          "suggested": "How Does Tape & Markers Work?",
+          "level": 3
+        },
+        {
+          "original": "✅ Do",
+          "suggested": "What Is ✅ Do?",
+          "level": 3
+        },
+        {
+          "original": "❌ Don't",
+          "suggested": "What Is ❌ Don't?",
+          "level": 3
+        },
+        {
+          "original": "Interstate Moving Guide",
+          "suggested": "What Is the Interstate Moving Guide?",
+          "level": 3
+        },
+        {
+          "original": "Furniture Inventory Checklist",
+          "suggested": "How Does Furniture Inventory Checklist Work?",
+          "level": 3
+        },
+        {
+          "original": "Save with Backloading",
+          "suggested": "How Does Save With Backloading Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "index.astro",
+      "totalHeadings": 16,
+      "questionHeadings": 4,
+      "statementHeadings": 12,
+      "suggestions": [
+        {
+          "original": "Australia's Trusted Interstate Removalists",
+          "suggested": "How Does Australia's Trusted Interstate Removalists Work?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Backloading Routes",
+          "suggested": "What Are Interstate Backloading Routes?",
+          "level": 2
+        },
+        {
+          "original": "Your Security & Privacy Matters",
+          "suggested": "How Does Your Security & Privacy Matters Work?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Backloading",
+          "suggested": "What Is Interstate Backloading?",
+          "level": 3
+        },
+        {
+          "original": "Car Transport",
+          "suggested": "What Is Car Transport?",
+          "level": 3
+        },
+        {
+          "original": "Self-Pack Containers",
+          "suggested": "What Are Self-pack Containers?",
+          "level": 3
+        },
+        {
+          "original": "🔒 Fully Insured",
+          "suggested": "How Does 🔒 Fully Insured Work?",
+          "level": 3
+        },
+        {
+          "original": "📱 Online Tracking",
+          "suggested": "How Does 📱 Online Tracking Work?",
+          "level": 3
+        },
+        {
+          "original": "🗓️ Flexible Scheduling",
+          "suggested": "How Does 🗓️ Flexible Scheduling Work?",
+          "level": 3
+        },
+        {
+          "original": "Secure Website",
+          "suggested": "What Is Secure Website?",
+          "level": 3
+        },
+        {
+          "original": "Privacy Protected",
+          "suggested": "What Is Privacy Protected?",
+          "level": 3
+        },
+        {
+          "original": "Fully Licensed & Insured",
+          "suggested": "How Does Fully Licensed & Insured Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "launceston.astro",
+      "totalHeadings": 7,
+      "questionHeadings": 1,
+      "statementHeadings": 6,
+      "suggestions": [
+        {
+          "original": "Routes from Launceston",
+          "suggested": "What Routes Are Available from Launceston?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Launceston",
+          "suggested": "What Routes Are Available to Launceston?",
+          "level": 2
+        },
+        {
+          "original": "Launceston: Northern Tasmania Hub",
+          "suggested": "What Routes Are Available from Launceston?",
+          "level": 2
+        },
+        {
+          "original": "Launceston → {route.data.destination}",
+          "suggested": "What Are Launceston → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Launceston",
+          "suggested": "What Are {route.data.origin} → Launceston?",
+          "level": 3
+        },
+        {
+          "original": "Tasmania Quarantine Restrictions",
+          "suggested": "How Does Tasmania Quarantine Restrictions Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "logan-city.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Logan City",
+          "suggested": "What Routes Are Available from Logan City?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Logan City",
+          "suggested": "What Routes Are Available to Logan City?",
+          "level": 2
+        },
+        {
+          "original": "Logan City: SE Queensland Hub",
+          "suggested": "What Routes Are Available from Logan City?",
+          "level": 2
+        },
+        {
+          "original": "Logan City → {route.data.destination}",
+          "suggested": "What Are Logan City → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Logan City",
+          "suggested": "What Are {route.data.origin} → Logan City?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "mackay.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Mackay",
+          "suggested": "What Routes Are Available from Mackay?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Mackay",
+          "suggested": "What Routes Are Available to Mackay?",
+          "level": 2
+        },
+        {
+          "original": "Mackay: Sugar Capital Hub",
+          "suggested": "What Routes Are Available from Mackay?",
+          "level": 2
+        },
+        {
+          "original": "Mackay → {route.data.destination}",
+          "suggested": "What Are Mackay → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Mackay",
+          "suggested": "What Are {route.data.origin} → Mackay?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "mandurah.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Mandurah",
+          "suggested": "What Routes Are Available from Mandurah?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Mandurah",
+          "suggested": "What Routes Are Available to Mandurah?",
+          "level": 2
+        },
+        {
+          "original": "Mandurah: Coastal Lifestyle Hub",
+          "suggested": "What Routes Are Available from Mandurah?",
+          "level": 2
+        },
+        {
+          "original": "Mandurah → {route.data.destination}",
+          "suggested": "What Are Mandurah → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Mandurah",
+          "suggested": "What Are {route.data.origin} → Mandurah?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "melbourne.astro",
+      "totalHeadings": 10,
+      "questionHeadings": 2,
+      "statementHeadings": 8,
+      "suggestions": [
+        {
+          "original": "Popular Melbourne Routes",
+          "suggested": "What Are the Popular Melbourne Routes?",
+          "level": 2
+        },
+        {
+          "original": "Melbourne: The Southern Backloading Hub",
+          "suggested": "What Routes Are Available from Melbourne?",
+          "level": 2
+        },
+        {
+          "original": "Melbourne & VIC Coverage",
+          "suggested": "What Areas Do You Cover?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Melbourne → {route.city}",
+          "suggested": "What Are Melbourne → {route.city}?",
+          "level": 3
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "level": 3
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "moving-interstate.astro",
+      "totalHeadings": 41,
+      "questionHeadings": 5,
+      "statementHeadings": 36,
+      "suggestions": [
+        {
+          "original": "Interstate Moving Costs",
+          "suggested": "How Does Interstate Moving Costs Work?",
+          "level": 2
+        },
+        {
+          "original": "Popular Interstate Routes",
+          "suggested": "What Are the Popular Interstate Routes?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Moving Timeline",
+          "suggested": "How Does Interstate Moving Timeline Work?",
+          "level": 2
+        },
+        {
+          "original": "Packing for an Interstate Move",
+          "suggested": "How Does Packing For An Interstate Move Work?",
+          "level": 2
+        },
+        {
+          "original": "State-by-State Regulations",
+          "suggested": "How Does State-by-state Regulations Work?",
+          "level": 2
+        },
+        {
+          "original": "Moving Insurance & Protection",
+          "suggested": "How Does Moving Insurance & Protection Work?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Browse Routes by City",
+          "suggested": "What Are Browse Routes By City?",
+          "level": 2
+        },
+        {
+          "original": "Related Guides",
+          "suggested": "What Are Related Guides?",
+          "level": 2
+        },
+        {
+          "original": "📚 In This Guide You'll Learn",
+          "suggested": "How Does 📚 In This Guide You'll Learn Work?",
+          "level": 3
+        },
+        {
+          "original": "Dedicated Move",
+          "suggested": "What Is Dedicated Move?",
+          "level": 3
+        },
+        {
+          "original": "Backloading",
+          "suggested": "What Is Backloading?",
+          "level": 3
+        },
+        {
+          "original": "Container/Self-Pack",
+          "suggested": "What Is Container/self-pack?",
+          "level": 3
+        },
+        {
+          "original": "💡 Save 40-60% with Backloading",
+          "suggested": "How Does 💡 Save 40-60% With Backloading Work?",
+          "level": 3
+        },
+        {
+          "original": "📦 Packing Tips",
+          "suggested": "How Does 📦 Packing Tips Work?",
+          "level": 3
+        },
+        {
+          "original": "🚫 What Can't Be Transported",
+          "suggested": "How Does 🚫 What Can't Be Transported Work?",
+          "level": 3
+        },
+        {
+          "original": "🚨 Western Australia",
+          "suggested": "How Does 🚨 Western Australia Work?",
+          "level": 3
+        },
+        {
+          "original": "🚨 Tasmania",
+          "suggested": "What Is 🚨 Tasmania?",
+          "level": 3
+        },
+        {
+          "original": "⚠️ South Australia",
+          "suggested": "How Does ⚠️ South Australia Work?",
+          "level": 3
+        },
+        {
+          "original": "✅ NSW, VIC, QLD, ACT, NT",
+          "suggested": "How Does ✅ Nsw, Vic, Qld, Act, Nt Work?",
+          "level": 3
+        },
+        {
+          "original": "Understanding Moving Insurance",
+          "suggested": "How Does Understanding Moving Insurance Work?",
+          "level": 3
+        },
+        {
+          "original": "Sydney",
+          "suggested": "What Is Sydney?",
+          "level": 3
+        },
+        {
+          "original": "Melbourne",
+          "suggested": "What Is Melbourne?",
+          "level": 3
+        },
+        {
+          "original": "Brisbane",
+          "suggested": "What Is Brisbane?",
+          "level": 3
+        },
+        {
+          "original": "Perth",
+          "suggested": "What Is Perth?",
+          "level": 3
+        },
+        {
+          "original": "Adelaide",
+          "suggested": "What Is Adelaide?",
+          "level": 3
+        },
+        {
+          "original": "Hobart",
+          "suggested": "What Is Hobart?",
+          "level": 3
+        },
+        {
+          "original": "Darwin",
+          "suggested": "What Is Darwin?",
+          "level": 3
+        },
+        {
+          "original": "Gold Coast",
+          "suggested": "What Is Gold Coast?",
+          "level": 3
+        },
+        {
+          "original": "Newcastle",
+          "suggested": "What Is Newcastle?",
+          "level": 3
+        },
+        {
+          "original": "Geelong",
+          "suggested": "What Is Geelong?",
+          "level": 3
+        },
+        {
+          "original": "Ballarat",
+          "suggested": "What Is Ballarat?",
+          "level": 3
+        },
+        {
+          "original": "Bendigo",
+          "suggested": "What Is Bendigo?",
+          "level": 3
+        },
+        {
+          "original": "All Cities",
+          "suggested": "What Are All Cities?",
+          "level": 3
+        },
+        {
+          "original": "Moving Pot Plants Interstate",
+          "suggested": "How Does Moving Pot Plants Interstate Work?",
+          "level": 3
+        },
+        {
+          "original": "Furniture Inventory Checklist",
+          "suggested": "How Does Furniture Inventory Checklist Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "moving-pot-plants-interstate.astro",
+      "totalHeadings": 11,
+      "questionHeadings": 4,
+      "statementHeadings": 7,
+      "suggestions": [
+        {
+          "original": "Interstate Quarantine Guide",
+          "suggested": "What Is the Interstate Quarantine Guide?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Most Plants OK",
+          "suggested": "How Does Most Plants Ok Work?",
+          "level": 3
+        },
+        {
+          "original": "Check Quarantine",
+          "suggested": "What Is Check Quarantine?",
+          "level": 3
+        },
+        {
+          "original": "Prep is Key",
+          "suggested": "How Does Prep Is Key Work?",
+          "level": 3
+        },
+        {
+          "original": "✅ Great Travelers",
+          "suggested": "How Does ✅ Great Travelers Work?",
+          "level": 3
+        },
+        {
+          "original": "⚠️ Need Extra Care",
+          "suggested": "How Does ⚠️ Need Extra Care Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "newcastle.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Newcastle",
+          "suggested": "What Routes Are Available from Newcastle?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Newcastle",
+          "suggested": "What Routes Are Available to Newcastle?",
+          "level": 2
+        },
+        {
+          "original": "Newcastle: NSW's Hunter Region Hub",
+          "suggested": "What Routes Are Available from Newcastle?",
+          "level": 2
+        },
+        {
+          "original": "Newcastle → {route.data.destination}",
+          "suggested": "What Are Newcastle → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Newcastle",
+          "suggested": "What Are {route.data.origin} → Newcastle?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "perth.astro",
+      "totalHeadings": 11,
+      "questionHeadings": 2,
+      "statementHeadings": 9,
+      "suggestions": [
+        {
+          "original": "Popular Perth Routes",
+          "suggested": "What Are the Popular Perth Routes?",
+          "level": 2
+        },
+        {
+          "original": "Crossing the Nullarbor: Perth Backloading",
+          "suggested": "What Routes Are Available from Crossing The Nullarbor?",
+          "level": 2
+        },
+        {
+          "original": "Perth & WA Coverage",
+          "suggested": "What Areas Do You Cover?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Western Australia Quarantine Restrictions",
+          "suggested": "How Does Western Australia Quarantine Restrictions Work?",
+          "level": 3
+        },
+        {
+          "original": "Perth → {route.city}",
+          "suggested": "What Are Perth → {route.city}?",
+          "level": 3
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "level": 3
+        },
+        {
+          "original": "Quarantine Experts",
+          "suggested": "What Are Quarantine Experts?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "privacy.astro",
+      "totalHeadings": 10,
+      "questionHeadings": 0,
+      "statementHeadings": 10,
+      "suggestions": [
+        {
+          "original": "Information We Collect From You",
+          "suggested": "How Does Information We Collect From You Work?",
+          "level": 2
+        },
+        {
+          "original": "Personal Information via the Website",
+          "suggested": "How Does Personal Information Via The Website Work?",
+          "level": 2
+        },
+        {
+          "original": "Your Option Not to Provide Your Personal Information",
+          "suggested": "What Are Your Option Not To Provide Your Personal Information?",
+          "level": 2
+        },
+        {
+          "original": "Use and Disclosure of Your Personal Information",
+          "suggested": "How Does Use And Disclosure Of Your Personal Information Work?",
+          "level": 2
+        },
+        {
+          "original": "Terms of Use",
+          "suggested": "How Does Terms Of Use Work?",
+          "level": 2
+        },
+        {
+          "original": "Security of Personal Information",
+          "suggested": "How Does Security Of Personal Information Work?",
+          "level": 2
+        },
+        {
+          "original": "Accuracy and Quality of Personal Information",
+          "suggested": "How Does Accuracy And Quality Of Personal Information Work?",
+          "level": 2
+        },
+        {
+          "original": "Access to Your Personal Information",
+          "suggested": "How Does Access To Your Personal Information Work?",
+          "level": 2
+        },
+        {
+          "original": "Correction of Your Personal Information",
+          "suggested": "How Does Correction Of Your Personal Information Work?",
+          "level": 2
+        },
+        {
+          "original": "Contact Us",
+          "suggested": "What Are Contact Us?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "file": "questions.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 2,
+      "statementHeadings": 4,
+      "suggestions": [
+        {
+          "original": "Backloading Questions",
+          "suggested": "What Are Backloading Questions?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Moving Questions",
+          "suggested": "How Does Interstate Moving Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Car Transport Questions",
+          "suggested": "How Does Car Transport Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "General Questions",
+          "suggested": "What Are General Questions?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "file": "reviews.astro",
+      "totalHeadings": 7,
+      "questionHeadings": 2,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Services Our Customers Love",
+          "suggested": "How Does Services Our Customers Love Work?",
+          "level": 2
+        },
+        {
+          "original": "{review.name}",
+          "suggested": "What Is {review.name}?",
+          "level": 3
+        },
+        {
+          "original": "Backloading",
+          "suggested": "What Is Backloading?",
+          "level": 3
+        },
+        {
+          "original": "Interstate Moving",
+          "suggested": "What Is Interstate Moving?",
+          "level": 3
+        },
+        {
+          "original": "Car Transport",
+          "suggested": "What Is Car Transport?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "rockhampton.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Rockhampton",
+          "suggested": "What Routes Are Available from Rockhampton?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Rockhampton",
+          "suggested": "What Routes Are Available to Rockhampton?",
+          "level": 2
+        },
+        {
+          "original": "Rockhampton: Beef Capital Hub",
+          "suggested": "What Routes Are Available from Rockhampton?",
+          "level": 2
+        },
+        {
+          "original": "Rockhampton → {route.data.destination}",
+          "suggested": "What Are Rockhampton → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Rockhampton",
+          "suggested": "What Are {route.data.origin} → Rockhampton?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "rockingham.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Rockingham",
+          "suggested": "What Routes Are Available from Rockingham?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Rockingham",
+          "suggested": "What Routes Are Available to Rockingham?",
+          "level": 2
+        },
+        {
+          "original": "Rockingham: Perth's Southern Gateway",
+          "suggested": "What Routes Are Available from Rockingham?",
+          "level": 2
+        },
+        {
+          "original": "Rockingham → {route.data.destination}",
+          "suggested": "What Are Rockingham → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Rockingham",
+          "suggested": "What Are {route.data.origin} → Rockingham?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "service-areas.astro",
+      "totalHeadings": 11,
+      "questionHeadings": 2,
+      "statementHeadings": 9,
+      "suggestions": [
+        {
+          "original": "Our Capital City Hubs",
+          "suggested": "How Does Our Capital City Hubs Work?",
+          "level": 2
+        },
+        {
+          "original": "Popular Interstate Corridors",
+          "suggested": "What Are the Popular Interstate Corridors?",
+          "level": 2
+        },
+        {
+          "original": "State-Specific Considerations",
+          "suggested": "How Does State-specific Considerations Work?",
+          "level": 2
+        },
+        {
+          "original": "Interstate Moving Questions",
+          "suggested": "How Does Interstate Moving Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "{hub.city}, {hub.state}",
+          "suggested": "What Is {hub.city}, {hub.state}?",
+          "level": 3
+        },
+        {
+          "original": "{hub.city}",
+          "suggested": "What Is {hub.city}?",
+          "level": 3
+        },
+        {
+          "original": "Western Australia",
+          "suggested": "What Is Western Australia?",
+          "level": 3
+        },
+        {
+          "original": "Tasmania",
+          "suggested": "What Is Tasmania?",
+          "level": 3
+        },
+        {
+          "original": "Northern Territory",
+          "suggested": "What Is Northern Territory?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "sydney.astro",
+      "totalHeadings": 10,
+      "questionHeadings": 2,
+      "statementHeadings": 8,
+      "suggestions": [
+        {
+          "original": "Popular Sydney Routes",
+          "suggested": "What Are the Popular Sydney Routes?",
+          "level": 2
+        },
+        {
+          "original": "Sydney: Australia's Busiest Moving Hub",
+          "suggested": "What Routes Are Available from Sydney?",
+          "level": 2
+        },
+        {
+          "original": "Sydney & NSW Coverage",
+          "suggested": "What Areas Do You Cover?",
+          "level": 2
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "level": 2
+        },
+        {
+          "original": "Sydney → {route.city}",
+          "suggested": "What Are Sydney → {route.city}?",
+          "level": 3
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "level": 3
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "terms-of-use.astro",
+      "totalHeadings": 13,
+      "questionHeadings": 0,
+      "statementHeadings": 13,
+      "suggestions": [
+        {
+          "original": "Acceptance of Terms",
+          "suggested": "How Does Acceptance Of Terms Work?",
+          "level": 2
+        },
+        {
+          "original": "Our Services",
+          "suggested": "What Are Our Services?",
+          "level": 2
+        },
+        {
+          "original": "Prohibited Conduct",
+          "suggested": "What Is Prohibited Conduct?",
+          "level": 2
+        },
+        {
+          "original": "Intellectual Property",
+          "suggested": "What Is Intellectual Property?",
+          "level": 2
+        },
+        {
+          "original": "Third Party Links",
+          "suggested": "How Does Third Party Links Work?",
+          "level": 2
+        },
+        {
+          "original": "Indemnity",
+          "suggested": "What Is Indemnity?",
+          "level": 2
+        },
+        {
+          "original": "Disclaimer",
+          "suggested": "What Is Disclaimer?",
+          "level": 2
+        },
+        {
+          "original": "Limitation of Liability",
+          "suggested": "How Does Limitation Of Liability Work?",
+          "level": 2
+        },
+        {
+          "original": "Privacy",
+          "suggested": "What Is Privacy?",
+          "level": 2
+        },
+        {
+          "original": "Termination",
+          "suggested": "What Is Termination?",
+          "level": 2
+        },
+        {
+          "original": "Miscellaneous",
+          "suggested": "What Are Miscellaneous?",
+          "level": 2
+        },
+        {
+          "original": "Applicable Law",
+          "suggested": "What Is Applicable Law?",
+          "level": 2
+        },
+        {
+          "original": "Contact Us",
+          "suggested": "What Are Contact Us?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "file": "terms.astro",
+      "totalHeadings": 41,
+      "questionHeadings": 1,
+      "statementHeadings": 40,
+      "suggestions": [
+        {
+          "original": "1. Definitions",
+          "suggested": "What Are 1. Definitions?",
+          "level": 2
+        },
+        {
+          "original": "2. Application of These Terms",
+          "suggested": "How Does 2. Application Of These Terms Work?",
+          "level": 2
+        },
+        {
+          "original": "3. Not Common Carriers",
+          "suggested": "How Does 3. Not Common Carriers Work?",
+          "level": 2
+        },
+        {
+          "original": "4. Your Obligations and Warranties",
+          "suggested": "How Does 4. Your Obligations And Warranties Work?",
+          "level": 2
+        },
+        {
+          "original": "5. Method of Carriage",
+          "suggested": "How Does 5. Method Of Carriage Work?",
+          "level": 2
+        },
+        {
+          "original": "6. Delivery",
+          "suggested": "What Is 6. Delivery?",
+          "level": 2
+        },
+        {
+          "original": "7. Charges",
+          "suggested": "What Are 7. Charges?",
+          "level": 2
+        },
+        {
+          "original": "8. Payment",
+          "suggested": "What Is 8. Payment?",
+          "level": 2
+        },
+        {
+          "original": "9. Lien on Goods",
+          "suggested": "How Does 9. Lien On Goods Work?",
+          "level": 2
+        },
+        {
+          "original": "10. Loss or Damage – Private Removals",
+          "suggested": "How Does 10. Loss Or Damage – Private Removals Work?",
+          "level": 2
+        },
+        {
+          "original": "11. Loss or Damage – Commercial Removals",
+          "suggested": "How Does 11. Loss Or Damage – Commercial Removals Work?",
+          "level": 2
+        },
+        {
+          "original": "12. Insurance",
+          "suggested": "What Is 12. Insurance?",
+          "level": 2
+        },
+        {
+          "original": "13. Privacy",
+          "suggested": "What Is 13. Privacy?",
+          "level": 2
+        },
+        {
+          "original": "14. GST",
+          "suggested": "What Is 14. Gst?",
+          "level": 2
+        },
+        {
+          "original": "15. General Terms",
+          "suggested": "How Does 15. General Terms Work?",
+          "level": 2
+        },
+        {
+          "original": "16. Variation",
+          "suggested": "What Is 16. Variation?",
+          "level": 2
+        },
+        {
+          "original": "17. Disputes",
+          "suggested": "What Are 17. Disputes?",
+          "level": 2
+        },
+        {
+          "original": "18. Governing Law",
+          "suggested": "How Does 18. Governing Law Work?",
+          "level": 2
+        },
+        {
+          "original": "Information provided by you",
+          "suggested": "How Does Information Provided By You Work?",
+          "level": 3
+        },
+        {
+          "original": "Owner of Goods",
+          "suggested": "How Does Owner Of Goods Work?",
+          "level": 3
+        },
+        {
+          "original": "Dangerous Goods",
+          "suggested": "What Are Dangerous Goods?",
+          "level": 3
+        },
+        {
+          "original": "Fragile and valuable goods",
+          "suggested": "How Does Fragile And Valuable Goods Work?",
+          "level": 3
+        },
+        {
+          "original": "Goods left behind or removed in error",
+          "suggested": "How Does Goods Left Behind Or Removed In Error Work?",
+          "level": 3
+        },
+        {
+          "original": "Presence at loading and unloading",
+          "suggested": "How Does Presence At Loading And Unloading Work?",
+          "level": 3
+        },
+        {
+          "original": "Mode of carriage",
+          "suggested": "How Does Mode Of Carriage Work?",
+          "level": 3
+        },
+        {
+          "original": "Use of Sub-contractors",
+          "suggested": "How Does Use Of Sub-contractors Work?",
+          "level": 3
+        },
+        {
+          "original": "Liability of Sub-contractors and employees",
+          "suggested": "How Does Liability Of Sub-contractors And Employees Work?",
+          "level": 3
+        },
+        {
+          "original": "Variation of Services",
+          "suggested": "How Does Variation Of Services Work?",
+          "level": 3
+        },
+        {
+          "original": "Delay",
+          "suggested": "What Is Delay?",
+          "level": 3
+        },
+        {
+          "original": "Customs, etc",
+          "suggested": "What Is Customs, Etc?",
+          "level": 3
+        },
+        {
+          "original": "Australian Consumer Law",
+          "suggested": "How Does Australian Consumer Law Work?",
+          "level": 3
+        },
+        {
+          "original": "Exclusions",
+          "suggested": "What Are Exclusions?",
+          "level": 3
+        },
+        {
+          "original": "Damage of Goods – Packaging",
+          "suggested": "How Does Damage Of Goods – Packaging Work?",
+          "level": 3
+        },
+        {
+          "original": "Damage of Goods – Inherent risk",
+          "suggested": "How Does Damage Of Goods – Inherent Risk Work?",
+          "level": 3
+        },
+        {
+          "original": "Maximum value of the Goods",
+          "suggested": "How Does Maximum Value Of The Goods Work?",
+          "level": 3
+        },
+        {
+          "original": "Negligence",
+          "suggested": "What Is Negligence?",
+          "level": 3
+        },
+        {
+          "original": "Exclusions",
+          "suggested": "What Are Exclusions?",
+          "level": 3
+        },
+        {
+          "original": "Claims",
+          "suggested": "What Are Claims?",
+          "level": 3
+        },
+        {
+          "original": "Invalid or unenforceable provisions",
+          "suggested": "How Does Invalid Or Unenforceable Provisions Work?",
+          "level": 3
+        },
+        {
+          "original": "Waiver",
+          "suggested": "What Is Waiver?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "toowoomba.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Toowoomba",
+          "suggested": "What Routes Are Available from Toowoomba?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Toowoomba",
+          "suggested": "What Routes Are Available to Toowoomba?",
+          "level": 2
+        },
+        {
+          "original": "Toowoomba: Garden City Hub",
+          "suggested": "What Routes Are Available from Toowoomba?",
+          "level": 2
+        },
+        {
+          "original": "Toowoomba → {route.data.destination}",
+          "suggested": "What Are Toowoomba → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Toowoomba",
+          "suggested": "What Are {route.data.origin} → Toowoomba?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "townsville.astro",
+      "totalHeadings": 22,
+      "questionHeadings": 3,
+      "statementHeadings": 19,
+      "suggestions": [
+        {
+          "original": "North Queensland's Backloading Specialists",
+          "suggested": "What North Queensland's Backloading Services Do You Offer?",
+          "level": 2
+        },
+        {
+          "original": "Popular Townsville Routes",
+          "suggested": "What Are the Popular Townsville Routes?",
+          "level": 2
+        },
+        {
+          "original": "Moving to or from North Queensland",
+          "suggested": "What Routes Are Available to or from North Queensland?",
+          "level": 2
+        },
+        {
+          "original": "Townsville → Brisbane",
+          "suggested": "What Routes Are Available from Townsville to Brisbane?",
+          "level": 3
+        },
+        {
+          "original": "Townsville → Sydney",
+          "suggested": "What Routes Are Available from Townsville to Sydney?",
+          "level": 3
+        },
+        {
+          "original": "Townsville → Melbourne",
+          "suggested": "What Routes Are Available from Townsville to Melbourne?",
+          "level": 3
+        },
+        {
+          "original": "Townsville → Cairns",
+          "suggested": "What Routes Are Available from Townsville to Cairns?",
+          "level": 3
+        },
+        {
+          "original": "Townsville → Mackay",
+          "suggested": "What Routes Are Available from Townsville to Mackay?",
+          "level": 3
+        },
+        {
+          "original": "Townsville → Gold Coast",
+          "suggested": "What Routes Are Available from Townsville to Gold Coast?",
+          "level": 3
+        },
+        {
+          "original": "Volume of Items",
+          "suggested": "How Does Volume Of Items Work?",
+          "level": 3
+        },
+        {
+          "original": "Schedule Flexibility",
+          "suggested": "What Is Schedule Flexibility?",
+          "level": 3
+        },
+        {
+          "original": "Route Availability",
+          "suggested": "What Is Route Availability?",
+          "level": 3
+        },
+        {
+          "original": "Access Issues",
+          "suggested": "What Are Access Issues?",
+          "level": 3
+        },
+        {
+          "original": "Time of Year",
+          "suggested": "How Does Time Of Year Work?",
+          "level": 3
+        },
+        {
+          "original": "Destination",
+          "suggested": "What Is Destination?",
+          "level": 3
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "level": 3
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?",
+          "level": 3
+        },
+        {
+          "original": "Professional Handling",
+          "suggested": "What Is Professional Handling?",
+          "level": 3
+        },
+        {
+          "original": "Planning Your Townsville Move",
+          "suggested": "How Does Planning Your Townsville Move Work?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "file": "wollongong.astro",
+      "totalHeadings": 6,
+      "questionHeadings": 1,
+      "statementHeadings": 5,
+      "suggestions": [
+        {
+          "original": "Routes from Wollongong",
+          "suggested": "What Routes Are Available from Wollongong?",
+          "level": 2
+        },
+        {
+          "original": "Routes to Wollongong",
+          "suggested": "What Routes Are Available to Wollongong?",
+          "level": 2
+        },
+        {
+          "original": "Wollongong: Illawarra Gateway",
+          "suggested": "What Routes Are Available from Wollongong?",
+          "level": 2
+        },
+        {
+          "original": "Wollongong → {route.data.destination}",
+          "suggested": "What Are Wollongong → {route.data.destination}?",
+          "level": 3
+        },
+        {
+          "original": "{route.data.origin} → Wollongong",
+          "suggested": "What Are {route.data.origin} → Wollongong?",
+          "level": 3
+        }
+      ]
+    }
+  ]
+}

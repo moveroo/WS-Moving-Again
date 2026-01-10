@@ -1,0 +1,2032 @@
+{
+  "convertedAt": "2026-01-10T12:08:58.729Z",
+  "dryRun": false,
+  "summary": {
+    "totalConversions": 213,
+    "totalSkipped": 179,
+    "filesModified": 40
+  },
+  "results": [
+    {
+      "file": "[...slug].astro",
+      "converted": [
+        {
+          "original": "Explore More Routes",
+          "suggested": "What More Routes Are Available?"
+        }
+      ],
+      "skipped": []
+    },
+    {
+      "file": "adelaide.astro",
+      "converted": [
+        {
+          "original": "Routes from Adelaide",
+          "suggested": "What Routes Are Available from Adelaide?"
+        },
+        {
+          "original": "Routes to Adelaide",
+          "suggested": "What Routes Are Available to Adelaide?"
+        },
+        {
+          "original": "Adelaide: Where East Meets West",
+          "suggested": "What Routes Are Available from Adelaide?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Adelaide → {route.data.destination}",
+          "suggested": "What Are Adelaide → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Adelaide",
+          "suggested": "What Are {route.data.origin} → Adelaide?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "backloading.astro",
+      "converted": [
+        {
+          "original": "Backloading vs. Dedicated Truck",
+          "suggested": "What Is the Difference Between Backloading and Dedicated Truck?"
+        },
+        {
+          "original": "Popular Backloading Routes",
+          "suggested": "What Are the Popular Backloading Routes?"
+        },
+        {
+          "original": "Backloading Pricing Guide",
+          "suggested": "What Is the Backloading Pricing Guide?"
+        },
+        {
+          "original": "Find Routes by City",
+          "suggested": "What Are Find Routes By City?"
+        },
+        {
+          "original": "Nationwide Backloading Coverage",
+          "suggested": "What Areas Do You Cover?"
+        },
+        {
+          "original": "Professional Removalists",
+          "suggested": "What Are Professional Removalists?"
+        },
+        {
+          "original": "Optional Extras",
+          "suggested": "What Are Optional Extras?"
+        },
+        {
+          "original": "Sydney",
+          "suggested": "What Is Sydney?"
+        },
+        {
+          "original": "Melbourne",
+          "suggested": "What Is Melbourne?"
+        },
+        {
+          "original": "Brisbane",
+          "suggested": "What Is Brisbane?"
+        },
+        {
+          "original": "Perth",
+          "suggested": "What Is Perth?"
+        },
+        {
+          "original": "Adelaide",
+          "suggested": "What Is Adelaide?"
+        },
+        {
+          "original": "Hobart",
+          "suggested": "What Is Hobart?"
+        },
+        {
+          "original": "Darwin",
+          "suggested": "What Is Darwin?"
+        },
+        {
+          "original": "Gold Coast",
+          "suggested": "What Is Gold Coast?"
+        },
+        {
+          "original": "Newcastle",
+          "suggested": "What Is Newcastle?"
+        },
+        {
+          "original": "Geelong",
+          "suggested": "What Is Geelong?"
+        },
+        {
+          "original": "Ballarat",
+          "suggested": "What Is Ballarat?"
+        },
+        {
+          "original": "Bendigo",
+          "suggested": "What Is Bendigo?"
+        },
+        {
+          "original": "All Cities",
+          "suggested": "What Are All Cities?"
+        },
+        {
+          "original": "State Hubs",
+          "suggested": "What Are State Hubs?"
+        },
+        {
+          "original": "Western Australia",
+          "suggested": "What Is Western Australia?"
+        },
+        {
+          "original": "Queensland",
+          "suggested": "What Is Queensland?"
+        },
+        {
+          "original": "Victoria",
+          "suggested": "What Is Victoria?"
+        },
+        {
+          "original": "South Australia",
+          "suggested": "What Is South Australia?"
+        },
+        {
+          "original": "Tasmania",
+          "suggested": "What Is Tasmania?"
+        },
+        {
+          "original": "Northern Territory",
+          "suggested": "What Is Northern Territory?"
+        },
+        {
+          "original": "ACT",
+          "suggested": "What Is Act?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Your Items, Protected",
+          "suggested": "How Does Your Items, Protected Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Preparing for Your Backload Move",
+          "suggested": "How Does Preparing For Your Backload Move Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Tell Us Your Inventory",
+          "suggested": "How Does Tell Us Your Inventory Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "We Match Your Load",
+          "suggested": "How Does We Match Your Load Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Professional Pickup & Delivery",
+          "suggested": "How Does Professional Pickup & Delivery Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Sample Price Ranges",
+          "suggested": "How Does Sample Price Ranges Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "\"Shared\" Doesn't Mean \"Mixed\"",
+          "suggested": "How Does \"shared\" Doesn't Mean \"mixed\" Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Transparent Process",
+          "suggested": "How Does the Transparent Process Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Before Moving Day",
+          "suggested": "How Does Before Moving Day Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "New South Wales",
+          "suggested": "How Does New South Wales Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "ballarat.astro",
+      "converted": [
+        {
+          "original": "Routes from Ballarat",
+          "suggested": "What Routes Are Available from Ballarat?"
+        },
+        {
+          "original": "Routes to Ballarat",
+          "suggested": "What Routes Are Available to Ballarat?"
+        },
+        {
+          "original": "Ballarat: Victoria's Goldfields Hub",
+          "suggested": "What Routes Are Available from Ballarat?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Ballarat → {route.data.destination}",
+          "suggested": "What Are Ballarat → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Ballarat",
+          "suggested": "What Are {route.data.origin} → Ballarat?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "bendigo.astro",
+      "converted": [
+        {
+          "original": "Routes from Bendigo",
+          "suggested": "What Routes Are Available from Bendigo?"
+        },
+        {
+          "original": "Routes to Bendigo",
+          "suggested": "What Routes Are Available to Bendigo?"
+        },
+        {
+          "original": "Bendigo: Central Victoria's Gateway",
+          "suggested": "What Routes Are Available from Bendigo?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Bendigo → {route.data.destination}",
+          "suggested": "What Are Bendigo → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Bendigo",
+          "suggested": "What Are {route.data.origin} → Bendigo?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "brisbane.astro",
+      "converted": [
+        {
+          "original": "Popular Brisbane Routes",
+          "suggested": "What Are the Popular Brisbane Routes?"
+        },
+        {
+          "original": "Brisbane & QLD Coverage",
+          "suggested": "What Areas Do You Cover?"
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Brisbane → {route.city}",
+          "suggested": "What Are Brisbane → {route.city}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "QLD Lifestyle Experts",
+          "suggested": "How Does Qld Lifestyle Experts Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "bunbury.astro",
+      "converted": [
+        {
+          "original": "Routes from Bunbury",
+          "suggested": "What Routes Are Available from Bunbury?"
+        },
+        {
+          "original": "Routes to Bunbury",
+          "suggested": "What Routes Are Available to Bunbury?"
+        },
+        {
+          "original": "Bunbury: South West Gateway",
+          "suggested": "What Routes Are Available from Bunbury?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Bunbury → {route.data.destination}",
+          "suggested": "What Are Bunbury → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Bunbury",
+          "suggested": "What Are {route.data.origin} → Bunbury?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "bundaberg.astro",
+      "converted": [
+        {
+          "original": "Routes from Bundaberg",
+          "suggested": "What Routes Are Available from Bundaberg?"
+        },
+        {
+          "original": "Routes to Bundaberg",
+          "suggested": "What Routes Are Available to Bundaberg?"
+        },
+        {
+          "original": "Bundaberg: Wide Bay Gateway",
+          "suggested": "What Routes Are Available from Bundaberg?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Bundaberg → {route.data.destination}",
+          "suggested": "What Are Bundaberg → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Bundaberg",
+          "suggested": "What Are {route.data.origin} → Bundaberg?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "cairns.astro",
+      "converted": [
+        {
+          "original": "Routes from Cairns",
+          "suggested": "What Routes Are Available from Cairns?"
+        },
+        {
+          "original": "Routes to Cairns",
+          "suggested": "What Routes Are Available to Cairns?"
+        },
+        {
+          "original": "Cairns: Tropical North Queensland Hub",
+          "suggested": "What Routes Are Available from Cairns?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Cairns → {route.data.destination}",
+          "suggested": "What Are Cairns → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Cairns",
+          "suggested": "What Are {route.data.origin} → Cairns?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "canberra.astro",
+      "converted": [
+        {
+          "original": "Routes from Canberra",
+          "suggested": "What Routes Are Available from Canberra?"
+        },
+        {
+          "original": "Routes to Canberra",
+          "suggested": "What Routes Are Available to Canberra?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "{route.data.origin} → Canberra",
+          "suggested": "What Are {route.data.origin} → Canberra?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "car-transport.astro",
+      "converted": [
+        {
+          "original": "Open vs Enclosed Transport",
+          "suggested": "What Is the Difference Between Open and Enclosed Transport?"
+        },
+        {
+          "original": "Interstate Routes & Pricing",
+          "suggested": "How Much Does Interstate Routes & Cost?"
+        },
+        {
+          "original": "Collection",
+          "suggested": "What Is Collection?"
+        },
+        {
+          "original": "Delivery",
+          "suggested": "What Is Delivery?"
+        },
+        {
+          "original": "Open Transport",
+          "suggested": "What Is Open Transport?"
+        },
+        {
+          "original": "Enclosed Transport",
+          "suggested": "What Is Enclosed Transport?"
+        },
+        {
+          "original": "📍 Distance",
+          "suggested": "What Is 📍 Distance?"
+        },
+        {
+          "original": "📅 Timing",
+          "suggested": "What Is 📅 Timing?"
+        },
+        {
+          "original": "🏠 Pickup/Delivery",
+          "suggested": "What Is 🏠 Pickup/delivery?"
+        },
+        {
+          "original": "Before Collection",
+          "suggested": "What Is Before Collection?"
+        },
+        {
+          "original": "On Delivery",
+          "suggested": "What Is On Delivery?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Vehicle Transport Insurance",
+          "suggested": "How Does Vehicle Transport Insurance Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Preparing Your Vehicle for Transport",
+          "suggested": "How Does Preparing Your Vehicle For Transport Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Get a Quote",
+          "suggested": "How Does Get A Quote Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Book & Prepare",
+          "suggested": "How Does Book & Prepare Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🚗 Vehicle Size",
+          "suggested": "How Does 🚗 Vehicle Size Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🛡️ Transport Type",
+          "suggested": "How Does 🛡️ Transport Type Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "⚙️ Vehicle Condition",
+          "suggested": "How Does ⚙️ Vehicle Condition Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Carrier Transit Insurance",
+          "suggested": "How Does Carrier Transit Insurance Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Full Vehicle Transport Insurance",
+          "suggested": "How Does Full Vehicle Transport Insurance Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "contact.astro",
+      "converted": [
+        {
+          "original": "Call Us",
+          "suggested": "What Are Call Us?"
+        },
+        {
+          "original": "Email Us",
+          "suggested": "What Are Email Us?"
+        },
+        {
+          "original": "Our Office",
+          "suggested": "What Is Our Office?"
+        },
+        {
+          "original": "Quick Links",
+          "suggested": "What Are Quick Links?"
+        },
+        {
+          "original": "Quick Response",
+          "suggested": "What Is Quick Response?"
+        },
+        {
+          "original": "Clear Communication",
+          "suggested": "What Is Clear Communication?"
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Get a Quote",
+          "suggested": "How Does Get A Quote Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Send Us a Message",
+          "suggested": "How Does Send Us A Message Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "darwin.astro",
+      "converted": [
+        {
+          "original": "Routes from Darwin",
+          "suggested": "What Routes Are Available from Darwin?"
+        },
+        {
+          "original": "Routes to Darwin",
+          "suggested": "What Routes Are Available to Darwin?"
+        },
+        {
+          "original": "Darwin: Top End Hub",
+          "suggested": "What Routes Are Available from Darwin?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Darwin → {route.data.destination}",
+          "suggested": "What Are Darwin → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Darwin",
+          "suggested": "What Are {route.data.origin} → Darwin?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "furniture-removal-inventory-list.astro",
+      "converted": [
+        {
+          "original": "Related Resources",
+          "suggested": "What Are Related Resources?"
+        },
+        {
+          "original": "Interstate Moving Guide",
+          "suggested": "What Is the Interstate Moving Guide?"
+        },
+        {
+          "original": "Box Calculator",
+          "suggested": "What Is Box Calculator?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Before You Start Your Inventory",
+          "suggested": "How Does Before You Start Your Inventory Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Room-by-Room Inventory Checklist",
+          "suggested": "How Does Room-by-room Inventory Checklist Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Access Issues to Report",
+          "suggested": "How Does Access Issues To Report Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Consider Your New Home",
+          "suggested": "How Does Consider Your New Home Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Measure Large Items",
+          "suggested": "How Does Measure Large Items Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "At Pickup Location",
+          "suggested": "How Does At Pickup Location Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "At Delivery Location",
+          "suggested": "How Does At Delivery Location Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save with Backloading",
+          "suggested": "How Does Save With Backloading Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "geelong.astro",
+      "converted": [
+        {
+          "original": "Routes from Geelong",
+          "suggested": "What Routes Are Available from Geelong?"
+        },
+        {
+          "original": "Routes to Geelong",
+          "suggested": "What Routes Are Available to Geelong?"
+        },
+        {
+          "original": "Geelong: Victoria's Coastal Gateway",
+          "suggested": "What Routes Are Available from Geelong?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Geelong → {route.data.destination}",
+          "suggested": "What Are Geelong → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Geelong",
+          "suggested": "What Are {route.data.origin} → Geelong?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "gold-coast.astro",
+      "converted": [
+        {
+          "original": "Routes from Gold Coast",
+          "suggested": "What Routes Are Available from Gold Coast?"
+        },
+        {
+          "original": "Routes to Gold Coast",
+          "suggested": "What Routes Are Available to Gold Coast?"
+        },
+        {
+          "original": "Gold Coast: Queensland's Lifestyle Capital",
+          "suggested": "What Routes Are Available from Gold Coast?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Gold Coast → {route.data.destination}",
+          "suggested": "What Are Gold Coast → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Gold Coast",
+          "suggested": "What Are {route.data.origin} → Gold Coast?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "hobart.astro",
+      "converted": [
+        {
+          "original": "Routes from Hobart",
+          "suggested": "What Routes Are Available from Hobart?"
+        },
+        {
+          "original": "Routes to Hobart",
+          "suggested": "What Routes Are Available to Hobart?"
+        },
+        {
+          "original": "Hobart: Tasmania's Southern Hub",
+          "suggested": "What Routes Are Available from Hobart?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Tasmania Quarantine Restrictions",
+          "suggested": "How Does Tasmania Quarantine Restrictions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Hobart → {route.data.destination}",
+          "suggested": "What Are Hobart → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Hobart",
+          "suggested": "What Are {route.data.origin} → Hobart?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "how-many-boxes-do-i-need-for-my-move.astro",
+      "converted": [
+        {
+          "original": "💡 Pro Tip: You Can Adjust Later",
+          "suggested": "What Routes Are Available from 💡 Pro Tip?"
+        },
+        {
+          "original": "Wardrobe Box",
+          "suggested": "What Is Wardrobe Box?"
+        },
+        {
+          "original": "Picture/Mirror Box",
+          "suggested": "What Is Picture/mirror Box?"
+        },
+        {
+          "original": "Packing Paper",
+          "suggested": "What Is Packing Paper?"
+        },
+        {
+          "original": "Bubble Wrap",
+          "suggested": "What Is Bubble Wrap?"
+        },
+        {
+          "original": "✅ Do",
+          "suggested": "What Is ✅ Do?"
+        },
+        {
+          "original": "❌ Don't",
+          "suggested": "What Is ❌ Don't?"
+        },
+        {
+          "original": "Interstate Moving Guide",
+          "suggested": "What Is the Interstate Moving Guide?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Estimating Your Moving Boxes",
+          "suggested": "How Does Estimating Your Moving Boxes Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Box Calculator by Home Size",
+          "suggested": "How Does Box Calculator By Home Size Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Room-by-Room Box Estimates",
+          "suggested": "How Does Room-by-room Box Estimates Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Types of Moving Boxes",
+          "suggested": "How Does Types Of Moving Boxes Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Essential Packing Materials",
+          "suggested": "How Does Essential Packing Materials Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Packing Tips for Success",
+          "suggested": "How Does Packing Tips For Success Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "More Moving Resources",
+          "suggested": "How Does More Moving Resources Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Standard Removal Carton",
+          "suggested": "How Does Standard Removal Carton Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Book Box (Small/Heavy)",
+          "suggested": "How Does Book Box (small/heavy) Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Tape & Markers",
+          "suggested": "How Does Tape & Markers Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Furniture Inventory Checklist",
+          "suggested": "How Does Furniture Inventory Checklist Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save with Backloading",
+          "suggested": "How Does Save With Backloading Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "index.astro",
+      "converted": [
+        {
+          "original": "Interstate Backloading Routes",
+          "suggested": "What Are Interstate Backloading Routes?"
+        },
+        {
+          "original": "Interstate Backloading",
+          "suggested": "What Is Interstate Backloading?"
+        },
+        {
+          "original": "Car Transport",
+          "suggested": "What Is Car Transport?"
+        },
+        {
+          "original": "Self-Pack Containers",
+          "suggested": "What Are Self-pack Containers?"
+        },
+        {
+          "original": "Secure Website",
+          "suggested": "What Is Secure Website?"
+        },
+        {
+          "original": "Privacy Protected",
+          "suggested": "What Is Privacy Protected?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Australia's Trusted Interstate Removalists",
+          "suggested": "How Does Australia's Trusted Interstate Removalists Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Your Security & Privacy Matters",
+          "suggested": "How Does Your Security & Privacy Matters Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🔒 Fully Insured",
+          "suggested": "How Does 🔒 Fully Insured Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "📱 Online Tracking",
+          "suggested": "How Does 📱 Online Tracking Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🗓️ Flexible Scheduling",
+          "suggested": "How Does 🗓️ Flexible Scheduling Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Fully Licensed & Insured",
+          "suggested": "How Does Fully Licensed & Insured Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "launceston.astro",
+      "converted": [
+        {
+          "original": "Routes from Launceston",
+          "suggested": "What Routes Are Available from Launceston?"
+        },
+        {
+          "original": "Routes to Launceston",
+          "suggested": "What Routes Are Available to Launceston?"
+        },
+        {
+          "original": "Launceston: Northern Tasmania Hub",
+          "suggested": "What Routes Are Available from Launceston?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Launceston → {route.data.destination}",
+          "suggested": "What Are Launceston → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Launceston",
+          "suggested": "What Are {route.data.origin} → Launceston?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Tasmania Quarantine Restrictions",
+          "suggested": "How Does Tasmania Quarantine Restrictions Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "logan-city.astro",
+      "converted": [
+        {
+          "original": "Routes from Logan City",
+          "suggested": "What Routes Are Available from Logan City?"
+        },
+        {
+          "original": "Routes to Logan City",
+          "suggested": "What Routes Are Available to Logan City?"
+        },
+        {
+          "original": "Logan City: SE Queensland Hub",
+          "suggested": "What Routes Are Available from Logan City?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Logan City → {route.data.destination}",
+          "suggested": "What Are Logan City → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Logan City",
+          "suggested": "What Are {route.data.origin} → Logan City?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "mackay.astro",
+      "converted": [
+        {
+          "original": "Routes from Mackay",
+          "suggested": "What Routes Are Available from Mackay?"
+        },
+        {
+          "original": "Routes to Mackay",
+          "suggested": "What Routes Are Available to Mackay?"
+        },
+        {
+          "original": "Mackay: Sugar Capital Hub",
+          "suggested": "What Routes Are Available from Mackay?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Mackay → {route.data.destination}",
+          "suggested": "What Are Mackay → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Mackay",
+          "suggested": "What Are {route.data.origin} → Mackay?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "mandurah.astro",
+      "converted": [
+        {
+          "original": "Routes from Mandurah",
+          "suggested": "What Routes Are Available from Mandurah?"
+        },
+        {
+          "original": "Routes to Mandurah",
+          "suggested": "What Routes Are Available to Mandurah?"
+        },
+        {
+          "original": "Mandurah: Coastal Lifestyle Hub",
+          "suggested": "What Routes Are Available from Mandurah?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Mandurah → {route.data.destination}",
+          "suggested": "What Are Mandurah → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Mandurah",
+          "suggested": "What Are {route.data.origin} → Mandurah?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "melbourne.astro",
+      "converted": [
+        {
+          "original": "Popular Melbourne Routes",
+          "suggested": "What Are the Popular Melbourne Routes?"
+        },
+        {
+          "original": "Melbourne: The Southern Backloading Hub",
+          "suggested": "What Routes Are Available from Melbourne?"
+        },
+        {
+          "original": "Melbourne & VIC Coverage",
+          "suggested": "What Areas Do You Cover?"
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Melbourne → {route.city}",
+          "suggested": "What Are Melbourne → {route.city}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "moving-interstate.astro",
+      "converted": [
+        {
+          "original": "Popular Interstate Routes",
+          "suggested": "What Are the Popular Interstate Routes?"
+        },
+        {
+          "original": "Browse Routes by City",
+          "suggested": "What Are Browse Routes By City?"
+        },
+        {
+          "original": "Related Guides",
+          "suggested": "What Are Related Guides?"
+        },
+        {
+          "original": "Dedicated Move",
+          "suggested": "What Is Dedicated Move?"
+        },
+        {
+          "original": "Backloading",
+          "suggested": "What Is Backloading?"
+        },
+        {
+          "original": "Container/Self-Pack",
+          "suggested": "What Is Container/self-pack?"
+        },
+        {
+          "original": "🚨 Tasmania",
+          "suggested": "What Is 🚨 Tasmania?"
+        },
+        {
+          "original": "Sydney",
+          "suggested": "What Is Sydney?"
+        },
+        {
+          "original": "Melbourne",
+          "suggested": "What Is Melbourne?"
+        },
+        {
+          "original": "Brisbane",
+          "suggested": "What Is Brisbane?"
+        },
+        {
+          "original": "Perth",
+          "suggested": "What Is Perth?"
+        },
+        {
+          "original": "Adelaide",
+          "suggested": "What Is Adelaide?"
+        },
+        {
+          "original": "Hobart",
+          "suggested": "What Is Hobart?"
+        },
+        {
+          "original": "Darwin",
+          "suggested": "What Is Darwin?"
+        },
+        {
+          "original": "Gold Coast",
+          "suggested": "What Is Gold Coast?"
+        },
+        {
+          "original": "Newcastle",
+          "suggested": "What Is Newcastle?"
+        },
+        {
+          "original": "Geelong",
+          "suggested": "What Is Geelong?"
+        },
+        {
+          "original": "Ballarat",
+          "suggested": "What Is Ballarat?"
+        },
+        {
+          "original": "Bendigo",
+          "suggested": "What Is Bendigo?"
+        },
+        {
+          "original": "All Cities",
+          "suggested": "What Are All Cities?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Interstate Moving Costs",
+          "suggested": "How Does Interstate Moving Costs Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Interstate Moving Timeline",
+          "suggested": "How Does Interstate Moving Timeline Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Packing for an Interstate Move",
+          "suggested": "How Does Packing For An Interstate Move Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "State-by-State Regulations",
+          "suggested": "How Does State-by-state Regulations Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Moving Insurance & Protection",
+          "suggested": "How Does Moving Insurance & Protection Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "📚 In This Guide You'll Learn",
+          "suggested": "How Does 📚 In This Guide You'll Learn Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "💡 Save 40-60% with Backloading",
+          "suggested": "How Does 💡 Save 40-60% With Backloading Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "📦 Packing Tips",
+          "suggested": "How Does 📦 Packing Tips Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🚫 What Can't Be Transported",
+          "suggested": "How Does 🚫 What Can't Be Transported Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "🚨 Western Australia",
+          "suggested": "How Does 🚨 Western Australia Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "⚠️ South Australia",
+          "suggested": "How Does ⚠️ South Australia Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "✅ NSW, VIC, QLD, ACT, NT",
+          "suggested": "How Does ✅ Nsw, Vic, Qld, Act, Nt Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Understanding Moving Insurance",
+          "suggested": "How Does Understanding Moving Insurance Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Moving Pot Plants Interstate",
+          "suggested": "How Does Moving Pot Plants Interstate Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Furniture Inventory Checklist",
+          "suggested": "How Does Furniture Inventory Checklist Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "moving-pot-plants-interstate.astro",
+      "converted": [
+        {
+          "original": "Interstate Quarantine Guide",
+          "suggested": "What Is the Interstate Quarantine Guide?"
+        },
+        {
+          "original": "Check Quarantine",
+          "suggested": "What Is Check Quarantine?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Most Plants OK",
+          "suggested": "How Does Most Plants Ok Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Prep is Key",
+          "suggested": "How Does Prep Is Key Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "✅ Great Travelers",
+          "suggested": "How Does ✅ Great Travelers Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "⚠️ Need Extra Care",
+          "suggested": "How Does ⚠️ Need Extra Care Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "newcastle.astro",
+      "converted": [
+        {
+          "original": "Routes from Newcastle",
+          "suggested": "What Routes Are Available from Newcastle?"
+        },
+        {
+          "original": "Routes to Newcastle",
+          "suggested": "What Routes Are Available to Newcastle?"
+        },
+        {
+          "original": "Newcastle: NSW's Hunter Region Hub",
+          "suggested": "What Routes Are Available from Newcastle?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Newcastle → {route.data.destination}",
+          "suggested": "What Are Newcastle → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Newcastle",
+          "suggested": "What Are {route.data.origin} → Newcastle?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "perth.astro",
+      "converted": [
+        {
+          "original": "Popular Perth Routes",
+          "suggested": "What Are the Popular Perth Routes?"
+        },
+        {
+          "original": "Crossing the Nullarbor: Perth Backloading",
+          "suggested": "What Routes Are Available from Crossing The Nullarbor?"
+        },
+        {
+          "original": "Perth & WA Coverage",
+          "suggested": "What Areas Do You Cover?"
+        },
+        {
+          "original": "Quarantine Experts",
+          "suggested": "What Are Quarantine Experts?"
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Western Australia Quarantine Restrictions",
+          "suggested": "How Does Western Australia Quarantine Restrictions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Perth → {route.city}",
+          "suggested": "What Are Perth → {route.city}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "privacy.astro",
+      "converted": [
+        {
+          "original": "Your Option Not to Provide Your Personal Information",
+          "suggested": "What Are Your Option Not To Provide Your Personal Information?"
+        },
+        {
+          "original": "Contact Us",
+          "suggested": "What Are Contact Us?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Information We Collect From You",
+          "suggested": "How Does Information We Collect From You Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Personal Information via the Website",
+          "suggested": "How Does Personal Information Via The Website Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Use and Disclosure of Your Personal Information",
+          "suggested": "How Does Use And Disclosure Of Your Personal Information Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Terms of Use",
+          "suggested": "How Does Terms Of Use Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Security of Personal Information",
+          "suggested": "How Does Security Of Personal Information Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Accuracy and Quality of Personal Information",
+          "suggested": "How Does Accuracy And Quality Of Personal Information Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Access to Your Personal Information",
+          "suggested": "How Does Access To Your Personal Information Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Correction of Your Personal Information",
+          "suggested": "How Does Correction Of Your Personal Information Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "questions.astro",
+      "converted": [
+        {
+          "original": "Backloading Questions",
+          "suggested": "What Are Backloading Questions?"
+        },
+        {
+          "original": "General Questions",
+          "suggested": "What Are General Questions?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Interstate Moving Questions",
+          "suggested": "How Does Interstate Moving Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Car Transport Questions",
+          "suggested": "How Does Car Transport Questions Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "reviews.astro",
+      "converted": [
+        {
+          "original": "Backloading",
+          "suggested": "What Is Backloading?"
+        },
+        {
+          "original": "Interstate Moving",
+          "suggested": "What Is Interstate Moving?"
+        },
+        {
+          "original": "Car Transport",
+          "suggested": "What Is Car Transport?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Services Our Customers Love",
+          "suggested": "How Does Services Our Customers Love Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{review.name}",
+          "suggested": "What Is {review.name}?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "rockhampton.astro",
+      "converted": [
+        {
+          "original": "Routes from Rockhampton",
+          "suggested": "What Routes Are Available from Rockhampton?"
+        },
+        {
+          "original": "Routes to Rockhampton",
+          "suggested": "What Routes Are Available to Rockhampton?"
+        },
+        {
+          "original": "Rockhampton: Beef Capital Hub",
+          "suggested": "What Routes Are Available from Rockhampton?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Rockhampton → {route.data.destination}",
+          "suggested": "What Are Rockhampton → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Rockhampton",
+          "suggested": "What Are {route.data.origin} → Rockhampton?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "rockingham.astro",
+      "converted": [
+        {
+          "original": "Routes from Rockingham",
+          "suggested": "What Routes Are Available from Rockingham?"
+        },
+        {
+          "original": "Routes to Rockingham",
+          "suggested": "What Routes Are Available to Rockingham?"
+        },
+        {
+          "original": "Rockingham: Perth's Southern Gateway",
+          "suggested": "What Routes Are Available from Rockingham?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Rockingham → {route.data.destination}",
+          "suggested": "What Are Rockingham → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Rockingham",
+          "suggested": "What Are {route.data.origin} → Rockingham?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "service-areas.astro",
+      "converted": [
+        {
+          "original": "Popular Interstate Corridors",
+          "suggested": "What Are the Popular Interstate Corridors?"
+        },
+        {
+          "original": "Western Australia",
+          "suggested": "What Is Western Australia?"
+        },
+        {
+          "original": "Tasmania",
+          "suggested": "What Is Tasmania?"
+        },
+        {
+          "original": "Northern Territory",
+          "suggested": "What Is Northern Territory?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Our Capital City Hubs",
+          "suggested": "How Does Our Capital City Hubs Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "State-Specific Considerations",
+          "suggested": "How Does State-specific Considerations Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Interstate Moving Questions",
+          "suggested": "How Does Interstate Moving Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{hub.city}, {hub.state}",
+          "suggested": "What Is {hub.city}, {hub.state}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{hub.city}",
+          "suggested": "What Is {hub.city}?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "sydney.astro",
+      "converted": [
+        {
+          "original": "Popular Sydney Routes",
+          "suggested": "What Are the Popular Sydney Routes?"
+        },
+        {
+          "original": "Sydney: Australia's Busiest Moving Hub",
+          "suggested": "What Routes Are Available from Sydney?"
+        },
+        {
+          "original": "Sydney & NSW Coverage",
+          "suggested": "What Areas Do You Cover?"
+        },
+        {
+          "original": "Daily Departures",
+          "suggested": "What Are Daily Departures?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Frequently Asked Questions",
+          "suggested": "How Does Frequently Asked Questions Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Sydney → {route.city}",
+          "suggested": "What Are Sydney → {route.city}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Transit Insurance Included",
+          "suggested": "How Does Transit Insurance Included Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "terms-of-use.astro",
+      "converted": [
+        {
+          "original": "Our Services",
+          "suggested": "What Are Our Services?"
+        },
+        {
+          "original": "Prohibited Conduct",
+          "suggested": "What Is Prohibited Conduct?"
+        },
+        {
+          "original": "Intellectual Property",
+          "suggested": "What Is Intellectual Property?"
+        },
+        {
+          "original": "Indemnity",
+          "suggested": "What Is Indemnity?"
+        },
+        {
+          "original": "Disclaimer",
+          "suggested": "What Is Disclaimer?"
+        },
+        {
+          "original": "Privacy",
+          "suggested": "What Is Privacy?"
+        },
+        {
+          "original": "Termination",
+          "suggested": "What Is Termination?"
+        },
+        {
+          "original": "Miscellaneous",
+          "suggested": "What Are Miscellaneous?"
+        },
+        {
+          "original": "Applicable Law",
+          "suggested": "What Is Applicable Law?"
+        },
+        {
+          "original": "Contact Us",
+          "suggested": "What Are Contact Us?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Acceptance of Terms",
+          "suggested": "How Does Acceptance Of Terms Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Third Party Links",
+          "suggested": "How Does Third Party Links Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Limitation of Liability",
+          "suggested": "How Does Limitation Of Liability Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "terms.astro",
+      "converted": [
+        {
+          "original": "1. Definitions",
+          "suggested": "What Are 1. Definitions?"
+        },
+        {
+          "original": "6. Delivery",
+          "suggested": "What Is 6. Delivery?"
+        },
+        {
+          "original": "7. Charges",
+          "suggested": "What Are 7. Charges?"
+        },
+        {
+          "original": "8. Payment",
+          "suggested": "What Is 8. Payment?"
+        },
+        {
+          "original": "12. Insurance",
+          "suggested": "What Is 12. Insurance?"
+        },
+        {
+          "original": "13. Privacy",
+          "suggested": "What Is 13. Privacy?"
+        },
+        {
+          "original": "14. GST",
+          "suggested": "What Is 14. Gst?"
+        },
+        {
+          "original": "16. Variation",
+          "suggested": "What Is 16. Variation?"
+        },
+        {
+          "original": "17. Disputes",
+          "suggested": "What Are 17. Disputes?"
+        },
+        {
+          "original": "Dangerous Goods",
+          "suggested": "What Are Dangerous Goods?"
+        },
+        {
+          "original": "Delay",
+          "suggested": "What Is Delay?"
+        },
+        {
+          "original": "Customs, etc",
+          "suggested": "What Is Customs, Etc?"
+        },
+        {
+          "original": "Exclusions",
+          "suggested": "What Are Exclusions?"
+        },
+        {
+          "original": "Negligence",
+          "suggested": "What Is Negligence?"
+        },
+        {
+          "original": "Claims",
+          "suggested": "What Are Claims?"
+        },
+        {
+          "original": "Waiver",
+          "suggested": "What Is Waiver?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "2. Application of These Terms",
+          "suggested": "How Does 2. Application Of These Terms Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "3. Not Common Carriers",
+          "suggested": "How Does 3. Not Common Carriers Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "4. Your Obligations and Warranties",
+          "suggested": "How Does 4. Your Obligations And Warranties Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "5. Method of Carriage",
+          "suggested": "How Does 5. Method Of Carriage Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "9. Lien on Goods",
+          "suggested": "How Does 9. Lien On Goods Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "10. Loss or Damage – Private Removals",
+          "suggested": "How Does 10. Loss Or Damage – Private Removals Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "11. Loss or Damage – Commercial Removals",
+          "suggested": "How Does 11. Loss Or Damage – Commercial Removals Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "15. General Terms",
+          "suggested": "How Does 15. General Terms Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "18. Governing Law",
+          "suggested": "How Does 18. Governing Law Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Information provided by you",
+          "suggested": "How Does Information Provided By You Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Owner of Goods",
+          "suggested": "How Does Owner Of Goods Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Fragile and valuable goods",
+          "suggested": "How Does Fragile And Valuable Goods Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Goods left behind or removed in error",
+          "suggested": "How Does Goods Left Behind Or Removed In Error Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Presence at loading and unloading",
+          "suggested": "How Does Presence At Loading And Unloading Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Mode of carriage",
+          "suggested": "How Does Mode Of Carriage Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Use of Sub-contractors",
+          "suggested": "How Does Use Of Sub-contractors Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Liability of Sub-contractors and employees",
+          "suggested": "How Does Liability Of Sub-contractors And Employees Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Variation of Services",
+          "suggested": "How Does Variation Of Services Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Australian Consumer Law",
+          "suggested": "How Does Australian Consumer Law Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Damage of Goods – Packaging",
+          "suggested": "How Does Damage Of Goods – Packaging Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Damage of Goods – Inherent risk",
+          "suggested": "How Does Damage Of Goods – Inherent Risk Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Maximum value of the Goods",
+          "suggested": "How Does Maximum Value Of The Goods Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Exclusions",
+          "suggested": "What Are Exclusions?",
+          "reason": "Conversion failed"
+        },
+        {
+          "original": "Invalid or unenforceable provisions",
+          "suggested": "How Does Invalid Or Unenforceable Provisions Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "toowoomba.astro",
+      "converted": [
+        {
+          "original": "Routes from Toowoomba",
+          "suggested": "What Routes Are Available from Toowoomba?"
+        },
+        {
+          "original": "Routes to Toowoomba",
+          "suggested": "What Routes Are Available to Toowoomba?"
+        },
+        {
+          "original": "Toowoomba: Garden City Hub",
+          "suggested": "What Routes Are Available from Toowoomba?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Toowoomba → {route.data.destination}",
+          "suggested": "What Are Toowoomba → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Toowoomba",
+          "suggested": "What Are {route.data.origin} → Toowoomba?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "townsville.astro",
+      "converted": [
+        {
+          "original": "North Queensland's Backloading Specialists",
+          "suggested": "What North Queensland's Backloading Services Do You Offer?"
+        },
+        {
+          "original": "Popular Townsville Routes",
+          "suggested": "What Are the Popular Townsville Routes?"
+        },
+        {
+          "original": "Moving to or from North Queensland",
+          "suggested": "What Routes Are Available to or from North Queensland?"
+        },
+        {
+          "original": "Townsville → Brisbane",
+          "suggested": "What Routes Are Available from Townsville to Brisbane?"
+        },
+        {
+          "original": "Townsville → Sydney",
+          "suggested": "What Routes Are Available from Townsville to Sydney?"
+        },
+        {
+          "original": "Townsville → Melbourne",
+          "suggested": "What Routes Are Available from Townsville to Melbourne?"
+        },
+        {
+          "original": "Townsville → Cairns",
+          "suggested": "What Routes Are Available from Townsville to Cairns?"
+        },
+        {
+          "original": "Townsville → Mackay",
+          "suggested": "What Routes Are Available from Townsville to Mackay?"
+        },
+        {
+          "original": "Townsville → Gold Coast",
+          "suggested": "What Routes Are Available from Townsville to Gold Coast?"
+        },
+        {
+          "original": "Schedule Flexibility",
+          "suggested": "What Is Schedule Flexibility?"
+        },
+        {
+          "original": "Route Availability",
+          "suggested": "What Is Route Availability?"
+        },
+        {
+          "original": "Access Issues",
+          "suggested": "What Are Access Issues?"
+        },
+        {
+          "original": "Destination",
+          "suggested": "What Is Destination?"
+        },
+        {
+          "original": "Transit Insurance",
+          "suggested": "What Is Transit Insurance?"
+        },
+        {
+          "original": "Professional Handling",
+          "suggested": "What Is Professional Handling?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Volume of Items",
+          "suggested": "How Does Volume Of Items Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Time of Year",
+          "suggested": "How Does Time Of Year Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Save Up to 60%",
+          "suggested": "How Does Save Up To 60% Work?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "Planning Your Townsville Move",
+          "suggested": "How Does Planning Your Townsville Move Work?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    },
+    {
+      "file": "wollongong.astro",
+      "converted": [
+        {
+          "original": "Routes from Wollongong",
+          "suggested": "What Routes Are Available from Wollongong?"
+        },
+        {
+          "original": "Routes to Wollongong",
+          "suggested": "What Routes Are Available to Wollongong?"
+        },
+        {
+          "original": "Wollongong: Illawarra Gateway",
+          "suggested": "What Routes Are Available from Wollongong?"
+        }
+      ],
+      "skipped": [
+        {
+          "original": "Wollongong → {route.data.destination}",
+          "suggested": "What Are Wollongong → {route.data.destination}?",
+          "reason": "Awkward conversion"
+        },
+        {
+          "original": "{route.data.origin} → Wollongong",
+          "suggested": "What Are {route.data.origin} → Wollongong?",
+          "reason": "Awkward conversion"
+        }
+      ]
+    }
+  ]
+}
