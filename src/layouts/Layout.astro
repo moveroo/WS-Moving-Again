@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import SEO from '../components/SEO.astro';
 import BrainAnalytics from '../components/BrainAnalytics.astro';
 import Schema from '../components/Schema.astro';
+import { BRAND } from '../utils/brand';
 
 interface Props {
   title?: string;
@@ -28,13 +29,18 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
   <Schema
     type="Organization"
     data={{
-      name: 'Moving Again',
-      url: 'https://movingagain.com.au',
-      logo: 'https://movingagain.com.au/logo.svg',
-      description:
-        "Australia's trusted interstate removalists and backloading specialists since 2010",
+      name: BRAND.name,
+      url: BRAND.website,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${BRAND.website}/logo.svg`,
+        width: 200,
+        height: 50,
+      },
+      description: `Australia's trusted interstate removalists and backloading specialists. Save up to 60% on interstate moves with professional backloading services across all major Australian cities. ${BRAND.yearsInBusiness} years of experience.`,
       telephone: '+61 7 2143 2557',
-      email: 'info@movingagain.com.au',
+      email: BRAND.email,
+      foundingDate: BRAND.foundingYear.toString(),
       address: {
         '@type': 'PostalAddress',
         streetAddress: '3/31 Expansion Street',
@@ -43,7 +49,24 @@ const { title, description, image, schemaType = 'WebSite', schemaData = {} } = A
         postalCode: '4216',
         addressCountry: 'AU',
       },
+      areaServed: {
+        '@type': 'Country',
+        name: 'Australia',
+      },
+      serviceArea: {
+        '@type': 'Country',
+        name: 'Australia',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+61 7 2143 2557',
+        contactType: 'Customer Service',
+        email: 'info@movingagain.com.au',
+        areaServed: 'AU',
+        availableLanguage: 'English',
+      },
       sameAs: ['https://www.facebook.com/MovingAgain'],
+      '@id': 'https://movingagain.com.au/#organization',
     }}
     slot="head"
   />

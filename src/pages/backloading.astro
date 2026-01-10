@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
+import { BRAND } from '../utils/brand';
 
 // Machine-readable facts for LLM extraction
 const pageFacts = {
@@ -544,8 +545,9 @@ const routes = [
             <div class="text-4xl mb-4">👷</div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Professional Removalists</h3>
             <p class="text-gray-600 mb-4">
-              Our teams are trained, experienced, and careful. We've been doing this since 2010, and
-              we know how to handle everything from delicate antiques to heavy appliances.
+              Our teams are trained, experienced, and careful. We've been doing this since {
+                BRAND.foundingYear
+              }, and we know how to handle everything from delicate antiques to heavy appliances.
             </p>
             <p class="text-gray-600">
               Same professional service as a dedicated move—just at a smarter price.
