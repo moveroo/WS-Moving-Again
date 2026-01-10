@@ -1,0 +1,74 @@
+{
+  "sets": {
+    "business-focus": {
+      "name": "Business Focus (Default)",
+      "description": "Regular health checks, business-critical monitoring",
+      "urls": [
+        "https://movingagain.com.au/",
+        "https://movingagain.com.au/backloading/",
+        "https://movingagain.com.au/moving-interstate/",
+        "https://movingagain.com.au/service-areas/",
+        "https://movingagain.com.au/sydney/",
+        "https://movingagain.com.au/melbourne/",
+        "https://movingagain.com.au/brisbane/",
+        "https://movingagain.com.au/car-transport/",
+        "https://movingagain.com.au/contact/",
+        "https://movingagain.com.au/perth/"
+      ]
+    },
+    "regional-focus": {
+      "name": "Regional Focus",
+      "description": "Focus on regional coverage across all states",
+      "urls": [
+        "https://movingagain.com.au/",
+        "https://movingagain.com.au/backloading/",
+        "https://movingagain.com.au/moving-interstate/",
+        "https://movingagain.com.au/service-areas/",
+        "https://movingagain.com.au/perth/",
+        "https://movingagain.com.au/adelaide/",
+        "https://movingagain.com.au/canberra/",
+        "https://movingagain.com.au/darwin/",
+        "https://movingagain.com.au/hobart/",
+        "https://movingagain.com.au/car-transport/"
+      ]
+    },
+    "content-diversity": {
+      "name": "Content Diversity",
+      "description": "Test different content types and page structures",
+      "urls": [
+        "https://movingagain.com.au/",
+        "https://movingagain.com.au/backloading/",
+        "https://movingagain.com.au/moving-interstate/",
+        "https://movingagain.com.au/service-areas/",
+        "https://movingagain.com.au/sydney/",
+        "https://movingagain.com.au/car-transport/",
+        "https://movingagain.com.au/contact/",
+        "https://movingagain.com.au/questions/",
+        "https://movingagain.com.au/moving-pot-plants-interstate/",
+        "https://movingagain.com.au/how-many-boxes-do-i-need-for-my-move/"
+      ]
+    },
+    "recently-improved": {
+      "name": "Recently Improved Pages",
+      "description": "Verify fixes after making SEO improvements",
+      "urls": [
+        "https://movingagain.com.au/",
+        "https://movingagain.com.au/backloading/",
+        "https://movingagain.com.au/moving-interstate/",
+        "https://movingagain.com.au/service-areas/",
+        "https://movingagain.com.au/sydney/",
+        "https://movingagain.com.au/melbourne/",
+        "https://movingagain.com.au/brisbane/",
+        "https://movingagain.com.au/perth/",
+        "https://movingagain.com.au/adelaide/",
+        "https://movingagain.com.au/canberra/"
+      ]
+    }
+  },
+  "default": "business-focus",
+  "notes": {
+    "max_urls": 10,
+    "homepage_always_first": true,
+    "rotation_strategy": "Weekly: business-focus, regional-focus, business-focus, content-diversity"
+  }
+}
