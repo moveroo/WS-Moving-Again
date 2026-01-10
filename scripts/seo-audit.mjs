@@ -27,12 +27,12 @@ if (!TOKEN) {
 }
 
 const headers = {
-  'Authorization': `Bearer ${TOKEN}`,
-  'Content-Type': 'application/json'
+  Authorization: `Bearer ${TOKEN}`,
+  'Content-Type': 'application/json',
 };
 
 // Helper: Sleep function
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Helper: Make API request
 async function apiRequest(endpoint, options = {}) {
@@ -41,8 +41,8 @@ async function apiRequest(endpoint, options = {}) {
     ...options,
     headers: {
       ...headers,
-      ...options.headers
-    }
+      ...options.headers,
+    },
   });
 
   if (!response.ok) {
@@ -60,7 +60,7 @@ async function runPageAudit(url) {
   // Start audit
   const { audit_id } = await apiRequest('/audit', {
     method: 'POST',
-    body: JSON.stringify({ url })
+    body: JSON.stringify({ url }),
   });
 
   console.log(`📋 Audit ID: ${audit_id}`);
@@ -95,10 +95,10 @@ async function runPageAudit(url) {
 // Run full site crawl
 async function runCrawl(domain, options = {}) {
   const { limit = 10, depth = 5, urls = [] } = options;
-  
+
   const isDiscoveryMode = limit <= 10;
   const mode = isDiscoveryMode ? 'Discovery Mode' : 'Full Crawl';
-  
+
   console.log(`\n🕷️  Starting ${mode}: ${domain}\n`);
   if (isDiscoveryMode) {
     console.log('💡 Discovery Mode: Lightweight scan focusing on site-wide issues (10 pages)\n');
@@ -106,7 +106,7 @@ async function runCrawl(domain, options = {}) {
 
   // Build request body
   const requestBody = { domain, depth, limit };
-  
+
   // Add priority URLs if provided (up to 10)
   if (urls.length > 0) {
     if (urls.length > 10) {
@@ -121,13 +121,13 @@ async function runCrawl(domain, options = {}) {
   // Start crawl
   const response = await apiRequest('/crawls', {
     method: 'POST',
-    body: JSON.stringify(requestBody)
+    body: JSON.stringify(requestBody),
   });
 
   // Handle response structure (may be wrapped in 'data' or direct)
   const crawlData = response.data || response;
   const crawlId = crawlData.id;
-  
+
   console.log(`📋 Crawl ID: ${crawlId}`);
   console.log(`📊 Status: ${crawlData.status}`);
   console.log('⏳ Waiting for crawl to complete...');
@@ -180,19 +180,21 @@ async function showCrawlList() {
   const response = await apiRequest('/crawls');
   // Handle API response wrapped in 'data' object or direct array
   const crawls = response.data || response;
-  const crawlList = Array.isArray(crawls) ? crawls : (crawls.data || []);
-  
+  const crawlList = Array.isArray(crawls) ? crawls : crawls.data || [];
+
   console.log('\n📊 Crawl History\n');
   console.log('ID    | Score | Status     | Domain');
   console.log('------|-------|------------|-------------------');
-  
-  crawlList.forEach(crawl => {
+
+  crawlList.forEach((crawl) => {
     const score = crawl.score !== undefined && crawl.score !== null ? `${crawl.score}/100` : 'N/A';
     const status = crawl.status || 'unknown';
     const domain = crawl.domain || 'N/A';
-    console.log(`${String(crawl.id).padEnd(5)} | ${String(score).padEnd(5)} | ${status.padEnd(10)} | ${domain}`);
+    console.log(
+      `${String(crawl.id).padEnd(5)} | ${String(score).padEnd(5)} | ${status.padEnd(10)} | ${domain}`
+    );
   });
-  
+
   console.log('');
 }
 
@@ -201,20 +203,20 @@ function displayPageResults(results) {
   console.log('\n' + '='.repeat(60));
   console.log('📊 AUDIT RESULTS');
   console.log('='.repeat(60));
-  
+
   console.log(`\n🎯 Overall Score: ${results.overall_score}/100`);
-  
+
   if (results.summary) {
     console.log(`\n📝 Summary:\n${results.summary}\n`);
   }
 
   if (results.action_items && results.action_items.length > 0) {
     console.log('\n📋 Action Items:\n');
-    
-    results.action_items.forEach(category => {
+
+    results.action_items.forEach((category) => {
       console.log(`\n${category.category}:`);
-      
-      category.issues.forEach(issue => {
+
+      category.issues.forEach((issue) => {
         const icon = issue.status === 'fail' ? '🔴' : '🟡';
         const priority = issue.priority ? ` [${issue.priority}]` : '';
         console.log(`  ${icon} ${issue.title}${priority}`);
@@ -243,12 +245,14 @@ function displayCrawlResults(crawl) {
   console.log('='.repeat(60));
   console.log('📊 CRAWL RESULTS');
   console.log('='.repeat(60));
-  
-  console.log(`\n🎯 Health Score: ${crawl.score !== null && crawl.score !== undefined ? `${crawl.score}/100` : 'N/A (Discovery Mode)'}`);
+
+  console.log(
+    `\n🎯 Health Score: ${crawl.score !== null && crawl.score !== undefined ? `${crawl.score}/100` : 'N/A (Discovery Mode)'}`
+  );
   console.log(`📄 Pages Processed: ${crawl.progress?.processed || 0}`);
   console.log(`📊 Total Pages Found: ${crawl.progress?.total || 0}`);
   console.log(`❌ Failed Pages: ${crawl.progress?.failed || 0}`);
-  
+
   if (crawl.timestamps) {
     console.log(`🕐 Started: ${crawl.timestamps.created_at}`);
     console.log(`🕐 Completed: ${crawl.timestamps.completed_at}`);
@@ -256,18 +260,18 @@ function displayCrawlResults(crawl) {
 
   if (crawl.issues && crawl.issues.length > 0) {
     console.log(`\n⚠️  Issues Found: ${crawl.issues_count || crawl.issues.length} types\n`);
-    
-    crawl.issues.forEach(issue => {
+
+    crawl.issues.forEach((issue) => {
       const issueType = issue.type || 'Unknown Issue';
-      const issueName = issueType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-      
+      const issueName = issueType.replace(/_/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+
       console.log(`\n${issueName}:`);
       console.log(`  Count: ${issue.count || 'N/A'}`);
       console.log(`  Message: ${issue.message || 'No description'}`);
-      
+
       if (issue.data && issue.data.length > 0) {
         console.log(`  Affected URLs (showing first 10):`);
-        issue.data.slice(0, 10).forEach(url => {
+        issue.data.slice(0, 10).forEach((url) => {
           console.log(`    - ${url}`);
         });
         if (issue.data.length > 10) {
@@ -281,10 +285,10 @@ function displayCrawlResults(crawl) {
 
   if (crawl.audits && crawl.audits.length > 0) {
     console.log('\n📄 Page Scores (sorted by lowest first):\n');
-    
+
     const sortedAudits = [...crawl.audits].sort((a, b) => (a.score || 0) - (b.score || 0));
-    
-    sortedAudits.forEach(audit => {
+
+    sortedAudits.forEach((audit) => {
       const score = audit.score !== undefined ? `${audit.score}/100` : 'N/A';
       const url = audit.url || audit.target_url || 'Unknown URL';
       console.log(`  ${score.padEnd(6)} - ${url}`);
@@ -311,23 +315,28 @@ switch (command) {
   case 'crawl': {
     if (!arg) {
       console.error('❌ Please provide a domain: npm run seo:crawl https://example.com');
-      console.error('   Optional: Add --limit=100 for full crawl (default: 10 pages, Discovery Mode)');
+      console.error(
+        '   Optional: Add --limit=100 for full crawl (default: 10 pages, Discovery Mode)'
+      );
       console.error('   Optional: Add --urls=url1,url2 for priority URLs');
       process.exit(1);
     }
-    
+
     // Parse optional parameters
-    const limitArg = process.argv.find(a => a.startsWith('--limit='));
-    const urlsArg = process.argv.find(a => a.startsWith('--urls='));
-    
+    const limitArg = process.argv.find((a) => a.startsWith('--limit='));
+    const urlsArg = process.argv.find((a) => a.startsWith('--urls='));
+
     const options = {};
     if (limitArg) {
       options.limit = parseInt(limitArg.split('=')[1], 10);
     }
     if (urlsArg) {
-      options.urls = urlsArg.split('=')[1].split(',').map(u => u.trim());
+      options.urls = urlsArg
+        .split('=')[1]
+        .split(',')
+        .map((u) => u.trim());
     }
-    
+
     runCrawl(arg, options).catch(console.error);
     break;
   }

@@ -24,8 +24,8 @@ if (!TOKEN) {
 }
 
 const headers = {
-  'Authorization': `Bearer ${TOKEN}`,
-  'Content-Type': 'application/json'
+  Authorization: `Bearer ${TOKEN}`,
+  'Content-Type': 'application/json',
 };
 
 // Helper: Make API request
@@ -78,7 +78,7 @@ async function main() {
   try {
     // Get crawl summary
     const crawl = await getCrawlStatus(crawlId);
-    
+
     if (crawl.status !== 'completed') {
       console.error(`❌ Crawl status: ${crawl.status}`);
       console.error('Please wait for crawl to complete');
@@ -113,11 +113,17 @@ async function main() {
             url: audit.url,
             auditId: auditId,
             score: details.overall_score || audit.score,
-            failCount: details.action_items?.reduce((sum, cat) => 
-              sum + cat.issues.filter(i => i.status === 'fail').length, 0) || 0,
-            warningCount: details.action_items?.reduce((sum, cat) => 
-              sum + cat.issues.filter(i => i.status === 'warning').length, 0) || 0,
-            categoryScores: details.category_scores || {}
+            failCount:
+              details.action_items?.reduce(
+                (sum, cat) => sum + cat.issues.filter((i) => i.status === 'fail').length,
+                0
+              ) || 0,
+            warningCount:
+              details.action_items?.reduce(
+                (sum, cat) => sum + cat.issues.filter((i) => i.status === 'warning').length,
+                0
+              ) || 0,
+            categoryScores: details.category_scores || {},
           };
 
           summary.push(pageInfo);
@@ -126,7 +132,6 @@ async function main() {
           const filename = sanitizeFilename(audit.url) + '.json';
           const filepath = join(outputDir, filename);
           fs.writeFileSync(filepath, JSON.stringify(details, null, 2));
-
         } catch (error) {
           console.error(`\n❌ Error processing ${audit.url}: ${error.message}`);
         }
@@ -144,11 +149,11 @@ async function main() {
 
     // Display summary stats
     console.log('📊 Summary Statistics:\n');
-    
+
     const avgScore = summary.reduce((sum, p) => sum + (p.score || 0), 0) / summary.length;
-    const minScore = Math.min(...summary.map(p => p.score || 0));
-    const maxScore = Math.max(...summary.map(p => p.score || 0));
-    
+    const minScore = Math.min(...summary.map((p) => p.score || 0));
+    const maxScore = Math.max(...summary.map((p) => p.score || 0));
+
     console.log(`  Average Score: ${avgScore.toFixed(1)}/100`);
     console.log(`  Lowest Score: ${minScore}/100`);
     console.log(`  Highest Score: ${maxScore}/100`);
@@ -158,14 +163,13 @@ async function main() {
     // Show lowest scoring pages
     const sorted = [...summary].sort((a, b) => (a.score || 0) - (b.score || 0));
     console.log('🔴 Lowest Scoring Pages:\n');
-    sorted.slice(0, 5).forEach(page => {
+    sorted.slice(0, 5).forEach((page) => {
       console.log(`  ${page.score}/100 - ${page.url}`);
       if (page.failCount > 0) {
         console.log(`    Fails: ${page.failCount}, Warnings: ${page.warningCount}`);
       }
     });
     console.log('');
-
   } catch (error) {
     console.error(`\n❌ Error: ${error.message}`);
     process.exit(1);
