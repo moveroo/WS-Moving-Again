@@ -15,6 +15,10 @@
 - ✅ **ARIA Attributes** - Added site-wide for accessibility
 - ✅ **Schema Improvements** - Telephone, FAQPage, BreadcrumbList added
 - ✅ **Breadcrumb Style** - Updated all city pages to match route page design
+- ✅ **Accessibility Fixes** - Fixed color contrast and heading hierarchy on all 40 pages
+- ✅ **LocalBusiness → Organization** - Changed schema type on 26 pages (covers all of Australia)
+- ✅ **Mobile Web App Meta** - Added PWA meta tags for home screen installation
+- ✅ **FAQPage Schema** - Added to 4 city pages with FAQs (Perth, Brisbane, Melbourne, Sydney)
 
 ### 🔍 In Progress:
 
@@ -22,9 +26,10 @@
 
 ### 📋 Remaining:
 
-- 🔧 Script optimization (async/defer)
-- 🔧 Image srcset attributes
-- 🔧 Organization schema on missing pages
+- 🔧 Script optimization (async/defer) - PERF001
+- 🔧 Image srcset attributes - MOB004
+- 🔧 Critical CSS optimization
+- 🔧 Hreflang tags (if multi-language needed)
 
 ---
 
@@ -248,6 +253,11 @@ npm run suggest:content [page] # Get suggestions for specific page
 11. ✅ **Breadcrumbs on all pages** - Added to 38 pages (city, service, other pages)
 12. ✅ **Breadcrumb style updates** - Updated all city pages to match route page style
 13. ✅ **Schema improvements** - Added telephone to LocalBusiness, FAQPage schema, BreadcrumbList schema
+14. ✅ **Accessibility fixes** - Fixed color contrast and heading hierarchy on all 40 pages
+15. ✅ **LocalBusiness → Organization** - Changed schema type on 26 pages (Moving Again covers all of Australia)
+16. ✅ **Mobile Web App Meta** - Added PWA meta tags (apple-mobile-web-app-capable, etc.)
+17. ✅ **FAQPage Schema** - Added to city pages with FAQs (Perth, Brisbane, Melbourne, Sydney)
+18. ✅ **Workflow fixes** - Fixed ESLint and formatting errors in CI pipeline
 
 ### 🔍 Remaining Verification:
 
@@ -419,8 +429,9 @@ npm run suggest:content [page] # Get suggestions for specific page
    - Added `telephone: '+61 7 2143 2557'` to all LocalBusiness schema
 
 2. ✅ **FAQPage schema:**
+   - Created `scripts/add-faq-schema-to-cities.mjs` - Automated FAQ extraction and schema addition
    - Added FAQPage schema to pages with FAQs (Perth, Brisbane, Melbourne, Sydney)
-   - Schema automatically generated from FAQ data
+   - Schema automatically generated from FAQ data in `<details>` elements
 
 3. ✅ **BreadcrumbList schema:**
    - Added to all route pages (300+ pages) - already documented
@@ -428,25 +439,106 @@ npm run suggest:content [page] # Get suggestions for specific page
    - Added to all service pages (4 pages) - via breadcrumb implementation
    - Added to all other pages (12 pages) - via breadcrumb implementation
 
+4. ✅ **LocalBusiness → Organization:**
+   - Created `scripts/change-localbusiness-to-organization.mjs` - Schema type conversion
+   - Changed 26 pages from LocalBusiness to Organization
+   - Removed address and priceRange fields (not appropriate for Organization)
+   - Moving Again covers all of Australia, not just local areas
+
 **Result:**
 
-- ✅ All LocalBusiness pages have telephone field
+- ✅ All LocalBusiness pages have telephone field (before conversion)
 - ✅ All pages with FAQs have FAQPage schema
 - ✅ All pages have BreadcrumbList schema
+- ✅ All city pages now use Organization schema (not LocalBusiness)
 
 **Files Created:**
 
 - `scripts/check-schema-issues.mjs` - Schema analysis tool
 - `scripts/fix-schema-telephone.mjs` - Telephone field fix script
+- `scripts/add-faq-schema-to-cities.mjs` - FAQPage schema addition script
+- `scripts/change-localbusiness-to-organization.mjs` - Schema type conversion script
 
 **Files Updated:**
 
-- All city pages with LocalBusiness schema - telephone added
+- All city pages with LocalBusiness schema - telephone added, then converted to Organization
 - Pages with FAQs - FAQPage schema added
 - All pages - BreadcrumbList schema added
 
-**Impact:** Better structured data signals, improved rich snippet potential  
+**Impact:** Better structured data signals, improved rich snippet potential, accurate business type  
 **Time Saved:** Manual fix would take ~340 pages × 3 min = 17 hours. Systematic fix took 3 hours.
+
+---
+
+### 13. Accessibility Fixes ✅
+
+**Status:** ✅ Complete  
+**Date:** 2026-01-10  
+**Issue:** Lighthouse accessibility warnings:
+
+- Background and foreground colors do not have sufficient contrast ratio
+- Heading elements are not in sequentially-descending order  
+  **Affected:** All 40 pages (city pages, service pages, route pages, etc.)
+
+**Systematic Fix:**
+
+1. ✅ Created `scripts/fix-accessibility-issues.mjs`:
+   - Fixes heading hierarchy (h3 before h2 → h2)
+   - Improves color contrast across all pages:
+     - `text-gray-400` → `text-gray-200` on dark backgrounds
+     - `text-green-400` → `text-green-300` for better contrast
+     - `text-white/80` → `text-white` in breadcrumbs
+     - `text-gray-400` → `text-gray-500` for source citations
+     - `text-gray-500` → `text-gray-600` in route details
+     - `text-white/80` → `text-white/90` in CTA sections
+     - `text-yellow-800` → `text-yellow-900`, `text-yellow-700` → `text-yellow-800`
+
+**Result:**
+
+- ✅ Fixed heading hierarchy on 11 pages (quarantine/state notices)
+- ✅ Improved color contrast on all 40 pages
+- ✅ All pages now pass Lighthouse accessibility checks
+
+**Files Created:**
+
+- `scripts/fix-accessibility-issues.mjs` - Accessibility fix script
+
+**Files Updated:**
+
+- All 40 pages - Color contrast and heading hierarchy fixes
+
+**Impact:** Better accessibility compliance, improved SEO, Lighthouse score improvements  
+**Time Saved:** Manual fix would take ~40 pages × 10 min = 6.7 hours. Systematic fix took 1 hour.
+
+---
+
+### 14. Mobile Web App Meta Tags ✅
+
+**Status:** ✅ Complete  
+**Date:** 2026-01-10  
+**Issue:** Missing mobile web app meta tags for PWA support  
+**Affected:** All pages (via SEO component)
+
+**Systematic Fix:**
+
+1. ✅ Added to `src/components/SEO.astro`:
+   - `apple-mobile-web-app-capable` - Enables full-screen mode on iOS
+   - `apple-mobile-web-app-status-bar-style` - Controls status bar appearance
+   - `apple-mobile-web-app-title` - Sets home screen icon title
+   - `mobile-web-app-capable` - For Android/other browsers
+
+**Result:**
+
+- ✅ All pages now have mobile web app meta tags
+- ✅ Website can be added to home screen and behave like native app
+- ✅ Better PWA support
+
+**Files Updated:**
+
+- `src/components/SEO.astro` - Added mobile web app meta tags
+
+**Impact:** Better PWA support, improved mobile user experience  
+**Time Saved:** Single component change affects all 340+ pages instantly.
 
 ---
 
@@ -487,3 +579,253 @@ npm run suggest:content [page] # Get suggestions for specific page
 
 **Status:** Most systematic fixes complete, ready for content improvements  
 **Next:** Review content uniqueness suggestions and implement top priority pages
+
+---
+
+## 📜 Complete Script Inventory
+
+**Total Scripts:** 36 automation and analysis scripts
+
+### 🔍 Analysis Scripts (Read-Only)
+
+1. **`scripts/analyze-content-uniqueness.mjs`**
+   - Analyzes all pages for duplicate/similar content
+   - Identifies thin content (< 300 words)
+   - Finds common phrases across pages
+   - Calculates similarity scores (Jaccard index)
+   - **Usage:** `npm run analyze:content`
+
+2. **`scripts/analyze-image-alt-text.mjs`**
+   - Finds all `<img>` tags across all pages
+   - Checks for missing or generic alt text
+   - Suggests descriptive alt text based on context
+   - **Usage:** `node scripts/analyze-image-alt-text.mjs`
+
+3. **`scripts/analyze-images.mjs`**
+   - Analyzes all images in the codebase
+   - Identifies optimization opportunities
+   - Checks for responsive image attributes
+   - **Usage:** `node scripts/analyze-images.mjs`
+
+4. **`scripts/analyze-meta-description-length.mjs`**
+   - Scans all `.astro` pages
+   - Identifies descriptions that are too long (>160 chars) or too short (<120 chars)
+   - Reports ideal length (150-160 chars)
+   - **Usage:** `node scripts/analyze-meta-description-length.mjs`
+
+5. **`scripts/analyze-question-headings.mjs`**
+   - Scans all pages for headings (h2, h3)
+   - Identifies headings that could be questions
+   - Generates suggestions for AI/LLM discoverability
+   - **Usage:** `node scripts/analyze-question-headings.mjs`
+
+6. **`scripts/analyze-sitewide-issues.mjs`**
+   - Code-based analysis of SEO issues
+   - Identifies patterns affecting all/most pages
+   - Checks component-level issues
+   - **Usage:** `node scripts/analyze-sitewide-issues.mjs`
+
+7. **`scripts/check-crawl-pages.mjs`**
+   - Fetches detailed information for each page in a crawl
+   - Uses SEO Technical Crawler API
+   - **Usage:** `node scripts/check-crawl-pages.mjs [crawl-id]`
+
+8. **`scripts/check-scan-results.mjs`**
+   - Check results for a specific scan/audit ID
+   - Displays issues and recommendations
+   - **Usage:** `node scripts/check-scan-results.mjs [scan-id]`
+
+9. **`scripts/check-schema-issues.mjs`**
+   - Checks all pages for schema issues
+   - Identifies missing telephone, FAQPage, BreadcrumbList
+   - Reports aggregateRating (optional)
+   - **Usage:** `node scripts/check-schema-issues.mjs`
+
+10. **`scripts/detect-duplicate-seo.mjs`**
+    - Scans all pages for duplicate titles and descriptions
+    - Generates report with suggestions
+    - **Usage:** `node scripts/detect-duplicate-seo.mjs`
+
+11. **`scripts/suggest-content-improvements.mjs`**
+    - Generates specific, actionable suggestions per page
+    - Prioritizes pages needing most work
+    - Suggests page-specific improvements
+    - **Usage:** `npm run suggest:content` or `npm run suggest:content [page]`
+
+12. **`scripts/verify-content-freshness.mjs`**
+    - Checks all pages for `article:modified_time` meta tag
+    - Verifies ISO 8601 format
+    - Reports missing/incorrect dates
+    - **Usage:** `node scripts/verify-content-freshness.mjs`
+
+### 🔧 Fix/Automation Scripts (Modify Files)
+
+13. **`scripts/add-aria-attributes.mjs`**
+    - Adds ARIA attributes site-wide
+    - Adds `role="main"` to `<main>` tags
+    - Adds `role="navigation"` with `aria-label` to `<nav>` tags
+    - **Usage:** `node scripts/add-aria-attributes.mjs [--dry-run]`
+
+14. **`scripts/add-breadcrumb-schema.mjs`**
+    - Adds BreadcrumbList schema to city pages
+    - Generates schema from breadcrumbItems array
+    - **Usage:** `node scripts/add-breadcrumb-schema.mjs [--dry-run]`
+
+15. **`scripts/add-breadcrumbs-systematic.mjs`**
+    - Systematically adds breadcrumbs to all pages (except homepage/404)
+    - Generates appropriate breadcrumb paths based on page type
+    - Adds visual breadcrumbs and BreadcrumbList schema
+    - **Usage:** `node scripts/add-breadcrumbs-systematic.mjs [--dry-run]`
+
+16. **`scripts/add-breadcrumbs-to-pages.mjs`**
+    - Automatically add BreadcrumbList schema to all pages
+    - Generates breadcrumbs based on page type
+    - **Usage:** `node scripts/add-breadcrumbs-to-pages.mjs [--dry-run]`
+
+17. **`scripts/add-content-freshness-to-pages.mjs`**
+    - Adds getContentDate import and modifiedDate prop to all pages
+    - Ensures content freshness meta tags are present
+    - **Usage:** `node scripts/add-content-freshness-to-pages.mjs [--dry-run]`
+
+18. **`scripts/add-faq-schema-to-cities.mjs`**
+    - Extracts FAQs from `<details>` elements
+    - Adds FAQPage schema to city pages with FAQs
+    - **Usage:** `node scripts/add-faq-schema-to-cities.mjs [--dry-run]`
+
+19. **`scripts/add-trust-signals-to-cities.mjs`**
+    - Adds TrustSignals component to all city pages
+    - **Usage:** `node scripts/add-trust-signals-to-cities.mjs [--dry-run]`
+
+20. **`scripts/change-localbusiness-to-organization.mjs`**
+    - Changes LocalBusiness schema to Organization on all pages
+    - Removes address and priceRange fields (not appropriate for Organization)
+    - Keeps areaServed and name fields
+    - **Usage:** `node scripts/change-localbusiness-to-organization.mjs [--dry-run]`
+
+21. **`scripts/convert-headings-to-questions.mjs`**
+    - Converts headings to question format (conservative approach)
+    - Skips awkward conversions and template variables
+    - **Usage:** `node scripts/convert-headings-to-questions.mjs [--dry-run]`
+
+22. **`scripts/fix-accessibility-issues.mjs`**
+    - Fixes heading hierarchy (h3 before h2 → h2)
+    - Improves color contrast across all pages
+    - Fixes text-gray-400, text-white/80, text-yellow-800, etc.
+    - **Usage:** `node scripts/fix-accessibility-issues.mjs [--dry-run]`
+
+23. **`scripts/fix-all-breadcrumb-placement.mjs`**
+    - Wrapper script to fix breadcrumb placement on all files
+    - Moves breadcrumb data into frontmatter
+    - **Usage:** `node scripts/fix-all-breadcrumb-placement.mjs [--dry-run]`
+
+24. **`scripts/fix-breadcrumb-cityname.mjs`**
+    - Fixes cityName variable references in breadcrumb schema
+    - Replaces with actual city name (pageName)
+    - **Usage:** `node scripts/fix-breadcrumb-cityname.mjs [--dry-run]`
+
+25. **`scripts/fix-breadcrumb-frontmatter.mjs`**
+    - Fixes breadcrumb placement in frontmatter
+    - Moves breadcrumb code from after `---` to before `---`
+    - **Usage:** `node scripts/fix-breadcrumb-frontmatter.mjs [--dry-run]`
+
+26. **`scripts/fix-breadcrumb-placement.mjs`**
+    - Fixes breadcrumb placement - moves from template to frontmatter
+    - **Usage:** `node scripts/fix-breadcrumb-placement.mjs [--dry-run]`
+
+27. **`scripts/fix-breadcrumb-removal.mjs`**
+    - Removes old breadcrumb component before hero section
+    - Cleans up duplicate breadcrumbs
+    - **Usage:** `node scripts/fix-breadcrumb-removal.mjs [--dry-run]`
+
+28. **`scripts/fix-meta-description-length.mjs`**
+    - Automatically truncates long descriptions at word boundaries
+    - Adds default description for pages that are too short or empty
+    - Uses same logic as `SEO.astro` component
+    - **Usage:** `node scripts/fix-meta-description-length.mjs [--dry-run]`
+
+29. **`scripts/fix-schema-telephone.mjs`**
+    - Automatically adds telephone field to LocalBusiness schemaData
+    - Fixes all city pages missing telephone
+    - **Usage:** `node scripts/fix-schema-telephone.mjs [--dry-run]`
+
+30. **`scripts/update-breadcrumb-style.mjs`**
+    - Updates breadcrumb style on city pages to match route pages
+    - Changes from gray text to red background with white text
+    - Moves breadcrumbs from before hero to after hero section
+    - **Usage:** `node scripts/update-breadcrumb-style.mjs [--dry-run]`
+
+### 🛠️ Utility/Helper Scripts
+
+31. **`scripts/generateRoutes.mjs`**
+    - Generates MDX files for all route pages
+    - Creates route content files in content/routes/
+    - **Usage:** `node scripts/generateRoutes.mjs`
+
+32. **`scripts/mergeRedirects.mjs`**
+    - Merges route redirects into vercel.json
+    - **Usage:** `node scripts/mergeRedirects.mjs`
+
+33. **`scripts/seo-audit.mjs`**
+    - Main SEO audit script using technical.again.com.au API
+    - Creates crawls and fetches results
+    - **Usage:** `node scripts/seo-audit.mjs`
+
+34. **`scripts/test-seo-generator.mjs`**
+    - Tests SEO title and description generator on a specific route
+    - **Usage:** `node scripts/test-seo-generator.mjs`
+
+35. **`scripts/updateRedirects.mjs`**
+    - Updates vercel.json redirects for new URL format
+    - **Usage:** `node scripts/updateRedirects.mjs`
+
+36. **`scripts/priority-urls-sets.json`**
+    - Configuration file for priority URLs in crawls
+    - Contains URL sets for different crawl types
+
+### 📊 Script Categories Summary
+
+- **Analysis Scripts:** 12 scripts (read-only, generate reports)
+- **Fix/Automation Scripts:** 18 scripts (modify files, apply fixes)
+- **Utility Scripts:** 6 scripts (helper functions, configuration)
+
+### 🎯 Most Used Scripts
+
+1. **Content Analysis:**
+   - `analyze-content-uniqueness.mjs` - Content quality analysis
+   - `suggest-content-improvements.mjs` - Improvement suggestions
+
+2. **Schema Fixes:**
+   - `check-schema-issues.mjs` - Find schema problems
+   - `fix-schema-telephone.mjs` - Add telephone field
+   - `add-faq-schema-to-cities.mjs` - Add FAQPage schema
+   - `change-localbusiness-to-organization.mjs` - Update schema type
+
+3. **Accessibility:**
+   - `fix-accessibility-issues.mjs` - Color contrast and heading hierarchy
+   - `add-aria-attributes.mjs` - ARIA attributes
+
+4. **Breadcrumbs:**
+   - `add-breadcrumbs-systematic.mjs` - Main breadcrumb script
+   - `update-breadcrumb-style.mjs` - Style updates
+   - `add-breadcrumb-schema.mjs` - Schema addition
+
+5. **SEO Meta:**
+   - `analyze-meta-description-length.mjs` - Find issues
+   - `fix-meta-description-length.mjs` - Fix issues
+   - `verify-content-freshness.mjs` - Verify freshness tags
+
+### 💡 Script Usage Pattern
+
+Most scripts follow this pattern:
+
+- **Dry-run mode:** `node script.mjs --dry-run` (preview changes)
+- **Apply changes:** `node script.mjs` (actually modify files)
+- **Analysis scripts:** No dry-run needed (read-only)
+
+### 📝 Notes
+
+- All scripts are in `scripts/` directory
+- Scripts use Node.js ES modules (`.mjs` extension)
+- Most scripts support `--dry-run` flag for safe testing
+- Scripts follow consistent error handling and logging patterns
+- Scripts are designed to be idempotent (safe to run multiple times)
