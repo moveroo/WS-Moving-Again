@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEO from '../components/SEO.astro';
 import BrainAnalytics from '../components/BrainAnalytics.astro';
+import Analytics from '../components/Analytics.astro';
 import Schema from '../components/Schema.astro';
 import { BRAND } from '../utils/brand';
 
@@ -29,6 +30,9 @@ const {
 <SEO title={title} description={description} image={image} modifiedDate={modifiedDate}>
   <!-- Brain Analytics (First-Party) -->
   <BrainAnalytics slot="head" />
+
+  <!-- Google tag (gtag.js) - uses PUBLIC_GA_ID from .env -->
+  <Analytics provider="gtag" slot="head" />
 
   <!-- Global Schema -->
   <Schema type={schemaType} data={schemaData} slot="head" />
