@@ -1,11 +1,39 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import { getContentCollectionDate } from './src/utils/fileDates.js';
+
+// Sitemap serializer to add lastmod dates to entries
+function sitemapSerialize(item) {
+  // Extract collection and slug from URL for route pages
+  // Routes look like: https://movingagain.com.au/adelaide-ballarat/
+  const urlPath = new URL(item.url).pathname.replace(/^\/|\/$/g, '');
+
+  // Check if this is a route page (contains a dash separator)
+  // Route pages are for the 'routes' collection
+  if (urlPath && urlPath.includes('-') && !urlPath.includes('/')) {
+    try {
+      // For route pages, get the lastmod date from the content file
+      const lastmod = getContentCollectionDate('routes', urlPath);
+      return {
+        ...item,
+        lastmod: new Date(lastmod),
+      };
+    } catch {
+      // If we can't get the date, just return the item without lastmod
+      // This maintains graceful degradation
+      return item;
+    }
+  }
+
+  // For other pages, don't add lastmod (they'll use server defaults if configured)
+  return item;
+}
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://movingagain.com.au',
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap({ serialize: sitemapSerialize })],
   // Optimize images automatically
   image: {
     service: {
