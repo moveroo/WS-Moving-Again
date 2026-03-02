@@ -1,3 +1,4 @@
 
 .deftly/actions/*.md
 .deftly/actions/**/*.md
+public/sitemap.html
