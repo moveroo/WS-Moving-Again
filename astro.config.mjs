@@ -19,15 +19,23 @@ function sitemapSerialize(item) {
         ...item,
         lastmod: new Date(lastmod),
       };
-    } catch {
-      // If we can't get the date, just return the item without lastmod
-      // This maintains graceful degradation
-      return item;
+    } catch (error) {
+      // Log error for debugging but still provide a lastmod using fallback
+      // This ensures all pages have lastmod even if we can't get the exact date
+      console.warn(`Failed to get content collection date for route "${urlPath}":`, error.message);
+      return {
+        ...item,
+        lastmod: new Date(),
+      };
     }
   }
 
-  // For other pages, don't add lastmod (they'll use server defaults if configured)
-  return item;
+  // For other pages (homepage, static pages, etc.), use current date as fallback
+  // This ensures all sitemap entries have a lastmod value for SEO
+  return {
+    ...item,
+    lastmod: new Date(),
+  };
 }
 
 // https://astro.build/config
