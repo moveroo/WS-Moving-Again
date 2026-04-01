@@ -1,7 +1,13 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { getContentCollectionDate } from './src/utils/fileDates.js';
+
+const repoRoot = path.dirname(fileURLToPath(import.meta.url));
+const redirectSourcePaths = loadRedirectSourcePaths(path.join(repoRoot, 'vercel.json'));
 
 // Sitemap serializer to add lastmod dates to entries
 function sitemapSerialize(item) {
@@ -41,7 +47,13 @@ function sitemapSerialize(item) {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://movingagain.com.au',
-  integrations: [tailwind(), sitemap({ serialize: sitemapSerialize })],
+  integrations: [
+    tailwind(),
+    sitemap({
+      filter: (page) => !redirectSourcePaths.has(new URL(page).pathname),
+      serialize: sitemapSerialize,
+    }),
+  ],
   // Optimize images automatically
   image: {
     service: {
@@ -55,3 +67,16 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
 });
+
+function loadRedirectSourcePaths(vercelConfigPath) {
+  try {
+    const vercelConfig = JSON.parse(fs.readFileSync(vercelConfigPath, 'utf8'));
+    return new Set(
+      (vercelConfig.redirects || [])
+        .filter((redirect) => redirect?.source && !redirect?.has)
+        .map((redirect) => redirect.source)
+    );
+  } catch {
+    return new Set();
+  }
+}

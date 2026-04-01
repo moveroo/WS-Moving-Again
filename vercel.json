@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.movingagain.com.au"
+        }
+      ],
+      "destination": "https://movingagain.com.au/$1",
+      "permanent": true
+    },
+    {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
