@@ -42,6 +42,26 @@
       "permanent": true
     },
     {
+      "source": "/contact-page",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-page/",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-au",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-au/",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
       "source": "/bendigo/",
       "destination": "/melbourne/",
       "permanent": true
