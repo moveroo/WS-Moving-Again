@@ -17,6 +17,31 @@
       "permanent": true
     },
     {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
+      "permanent": true
+    },
+    {
       "source": "/bendigo/",
       "destination": "/melbourne/",
       "permanent": true
@@ -68,7 +93,7 @@
     },
     {
       "source": "/contact-moving-again/",
-      "destination": "/contact/",
+      "destination": "https://removalistquotes.movingagain.com.au/contact",
       "permanent": true
     },
     {
