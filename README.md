@@ -1,115 +1,70 @@
-# Moving Again Website (Astro)
+# MM-movingagain.com.au
 
-This repository contains the source code for the new **Moving Again** website,
-built with [Astro](https://astro.build) and
-[Tailwind CSS](https://tailwindcss.com). This project is intended to replace the
-existing WordPress implementation with a high-performance, static-first
-architecture.
+Canonical Astro controller for `movingagain.com.au`.
 
-## 🛠️ Tech Stack
+This repo contains the live Moving Again Astro rebuild and the large route/content estate that replaced the former WordPress implementation. It also contains a deeper set of SEO and content-analysis scripts than most fleet sites, so this standardization pass adds the missing migration and cutover contract without stripping out the existing tooling.
 
-- **Framework**: [Astro 5](https://astro.build)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com)
-- **Language**: TypeScript
-- **Linting/Formatting**: ESLint, Prettier
+## Current State
 
-## 🎨 Design System
+- domain: `https://movingagain.com.au`
+- framework: Astro
+- hosting: Netlify (per current `brain.manifest.json` controller record)
+- local controller path: `MM-movingagain.com.au`
+- redirect source of truth: `vercel.json` plus supporting redirect-generation scripts
 
-The project uses a custom Tailwind configuration to match the Moving Again brand
-identity.
+The current migration and operating paperwork lives in:
 
-### Colors
+- [docs/migration-ledger.md](docs/migration-ledger.md)
+- [docs/redirect-map.md](docs/redirect-map.md)
+- [docs/indexed-valid-inventory.md](docs/indexed-valid-inventory.md)
+- [docs/homepage-audit.md](docs/homepage-audit.md)
+- [docs/live-cutover-status.md](docs/live-cutover-status.md)
 
-Use these utility classes for branding:
+Existing SEO analysis material remains valuable, especially:
 
-| Color Name       | Hex       | Usage                       | Class Example                      |
-| ---------------- | --------- | --------------------------- | ---------------------------------- |
-| **Brand Red**    | `#800006` | Primary CTA, Headers        | `bg-brand-red`, `text-brand-red`   |
-| **Brand Yellow** | `#F1C40D` | Secondary CTA, Highlights   | `bg-brand-yellow`                  |
-| **Brand Accent** | `#B23850` | Logo Accent                 | `text-brand-accent`                |
-| **Brand Dark**   | `#191919` | Main Text, Dark Backgrounds | `text-brand-dark`, `bg-brand-dark` |
-| **Brand Light**  | `#FAFAFA` | Page Backgrounds            | `bg-brand-light`                   |
-| **Brand Gray**   | `#333333` | Borders, Footer Backgrounds | `border-brand-gray`                |
+- [docs/INDEX-SYSTEMATIC-SEO.md](docs/INDEX-SYSTEMATIC-SEO.md)
+- [docs/PRIORITY-PAGES-STRATEGY.md](docs/PRIORITY-PAGES-STRATEGY.md)
+- [docs/CRAWL-42-ANALYSIS.md](docs/CRAWL-42-ANALYSIS.md)
+- [docs/CRAWL-44-ANALYSIS.md](docs/CRAWL-44-ANALYSIS.md)
 
-### Fonts
-
-- **Primary Font**: `Roboto` (Google Fonts). configured as the default
-  sans-serif font.
-
-### UI Tokens
-
-- **Border Radius**: `rounded-brand` (20px) - used for buttons and cards.
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm
-
-### Installation
-
-```bash
-npm install
-```
-
-### Development
-
-Start the local development server:
+## Important Commands
 
 ```bash
 npm run dev
-```
-
-Visit `http://localhost:4321` to see the site.
-
-### Build
-
-Build the project for production:
-
-```bash
 npm run build
+npm run check:seo
+npm run seo:audit
 ```
 
-The output will be in the `dist/` directory.
+Useful supporting commands:
 
-### Linting & Formatting
+- `npm run seo:page`
+- `npm run seo:crawl`
+- `npm run analyze:duplicates`
+- `npm run analyze:content`
+- `npm run analyze:alt-text`
 
-Ensure code quality before committing:
+## Content And Redirect Sources
 
-```bash
-npm run lint      # Check for linting errors
-npm run lint:fix  # Automatically fix linting errors
-npm run format    # Format code with Prettier
-```
+- route markdown: `src/content/routes/`
+- core commercial pages: `src/pages/`
+- brand constants: `src/utils/brand.ts`
+- redirect config: `vercel.json`
+- redirect helper scripts: `scripts/generateRoutes.mjs`, `scripts/updateRedirects.mjs`, `scripts/mergeRedirects.mjs`
 
-## 📂 Project Structure
+## Environment
 
-```text
-/
-├── src/
-│   ├── components/    # Reusable UI components (SEO, Connectors, UI elements)
-│   ├── layouts/       # (Optional) Page layouts
-│   ├── pages/         # File-based routing (index.astro, etc.)
-│   └── styles/        # Global styles (if any)
-├── public/            # Static assets (fonts, images, robots.txt)
-├── astro.config.mjs   # Astro configuration
-└── tailwind.config.mjs # Tailwind configuration (Design tokens)
-```
+Copy `.env.example` and set the real values when needed:
 
-## 🧩 Key Components
+- `PUBLIC_SITE_URL`
+- `PUBLIC_SITE_NAME`
+- `PUBLIC_SITE_DESCRIPTION`
+- `PUBLIC_SITE_IMAGE`
+- `PUBLIC_GA_ID`
+- `PUBLIC_MATOMO_BASE_URL`
+- `PUBLIC_MATOMO_SITE_ID`
 
-- **`SEO.astro`**: Wraps pages to handle meta tags, Open Graph, and titles.
-  **Must be used on every page.**
-- **`Analytics.astro`**: Handles Google Analytics/Tag Manager injection.
-- **`Schema.astro`**: Generates JSON-LD structured data for SEO.
+## Notes
 
-## 🤝 Best Practices
-
-1. **Use Tailwind Utility Classes**: Avoid writing custom CSS in `<style>`
-   blocks unless absolutely necessary. Use the `brand-*` colors.
-2. **Type Safety**: Use TypeScript interfaces for Component Props.
-3. **SEO First**: Ensure every page uses the `<SEO />` component and includes
-   unique titles/descriptions.
-4. **Images**: Use Astro's built-in `<Image />` component for optimized assets
-   where possible (or place in `public/` if generic).
+- this repo carries a heavier SEO-analysis history than the newer fleet builds; the new docs are there to make that work legible, not to replace it
+- `vercel.json` remains important even with Netlify as the recorded live platform because the repo still uses it as the machine-readable redirect source for tooling and sitemap filtering

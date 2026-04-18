@@ -1,11 +1,14 @@
 import type { APIRoute } from 'astro';
 
+const siteUrl =
+  import.meta.env.PUBLIC_SITE_URL || import.meta.env.SITE_URL || 'https://movingagain.com.au';
+
 const robotsTxt = `
 User-agent: *
 Allow: /
 
-Sitemap: ${import.meta.env.SITE}/sitemap-index.xml
-Sitemap: ${import.meta.env.SITE}/llms.txt
+Sitemap: ${siteUrl.replace(/\/$/, '')}/sitemap-index.xml
+Sitemap: ${siteUrl.replace(/\/$/, '')}/llms.txt
 `.trim();
 
 export const GET: APIRoute = () => {
