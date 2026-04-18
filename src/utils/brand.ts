@@ -21,7 +21,7 @@ export const BRAND = {
   // URLs
   website: 'https://movingagain.com.au',
   quoteUrl: 'https://removalistquotes.movingagain.com.au/quote/household',
-  carQuoteUrl: 'https://carquotes.movingagain.com.au/quote/v2',
+  carQuoteUrl: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
   insuranceUrl: 'https://movinginsurance.com.au',
 
   // Taglines

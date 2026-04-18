@@ -26,3 +26,5 @@ pnpm-debug.log*
 
 #Ignore cursor AI rules
 .cursor/rules/codacy.mdc
+.vercel
+.env*.local

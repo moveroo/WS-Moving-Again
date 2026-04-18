@@ -11,7 +11,7 @@
 - **WordPress Sitemap:** Verified Dec 26, 2025
 - **Quote System (Household):**
   `https://removalistquotes.movingagain.com.au/quote/household`
-- **Quote System (Car):** `https://carquotes.movingagain.com.au/quote/v2`
+- **Quote System (Car):** `https://removalistquotes.movingagain.com.au/quote/vehicle`
 - **Brain Baseline:** Snapshot ID 1, 2, 3
 
 ---
