@@ -57,6 +57,7 @@ if (description.length > DESC_MAX_LENGTH) {
 }
 
 const siteName = import.meta.env.PUBLIC_SITE_NAME || 'Moving Again';
+const rssUrl = `${PRODUCTION_DOMAIN}/rss.xml`;
 // Default author for business pages (organization name)
 // For business/service sites, the organization is the author
 const defaultAuthor = 'Moving Again'; // Use brand name directly
@@ -177,6 +178,7 @@ if (title) {
 
     <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${siteName} RSS Feed`} href={rssUrl} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
 

@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const groups = [
+  {
+    title: 'Core pages',
+    links: [
+      { href: '/', label: 'Home' },
+      { href: '/moving-interstate/', label: 'Moving interstate' },
+      { href: '/backloading/', label: 'Backloading' },
+      { href: '/questions/', label: 'Questions' },
+      { href: '/car-transport/', label: 'Car transport' },
+      { href: '/reviews/', label: 'Reviews' },
+    ],
+  },
+  {
+    title: 'Legal pages',
+    links: [
+      { href: '/privacy/', label: 'Privacy' },
+      { href: '/terms/', label: 'Terms' },
+      { href: '/terms-of-use/', label: 'Terms of use' },
+    ],
+  },
+];
+---
+
+<Layout
+  title="HTML Sitemap | Moving Again"
+  description="Human-readable sitemap for Moving Again covering the main service, guide, review, and legal pages."
+  schemaType="WebSite"
+>
+  <section class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+    <p class="text-sm font-bold uppercase tracking-[0.24em] text-brand-red">HTML sitemap</p>
+    <h1 class="mt-4 text-4xl font-bold tracking-tight text-brand-dark md:text-6xl">
+      Moving Again sitemap
+    </h1>
+    <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
+      A simple directory of the main Moving Again pages, including core service pages, moving
+      guides, and the legal references that support the live site.
+    </p>
+
+    <div class="mt-10 grid gap-4 md:grid-cols-2">
+      {
+        groups.map((group) => (
+          <section class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-bold text-brand-dark">{group.title}</h2>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              {group.links.map((link) => (
+                <li>
+                  <a class="text-brand-red underline-offset-4 hover:underline" href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

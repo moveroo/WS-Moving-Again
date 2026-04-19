@@ -21,26 +21,57 @@ async function exists(relativePath) {
 
 async function main() {
   const checks = [];
+  const packageJson = JSON.parse(await read('package.json'));
   const layout = await read('src/layouts/Layout.astro');
+  const seo = await read('src/components/SEO.astro');
   const envExample = await read('.env.example');
+  const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
+
+  for (const scriptName of ['check', 'check:contract', 'check:seo']) {
+    checks.push([
+      `package.json includes ${scriptName}`,
+      Boolean(packageJson.scripts?.[scriptName]),
+    ]);
+  }
 
   checks.push([
     'BrainAnalytics component exists',
     await exists('src/components/BrainAnalytics.astro'),
   ]);
-  checks.push(['Analytics component exists', await exists('src/components/Analytics.astro')]);
+  checks.push([
+    'analytics wrapper exists',
+    await exists('src/components/analytics/Analytics.astro'),
+  ]);
+  checks.push(['matomo wrapper exists', await exists('src/components/analytics/Matomo.astro')]);
   checks.push([
     'Layout imports BrainAnalytics',
     layout.includes("import BrainAnalytics from '../components/BrainAnalytics.astro';"),
   ]);
   checks.push([
-    'Layout imports Analytics',
-    layout.includes("import Analytics from '../components/Analytics.astro';"),
+    'Layout imports analytics wrapper',
+    layout.includes("import Analytics from '../components/analytics/Analytics.astro';"),
   ]);
   checks.push([
-    'Layout includes Matomo config keys',
-    layout.includes('PUBLIC_MATOMO_BASE_URL') && layout.includes('PUBLIC_MATOMO_SITE_ID'),
+    'analytics wrapper includes Matomo',
+    analyticsWrapper.includes("import Matomo from './Matomo.astro';"),
   ]);
+  checks.push(['SEO links RSS feed', seo.includes('application/rss+xml')]);
+  for (const relativePath of [
+    'src/pages/rss.xml.ts',
+    'src/pages/sitemap.astro',
+    'src/pages/robots.txt.ts',
+    'src/pages/privacy.astro',
+    'src/pages/terms.astro',
+    'docs/migration-ledger.md',
+    'docs/redirect-map.md',
+    'docs/live-cutover-status.md',
+    'docs/homepage-audit.md',
+    'docs/indexed-valid-inventory.md',
+    'docs/nonindexed-redirect-strategy.md',
+    'docs/nonindexed-redirect-report.md',
+  ]) {
+    checks.push([`${relativePath} exists`, await exists(relativePath)]);
+  }
   checks.push([
     '.env.example includes PUBLIC_MATOMO_BASE_URL=',
     envExample.includes('PUBLIC_MATOMO_BASE_URL='),

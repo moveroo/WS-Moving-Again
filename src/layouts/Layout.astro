@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEO from '../components/SEO.astro';
 import BrainAnalytics from '../components/BrainAnalytics.astro';
-import Analytics from '../components/Analytics.astro';
+import Analytics from '../components/analytics/Analytics.astro';
 import Schema from '../components/Schema.astro';
 import { BRAND } from '../utils/brand';
 
@@ -25,30 +25,14 @@ const {
   schemaData = {},
   modifiedDate,
 } = Astro.props;
-const matomoBaseUrl = (
-  import.meta.env.PUBLIC_MATOMO_BASE_URL || 'https://stats.redirection.com.au'
-).replace(/\/$/, '');
-const matomoSiteId = import.meta.env.PUBLIC_MATOMO_SITE_ID || '9';
 ---
 
 <SEO title={title} description={description} image={image} modifiedDate={modifiedDate}>
   <!-- Brain Analytics (First-Party) -->
   <BrainAnalytics slot="head" />
 
-  <link rel="preconnect" href={matomoBaseUrl} slot="head" />
-  <link rel="dns-prefetch" href={matomoBaseUrl} slot="head" />
-  {
-    matomoBaseUrl && matomoSiteId && (
-      <script
-        is:inline
-        slot="head"
-        set:html={`var _paq = window._paq = window._paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u='${matomoBaseUrl}/'; _paq.push(['setTrackerUrl', u + 'piwik.php']); _paq.push(['setSiteId', '${matomoSiteId}']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.async=true; g.src=u + 'piwik.js'; s.parentNode.insertBefore(g,s); })();`}
-      />
-    )
-  }
-
   <!-- Google tag (gtag.js) - uses PUBLIC_GA_ID from .env -->
-  <Analytics provider="gtag" slot="head" />
+  <Analytics slot="head" />
 
   <!-- Global Schema -->
   <Schema type={schemaType} data={schemaData} slot="head" />
