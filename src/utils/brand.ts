@@ -22,9 +22,23 @@ export const BRAND = {
   website: 'https://movingagain.com.au',
   quoteUrl: 'https://removalistquotes.movingagain.com.au/quote/household',
   carQuoteUrl: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
+  contactUrl: 'https://removalistquotes.movingagain.com.au/contact',
   insuranceUrl: 'https://movinginsurance.com.au',
 
   // Taglines
   tagline: `${YEARS_IN_BUSINESS} Years of Moving Australia`,
   shortTagline: 'Since 1995',
+  analytics: {
+    siteKey: 'movingagain',
+    trackedLinks: [
+      {
+        href: 'https://removalistquotes.movingagain.com.au/quote/household',
+        eventName: 'quote_household_click',
+      },
+      {
+        href: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
+        eventName: 'quote_vehicle_click',
+      },
+    ],
+  },
 };

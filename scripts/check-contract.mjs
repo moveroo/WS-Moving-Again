@@ -42,6 +42,7 @@ async function main() {
     'analytics wrapper exists',
     await exists('src/components/analytics/Analytics.astro'),
   ]);
+  checks.push(['ga4 wrapper exists', await exists('src/components/analytics/Ga4.astro')]);
   checks.push(['matomo wrapper exists', await exists('src/components/analytics/Matomo.astro')]);
   checks.push([
     'Layout imports BrainAnalytics',
@@ -50,6 +51,10 @@ async function main() {
   checks.push([
     'Layout imports analytics wrapper',
     layout.includes("import Analytics from '../components/analytics/Analytics.astro';"),
+  ]);
+  checks.push([
+    'analytics wrapper includes Ga4',
+    analyticsWrapper.includes("import Ga4 from './Ga4.astro';"),
   ]);
   checks.push([
     'analytics wrapper includes Matomo',
@@ -72,6 +77,14 @@ async function main() {
   ]) {
     checks.push([`${relativePath} exists`, await exists(relativePath)]);
   }
+  checks.push([
+    '.env.example includes PUBLIC_ANALYTICS_PROVIDER=',
+    envExample.includes('PUBLIC_ANALYTICS_PROVIDER='),
+  ]);
+  checks.push([
+    '.env.example includes PUBLIC_GA_MEASUREMENT_ID=',
+    envExample.includes('PUBLIC_GA_MEASUREMENT_ID='),
+  ]);
   checks.push([
     '.env.example includes PUBLIC_MATOMO_BASE_URL=',
     envExample.includes('PUBLIC_MATOMO_BASE_URL='),
