@@ -3,10 +3,10 @@
   "site_url": "https://movingagain.com.au",
   "framework": "Astro",
   "controller_type": "static_site",
-  "repo_path": "/Users/jasonhill/Projects/websites/MM-movingagain.com.au",
+  "repo_path": "/Users/jasonhill/Projects/Business/websites/MM-movingagain.com.au",
   "action_adapter": "static-repo-build-deploy",
   "capabilities": ["audit", "verify_analytics", "redeploy_static"],
-  "deploy_target": "netlify",
+  "deploy_target": "vercel",
   "metadata": {
     "managed_surface": true
   }

@@ -4,7 +4,7 @@
 
 - domain: `movingagain.com.au`
 - local controller: `MM-movingagain.com.au`
-- hosting platform: Netlify (per current controller record)
+- hosting platform: Vercel
 - previous live platform: WordPress
 - current live platform: Astro
 
@@ -24,7 +24,7 @@
 
 ## Operational Caveat
 
-`vercel.json` remains part of the live operational picture even though the recorded hosting target is Netlify, because this repo still uses it as the redirect inventory and Astro config reads from it when filtering sitemap entries.
+`vercel.json` remains part of the live operational picture because it is both the redirect inventory and the active hosting config, while Astro also reads from it when filtering sitemap entries.
 
 ## Follow-Up
 

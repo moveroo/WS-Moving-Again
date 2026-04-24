@@ -8,7 +8,7 @@ This repo contains the live Moving Again Astro rebuild and the large route/conte
 
 - domain: `https://movingagain.com.au`
 - framework: Astro
-- hosting: Netlify (per current `brain.manifest.json` controller record)
+- hosting: Vercel
 - local controller path: `MM-movingagain.com.au`
 - redirect source of truth: `vercel.json` plus supporting redirect-generation scripts
 
@@ -67,4 +67,4 @@ Copy `.env.example` and set the real values when needed:
 ## Notes
 
 - this repo carries a heavier SEO-analysis history than the newer fleet builds; the new docs are there to make that work legible, not to replace it
-- `vercel.json` remains important even with Netlify as the recorded live platform because the repo still uses it as the machine-readable redirect source for tooling and sitemap filtering
+- `vercel.json` remains the live redirect source of truth and is also aligned with the active Vercel hosting setup
