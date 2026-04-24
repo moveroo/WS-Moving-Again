@@ -43,7 +43,9 @@ if (analyticsProvider && analyticsConfig) {
   };
 }
 
-const enabled = analyticsEnabled ? analyticsEnabled === 'true' : Boolean(provider);
+const explicitAnalyticsGate = analyticsEnabled ? analyticsEnabled === 'true' : true;
+// GA4 is a required monitoring contract for this property, so keep it installed in prod.
+const enabled = Boolean(provider) && (explicitAnalyticsGate || provider === 'ga4');
 ---
 
 {
