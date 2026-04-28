@@ -54,10 +54,17 @@ const homepageDate = getContentDate(currentFile);
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
             data-brain-track="quote"
-            href="https://quotes.moveroo.com.au/quote/household"
+            href={BRAND.quoteUrl}
             class="inline-flex items-center justify-center gap-2 py-5 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200"
           >
             <span>Get Your Free Quote</span>
+            <span>→</span>
+          </a>
+          <a
+            href={BRAND.carQuoteUrl}
+            class="inline-flex items-center justify-center gap-2 py-5 px-10 bg-brand-yellow text-brand-dark font-bold rounded-brand text-lg hover:bg-yellow-300 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200"
+          >
+            <span>Vehicle Quote</span>
             <span>→</span>
           </a>
         </div>
@@ -459,7 +466,7 @@ const homepageDate = getContentDate(currentFile);
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
           data-brain-track="quote"
-          href="https://quotes.moveroo.com.au/quote/household"
+          href={BRAND.quoteUrl}
           class="inline-flex items-center justify-center gap-2 py-5 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-all shadow-lg"
         >
           Get Your Free Quote
@@ -471,7 +478,7 @@ const homepageDate = getContentDate(currentFile);
           Common Questions
         </a>
         <a
-          href="https://removalistquotes.movingagain.com.au/contact"
+          href={BRAND.contactUrl}
           class="inline-flex items-center justify-center gap-2 py-5 px-10 bg-transparent text-white/80 font-semibold rounded-brand text-lg hover:text-white hover:underline transition-all"
         >
           Contact Us

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import FactBox from '../components/FactBox.astro';
 import Definitions from '../components/Definitions.astro';
 import TrustSignals from '../components/TrustSignals.astro';
+import { BRAND } from '../utils/brand';
 import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
@@ -194,7 +195,7 @@ const breadcrumbItems = [
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://quotes.moveroo.com.au/quote/vehicle"
+            href={BRAND.carQuoteUrl}
             class="inline-block py-4 px-8 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
           >
             Get Transport Quote
@@ -400,7 +401,7 @@ const breadcrumbItems = [
 
       <p class="text-center text-gray-500 mt-4 text-sm">
         Prices are indicative for standard sedans. <a
-          href="https://quotes.moveroo.com.au/quote/vehicle"
+          href={BRAND.carQuoteUrl}
           class="text-brand-red hover:underline">Get an exact quote</a
         > for your vehicle.
       </p>
@@ -650,7 +651,7 @@ const breadcrumbItems = [
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="https://quotes.moveroo.com.au/quote/vehicle"
+          href={BRAND.carQuoteUrl}
           class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
         >
           Get Your Free Quote

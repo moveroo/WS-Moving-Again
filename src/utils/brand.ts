@@ -20,8 +20,9 @@ export const BRAND = {
 
   // URLs
   website: 'https://movingagain.com.au',
-  quoteUrl: 'https://quotes.moveroo.com.au/quote/household',
-  carQuoteUrl: 'https://quotes.moveroo.com.au/quote/vehicle',
+  quoteUrl: 'https://removalistquotes.movingagain.com.au/quote/household',
+  carQuoteUrl: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
+  bookingUrl: 'https://removalistquotes.movingagain.com.au/booking/create',
   contactUrl: 'https://removalistquotes.movingagain.com.au/contact',
   insuranceUrl: 'https://movinginsurance.com.au',
 
@@ -32,11 +33,11 @@ export const BRAND = {
     siteKey: 'movingagain',
     trackedLinks: [
       {
-        href: 'https://quotes.moveroo.com.au/quote/household',
+        href: 'https://removalistquotes.movingagain.com.au/quote/household',
         eventName: 'quote_household_click',
       },
       {
-        href: 'https://quotes.moveroo.com.au/quote/vehicle',
+        href: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
         eventName: 'quote_vehicle_click',
       },
     ],

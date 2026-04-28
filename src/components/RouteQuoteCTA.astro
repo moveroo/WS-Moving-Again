@@ -1,4 +1,6 @@
 ---
+import { BRAND } from '../utils/brand';
+
 interface Props {
   origin: string;
   destination: string;
@@ -19,7 +21,7 @@ const { origin, destination } = Astro.props;
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a
         data-brain-track="quote"
-        href="https://quotes.moveroo.com.au/quote/household"
+        href={BRAND.quoteUrl}
         class="inline-block py-4 px-10 bg-brand-red text-white font-bold rounded-brand text-lg hover:bg-brand-accent transition-colors shadow-lg"
       >
         Get Your Free Quote

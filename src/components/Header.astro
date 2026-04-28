@@ -7,7 +7,7 @@ const navItems = [
   { name: 'Backloading', href: '/backloading/' },
   { name: 'Car Transport', href: '/car-transport/' },
   { name: 'Moving Interstate', href: '/moving-interstate/' },
-  { name: 'Contact', href: 'https://removalistquotes.movingagain.com.au/contact' },
+  { name: 'Contact', href: BRAND.contactUrl },
 ];
 ---
 
@@ -62,8 +62,14 @@ const navItems = [
           ))
         }
         <a
+          href={BRAND.carQuoteUrl}
+          class="text-brand-yellow font-bold hover:text-white transition-colors text-sm lg:text-base uppercase tracking-tight"
+        >
+          Vehicle Quote
+        </a>
+        <a
           data-brain-track="quote"
-          href="https://quotes.moveroo.com.au/quote/household"
+          href={BRAND.quoteUrl}
           class="bg-brand-red text-white font-bold py-2.5 px-6 rounded-brand hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
         >
           Get a Quote
@@ -131,8 +137,14 @@ const navItems = [
         ))
       }
       <a
+        href={BRAND.carQuoteUrl}
+        class="text-xl text-brand-yellow font-bold hover:text-white transition-colors"
+      >
+        Vehicle Quote
+      </a>
+      <a
         data-brain-track="quote"
-        href="https://quotes.moveroo.com.au/quote/household"
+        href={BRAND.quoteUrl}
         class="mt-4 bg-brand-yellow text-brand-dark font-bold py-4 px-10 rounded-brand text-xl shadow-xl"
       >
         Get a Quote
