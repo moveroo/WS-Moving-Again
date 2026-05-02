@@ -1,6 +1,12 @@
 # SEO Technical Crawler - Complete Guide
 
-**Purpose:** This guide documents the complete setup, usage, and methodology for using the technical.again.com.au SEO crawler to audit and improve website SEO performance.
+> Historical note: the `technical.again.com.au` crawler described in this file
+> is retired and must not be used by this repo. Fleet-owned SEO checks should use
+> the local `npm run seo:page -- <path-or-url>` check by default, or an explicit
+> current Fleet audit endpoint via `SEO_AUDITOR_API_BASE` when one exists.
+
+**Purpose:** This historical guide documents the retired technical SEO crawler
+workflow that previously audited and improved website SEO performance.
 
 **Test Site:** moveroo.com.au (used as reference implementation)
 

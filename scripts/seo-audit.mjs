@@ -1,11 +1,12 @@
 /**
  * SEO Technical Crawler - Main Audit Script
  *
- * Uses technical.again.com.au API to perform SEO audits
+ * Uses local live-page checks by default and an explicitly configured audit API
+ * for crawl/history commands.
  * Run with: npm run seo:audit [command] [args]
  */
 
-/* eslint-env node */
+/* global process, console, fetch, URL */
 
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
@@ -16,13 +17,32 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 dotenv.config({ path: join(__dirname, '..', '.env') });
 
-const API_BASE = 'https://technical.again.com.au/api';
+const RETIRED_API_HOST = 'technical.again.com.au';
+const DEFAULT_SITE_URL = process.env.SEO_AUDITOR_SITE_URL || 'https://movingagain.com.au';
+const API_BASE = process.env.SEO_AUDITOR_API_BASE?.replace(/\/$/, '');
 const TOKEN = process.env.SEO_AUDITOR_TOKEN;
 
-if (!TOKEN) {
-  console.error('❌ SEO_AUDITOR_TOKEN not found in .env file');
-  console.error('Please add: SEO_AUDITOR_TOKEN=your_token_here');
-  process.exit(1);
+function assertApiConfigured() {
+  if (!API_BASE) {
+    console.error('❌ SEO_AUDITOR_API_BASE is not configured.');
+    console.error('Fleet has retired the old technical.again.com.au auditor endpoint.');
+    console.error(
+      'Set SEO_AUDITOR_API_BASE to the current Fleet audit API before using crawl/status/list.'
+    );
+    process.exit(1);
+  }
+
+  if (API_BASE.includes(RETIRED_API_HOST)) {
+    console.error(`❌ Refusing to call retired SEO auditor host: ${RETIRED_API_HOST}`);
+    console.error('Update SEO_AUDITOR_API_BASE to the current Fleet audit API.');
+    process.exit(1);
+  }
+
+  if (!TOKEN) {
+    console.error('❌ SEO_AUDITOR_TOKEN not found in .env file');
+    console.error('Please add: SEO_AUDITOR_TOKEN=your_token_here');
+    process.exit(1);
+  }
 }
 
 const headers = {
@@ -35,6 +55,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Helper: Make API request
 async function apiRequest(endpoint, options = {}) {
+  assertApiConfigured();
   const url = `${API_BASE}${endpoint}`;
   const response = await fetch(url, {
     ...options,
@@ -60,8 +81,104 @@ async function apiRequest(endpoint, options = {}) {
   }
 }
 
+function resolveAuditUrl(input) {
+  return new URL(input, DEFAULT_SITE_URL).toString();
+}
+
+function getTagContent(html, pattern) {
+  return html.match(pattern)?.[1]?.trim() || '';
+}
+
+function findLinks(html, hrefPattern) {
+  const links = [];
+  const anchorPattern = /<a\b[^>]*href=["']([^"']+)["'][^>]*>/giu;
+  let match;
+
+  while ((match = anchorPattern.exec(html)) !== null) {
+    if (hrefPattern.test(match[1])) {
+      links.push(match[1]);
+    }
+  }
+
+  return [...new Set(links)];
+}
+
+function displayLocalPageResults(url, html, status) {
+  const title = getTagContent(html, /<title[^>]*>([^<]*)<\/title>/iu);
+  const description = getTagContent(
+    html,
+    /<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/iu
+  );
+  const canonical = getTagContent(
+    html,
+    /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']*)["'][^>]*>/iu
+  );
+  const robots = getTagContent(
+    html,
+    /<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']*)["'][^>]*>/iu
+  );
+  const h1 = getTagContent(html, /<h1\b[^>]*>([\s\S]*?)<\/h1>/iu).replace(/<[^>]+>/gu, '');
+  const householdQuotes = findLinks(html, /\/quote\/household\/?$/iu);
+  const vehicleQuotes = findLinks(html, /\/quote\/vehicle\/?$/iu);
+  const issues = [];
+
+  if (!title) issues.push('Missing <title>');
+  if (title.length > 60) issues.push(`Title is long (${title.length} chars)`);
+  if (!description) issues.push('Missing meta description');
+  if (description.length > 160)
+    issues.push(`Meta description is long (${description.length} chars)`);
+  if (!canonical) issues.push('Missing canonical link');
+  if (robots.toLowerCase().includes('noindex')) issues.push('Robots meta contains noindex');
+  if (!h1) issues.push('Missing H1');
+  if (!householdQuotes.length) issues.push('Household quote path not found');
+  if (!vehicleQuotes.length) issues.push('Vehicle quote path not found');
+
+  console.log('\n' + '='.repeat(60));
+  console.log('📊 LOCAL PAGE SEO CHECK');
+  console.log('='.repeat(60));
+  console.log(`\n🔗 URL: ${url}`);
+  console.log(`📡 HTTP status: ${status}`);
+  console.log(`\n<title> ${title || 'MISSING'} (${title.length} chars)`);
+  console.log(`description: ${description || 'MISSING'} (${description.length} chars)`);
+  console.log(`canonical: ${canonical || 'MISSING'}`);
+  console.log(`robots: ${robots || 'not set'}`);
+  console.log(`h1: ${h1 || 'MISSING'}`);
+  console.log(`household quote links: ${householdQuotes.length}`);
+  console.log(`vehicle quote links: ${vehicleQuotes.length}`);
+
+  if (issues.length > 0) {
+    console.log('\n⚠️  Issues:');
+    issues.forEach((issue) => console.log(`  - ${issue}`));
+    console.log('\n' + '='.repeat(60) + '\n');
+    process.exitCode = 1;
+    return;
+  }
+
+  console.log('\n✅ No local page SEO issues found.');
+  console.log('\n' + '='.repeat(60) + '\n');
+}
+
+async function runLocalPageAudit(input) {
+  const url = resolveAuditUrl(input);
+  console.log(`\n🔍 Checking page locally: ${url}\n`);
+
+  const response = await fetch(url);
+  const html = await response.text();
+
+  if (!response.ok) {
+    throw new Error(`Fetch failed: HTTP ${response.status}`);
+  }
+
+  displayLocalPageResults(url, html, response.status);
+}
+
 // Run single page audit
 async function runPageAudit(url) {
+  if (!API_BASE) {
+    await runLocalPageAudit(url);
+    return;
+  }
+
   console.log(`\n🔍 Auditing page: ${url}\n`);
 
   // Start audit
@@ -393,7 +510,9 @@ Full Crawl:
   - Takes longer but provides complete coverage
 
 Environment:
-  Make sure SEO_AUDITOR_TOKEN is set in .env file
+  seo:page runs a local live-page check by default.
+  Crawl/status/list commands require SEO_AUDITOR_API_BASE and SEO_AUDITOR_TOKEN.
+  The retired technical.again.com.au endpoint is blocked.
 `);
     break;
 }
