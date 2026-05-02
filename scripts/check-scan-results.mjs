@@ -15,8 +15,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 dotenv.config({ path: join(__dirname, '..', '.env') });
 
-const API_BASE = 'https://technical.again.com.au/api';
+const RETIRED_API_HOST = 'technical.again.com.au';
+const API_BASE = process.env.SEO_AUDITOR_API_BASE?.replace(/\/$/, '');
 const TOKEN = process.env.SEO_AUDITOR_TOKEN;
+
+if (!API_BASE) {
+  console.error('❌ SEO_AUDITOR_API_BASE is not configured.');
+  console.error('Fleet has retired the old technical.again.com.au auditor endpoint.');
+  process.exit(1);
+}
+
+if (API_BASE.includes(RETIRED_API_HOST)) {
+  console.error(`❌ Refusing to call retired SEO auditor host: ${RETIRED_API_HOST}`);
+  console.error('Update SEO_AUDITOR_API_BASE to the current Fleet audit API.');
+  process.exit(1);
+}
 
 if (!TOKEN) {
   console.error('❌ SEO_AUDITOR_TOKEN not found in .env file');
