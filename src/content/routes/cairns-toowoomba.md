@@ -1,8 +1,8 @@
 ---
 slug: /cairns-toowoomba/
 slugFs: cairns-toowoomba
-title: Backloading Cairns to Toowoomba | Interstate Removals
-metaDescription: Affordable backloading from Cairns to Toowoomba. Save up to 60% on your interstate move with Moving Again. Professional service, transit insurance included.
+title: Cairns to Toowoomba Backloading Removalists | Moving Again
+metaDescription: Moving from Cairns to Toowoomba? Compare backloading and interstate removalist options with transit insurance, flexible dates, and household or car quote paths.
 origin: Cairns
 destination: Toowoomba
 originState: QLD
