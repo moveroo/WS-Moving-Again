@@ -14,6 +14,14 @@ import { getCityHubUrl } from '../utils/hubPages';
 import { generateRouteSEO } from '../utils/seoGenerator';
 import { getContentCollectionDate } from '../utils/fileDates';
 
+const controlledSeoOverrides: Record<string, { title: string; description: string }> = {
+  'cairns-toowoomba': {
+    title: 'Cairns to Toowoomba Backloading Removalists | Moving Again',
+    description:
+      'Moving from Cairns to Toowoomba? Compare backloading and interstate removalist options with transit insurance, flexible dates, and household or car quote paths.',
+  },
+};
+
 export async function getStaticPaths() {
   const routes = await getCollection('routes');
 
@@ -63,9 +71,10 @@ const seo = generateRouteSEO({
   title: route.data.title, // Use as base, but generator will optimize it
 });
 
-// Use generated SEO (optimized for length and format)
-const pageTitle = seo.title;
-const metaDescription = seo.description;
+// Use generated SEO by default. Controlled-test overrides must stay route-scoped.
+const controlledSeo = controlledSeoOverrides[route.data.slugFs];
+const pageTitle = controlledSeo?.title ?? seo.title;
+const metaDescription = controlledSeo?.description ?? seo.description;
 
 // Machine-readable facts for LLM extraction
 const routeFacts = {
