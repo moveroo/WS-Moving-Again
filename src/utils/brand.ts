@@ -40,6 +40,10 @@ export const BRAND = {
         href: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
         eventName: 'quote_vehicle_click',
       },
+      {
+        href: 'https://removalistquotes.movingagain.com.au/booking/create',
+        eventName: 'booking_household_click',
+      },
     ],
   },
 };

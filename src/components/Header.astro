@@ -47,7 +47,7 @@ const navItems = [
 
       <!-- Desktop Navigation -->
       <nav
-        class="hidden md:flex items-center gap-6 lg:gap-8"
+        class="hidden md:flex items-center gap-5 lg:gap-7"
         role="navigation"
         aria-label="Main navigation"
       >
@@ -68,9 +68,16 @@ const navItems = [
           Vehicle Quote
         </a>
         <a
+          data-brain-track="booking"
+          href={BRAND.bookingUrl}
+          class="text-white font-bold hover:text-brand-yellow transition-colors text-sm lg:text-base uppercase tracking-tight"
+        >
+          Book Now
+        </a>
+        <a
           data-brain-track="quote"
           href={BRAND.quoteUrl}
-          class="bg-brand-red text-white font-bold py-2.5 px-6 rounded-brand hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
+          class="bg-brand-red text-white font-bold py-2.5 px-5 lg:px-6 rounded-brand hover:bg-brand-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
         >
           Get a Quote
         </a>
@@ -141,6 +148,13 @@ const navItems = [
         class="text-xl text-brand-yellow font-bold hover:text-white transition-colors"
       >
         Vehicle Quote
+      </a>
+      <a
+        data-brain-track="booking"
+        href={BRAND.bookingUrl}
+        class="text-xl text-white font-bold hover:text-brand-yellow transition-colors"
+      >
+        Book Now
       </a>
       <a
         data-brain-track="quote"
