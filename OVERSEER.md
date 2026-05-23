@@ -23,3 +23,10 @@ Repo tracking note for Bossman, Fleet, and Paperclip review.
 - What changed: `npm run seo:page` now performs a local live-page SEO check by default, the old API crawler commands require an explicit `SEO_AUDITOR_API_BASE`, and the scripts refuse to call `technical.again.com.au` if it is still configured.
 - What was fixed: the repo no longer hard-codes or allows the retired auditor endpoint in active scripts or deploy CSP headers.
 - What remains: wire `SEO_AUDITOR_API_BASE` to a current Fleet audit API later if Fleet restores a crawl/status service; single-page route checks work locally now.
+
+## 2026-05-23 - Homepage Chatbot Embed Added
+
+- Issue or trigger: operator request to install the Moving Again vehicle assistant iframe loader on `movingagain.com.au`.
+- What changed: added `src/components/VehicleAssistantEmbed.astro`, exposed an opt-in `vehicleAssistantSurface` prop on the shared layout, and enabled it on the homepage with `data-channel="chatbot-widget"` and `data-surface="main-domain-home"`.
+- What was fixed: the built homepage now includes the vehicle assistant loader once before `</body>` without loading the main-domain-home surface on route, city, legal, or content pages.
+- What remains: deploy/verify the production homepage after the pushed change lands.

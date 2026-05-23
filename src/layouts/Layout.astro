@@ -5,6 +5,7 @@ import SEO from '../components/SEO.astro';
 import BrainAnalytics from '../components/BrainAnalytics.astro';
 import Analytics from '../components/analytics/Analytics.astro';
 import Schema from '../components/Schema.astro';
+import VehicleAssistantEmbed from '../components/VehicleAssistantEmbed.astro';
 import { BRAND } from '../utils/brand';
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   schemaData?: Record<string, any>;
   modifiedDate?: string; // Pass through to SEO component
+  vehicleAssistantSurface?: string;
 }
 
 const {
@@ -24,6 +26,7 @@ const {
   schemaType = 'WebSite',
   schemaData = {},
   modifiedDate,
+  vehicleAssistantSurface,
 } = Astro.props;
 ---
 
@@ -135,4 +138,6 @@ const {
 
     <Footer />
   </div>
+
+  {vehicleAssistantSurface && <VehicleAssistantEmbed surface={vehicleAssistantSurface} />}
 </SEO>

@@ -1,0 +1,14 @@
+---
+interface Props {
+  channel?: string;
+  surface?: string;
+}
+
+const { channel = 'chatbot-widget', surface = 'main-domain-home' } = Astro.props;
+---
+
+<script
+  async
+  src="https://removalistquotes.movingagain.com.au/embed/vehicle-assistant/v1/loader.js"
+  data-channel={channel}
+  data-surface={surface}></script>
