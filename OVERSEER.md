@@ -27,6 +27,6 @@ Repo tracking note for Bossman, Fleet, and Paperclip review.
 ## 2026-05-23 - Homepage Chatbot Embed Added
 
 - Issue or trigger: operator request to install the Moving Again vehicle assistant iframe loader on `movingagain.com.au`.
-- What changed: added `src/components/VehicleAssistantEmbed.astro`, exposed an opt-in `vehicleAssistantSurface` prop on the shared layout, and enabled it on the homepage with `data-channel="chatbot-widget"` and `data-surface="main-domain-home"`.
-- What was fixed: the built homepage now includes the vehicle assistant loader once before `</body>` without loading the main-domain-home surface on route, city, legal, or content pages.
+- What changed: added `src/components/VehicleAssistantEmbed.astro`, exposed an opt-in `vehicleAssistantSurface` prop on the shared layout, enabled it on the homepage with `data-channel="chatbot-widget"` and `data-surface="main-domain-home"`, and allowed the widget origin in the Vercel/Netlify CSP headers.
+- What was fixed: the built homepage now includes the vehicle assistant loader once before `</body>` without loading the main-domain-home surface on route, city, legal, or content pages, and the production CSP allows the loader script plus hosted iframe.
 - What remains: deploy/verify the production homepage after the pushed change lands.
