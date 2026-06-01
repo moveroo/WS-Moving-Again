@@ -19,6 +19,13 @@ async function exists(relativePath) {
   }
 }
 
+function cspDirectiveAllows(configText, directive, origin) {
+  const escapedOrigin = origin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`${directive}\\s+[^";]*${escapedOrigin}[^";]*`);
+
+  return pattern.test(configText);
+}
+
 async function main() {
   const checks = [];
   const packageJson = JSON.parse(await read('package.json'));
@@ -26,6 +33,10 @@ async function main() {
   const seo = await read('src/components/SEO.astro');
   const envExample = await read('.env.example');
   const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
+  const vehicleAssistantEmbed = await read('src/components/VehicleAssistantEmbed.astro');
+  const homepage = await read('src/pages/index.astro');
+  const vercelConfig = await read('vercel.json');
+  const netlifyConfig = await read('netlify.toml');
 
   for (const scriptName of ['check', 'check:contract', 'check:seo']) {
     checks.push([
@@ -60,6 +71,43 @@ async function main() {
     'analytics wrapper includes Matomo',
     analyticsWrapper.includes("import Matomo from './Matomo.astro';"),
   ]);
+  checks.push([
+    'vehicle assistant uses central loader',
+    vehicleAssistantEmbed.includes(
+      'src="https://quotes.moveroo.com.au/embed/vehicle-assistant/v1/loader.js"'
+    ),
+  ]);
+  checks.push([
+    'vehicle assistant default channel is chatbot-widget',
+    vehicleAssistantEmbed.includes("channel = 'chatbot-widget'"),
+  ]);
+  checks.push([
+    'vehicle assistant default surface is main-domain-home',
+    vehicleAssistantEmbed.includes("surface = 'main-domain-home'"),
+  ]);
+  checks.push([
+    'homepage opts into vehicle assistant',
+    homepage.includes('vehicleAssistantSurface="main-domain-home"'),
+  ]);
+  for (const [label, configText] of [
+    ['Vercel', vercelConfig],
+    ['Netlify', netlifyConfig],
+  ]) {
+    for (const directive of ['script-src', 'connect-src', 'frame-src']) {
+      checks.push([
+        `${label} CSP allows central vehicle assistant in ${directive}`,
+        cspDirectiveAllows(configText, directive, 'https://quotes.moveroo.com.au'),
+      ]);
+    }
+    checks.push([
+      `${label} CSP does not keep old quote host as an active embed origin`,
+      !configText.includes('https://removalistquotes.movingagain.com.au; style-src') &&
+        !configText.includes(
+          'https://removalistquotes.movingagain.com.au https://quotes.moveroo.com.au'
+        ) &&
+        !configText.includes('frame-src https://removalistquotes.movingagain.com.au'),
+    ]);
+  }
   checks.push(['SEO links RSS feed', seo.includes('application/rss+xml')]);
   for (const relativePath of [
     'src/pages/rss.xml.ts',

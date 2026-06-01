@@ -4738,7 +4738,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://analytics.brain.com.au https://stats.redirection.com.au https://removalistquotes.movingagain.com.au; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://region1.google-analytics.com https://analytics.brain.com.au https://stats.redirection.com.au https://removalistquotes.movingagain.com.au; frame-src https://removalistquotes.movingagain.com.au; object-src 'none'; base-uri 'self'; frame-ancestors 'self';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://analytics.brain.com.au https://stats.redirection.com.au https://quotes.moveroo.com.au; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://region1.google-analytics.com https://analytics.brain.com.au https://stats.redirection.com.au https://quotes.moveroo.com.au; frame-src https://quotes.moveroo.com.au; object-src 'none'; base-uri 'self'; frame-ancestors 'self';"
         }
       ]
     },
