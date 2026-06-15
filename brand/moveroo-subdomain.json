@@ -1,0 +1,127 @@
+{
+  "source_system": "site-repo-moveroo-subdomain-handoff",
+  "contract_version": 1,
+  "hostnames": ["removalistquotes.movingagain.com.au"],
+  "property_slug": "movingagain-com-au",
+  "surface_slug": "movingagain-removalistquotes",
+  "surface_type": "quote",
+  "canonical_role": "primary",
+  "canonical_hostname": "removalistquotes.movingagain.com.au",
+  "brand": {
+    "display_name": "Moving Again",
+    "brand_key": "movingagain",
+    "mark_text": "MA",
+    "tagline": "Moving made simple since 1995."
+  },
+  "copy": {
+    "eyebrow": "Moving Again quotes",
+    "headline": "Get a Moving Again quote",
+    "subheading": "Start with a few move details and the team can help plan your interstate move.",
+    "primary_cta_label": "Start quote",
+    "secondary_cta_label": "Contact us",
+    "footer_blurb": "Family-owned interstate removals, vehicle transport, bookings, and moving support.",
+    "contact_page": {
+      "hero_heading": "Talk to Moving Again",
+      "hero_subheading": "Send the move details and the team will help you plan the next step.",
+      "quote_section_heading": "Need a price first?",
+      "quote_section_body": "Start with the fastest quote path for your move.",
+      "quote_primary_cta_label": "Start quote"
+    }
+  },
+  "theme": {
+    "theme_key": "moving-again",
+    "fonts": {
+      "body_family": "Roboto, Arial, sans-serif",
+      "heading_family": "Roboto, Arial, sans-serif"
+    },
+    "colors": {
+      "accent": "#800006",
+      "accent_strong": "#B23850",
+      "background": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "text": "#191919",
+      "muted_text": "#666666",
+      "border": "rgba(25, 25, 25, 0.14)",
+      "header_background": "#191919",
+      "header_border": "#800006",
+      "header_text": "#FFFFFF",
+      "header_muted_text": "#F1C40D",
+      "header_link": "#FFFFFF",
+      "footer_background": "#191919",
+      "footer_border": "#800006",
+      "footer_text": "#FFFFFF",
+      "footer_muted_text": "#D1D5DB",
+      "footer_link": "#FFFFFF",
+      "hero_gradient_start": "#191919",
+      "hero_gradient_mid": "#333333",
+      "hero_gradient_end": "#800006",
+      "hero_text": "#FFFFFF"
+    },
+    "radius_scale": "0.75rem",
+    "shadow_style": "soft",
+    "exact_tokens": {
+      "primary_cta": {
+        "background": "#800006",
+        "text": "#FFFFFF",
+        "border": "#800006"
+      },
+      "secondary_cta": {
+        "background": "#F1C40D",
+        "text": "#191919",
+        "border": "#F1C40D"
+      },
+      "dark_card": {
+        "background": "#191919",
+        "text": "#FFFFFF",
+        "muted_text": "#D1D5DB",
+        "border": "#800006"
+      },
+      "focus_ring": {
+        "border": "#800006",
+        "ring": "rgba(128, 0, 6, 0.24)"
+      },
+      "selected_choice": {
+        "background": "#FFF7D0",
+        "border": "#800006",
+        "text": "#191919"
+      }
+    }
+  },
+  "navigation": {
+    "show_household_quote_link": true,
+    "show_vehicle_quote_link": true,
+    "show_booking_link": true,
+    "show_contact_link": true,
+    "show_customer_portal_link": true,
+    "show_customer_portal_in_header": true,
+    "show_provider_login_link": false,
+    "show_admin_link": false
+  },
+  "behavior": {
+    "show_phone_publicly": true,
+    "show_email_publicly": true,
+    "prefer_contact_page_over_direct_contact": false,
+    "allow_customer_portal_links": true,
+    "allow_provider_login_links": false,
+    "allow_admin_links": false
+  },
+  "links": {
+    "primary_cta_route": "quote.rebuild.index",
+    "household_quote_url": "/quote/household",
+    "vehicle_quote_url": "/quote/vehicle",
+    "booking_url": "/booking/create",
+    "contact_url": "/contact",
+    "customer_portal_url": "/customer/login",
+    "support_url": "/contact"
+  },
+  "contact": {
+    "public_phone": "+61721432557",
+    "public_phone_display": "+61 7 2143 2557",
+    "public_phone_href": "tel:+61721432557",
+    "public_email": "removals@moveroo.com.au",
+    "public_email_href": "mailto:removals@moveroo.com.au"
+  },
+  "analytics": {
+    "status": "not_applicable"
+  }
+}
