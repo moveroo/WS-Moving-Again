@@ -1,0 +1,36 @@
+{
+  "schema": "bossman-site-manifest.v1",
+  "domain": "movingagain.com.au",
+  "brandName": "Movingagain",
+  "productionUrl": "https://movingagain.com.au",
+  "repo": "moveroo/WS-Moving-Again",
+  "platform": "astro",
+  "deployTarget": "Vercel",
+  "localPath": "/Users/jasonhill/Projects/Business/websites/MM-movingagain.com.au",
+  "owner": "site-repo",
+  "quoteTargets": [
+    "https://quotes.moveroo.com.au/embed/vehicle-assistant/v1/loader.js",
+    "https://removalistquotes.movingagain.com.au/booking/create",
+    "https://removalistquotes.movingagain.com.au/contact",
+    "https://removalistquotes.movingagain.com.au/quote/household",
+    "https://removalistquotes.movingagain.com.au/quote/household%60",
+    "https://removalistquotes.movingagain.com.au/quote/vehicle"
+  ],
+  "legalPages": ["/privacy/", "/terms-of-use/", "/terms/"],
+  "search": {
+    "status": "not-applicable"
+  },
+  "standards": {
+    "legalPages": "moveroo-aligned",
+    "imageQuality": "brand-pass-required",
+    "languageQuality": "basic-hygiene-required",
+    "search": "not-applicable",
+    "quoteLinkSecurity": "quote-subdomain-required",
+    "astroBuild": "static-astro"
+  },
+  "evidence": {
+    "brandTokens": "brand/tokens.json"
+  },
+  "notes": "Bossman site manifest for repo-owned implementation truth. Bossman imports this as evidence but does not overwrite accepted truth without review.",
+  "updatedAt": "2026-06-18"
+}
