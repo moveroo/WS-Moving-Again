@@ -37,7 +37,7 @@
     "submissionApproved": true,
     "submissionMode": "production_deploy_sitemap",
     "endpoint": "https://api.indexnow.org/indexnow",
-    "maxUrlsPerBatch": 10000,
+    "maxUrlsPerBatch": 5000,
     "key": "indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95",
     "keyFile": "public/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt",
     "keyFileUrl": "https://movingagain.com.au/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt"
