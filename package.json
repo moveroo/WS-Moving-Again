@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node ./scripts/indexnow-submit.mjs --auto",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
@@ -24,7 +24,9 @@
     "analyze:duplicates": "node scripts/detect-duplicate-seo.mjs",
     "analyze:alt-text": "node scripts/analyze-image-alt-text.mjs",
     "analyze:content": "node scripts/analyze-content-uniqueness.mjs",
-    "suggest:content": "node scripts/suggest-content-improvements.mjs"
+    "suggest:content": "node scripts/suggest-content-improvements.mjs",
+    "indexnow:dry-run": "node ./scripts/indexnow-submit.mjs --dry-run",
+    "indexnow:submit": "node ./scripts/indexnow-submit.mjs --live --force"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

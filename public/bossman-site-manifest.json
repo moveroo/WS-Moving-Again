@@ -31,5 +31,15 @@
     "brandTokens": "brand/tokens.json"
   },
   "notes": "Bossman site manifest for repo-owned implementation truth. Bossman imports this as evidence but does not overwrite accepted truth without review.",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-06-23",
+  "indexNow": {
+    "status": "auto",
+    "submissionApproved": true,
+    "submissionMode": "production_deploy_sitemap",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "maxUrlsPerBatch": 10000,
+    "key": "indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95",
+    "keyFile": "public/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt",
+    "keyFileUrl": "https://movingagain.com.au/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt"
+  }
 }
