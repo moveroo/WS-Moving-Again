@@ -26,12 +26,26 @@ export const GET: APIRoute = () => {
         displayName: 'Household Quote',
         type: 'text/html',
         url: 'https://removalistquotes.movingagain.com.au/quote/household',
+        capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
+        publicAgentApi:
+          'https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit',
       },
       {
         identifier: 'urn:ai:movingagain.com.au:quote:vehicle',
         displayName: 'Vehicle Quote',
         type: 'text/html',
         url: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
+        capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
+      },
+      {
+        identifier: 'urn:ai:movingagain.com.au:quote:contact',
+        displayName: 'Quote Contact Workspace',
+        type: 'text/html',
+        url: 'https://removalistquotes.movingagain.com.au/contact',
+        capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
       },
     ],
   };

@@ -9,8 +9,6 @@
   "localPath": "/Users/jasonhill/Projects/Business/websites/MM-movingagain.com.au",
   "owner": "site-repo",
   "quoteTargets": [
-    "https://quotes.moveroo.com.au/embed/vehicle-assistant/v1/loader.js",
-    "https://removalistquotes.movingagain.com.au/booking/create",
     "https://removalistquotes.movingagain.com.au/contact",
     "https://removalistquotes.movingagain.com.au/quote/household",
     "https://removalistquotes.movingagain.com.au/quote/vehicle"
@@ -31,7 +29,7 @@
     "brandTokens": "brand/tokens.json"
   },
   "notes": "Bossman site manifest for repo-owned implementation truth. Bossman imports this as evidence but does not overwrite accepted truth without review.",
-  "updatedAt": "2026-06-23",
+  "updatedAt": "2026-06-30",
   "indexNow": {
     "status": "auto",
     "submissionApproved": true,
@@ -41,5 +39,40 @@
     "key": "indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95",
     "keyFile": "public/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt",
     "keyFileUrl": "https://movingagain.com.au/indexnow-movingagain-com-au-8f7e50c7b24c5b7517bcba95.txt"
+  },
+  "quoteCapability": {
+    "host": "https://removalistquotes.movingagain.com.au",
+    "llmsTxt": "https://removalistquotes.movingagain.com.au/llms.txt",
+    "aiCatalog": "https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json",
+    "manifest": "https://removalistquotes.movingagain.com.au/quote-capability.json",
+    "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
+    "householdPublicAgentApi": {
+      "method": "POST",
+      "url": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
+      "hostAware": true,
+      "requiresTenant": false,
+      "requiresCustomerConsent": true,
+      "ready": true
+    },
+    "vehiclePublicAgentApi": {
+      "ready": false,
+      "handoffUrl": "https://removalistquotes.movingagain.com.au/quote/vehicle"
+    }
+  },
+  "agentCapabilities": {
+    "quote": {
+      "householdQuote": "https://removalistquotes.movingagain.com.au/quote/household",
+      "vehicleQuote": "https://removalistquotes.movingagain.com.au/quote/vehicle",
+      "contact": "https://removalistquotes.movingagain.com.au/contact",
+      "capabilityManifest": "https://removalistquotes.movingagain.com.au/quote-capability.json",
+      "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
+      "householdPublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
+      "hostAware": true,
+      "tenantRequired": false
+    },
+    "siteIdentity": true,
+    "contentDiscovery": true,
+    "safeActions": true,
+    "bossmanRepairReady": true
   }
 }

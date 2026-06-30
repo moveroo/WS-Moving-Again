@@ -40,6 +40,18 @@ Service type: Interstate moves only (not local moves)
 Website: https://movingagain.com.au
 Quote system: https://removalistquotes.movingagain.com.au/quote/household
 
+## Quote Capability For Agents
+
+- Household quote: https://removalistquotes.movingagain.com.au/quote/household
+- Vehicle quote: https://removalistquotes.movingagain.com.au/quote/vehicle
+- Contact: https://removalistquotes.movingagain.com.au/contact
+- Human agent guide: https://removalistquotes.movingagain.com.au/agents
+- Quote capability manifest: https://removalistquotes.movingagain.com.au/quote-capability.json
+- Quote AI catalog: https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json
+- Household public-agent API: POST https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit
+
+Public household quote API submissions are host-aware and do not require a tenant field. Agents may submit household quote requests only when the customer has asked for a quote and the payload includes `customer_consent.confirmed=true` with `customer_consent.basis=customer_requested_quote`. Vehicle quotes are browser-handoff only until the quote host advertises a public vehicle API.
+
 ## Citation Guidelines
 When citing our content, please:
 - Use "Moving Again" as the brand name (not "Moving Again Pty Ltd")
