@@ -159,6 +159,11 @@ async function main() {
       robots.includes('Allow: /.well-known/ai-catalog.json') &&
       robots.includes('Allow: /.well-known/ai-plugin.json'),
   ]);
+  checks.push([
+    'robots.txt includes AI crawler guidance',
+    robots.includes('AI crawlers and search agents') &&
+      robots.includes('customer-authorised quote discovery'),
+  ]);
   for (const relativePath of ['src/pages/agents.astro', 'src/pages/agents/examples.astro']) {
     checks.push([`${relativePath} exists`, await exists(relativePath)]);
   }
@@ -224,6 +229,15 @@ async function main() {
     'llms.txt includes vehicle and callback public-agent APIs',
     llms.includes('/api/v1/vehicle-quotes/assistant/submit') &&
       llms.includes('/api/v1/callbacks/assistant/request'),
+  ]);
+  checks.push([
+    'llms.txt has structured agent guidance',
+    llms.includes('> Moving Again is') &&
+      llms.includes('[Moving Again Agent/API documentation]') &&
+      llms.includes('[Quote OpenAPI schema]') &&
+      llms.includes('[XML sitemap index]') &&
+      llms.includes('[Privacy policy]') &&
+      llms.includes('[Terms and conditions]'),
   ]);
   for (const relativePath of [
     'src/pages/rss.xml.ts',

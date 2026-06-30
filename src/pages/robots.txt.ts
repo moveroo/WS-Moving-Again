@@ -12,6 +12,8 @@ Sitemap: ${siteUrl.replace(/\/$/, '')}/llms.txt
 Sitemap: ${siteUrl.replace(/\/$/, '')}/.well-known/llms.txt
 
 # Agent/API discovery
+# AI crawlers and search agents may crawl these public documentation and content-signal resources
+# for customer-authorised quote discovery. API execution is documented at /agents/ and /openapi.json.
 Allow: /agents/
 Allow: /agents/examples/
 Allow: /openapi.json
