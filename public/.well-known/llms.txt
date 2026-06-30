@@ -4,20 +4,20 @@
 
 Moving Again is a public marketing site. The canonical quote and callback API contract lives on the Moving Again quote host:
 
-- [Moving Again Agent/API documentation](https://movingagain.com.au/agents/) - Public entry point for AI assistants and developers.
-- [Moving Again Agent/API examples](https://movingagain.com.au/agents/examples/) - Copy-paste request examples.
-- [Moving Again OpenAPI alias](https://movingagain.com.au/openapi.json) - First-party OpenAPI alias.
-- [Moving Again quote capability alias](https://movingagain.com.au/quote-capability.json) - First-party capability manifest alias.
-- [Canonical quote host Agent/API guide](https://removalistquotes.movingagain.com.au/agents) - Canonical public API guide.
-- [Canonical quote host examples](https://removalistquotes.movingagain.com.au/agents/examples) - Canonical API examples.
-- [Quote capability manifest](https://removalistquotes.movingagain.com.au/quote-capability.json) - Machine-readable supported operations and quote targets.
-- [Quote AI catalog](https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json) - Machine-readable quote host catalog.
-- [Quote AI plugin manifest](https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json) - AI plugin compatibility manifest.
-- [Quote OpenAPI schema](https://removalistquotes.movingagain.com.au/openapi.json) - Canonical OpenAPI schema.
-- [Quote well-known OpenAPI schema](https://removalistquotes.movingagain.com.au/.well-known/openapi.json) - Well-known OpenAPI schema alias.
-- [XML sitemap index](https://movingagain.com.au/sitemap-index.xml) - Machine-readable sitemap index.
-- [Privacy policy](https://movingagain.com.au/privacy/) - Personal information handling.
-- [Terms and conditions](https://movingagain.com.au/terms/) - Moving service terms.
+- [Moving Again Agent/API documentation](https://movingagain.com.au/agents/): Public entry point for AI assistants and developers.
+- [Moving Again Agent/API examples](https://movingagain.com.au/agents/examples/): Copy-paste request examples.
+- [Moving Again OpenAPI alias](https://movingagain.com.au/openapi.json): First-party OpenAPI alias.
+- [Moving Again quote capability alias](https://movingagain.com.au/quote-capability.json): First-party capability manifest alias.
+- [Canonical quote host Agent/API guide](https://removalistquotes.movingagain.com.au/agents): Canonical public API guide.
+- [Canonical quote host examples](https://removalistquotes.movingagain.com.au/agents/examples): Canonical API examples.
+- [Quote capability manifest](https://removalistquotes.movingagain.com.au/quote-capability.json): Machine-readable supported operations and quote targets.
+- [Quote AI catalog](https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json): Machine-readable quote host catalog.
+- [Quote AI plugin manifest](https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json): AI plugin compatibility manifest.
+- [Quote OpenAPI schema](https://removalistquotes.movingagain.com.au/openapi.json): Canonical OpenAPI schema.
+- [Quote well-known OpenAPI schema](https://removalistquotes.movingagain.com.au/.well-known/openapi.json): Well-known OpenAPI schema alias.
+- [XML sitemap index](https://movingagain.com.au/sitemap-index.xml): Machine-readable sitemap index.
+- [Privacy policy](https://movingagain.com.au/privacy/): Personal information handling.
+- [Terms and conditions](https://movingagain.com.au/terms/): Moving service terms.
 
 Agents may use the quote host for customer-authorised household quote, vehicle quote, and callback requests. Omit tenant for public host-aware submissions unless Moveroo has supplied a tenant slug.
 

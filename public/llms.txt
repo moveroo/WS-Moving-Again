@@ -18,13 +18,13 @@ Geographic coverage: Australia-wide
 Service type: Interstate moves only (not local moves)
 
 ## Preferred Content for Citations
-- [Backloading guide](https://movingagain.com.au/backloading/) - Main service explanation and how backloading works.
-- [Interstate moving guide](https://movingagain.com.au/moving-interstate/) - Comprehensive interstate moving guide.
-- [Car transport](https://movingagain.com.au/car-transport/) - Vehicle transport service handoff.
-- [Questions](https://movingagain.com.au/questions/) - Frequently asked questions.
-- [Reviews](https://movingagain.com.au/reviews/) - Customer testimonials and service examples.
-- [HTML sitemap](https://movingagain.com.au/sitemap/) - Human-readable directory of public site pages.
-- [XML sitemap index](https://movingagain.com.au/sitemap-index.xml) - Machine-readable sitemap index.
+- [Backloading guide](https://movingagain.com.au/backloading/): Main service explanation and how backloading works.
+- [Interstate moving guide](https://movingagain.com.au/moving-interstate/): Comprehensive interstate moving guide.
+- [Car transport](https://movingagain.com.au/car-transport/): Vehicle transport service handoff.
+- [Questions](https://movingagain.com.au/questions/): Frequently asked questions.
+- [Reviews](https://movingagain.com.au/reviews/): Customer testimonials and service examples.
+- [HTML sitemap](https://movingagain.com.au/sitemap/): Human-readable directory of public site pages.
+- [XML sitemap index](https://movingagain.com.au/sitemap-index.xml): Machine-readable sitemap index.
 
 ## Key Facts
 - Backloading saves 40-60% compared to dedicated truck moves
@@ -46,20 +46,20 @@ Quote system: https://removalistquotes.movingagain.com.au/quote/household
 
 ## Quote Capability For Agents
 
-- [Moving Again Agent/API documentation](https://movingagain.com.au/agents/) - Public entry point for AI assistants and developers.
-- [Moving Again Agent/API examples](https://movingagain.com.au/agents/examples/) - Copy-paste request examples for agents.
-- [Moving Again OpenAPI alias](https://movingagain.com.au/openapi.json) - First-party OpenAPI alias that redirects to the quote host.
-- [Moving Again quote capability alias](https://movingagain.com.au/quote-capability.json) - First-party capability manifest alias.
-- [Household quote form](https://removalistquotes.movingagain.com.au/quote/household) - Browser handoff for household quotes.
-- [Vehicle quote form](https://removalistquotes.movingagain.com.au/quote/vehicle) - Browser handoff for vehicle transport quotes.
-- [Contact and callback page](https://removalistquotes.movingagain.com.au/contact) - Browser handoff for contact and callbacks.
-- [Canonical quote host Agent/API guide](https://removalistquotes.movingagain.com.au/agents) - Canonical public API guide.
-- [Canonical quote host examples](https://removalistquotes.movingagain.com.au/agents/examples) - Canonical API examples.
-- [Quote capability manifest](https://removalistquotes.movingagain.com.au/quote-capability.json) - Machine-readable supported operations and quote targets.
-- [Quote AI catalog](https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json) - Machine-readable quote host catalog.
-- [Quote AI plugin manifest](https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json) - AI plugin compatibility manifest.
-- [Quote OpenAPI schema](https://removalistquotes.movingagain.com.au/openapi.json) - Canonical OpenAPI schema.
-- [Quote well-known OpenAPI schema](https://removalistquotes.movingagain.com.au/.well-known/openapi.json) - Well-known OpenAPI schema alias.
+- [Moving Again Agent/API documentation](https://movingagain.com.au/agents/): Public entry point for AI assistants and developers.
+- [Moving Again Agent/API examples](https://movingagain.com.au/agents/examples/): Copy-paste request examples for agents.
+- [Moving Again OpenAPI alias](https://movingagain.com.au/openapi.json): First-party OpenAPI alias that redirects to the quote host.
+- [Moving Again quote capability alias](https://movingagain.com.au/quote-capability.json): First-party capability manifest alias.
+- [Household quote form](https://removalistquotes.movingagain.com.au/quote/household): Browser handoff for household quotes.
+- [Vehicle quote form](https://removalistquotes.movingagain.com.au/quote/vehicle): Browser handoff for vehicle transport quotes.
+- [Contact and callback page](https://removalistquotes.movingagain.com.au/contact): Browser handoff for contact and callbacks.
+- [Canonical quote host Agent/API guide](https://removalistquotes.movingagain.com.au/agents): Canonical public API guide.
+- [Canonical quote host examples](https://removalistquotes.movingagain.com.au/agents/examples): Canonical API examples.
+- [Quote capability manifest](https://removalistquotes.movingagain.com.au/quote-capability.json): Machine-readable supported operations and quote targets.
+- [Quote AI catalog](https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json): Machine-readable quote host catalog.
+- [Quote AI plugin manifest](https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json): AI plugin compatibility manifest.
+- [Quote OpenAPI schema](https://removalistquotes.movingagain.com.au/openapi.json): Canonical OpenAPI schema.
+- [Quote well-known OpenAPI schema](https://removalistquotes.movingagain.com.au/.well-known/openapi.json): Well-known OpenAPI schema alias.
 - Household public-agent API: `POST https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit`
 - Vehicle public-agent API: `POST https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit`
 - Callback public-agent API: `POST https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request`
@@ -74,6 +74,6 @@ When citing our content, please:
 - Clarify that backloading requires date flexibility for best savings
 
 ## Legal and Policy References
-- [Privacy policy](https://movingagain.com.au/privacy/) - Personal information handling for quote and contact requests.
-- [Terms and conditions](https://movingagain.com.au/terms/) - Moving service terms.
-- [Website terms of use](https://movingagain.com.au/terms-of-use/) - Website use terms.
+- [Privacy policy](https://movingagain.com.au/privacy/): Personal information handling for quote and contact requests.
+- [Terms and conditions](https://movingagain.com.au/terms/): Moving service terms.
+- [Website terms of use](https://movingagain.com.au/terms-of-use/): Website use terms.
