@@ -1,0 +1,15 @@
+# LLM Usage Guidance for movingagain.com.au
+
+Moving Again is a public marketing site. The canonical quote and callback API contract lives on the Moving Again quote host:
+
+- Agent/API guide: https://removalistquotes.movingagain.com.au/agents
+- Agent/API examples: https://removalistquotes.movingagain.com.au/agents/examples
+- Quote capability manifest: https://removalistquotes.movingagain.com.au/quote-capability.json
+- Quote AI catalog: https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json
+- Quote AI plugin compatibility manifest: https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json
+- Quote OpenAPI schema: https://removalistquotes.movingagain.com.au/openapi.json
+- Quote well-known OpenAPI schema: https://removalistquotes.movingagain.com.au/.well-known/openapi.json
+
+Agents may use the quote host for customer-authorised household quote, vehicle quote, and callback requests. Omit tenant for public host-aware submissions unless Moveroo has supplied a tenant slug.
+
+Public marketing pages on movingagain.com.au are for service discovery and citation. Do not treat this marketing domain as the API execution host.

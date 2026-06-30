@@ -31,10 +31,16 @@ async function main() {
   const packageJson = JSON.parse(await read('package.json'));
   const layout = await read('src/layouts/Layout.astro');
   const seo = await read('src/components/SEO.astro');
+  const footer = await read('src/components/Footer.astro');
   const envExample = await read('.env.example');
   const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
   const vehicleAssistantEmbed = await read('src/components/VehicleAssistantEmbed.astro');
   const homepage = await read('src/pages/index.astro');
+  const llms = await read('public/llms.txt');
+  const wellKnownLlms = await read('public/.well-known/llms.txt');
+  const aiCatalog = await read('src/pages/.well-known/ai-catalog.json.ts');
+  const bossmanManifest = await read('bossman-site-manifest.json');
+  const publicBossmanManifest = await read('public/bossman-site-manifest.json');
   const vercelConfig = await read('vercel.json');
   const netlifyConfig = await read('netlify.toml');
 
@@ -109,10 +115,69 @@ async function main() {
     ]);
   }
   checks.push(['SEO links RSS feed', seo.includes('application/rss+xml')]);
+  checks.push([
+    'SEO head imports quote agent discovery constants',
+    seo.includes("import { QUOTE_AGENT_DISCOVERY } from '../utils/brand';"),
+  ]);
+  for (const token of [
+    'capabilityManifest',
+    'aiCatalog',
+    'aiPlugin',
+    'openApi',
+    'bossman-site-manifest.json',
+    '/.well-known/ai-catalog.json',
+    '/.well-known/llms.txt',
+  ]) {
+    checks.push([`SEO head advertises ${token}`, seo.includes(token)]);
+  }
+  checks.push([
+    'footer links to agent guide through shared constants',
+    footer.includes('QUOTE_AGENT_DISCOVERY.agentGuide') && footer.includes('Agents/API'),
+  ]);
+  for (const [label, text] of [
+    ['llms.txt', llms],
+    ['well-known llms.txt', wellKnownLlms],
+    ['AI catalog', aiCatalog],
+    ['Bossman manifest', bossmanManifest],
+    ['public Bossman manifest', publicBossmanManifest],
+    ['Vercel headers', vercelConfig],
+    ['Netlify headers', netlifyConfig],
+  ]) {
+    checks.push([
+      `${label} advertises quote capability manifest`,
+      text.includes('https://removalistquotes.movingagain.com.au/quote-capability.json'),
+    ]);
+    checks.push([
+      `${label} advertises quote OpenAPI`,
+      text.includes('https://removalistquotes.movingagain.com.au/openapi.json'),
+    ]);
+    checks.push([
+      `${label} advertises quote AI plugin manifest`,
+      text.includes('https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json'),
+    ]);
+    checks.push([
+      `${label} advertises agent examples`,
+      text.includes('https://removalistquotes.movingagain.com.au/agents/examples') ||
+        (label.endsWith('headers') &&
+          text.includes('https://removalistquotes.movingagain.com.au/openapi.json')),
+    ]);
+  }
+  checks.push([
+    'AI catalog marks marketing site as non-execution surface',
+    aiCatalog.includes("role: 'marketing_site'") &&
+      aiCatalog.includes("role: 'canonical_quote_api_host'"),
+  ]);
+  checks.push([
+    'llms.txt includes vehicle and callback public-agent APIs',
+    llms.includes('/api/v1/vehicle-quotes/assistant/submit') &&
+      llms.includes('/api/v1/callbacks/assistant/request'),
+  ]);
   for (const relativePath of [
     'src/pages/rss.xml.ts',
     'src/pages/sitemap.astro',
     'src/pages/robots.txt.ts',
+    'public/.well-known/llms.txt',
+    'src/pages/.well-known/ai-catalog.json.ts',
     'src/pages/privacy.astro',
     'src/pages/terms.astro',
     'docs/migration-ledger.md',

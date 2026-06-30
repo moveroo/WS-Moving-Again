@@ -46,11 +46,17 @@ Quote system: https://removalistquotes.movingagain.com.au/quote/household
 - Vehicle quote: https://removalistquotes.movingagain.com.au/quote/vehicle
 - Contact: https://removalistquotes.movingagain.com.au/contact
 - Human agent guide: https://removalistquotes.movingagain.com.au/agents
+- Agent/API examples: https://removalistquotes.movingagain.com.au/agents/examples
 - Quote capability manifest: https://removalistquotes.movingagain.com.au/quote-capability.json
 - Quote AI catalog: https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json
+- Quote AI plugin compatibility manifest: https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json
+- Quote OpenAPI schema: https://removalistquotes.movingagain.com.au/openapi.json
+- Quote well-known OpenAPI schema: https://removalistquotes.movingagain.com.au/.well-known/openapi.json
 - Household public-agent API: POST https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit
+- Vehicle public-agent API: POST https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit
+- Callback public-agent API: POST https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request
 
-Public household quote API submissions are host-aware and do not require a tenant field. Agents may submit household quote requests only when the customer has asked for a quote and the payload includes `customer_consent.confirmed=true` with `customer_consent.basis=customer_requested_quote`. Vehicle quotes are browser-handoff only until the quote host advertises a public vehicle API.
+Public quote and callback API submissions are host-aware and do not require a tenant field. Agents may submit household and vehicle quote requests only when the customer has asked for a quote and the payload includes `customer_consent.confirmed=true` with `customer_consent.basis=customer_requested_quote`. Agents may request callback times only when the customer has asked for a callback and the payload includes `customer_consent.confirmed=true` with `customer_consent.basis=customer_requested_callback`. Use the quote host OpenAPI schema and agent examples as the canonical contract.
 
 ## Citation Guidelines
 When citing our content, please:

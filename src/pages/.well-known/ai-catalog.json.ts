@@ -7,6 +7,20 @@ export const GET: APIRoute = () => {
       displayName: 'Moving Again',
       identifier: 'did:web:movingagain.com.au',
       url: 'https://movingagain.com.au/',
+      role: 'marketing_site',
+    },
+    quoteHost: {
+      host: 'https://removalistquotes.movingagain.com.au',
+      role: 'canonical_quote_api_host',
+      llmsTxt: 'https://removalistquotes.movingagain.com.au/llms.txt',
+      wellKnownLlmsTxt: 'https://removalistquotes.movingagain.com.au/.well-known/llms.txt',
+      aiCatalog: 'https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json',
+      aiPlugin: 'https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json',
+      capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+      openApi: 'https://removalistquotes.movingagain.com.au/openapi.json',
+      wellKnownOpenApi: 'https://removalistquotes.movingagain.com.au/.well-known/openapi.json',
+      agentGuide: 'https://removalistquotes.movingagain.com.au/agents',
+      agentExamples: 'https://removalistquotes.movingagain.com.au/agents/examples',
     },
     entries: [
       {
@@ -27,9 +41,15 @@ export const GET: APIRoute = () => {
         type: 'text/html',
         url: 'https://removalistquotes.movingagain.com.au/quote/household',
         capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        openApi: 'https://removalistquotes.movingagain.com.au/openapi.json',
+        aiPlugin: 'https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json',
         humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
+        examples: 'https://removalistquotes.movingagain.com.au/agents/examples',
         publicAgentApi:
           'https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit',
+        hostAware: true,
+        tenantRequired: false,
+        customerConsentRequired: true,
       },
       {
         identifier: 'urn:ai:movingagain.com.au:quote:vehicle',
@@ -37,7 +57,15 @@ export const GET: APIRoute = () => {
         type: 'text/html',
         url: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
         capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        openApi: 'https://removalistquotes.movingagain.com.au/openapi.json',
+        aiPlugin: 'https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json',
         humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
+        examples: 'https://removalistquotes.movingagain.com.au/agents/examples',
+        publicAgentApi:
+          'https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit',
+        hostAware: true,
+        tenantRequired: false,
+        customerConsentRequired: true,
       },
       {
         identifier: 'urn:ai:movingagain.com.au:quote:contact',
@@ -45,9 +73,25 @@ export const GET: APIRoute = () => {
         type: 'text/html',
         url: 'https://removalistquotes.movingagain.com.au/contact',
         capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+        openApi: 'https://removalistquotes.movingagain.com.au/openapi.json',
+        aiPlugin: 'https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json',
         humanGuide: 'https://removalistquotes.movingagain.com.au/agents',
+        examples: 'https://removalistquotes.movingagain.com.au/agents/examples',
+        publicAgentApi:
+          'https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request',
+        hostAware: true,
+        tenantRequired: false,
+        customerConsentRequired: true,
       },
     ],
+    agentGuidance: {
+      canonicalContract:
+        'Use the quote host OpenAPI schema, capability manifest, agent guide, and examples as the source of truth.',
+      tenant:
+        'Omit tenant for public host-aware submissions unless Moveroo has supplied a tenant slug.',
+      consent:
+        'Submit quote or callback requests only when the customer has asked for that action and the payload includes the required customer_consent fields.',
+    },
   };
 
   return new Response(JSON.stringify(catalog, null, 2), {
