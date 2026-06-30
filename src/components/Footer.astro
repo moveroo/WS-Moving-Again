@@ -1,5 +1,5 @@
 ---
-import { BRAND } from '../utils/brand';
+import { BRAND, QUOTE_AGENT_DISCOVERY } from '../utils/brand';
 
 const currentYear = new Date().getFullYear();
 ---
@@ -42,6 +42,12 @@ const currentYear = new Date().getFullYear();
             <a href={BRAND.contactUrl} class="hover:text-brand-yellow transition-colors">Contact</a>
           </li>
           <li><a href="/questions/" class="hover:text-brand-yellow transition-colors">FAQ</a></li>
+          <li>
+            <a
+              href={QUOTE_AGENT_DISCOVERY.agentGuide}
+              class="hover:text-brand-yellow transition-colors">Agents/API</a
+            >
+          </li>
         </ul>
       </div>
 

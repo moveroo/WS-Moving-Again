@@ -9,6 +9,7 @@ Allow: /
 
 Sitemap: ${siteUrl.replace(/\/$/, '')}/sitemap-index.xml
 Sitemap: ${siteUrl.replace(/\/$/, '')}/llms.txt
+Sitemap: ${siteUrl.replace(/\/$/, '')}/.well-known/llms.txt
 `.trim();
 
 export const GET: APIRoute = () => {

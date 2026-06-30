@@ -47,3 +47,20 @@ export const BRAND = {
     ],
   },
 };
+
+export const QUOTE_AGENT_DISCOVERY = {
+  host: 'https://removalistquotes.movingagain.com.au',
+  llmsTxt: 'https://removalistquotes.movingagain.com.au/llms.txt',
+  wellKnownLlmsTxt: 'https://removalistquotes.movingagain.com.au/.well-known/llms.txt',
+  aiCatalog: 'https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json',
+  aiPlugin: 'https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json',
+  capabilityManifest: 'https://removalistquotes.movingagain.com.au/quote-capability.json',
+  openApi: 'https://removalistquotes.movingagain.com.au/openapi.json',
+  wellKnownOpenApi: 'https://removalistquotes.movingagain.com.au/.well-known/openapi.json',
+  agentGuide: 'https://removalistquotes.movingagain.com.au/agents',
+  agentExamples: 'https://removalistquotes.movingagain.com.au/agents/examples',
+  householdApi:
+    'https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit',
+  vehicleApi: 'https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit',
+  callbackApi: 'https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request',
+};

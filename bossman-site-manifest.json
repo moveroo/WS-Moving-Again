@@ -29,7 +29,7 @@
     "brandTokens": "brand/tokens.json"
   },
   "notes": "Bossman site manifest for repo-owned implementation truth. Bossman imports this as evidence but does not overwrite accepted truth without review.",
-  "updatedAt": "2026-06-30",
+  "updatedAt": "2026-07-01",
   "indexNow": {
     "status": "auto",
     "submissionApproved": true,
@@ -43,9 +43,14 @@
   "quoteCapability": {
     "host": "https://removalistquotes.movingagain.com.au",
     "llmsTxt": "https://removalistquotes.movingagain.com.au/llms.txt",
+    "wellKnownLlmsTxt": "https://removalistquotes.movingagain.com.au/.well-known/llms.txt",
     "aiCatalog": "https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json",
+    "aiPlugin": "https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json",
     "manifest": "https://removalistquotes.movingagain.com.au/quote-capability.json",
+    "openApi": "https://removalistquotes.movingagain.com.au/openapi.json",
+    "wellKnownOpenApi": "https://removalistquotes.movingagain.com.au/.well-known/openapi.json",
     "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
+    "examples": "https://removalistquotes.movingagain.com.au/agents/examples",
     "householdPublicAgentApi": {
       "method": "POST",
       "url": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
@@ -55,8 +60,22 @@
       "ready": true
     },
     "vehiclePublicAgentApi": {
-      "ready": false,
+      "method": "POST",
+      "url": "https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit",
+      "hostAware": true,
+      "requiresTenant": false,
+      "requiresCustomerConsent": true,
+      "ready": true,
       "handoffUrl": "https://removalistquotes.movingagain.com.au/quote/vehicle"
+    },
+    "callbackPublicAgentApi": {
+      "method": "POST",
+      "url": "https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request",
+      "hostAware": true,
+      "requiresTenant": false,
+      "requiresCustomerConsent": true,
+      "ready": true,
+      "handoffUrl": "https://removalistquotes.movingagain.com.au/contact"
     }
   },
   "agentCapabilities": {
@@ -65,8 +84,13 @@
       "vehicleQuote": "https://removalistquotes.movingagain.com.au/quote/vehicle",
       "contact": "https://removalistquotes.movingagain.com.au/contact",
       "capabilityManifest": "https://removalistquotes.movingagain.com.au/quote-capability.json",
+      "openApi": "https://removalistquotes.movingagain.com.au/openapi.json",
+      "aiPlugin": "https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json",
       "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
+      "examples": "https://removalistquotes.movingagain.com.au/agents/examples",
       "householdPublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
+      "vehiclePublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit",
+      "callbackPublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request",
       "hostAware": true,
       "tenantRequired": false
     },

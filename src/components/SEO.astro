@@ -12,6 +12,8 @@ interface Props {
   publishedDate?: string; // ISO date string for article:published_time
 }
 
+import { QUOTE_AGENT_DISCOVERY } from '../utils/brand';
+
 // Production domain - always use this for canonical URLs
 const PRODUCTION_DOMAIN = 'https://movingagain.com.au';
 
@@ -178,6 +180,49 @@ if (title) {
 
     <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="text/plain" title="LLMs guidance" href="/llms.txt" />
+    <link
+      rel="alternate"
+      type="text/plain"
+      title="Well-known LLMs guidance"
+      href="/.well-known/llms.txt"
+    />
+    <link
+      rel="service-desc"
+      type="application/json"
+      title="Marketing site AI catalog"
+      href="/.well-known/ai-catalog.json"
+    />
+    <link
+      rel="service-desc"
+      type="application/json"
+      title="Bossman site manifest"
+      href="/bossman-site-manifest.json"
+    />
+    <link
+      rel="service-desc"
+      type="application/json"
+      title="Quote capability manifest"
+      href={QUOTE_AGENT_DISCOVERY.capabilityManifest}
+    />
+    <link
+      rel="service-desc"
+      type="application/json"
+      title="Quote AI catalog"
+      href={QUOTE_AGENT_DISCOVERY.aiCatalog}
+    />
+    <link
+      rel="service-desc"
+      type="application/json"
+      title="Quote AI plugin compatibility manifest"
+      href={QUOTE_AGENT_DISCOVERY.aiPlugin}
+    />
+    <link
+      rel="service-desc"
+      type="application/vnd.oai.openapi+json"
+      title="Quote OpenAPI description"
+      href={QUOTE_AGENT_DISCOVERY.openApi}
+    />
     <link rel="alternate" type="application/rss+xml" title={`${siteName} RSS Feed`} href={rssUrl} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
