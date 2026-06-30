@@ -239,6 +239,10 @@ async function main() {
       llms.includes('[Privacy policy]') &&
       llms.includes('[Terms and conditions]'),
   ]);
+  checks.push([
+    'llms.txt has described markdown links',
+    (llms.match(/^\s*[-*]\s+\[[^\]]+\]\([^)]+\):\s*\S.+$/gm) || []).length >= 5,
+  ]);
   for (const relativePath of [
     'src/pages/rss.xml.ts',
     'src/pages/sitemap.astro',
