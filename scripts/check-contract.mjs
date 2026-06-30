@@ -120,10 +120,10 @@ async function main() {
     seo.includes("import { QUOTE_AGENT_DISCOVERY } from '../utils/brand';"),
   ]);
   for (const token of [
-    'capabilityManifest',
+    '/quote-capability.json',
     'aiCatalog',
-    'aiPlugin',
-    'openApi',
+    '/.well-known/ai-plugin.json',
+    '/openapi.json',
     'bossman-site-manifest.json',
     '/.well-known/ai-catalog.json',
     '/.well-known/llms.txt',
@@ -131,9 +131,25 @@ async function main() {
     checks.push([`SEO head advertises ${token}`, seo.includes(token)]);
   }
   checks.push([
-    'footer links to agent guide through shared constants',
-    footer.includes('QUOTE_AGENT_DISCOVERY.agentGuide') && footer.includes('Agents/API'),
+    'footer links to local agent guide',
+    footer.includes('href="/agents/"') && footer.includes('Agents/API'),
   ]);
+  for (const relativePath of ['src/pages/agents.astro', 'src/pages/agents/examples.astro']) {
+    checks.push([`${relativePath} exists`, await exists(relativePath)]);
+  }
+  for (const [label, text] of [
+    ['Vercel redirects', vercelConfig],
+    ['Netlify redirects', netlifyConfig],
+  ]) {
+    for (const alias of [
+      '/openapi.json',
+      '/.well-known/openapi.json',
+      '/quote-capability.json',
+      '/.well-known/ai-plugin.json',
+    ]) {
+      checks.push([`${label} includes ${alias}`, text.includes(alias)]);
+    }
+  }
   for (const [label, text] of [
     ['llms.txt', llms],
     ['well-known llms.txt', wellKnownLlms],

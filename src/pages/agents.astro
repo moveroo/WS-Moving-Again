@@ -1,0 +1,174 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BRAND, QUOTE_AGENT_DISCOVERY } from '../utils/brand';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Agents/API', url: 'https://movingagain.com.au/agents/' },
+];
+
+const operations = [
+  {
+    name: 'Household quote request',
+    endpoint: QUOTE_AGENT_DISCOVERY.householdApi,
+    browserUrl: BRAND.quoteUrl,
+    consentBasis: 'customer_requested_quote',
+  },
+  {
+    name: 'Vehicle quote request',
+    endpoint: QUOTE_AGENT_DISCOVERY.vehicleApi,
+    browserUrl: BRAND.carQuoteUrl,
+    consentBasis: 'customer_requested_quote',
+  },
+  {
+    name: 'Callback request',
+    endpoint: QUOTE_AGENT_DISCOVERY.callbackApi,
+    browserUrl: BRAND.contactUrl,
+    consentBasis: 'customer_requested_callback',
+  },
+];
+---
+
+<Layout
+  title="Agents/API | Moving Again"
+  description="Public agent and API discovery guide for customer-authorised Moving Again household quote, vehicle quote, and callback requests."
+>
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-wider text-brand-red">
+          Moving Again agent platform
+        </p>
+        <h1 class="mb-6 text-4xl font-black tracking-tight text-brand-dark md:text-5xl">
+          Public agent and quote API discovery
+        </h1>
+        <p class="max-w-3xl text-lg leading-8 text-gray-700">
+          Moving Again is a marketing site. The canonical quote API, consent contract, OpenAPI
+          schema, and copy-paste examples are hosted on the Moving Again quote host. Use the current
+          Moving Again quote host for all quote and callback submissions.
+        </p>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <a
+            href={QUOTE_AGENT_DISCOVERY.agentGuide}
+            class="rounded-lg border border-gray-200 bg-gray-50 p-5 transition hover:border-brand-red hover:bg-white"
+          >
+            <span class="block text-sm font-bold uppercase tracking-wide text-gray-500"
+              >Canonical guide</span
+            >
+            <span class="mt-2 block break-words font-semibold text-brand-dark"
+              >{QUOTE_AGENT_DISCOVERY.agentGuide}</span
+            >
+          </a>
+          <a
+            href={QUOTE_AGENT_DISCOVERY.openApi}
+            class="rounded-lg border border-gray-200 bg-gray-50 p-5 transition hover:border-brand-red hover:bg-white"
+          >
+            <span class="block text-sm font-bold uppercase tracking-wide text-gray-500"
+              >OpenAPI schema</span
+            >
+            <span class="mt-2 block break-words font-semibold text-brand-dark"
+              >{QUOTE_AGENT_DISCOVERY.openApi}</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-light py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-5xl">
+        <h2 class="mb-6 text-3xl font-black text-brand-dark">Supported public operations</h2>
+        <div class="grid gap-5">
+          {
+            operations.map((operation) => (
+              <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-dark">{operation.name}</h3>
+                <dl class="mt-4 grid gap-3 text-sm text-gray-700 md:grid-cols-[12rem_minmax(0,1fr)]">
+                  <dt class="font-bold text-gray-900">API endpoint</dt>
+                  <dd class="break-words font-mono">{operation.endpoint}</dd>
+                  <dt class="font-bold text-gray-900">Browser handoff</dt>
+                  <dd>
+                    <a
+                      class="break-words text-brand-red hover:underline"
+                      href={operation.browserUrl}
+                    >
+                      {operation.browserUrl}
+                    </a>
+                  </dd>
+                  <dt class="font-bold text-gray-900">Consent basis</dt>
+                  <dd class="font-mono">{operation.consentBasis}</dd>
+                </dl>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <div>
+          <h2 class="mb-4 text-3xl font-black text-brand-dark">Consent and tenant rules</h2>
+          <div class="prose prose-lg max-w-none">
+            <p>
+              Agents may submit quote or callback requests only when the customer has asked for that
+              action. Quote submissions require <code>customer_consent.confirmed=true</code>
+              and <code>customer_consent.basis=customer_requested_quote</code>. Callback requests
+              use <code>customer_requested_callback</code>.
+            </p>
+            <p>
+              Public submissions are host-aware. Omit <code>tenant</code> unless Moveroo has separately
+              supplied an agreed tenant slug. The quote host resolves the tenant from the request host.
+            </p>
+            <p>
+              Use a stable <code>idempotency_key</code> when possible so retries do not create duplicate
+              quote requests.
+            </p>
+          </div>
+        </div>
+
+        <aside class="rounded-lg border border-gray-200 bg-gray-50 p-6">
+          <h2 class="text-xl font-black text-brand-dark">Discovery URLs</h2>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a class="text-brand-red hover:underline" href="/llms.txt">/llms.txt</a></li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/.well-known/llms.txt"
+                >/.well-known/llms.txt</a
+              >
+            </li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/quote-capability.json"
+                >/quote-capability.json</a
+              >
+            </li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/openapi.json">/openapi.json</a>
+            </li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/.well-known/ai-catalog.json"
+                >/.well-known/ai-catalog.json</a
+              >
+            </li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/.well-known/ai-plugin.json"
+                >/.well-known/ai-plugin.json</a
+              >
+            </li>
+            <li>
+              <a class="text-brand-red hover:underline" href="/agents/examples">/agents/examples</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

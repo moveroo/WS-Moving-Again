@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { QUOTE_AGENT_DISCOVERY } from '../../utils/brand';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://movingagain.com.au/' },
+  { name: 'Agents/API', url: 'https://movingagain.com.au/agents/' },
+  { name: 'Examples', url: 'https://movingagain.com.au/agents/examples/' },
+];
+
+const examples = [
+  {
+    title: 'Household quote cURL',
+    command: `curl -X POST "${QUOTE_AGENT_DISCOVERY.householdApi}" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "origin_domain": "removalistquotes.movingagain.com.au",
+    "customer_consent": {
+      "confirmed": true,
+      "basis": "customer_requested_quote"
+    },
+    "customer": {
+      "name": "Example Customer",
+      "email": "customer@example.com",
+      "phone": "0400000000"
+    },
+    "pickup": {
+      "city": "Sydney",
+      "state": "NSW"
+    },
+    "delivery": {
+      "city": "Brisbane",
+      "state": "QLD"
+    },
+    "move_date": {
+      "type": "asap"
+    },
+    "inventory": {
+      "method": "m3",
+      "cubic_meters": 20
+    },
+    "idempotency_key": "agent-household-example-001"
+  }'`,
+  },
+  {
+    title: 'Vehicle quote cURL',
+    command: `curl -X POST "${QUOTE_AGENT_DISCOVERY.vehicleApi}" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "origin_domain": "removalistquotes.movingagain.com.au",
+    "customer_consent": {
+      "confirmed": true,
+      "basis": "customer_requested_quote"
+    },
+    "customer": {
+      "name": "Example Customer",
+      "email": "customer@example.com",
+      "phone": "0400000000"
+    },
+    "pickup": {
+      "city": "Sydney",
+      "state": "NSW"
+    },
+    "delivery": {
+      "city": "Brisbane",
+      "state": "QLD"
+    },
+    "vehicle": {
+      "category": "standard_vehicle",
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2020,
+      "is_drivable": true
+    },
+    "idempotency_key": "agent-vehicle-example-001"
+  }'`,
+  },
+  {
+    title: 'Callback request cURL',
+    command: `curl -X POST "${QUOTE_AGENT_DISCOVERY.callbackApi}" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "origin_domain": "removalistquotes.movingagain.com.au",
+    "customer_consent": {
+      "confirmed": true,
+      "basis": "customer_requested_callback"
+    },
+    "customer": {
+      "name": "Example Customer",
+      "email": "customer@example.com",
+      "phone": "0400000000"
+    },
+    "slot": "2026-07-08T10:00:00+10:00",
+    "notes": "Customer asked for a callback about a quote.",
+    "idempotency_key": "agent-callback-example-001"
+  }'`,
+  },
+];
+---
+
+<Layout
+  title="Agent API Examples | Moving Again"
+  description="Copy-paste public agent API examples for Moving Again household quote, vehicle quote, and callback requests."
+>
+  <div class="container mx-auto px-4 py-4">
+    <Breadcrumbs items={breadcrumbItems} />
+  </div>
+
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-3 text-sm font-bold uppercase tracking-wider text-brand-red">
+          Public agent examples
+        </p>
+        <h1 class="mb-6 text-4xl font-black tracking-tight text-brand-dark md:text-5xl">
+          Moving Again quote API examples
+        </h1>
+        <p class="max-w-3xl text-lg leading-8 text-gray-700">
+          These examples use the Moving Again quote host. Submit only customer-authorised requests,
+          omit tenant unless separately agreed, and send a stable idempotency key when possible.
+        </p>
+
+        <div class="mt-10 space-y-6">
+          {
+            examples.map((example) => (
+              <section class="rounded-lg border border-gray-200 bg-gray-50 p-6">
+                <h2 class="mb-4 text-2xl font-black text-brand-dark">{example.title}</h2>
+                <pre class="overflow-x-auto rounded-lg bg-gray-950 p-5 text-sm leading-6 text-white">
+                  <code>{example.command}</code>
+                </pre>
+              </section>
+            ))
+          }
+        </div>
+
+        <div class="mt-8 rounded-lg border border-gray-200 bg-brand-light p-6">
+          <h2 class="text-xl font-black text-brand-dark">Canonical schema</h2>
+          <p class="mt-3 text-gray-700">
+            Use <a class="text-brand-red hover:underline" href={QUOTE_AGENT_DISCOVERY.openApi}
+              >{QUOTE_AGENT_DISCOVERY.openApi}</a
+            > and <a
+              class="text-brand-red hover:underline"
+              href={QUOTE_AGENT_DISCOVERY.capabilityManifest}
+              >{QUOTE_AGENT_DISCOVERY.capabilityManifest}</a
+            > as the source of truth for required fields and supported workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

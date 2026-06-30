@@ -4,6 +4,10 @@ Moving Again is a public marketing site. The canonical quote and callback API co
 
 - Agent/API guide: https://removalistquotes.movingagain.com.au/agents
 - Agent/API examples: https://removalistquotes.movingagain.com.au/agents/examples
+- Moving Again agent landing page: https://movingagain.com.au/agents
+- Moving Again agent examples: https://movingagain.com.au/agents/examples
+- Moving Again OpenAPI alias: https://movingagain.com.au/openapi.json
+- Moving Again quote capability alias: https://movingagain.com.au/quote-capability.json
 - Quote capability manifest: https://removalistquotes.movingagain.com.au/quote-capability.json
 - Quote AI catalog: https://removalistquotes.movingagain.com.au/.well-known/ai-catalog.json
 - Quote AI plugin compatibility manifest: https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json

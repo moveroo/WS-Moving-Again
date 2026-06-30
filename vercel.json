@@ -33,6 +33,26 @@
       "permanent": true
     },
     {
+      "source": "/openapi.json",
+      "destination": "https://removalistquotes.movingagain.com.au/openapi.json",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/openapi.json",
+      "destination": "https://removalistquotes.movingagain.com.au/.well-known/openapi.json",
+      "permanent": true
+    },
+    {
+      "source": "/quote-capability.json",
+      "destination": "https://removalistquotes.movingagain.com.au/quote-capability.json",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/ai-plugin.json",
+      "destination": "https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json",
+      "permanent": true
+    },
+    {
       "source": "/backloading/sitemap.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
