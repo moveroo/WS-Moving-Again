@@ -2,6 +2,26 @@
   command = "npm run build"
   publish = "dist"
 
+[[redirects]]
+  from = "/openapi.json"
+  to = "https://removalistquotes.movingagain.com.au/openapi.json"
+  status = 301
+
+[[redirects]]
+  from = "/.well-known/openapi.json"
+  to = "https://removalistquotes.movingagain.com.au/.well-known/openapi.json"
+  status = 301
+
+[[redirects]]
+  from = "/quote-capability.json"
+  to = "https://removalistquotes.movingagain.com.au/quote-capability.json"
+  status = 301
+
+[[redirects]]
+  from = "/.well-known/ai-plugin.json"
+  to = "https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

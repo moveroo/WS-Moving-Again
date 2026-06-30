@@ -51,6 +51,14 @@
     "wellKnownOpenApi": "https://removalistquotes.movingagain.com.au/.well-known/openapi.json",
     "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
     "examples": "https://removalistquotes.movingagain.com.au/agents/examples",
+    "marketingAliases": {
+      "humanGuide": "https://movingagain.com.au/agents",
+      "examples": "https://movingagain.com.au/agents/examples",
+      "manifest": "https://movingagain.com.au/quote-capability.json",
+      "openApi": "https://movingagain.com.au/openapi.json",
+      "wellKnownOpenApi": "https://movingagain.com.au/.well-known/openapi.json",
+      "aiPlugin": "https://movingagain.com.au/.well-known/ai-plugin.json"
+    },
     "householdPublicAgentApi": {
       "method": "POST",
       "url": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
@@ -88,6 +96,10 @@
       "aiPlugin": "https://removalistquotes.movingagain.com.au/.well-known/ai-plugin.json",
       "humanGuide": "https://removalistquotes.movingagain.com.au/agents",
       "examples": "https://removalistquotes.movingagain.com.au/agents/examples",
+      "marketingHumanGuide": "https://movingagain.com.au/agents",
+      "marketingExamples": "https://movingagain.com.au/agents/examples",
+      "marketingOpenApi": "https://movingagain.com.au/openapi.json",
+      "marketingCapabilityManifest": "https://movingagain.com.au/quote-capability.json",
       "householdPublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/household-quotes/assistant/submit",
       "vehiclePublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/vehicle-quotes/assistant/submit",
       "callbackPublicAgentApi": "https://removalistquotes.movingagain.com.au/api/v1/callbacks/assistant/request",

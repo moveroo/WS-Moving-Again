@@ -203,7 +203,7 @@ if (title) {
       rel="service-desc"
       type="application/json"
       title="Quote capability manifest"
-      href={QUOTE_AGENT_DISCOVERY.capabilityManifest}
+      href="/quote-capability.json"
     />
     <link
       rel="service-desc"
@@ -215,13 +215,13 @@ if (title) {
       rel="service-desc"
       type="application/json"
       title="Quote AI plugin compatibility manifest"
-      href={QUOTE_AGENT_DISCOVERY.aiPlugin}
+      href="/.well-known/ai-plugin.json"
     />
     <link
       rel="service-desc"
       type="application/vnd.oai.openapi+json"
       title="Quote OpenAPI description"
-      href={QUOTE_AGENT_DISCOVERY.openApi}
+      href="/openapi.json"
     />
     <link rel="alternate" type="application/rss+xml" title={`${siteName} RSS Feed`} href={rssUrl} />
     <meta name="generator" content={Astro.generator} />
