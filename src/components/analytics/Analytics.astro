@@ -3,7 +3,7 @@ import Ga4 from './Ga4.astro';
 import Matomo from './Matomo.astro';
 import { BRAND } from '../../utils/brand';
 
-function parseJsonRecord(value) {
+function parseJsonRecord(value: string | undefined): Record<string, string> | null {
   if (!value) return null;
   try {
     const parsed = JSON.parse(value);

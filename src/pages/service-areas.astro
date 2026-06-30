@@ -16,12 +16,22 @@ import { getContentDate } from '../utils/fileDates';
 import { fileURLToPath } from 'url';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 
+type StateCode = keyof typeof NET_INTERSTATE_MIGRATION;
+
 // Get content modification date
 const currentFile = fileURLToPath(import.meta.url);
 const pageDate = getContentDate(currentFile);
 
 // City hub data
-const cityHubs = [
+const cityHubs: Array<{
+  city: string;
+  state: string;
+  slug: string;
+  stateCode: StateCode;
+  icon: string;
+  tagline: string;
+  features: string[];
+}> = [
   {
     city: 'Sydney',
     state: 'NSW',
