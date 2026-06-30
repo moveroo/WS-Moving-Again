@@ -36,6 +36,8 @@ async function main() {
   const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
   const vehicleAssistantEmbed = await read('src/components/VehicleAssistantEmbed.astro');
   const homepage = await read('src/pages/index.astro');
+  const htmlSitemap = await read('src/pages/sitemap.astro');
+  const robots = await read('src/pages/robots.txt.ts');
   const llms = await read('public/llms.txt');
   const wellKnownLlms = await read('public/.well-known/llms.txt');
   const aiCatalog = await read('src/pages/.well-known/ai-catalog.json.ts');
@@ -95,6 +97,13 @@ async function main() {
     'homepage opts into vehicle assistant',
     homepage.includes('vehicleAssistantSurface="main-domain-home"'),
   ]);
+  checks.push([
+    'homepage advertises Agent/API section',
+    homepage.includes('For AI assistants and developers') &&
+      homepage.includes('Official Agent/API access') &&
+      homepage.includes('href="/agents/"') &&
+      homepage.includes('href="/openapi.json"'),
+  ]);
   for (const [label, configText] of [
     ['Vercel', vercelConfig],
     ['Netlify', netlifyConfig],
@@ -133,6 +142,22 @@ async function main() {
   checks.push([
     'footer links to local agent guide',
     footer.includes('href="/agents/"') && footer.includes('Agents/API'),
+  ]);
+  checks.push([
+    'HTML sitemap links agent resources',
+    htmlSitemap.includes('/agents/') &&
+      htmlSitemap.includes('/agents/examples/') &&
+      htmlSitemap.includes('/openapi.json') &&
+      htmlSitemap.includes('/quote-capability.json'),
+  ]);
+  checks.push([
+    'robots.txt advertises agent resources',
+    robots.includes('Allow: /agents/') &&
+      robots.includes('Allow: /agents/examples/') &&
+      robots.includes('Allow: /openapi.json') &&
+      robots.includes('Allow: /quote-capability.json') &&
+      robots.includes('Allow: /.well-known/ai-catalog.json') &&
+      robots.includes('Allow: /.well-known/ai-plugin.json'),
   ]);
   for (const relativePath of ['src/pages/agents.astro', 'src/pages/agents/examples.astro']) {
     checks.push([`${relativePath} exists`, await exists(relativePath)]);
@@ -176,6 +201,18 @@ async function main() {
       text.includes('https://removalistquotes.movingagain.com.au/agents/examples') ||
         (label.endsWith('headers') &&
           text.includes('https://removalistquotes.movingagain.com.au/openapi.json')),
+    ]);
+  }
+  for (const [label, text] of [
+    ['Vercel headers', vercelConfig],
+    ['Netlify headers', netlifyConfig],
+  ]) {
+    checks.push([
+      `${label} advertises local agent guide and aliases`,
+      text.includes('</agents/>') &&
+        text.includes('</quote-capability.json>') &&
+        text.includes('</.well-known/ai-plugin.json>') &&
+        text.includes('</openapi.json>'),
     ]);
   }
   checks.push([

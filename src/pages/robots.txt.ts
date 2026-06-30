@@ -10,6 +10,14 @@ Allow: /
 Sitemap: ${siteUrl.replace(/\/$/, '')}/sitemap-index.xml
 Sitemap: ${siteUrl.replace(/\/$/, '')}/llms.txt
 Sitemap: ${siteUrl.replace(/\/$/, '')}/.well-known/llms.txt
+
+# Agent/API discovery
+Allow: /agents/
+Allow: /agents/examples/
+Allow: /openapi.json
+Allow: /quote-capability.json
+Allow: /.well-known/ai-catalog.json
+Allow: /.well-known/ai-plugin.json
 `.trim();
 
 export const GET: APIRoute = () => {
