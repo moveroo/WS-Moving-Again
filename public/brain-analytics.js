@@ -7,7 +7,7 @@
  * Usage:
  *   BrainAnalytics.init({ url: 'https://brain.example.com', key: 'your-api-key' });
  *
- * Quote Click Tracking:
+ * Lead Intent Click Tracking:
  *   Add data-brain-track="quote" attribute to quote/CTA links:
  *   <a href="/quote" data-brain-track="quote">Get a Quote</a>
  *
@@ -210,38 +210,62 @@
     setupClickTracking: function () {
       var self = this;
 
+      function leadIntentType(link, href) {
+        var trackValue = link.getAttribute('data-brain-track');
+        if (trackValue === 'quote') return 'quote_household';
+        if (trackValue === 'vehicle_quote') return 'quote_vehicle';
+        if (trackValue === 'booking') return 'booking_household';
+        if (trackValue === 'contact') return 'contact';
+
+        if (href.indexOf('/quote/household') !== -1) return 'quote_household';
+        if (href.indexOf('/quote/vehicle') !== -1) return 'quote_vehicle';
+        if (href.indexOf('/booking/create') !== -1) return 'booking_household';
+        if (href.indexOf('/contact') !== -1) return 'contact';
+
+        return '';
+      }
+
+      function leadIntentPayload(link, href, intentType) {
+        var deviceInfo = self.getDeviceInfo();
+        var utmParams = self.getUTMParams();
+        var landingPage = sessionStorage.getItem('brain_landing') || location.pathname;
+
+        var payload = {
+          url: location.pathname,
+          intent_type: intentType,
+          button_text: (link.textContent || '').trim().substring(0, 50),
+          destination: href,
+          referrer: document.referrer || '',
+          device: deviceInfo.device,
+          browser: deviceInfo.browser,
+          screen: window.innerWidth + 'x' + window.innerHeight,
+          landing_page: landingPage,
+        };
+
+        // Add UTM params if present
+        for (var key in utmParams) {
+          if (utmParams.hasOwnProperty(key)) {
+            payload[key] = utmParams[key];
+          }
+        }
+
+        return payload;
+      }
+
       document.addEventListener('click', function (e) {
         var link = e.target.closest('a');
         if (!link) return;
 
         var href = link.getAttribute('href') || '';
 
-        // Quote link clicks - check for data-brain-track="quote" attribute
-        var trackValue = link.getAttribute('data-brain-track');
-        if (trackValue === 'quote') {
-          var deviceInfo = self.getDeviceInfo();
-          var utmParams = self.getUTMParams();
-          var landingPage = sessionStorage.getItem('brain_landing') || location.pathname;
+        var intentType = leadIntentType(link, href);
+        if (intentType) {
+          var intentPayload = leadIntentPayload(link, href, intentType);
+          self.send('web.lead_intent_clicked', intentPayload);
 
-          var quotePayload = {
-            url: location.pathname,
-            button_text: (link.textContent || '').trim().substring(0, 50),
-            destination: href,
-            referrer: document.referrer || '',
-            device: deviceInfo.device,
-            browser: deviceInfo.browser,
-            screen: window.innerWidth + 'x' + window.innerHeight,
-            landing_page: landingPage,
-          };
-
-          // Add UTM params if present
-          for (var key in utmParams) {
-            if (utmParams.hasOwnProperty(key)) {
-              quotePayload[key] = utmParams[key];
-            }
+          if (intentType === 'quote_household') {
+            self.send('web.quote_clicked', intentPayload);
           }
-
-          self.send('web.quote_clicked', quotePayload);
         }
         // Phone clicks
         else if (href.indexOf('tel:') === 0) {

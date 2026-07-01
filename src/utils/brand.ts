@@ -44,6 +44,10 @@ export const BRAND = {
         href: 'https://removalistquotes.movingagain.com.au/booking/create',
         eventName: 'booking_household_click',
       },
+      {
+        href: 'https://removalistquotes.movingagain.com.au/contact',
+        eventName: 'contact_intent_click',
+      },
     ],
   },
 };

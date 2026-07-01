@@ -30,16 +30,25 @@ const currentYear = new Date().getFullYear();
             >
           </li>
           <li>
-            <a href={BRAND.carQuoteUrl} class="hover:text-brand-yellow transition-colors"
-              >Vehicle Quote</a
+            <a
+              data-brain-track="vehicle_quote"
+              href={BRAND.carQuoteUrl}
+              class="hover:text-brand-yellow transition-colors">Vehicle Quote</a
             >
           </li>
           <li>
-            <a href={BRAND.bookingUrl} class="hover:text-brand-yellow transition-colors">Book Now</a
+            <a
+              data-brain-track="booking"
+              href={BRAND.bookingUrl}
+              class="hover:text-brand-yellow transition-colors">Book Now</a
             >
           </li>
           <li>
-            <a href={BRAND.contactUrl} class="hover:text-brand-yellow transition-colors">Contact</a>
+            <a
+              data-brain-track="contact"
+              href={BRAND.contactUrl}
+              class="hover:text-brand-yellow transition-colors">Contact</a
+            >
           </li>
           <li><a href="/questions/" class="hover:text-brand-yellow transition-colors">FAQ</a></li>
           <li>

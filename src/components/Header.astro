@@ -1,13 +1,19 @@
 ---
 import { BRAND } from '../utils/brand';
 
-const navItems = [
+type NavItem = {
+  name: string;
+  href: string;
+  brainTrack?: 'contact';
+};
+
+const navItems: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'Service Areas', href: '/service-areas/' },
   { name: 'Backloading', href: '/backloading/' },
   { name: 'Car Transport', href: '/car-transport/' },
   { name: 'Moving Interstate', href: '/moving-interstate/' },
-  { name: 'Contact', href: BRAND.contactUrl },
+  { name: 'Contact', href: BRAND.contactUrl, brainTrack: 'contact' },
 ];
 ---
 
@@ -54,6 +60,7 @@ const navItems = [
         {
           navItems.map((item) => (
             <a
+              data-brain-track={item.brainTrack}
               href={item.href}
               class="text-white font-bold hover:text-brand-yellow transition-colors text-sm lg:text-base uppercase tracking-tight"
             >
@@ -62,6 +69,7 @@ const navItems = [
           ))
         }
         <a
+          data-brain-track="vehicle_quote"
           href={BRAND.carQuoteUrl}
           class="text-brand-yellow font-bold hover:text-white transition-colors text-sm lg:text-base uppercase tracking-tight"
         >
@@ -136,6 +144,7 @@ const navItems = [
       {
         navItems.map((item) => (
           <a
+            data-brain-track={item.brainTrack}
             href={item.href}
             class="text-2xl text-white font-bold hover:text-brand-yellow transition-colors"
           >
@@ -144,6 +153,7 @@ const navItems = [
         ))
       }
       <a
+        data-brain-track="vehicle_quote"
         href={BRAND.carQuoteUrl}
         class="text-xl text-brand-yellow font-bold hover:text-white transition-colors"
       >
