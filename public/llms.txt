@@ -48,6 +48,8 @@ Quote system: https://removalistquotes.movingagain.com.au/quote/household
 
 - [Moving Again Agent/API documentation](https://movingagain.com.au/agents/): Public entry point for AI assistants and developers.
 - [Moving Again Agent/API examples](https://movingagain.com.au/agents/examples/): Copy-paste request examples for agents.
+- [Moving Again agent skills index](https://movingagain.com.au/.well-known/agent-skills/index.json): Machine-readable agent skill discovery index.
+- [Moving Again Markdown homepage summary](https://movingagain.com.au/index.md): Markdown summary of services, quote actions, and agent/API resources.
 - [Moving Again OpenAPI alias](https://movingagain.com.au/openapi.json): First-party OpenAPI alias that redirects to the quote host.
 - [Moving Again quote capability alias](https://movingagain.com.au/quote-capability.json): First-party capability manifest alias.
 - [Household quote form](https://removalistquotes.movingagain.com.au/quote/household): Browser handoff for household quotes.
