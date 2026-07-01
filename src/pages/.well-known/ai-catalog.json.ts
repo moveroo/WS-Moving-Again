@@ -29,6 +29,8 @@ export const GET: APIRoute = () => {
       wellKnownOpenApi: 'https://movingagain.com.au/.well-known/openapi.json',
       capabilityManifest: 'https://movingagain.com.au/quote-capability.json',
       aiPlugin: 'https://movingagain.com.au/.well-known/ai-plugin.json',
+      agentSkills: 'https://movingagain.com.au/.well-known/agent-skills/index.json',
+      markdownSummary: 'https://movingagain.com.au/index.md',
     },
     entries: [
       {
@@ -42,6 +44,18 @@ export const GET: APIRoute = () => {
         displayName: 'Moving Again Open Knowledge Index',
         type: 'text/markdown',
         url: 'https://movingagain.com.au/okf/index.md',
+      },
+      {
+        identifier: 'urn:ai:movingagain.com.au:markdown:home',
+        displayName: 'Moving Again Markdown Homepage Summary',
+        type: 'text/markdown',
+        url: 'https://movingagain.com.au/index.md',
+      },
+      {
+        identifier: 'urn:ai:movingagain.com.au:agent-skills',
+        displayName: 'Moving Again Agent Skills Index',
+        type: 'application/json',
+        url: 'https://movingagain.com.au/.well-known/agent-skills/index.json',
       },
       {
         identifier: 'urn:ai:movingagain.com.au:quote:household',

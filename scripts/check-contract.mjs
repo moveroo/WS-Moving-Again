@@ -41,6 +41,8 @@ async function main() {
   const llms = await read('public/llms.txt');
   const wellKnownLlms = await read('public/.well-known/llms.txt');
   const aiCatalog = await read('src/pages/.well-known/ai-catalog.json.ts');
+  const agentSkills = await read('src/pages/.well-known/agent-skills/index.json.ts');
+  const markdownHomepage = await read('src/pages/index.md.ts');
   const bossmanManifest = await read('bossman-site-manifest.json');
   const publicBossmanManifest = await read('public/bossman-site-manifest.json');
   const vercelConfig = await read('vercel.json');
@@ -136,6 +138,8 @@ async function main() {
     'bossman-site-manifest.json',
     '/.well-known/ai-catalog.json',
     '/.well-known/llms.txt',
+    '/.well-known/agent-skills/index.json',
+    '/index.md',
   ]) {
     checks.push([`SEO head advertises ${token}`, seo.includes(token)]);
   }
@@ -147,6 +151,8 @@ async function main() {
     'HTML sitemap links agent resources',
     htmlSitemap.includes('/agents/') &&
       htmlSitemap.includes('/agents/examples/') &&
+      htmlSitemap.includes('/.well-known/agent-skills/index.json') &&
+      htmlSitemap.includes('/index.md') &&
       htmlSitemap.includes('/openapi.json') &&
       htmlSitemap.includes('/quote-capability.json'),
   ]);
@@ -154,9 +160,11 @@ async function main() {
     'robots.txt advertises agent resources',
     robots.includes('Allow: /agents/') &&
       robots.includes('Allow: /agents/examples/') &&
+      robots.includes('Allow: /index.md') &&
       robots.includes('Allow: /openapi.json') &&
       robots.includes('Allow: /quote-capability.json') &&
       robots.includes('Allow: /.well-known/ai-catalog.json') &&
+      robots.includes('Allow: /.well-known/agent-skills/index.json') &&
       robots.includes('Allow: /.well-known/ai-plugin.json'),
   ]);
   checks.push([
@@ -164,7 +172,17 @@ async function main() {
     robots.includes('AI crawlers and search agents') &&
       robots.includes('customer-authorised quote discovery'),
   ]);
-  for (const relativePath of ['src/pages/agents.astro', 'src/pages/agents/examples.astro']) {
+  checks.push([
+    'robots.txt guards against placeholder site URLs',
+    robots.includes("!configuredSiteUrl.includes('example.com')") &&
+      robots.includes("'https://movingagain.com.au'"),
+  ]);
+  for (const relativePath of [
+    'src/pages/agents.astro',
+    'src/pages/agents/examples.astro',
+    'src/pages/index.md.ts',
+    'src/pages/.well-known/agent-skills/index.json.ts',
+  ]) {
     checks.push([`${relativePath} exists`, await exists(relativePath)]);
   }
   for (const [label, text] of [
@@ -224,6 +242,28 @@ async function main() {
     'AI catalog marks marketing site as non-execution surface',
     aiCatalog.includes("role: 'marketing_site'") &&
       aiCatalog.includes("role: 'canonical_quote_api_host'"),
+  ]);
+  checks.push([
+    'AI catalog advertises agent skills and markdown summary',
+    aiCatalog.includes('https://movingagain.com.au/.well-known/agent-skills/index.json') &&
+      aiCatalog.includes('https://movingagain.com.au/index.md'),
+  ]);
+  checks.push([
+    'agent skills index advertises usable skills',
+    agentSkills.includes('skills: [') &&
+      agentSkills.includes("id: 'movingagain.household_quote'") &&
+      agentSkills.includes("id: 'movingagain.vehicle_quote'") &&
+      agentSkills.includes("id: 'movingagain.callback_request'") &&
+      agentSkills.includes("id: 'movingagain.agent_discovery'") &&
+      agentSkills.includes('https://movingagain.com.au/agents/') &&
+      agentSkills.includes('https://movingagain.com.au/openapi.json'),
+  ]);
+  checks.push([
+    'markdown homepage endpoint returns markdown content',
+    markdownHomepage.includes("'Content-Type': 'text/markdown; charset=utf-8'") &&
+      markdownHomepage.includes('# Moving Again') &&
+      markdownHomepage.includes('https://movingagain.com.au/.well-known/agent-skills/index.json') &&
+      markdownHomepage.includes('https://movingagain.com.au/openapi.json'),
   ]);
   checks.push([
     'llms.txt includes vehicle and callback public-agent APIs',
