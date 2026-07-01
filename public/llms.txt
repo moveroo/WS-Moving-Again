@@ -42,7 +42,8 @@ Service type: Interstate moves only (not local moves)
 
 ## Contact
 Website: https://movingagain.com.au
-Quote system: https://removalistquotes.movingagain.com.au/quote/household
+Contact: https://removalistquotes.movingagain.com.au/contact
+Quote system: https://removalistquotes.movingagain.com.au/
 
 ## Quote Capability For Agents
 
