@@ -271,6 +271,12 @@ async function main() {
       llms.includes('/api/v1/callbacks/assistant/request'),
   ]);
   checks.push([
+    'llms.txt uses contact page and quote host root',
+    llms.includes('Contact: https://removalistquotes.movingagain.com.au/contact') &&
+      llms.includes('Quote system: https://removalistquotes.movingagain.com.au/') &&
+      !llms.includes('Quote system: https://removalistquotes.movingagain.com.au/quote/household'),
+  ]);
+  checks.push([
     'llms.txt has structured agent guidance',
     llms.includes('> Moving Again is') &&
       llms.includes('[Moving Again Agent/API documentation]') &&
