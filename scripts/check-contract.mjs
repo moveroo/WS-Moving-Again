@@ -26,6 +26,32 @@ function cspDirectiveAllows(configText, directive, origin) {
   return pattern.test(configText);
 }
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function trackedLinkPairs(brandText) {
+  return [...brandText.matchAll(/\{\s*href:\s*'([^']+)',\s*eventName:\s*'([^']+)',\s*\}/g)].map(
+    ([, href, eventName]) => ({ href, eventName })
+  );
+}
+
+function anchorTags(text) {
+  return [...text.matchAll(/<a\b[^>]*>/g)].map(([tag]) => tag);
+}
+
+function anchorsWithHref(text, hrefNeedle) {
+  return anchorTags(text).filter((tag) => tag.includes(hrefNeedle));
+}
+
+function allAnchorsWithHrefHaveTrack(text, hrefNeedle, trackValue) {
+  const anchors = anchorsWithHref(text, hrefNeedle);
+
+  return (
+    anchors.length > 0 && anchors.every((tag) => tag.includes(`data-brain-track="${trackValue}"`))
+  );
+}
+
 async function main() {
   const checks = [];
   const packageJson = JSON.parse(await read('package.json'));
@@ -34,8 +60,14 @@ async function main() {
   const footer = await read('src/components/Footer.astro');
   const envExample = await read('.env.example');
   const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
+  const ga4 = await read('src/components/analytics/Ga4.astro');
+  const brainAnalytics = await read('public/brain-analytics.js');
+  const brand = await read('src/utils/brand.ts');
   const vehicleAssistantEmbed = await read('src/components/VehicleAssistantEmbed.astro');
   const homepage = await read('src/pages/index.astro');
+  const header = await read('src/components/Header.astro');
+  const questions = await read('src/pages/questions.astro');
+  const carTransport = await read('src/pages/car-transport.astro');
   const htmlSitemap = await read('src/pages/sitemap.astro');
   const robots = await read('src/pages/robots.txt.ts');
   const llms = await read('public/llms.txt');
@@ -81,6 +113,86 @@ async function main() {
     'analytics wrapper includes Matomo',
     analyticsWrapper.includes("import Matomo from './Matomo.astro';"),
   ]);
+  const expectedTrackedLinks = [
+    {
+      href: 'https://removalistquotes.movingagain.com.au/quote/household',
+      eventName: 'quote_household_click',
+    },
+    {
+      href: 'https://removalistquotes.movingagain.com.au/quote/vehicle',
+      eventName: 'quote_vehicle_click',
+    },
+    {
+      href: 'https://removalistquotes.movingagain.com.au/booking/create',
+      eventName: 'booking_household_click',
+    },
+    {
+      href: 'https://removalistquotes.movingagain.com.au/contact',
+      eventName: 'contact_intent_click',
+    },
+  ];
+  const actualTrackedLinks = trackedLinkPairs(brand);
+
+  for (const expectedLink of expectedTrackedLinks) {
+    checks.push([
+      `GA4 tracked links map ${expectedLink.href} to ${expectedLink.eventName}`,
+      analyticsWrapper.includes('trackedLinks={BRAND.analytics.trackedLinks}') &&
+        ga4.includes('trackedLinks') &&
+        actualTrackedLinks.some(
+          (link) => link.href === expectedLink.href && link.eventName === expectedLink.eventName
+        ),
+    ]);
+  }
+  checks.push([
+    'GA4 tracked links contain only approved Lead Intent pairs',
+    actualTrackedLinks.length === expectedTrackedLinks.length,
+  ]);
+
+  for (const [label, text, trackValue] of [
+    ['header vehicle links', header, 'data-brain-track="vehicle_quote"'],
+    ['header booking links', header, 'data-brain-track="booking"'],
+    ['header quote links', header, 'data-brain-track="quote"'],
+    ['footer contact link', footer, 'data-brain-track="contact"'],
+    ['homepage contact CTA', homepage, 'data-brain-track="contact"'],
+    ['questions contact CTA', questions, 'data-brain-track="contact"'],
+    ['questions vehicle CTA', questions, 'data-brain-track="vehicle_quote"'],
+    ['car transport vehicle CTAs', carTransport, 'data-brain-track="vehicle_quote"'],
+  ]) {
+    checks.push([`Lead Intent first-party tracking covers ${label}`, text.includes(trackValue)]);
+  }
+  for (const [label, text, hrefNeedle, trackValue] of [
+    ['header vehicle links', header, 'href={BRAND.carQuoteUrl}', 'vehicle_quote'],
+    ['header booking links', header, 'href={BRAND.bookingUrl}', 'booking'],
+    ['header quote links', header, 'href={BRAND.quoteUrl}', 'quote'],
+    ['footer contact link', footer, 'href={BRAND.contactUrl}', 'contact'],
+    ['homepage contact CTA', homepage, 'href={BRAND.contactUrl}', 'contact'],
+    [
+      'questions contact CTA',
+      questions,
+      'href="https://removalistquotes.movingagain.com.au/contact"',
+      'contact',
+    ],
+    ['questions vehicle CTA', questions, 'href={BRAND.carQuoteUrl}', 'vehicle_quote'],
+    ['car transport vehicle CTAs', carTransport, 'href={BRAND.carQuoteUrl}', 'vehicle_quote'],
+  ]) {
+    checks.push([
+      `Every ${label} anchor has explicit first-party Lead Intent tracking`,
+      allAnchorsWithHrefHaveTrack(text, hrefNeedle, trackValue),
+    ]);
+  }
+  for (const [trackValue, intentType] of [
+    ['quote', 'quote_household'],
+    ['vehicle_quote', 'quote_vehicle'],
+    ['booking', 'booking_household'],
+    ['contact', 'contact'],
+  ]) {
+    checks.push([
+      `Brain Analytics maps ${trackValue} Lead Intent clicks`,
+      new RegExp(
+        `if \\(trackValue === '${escapeRegExp(trackValue)}'\\) return '${escapeRegExp(intentType)}'`
+      ).test(brainAnalytics),
+    ]);
+  }
   checks.push([
     'vehicle assistant uses central loader',
     vehicleAssistantEmbed.includes(
