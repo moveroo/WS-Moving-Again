@@ -61,6 +61,10 @@ async function main() {
   const envExample = await read('.env.example');
   const analyticsWrapper = await read('src/components/analytics/Analytics.astro');
   const ga4 = await read('src/components/analytics/Ga4.astro');
+  const leadAttributionRuntime = [
+    ga4,
+    await fs.readFile(path.join(root, 'public/ga4-loader.js'), 'utf8').catch(() => ''),
+  ].join('\n');
   const brainAnalytics = await read('public/brain-analytics.js');
   const brand = await read('src/utils/brand.ts');
   const vehicleAssistantEmbed = await read('src/components/VehicleAssistantEmbed.astro');
@@ -148,6 +152,21 @@ async function main() {
     actualTrackedLinks.length === expectedTrackedLinks.length,
   ]);
 
+  for (const token of [
+    'lead_intent_id',
+    'source_site',
+    'source_path',
+    'intent_type',
+    'quote_household',
+    'quote_vehicle',
+    'booking_household',
+    'contact',
+  ]) {
+    checks.push([
+      `Lead attribution runtime decorates outbound Lead Intent links with ${token}`,
+      leadAttributionRuntime.includes(token),
+    ]);
+  }
   for (const [label, text, trackValue] of [
     ['header vehicle links', header, 'data-brain-track="vehicle_quote"'],
     ['header booking links', header, 'data-brain-track="booking"'],
